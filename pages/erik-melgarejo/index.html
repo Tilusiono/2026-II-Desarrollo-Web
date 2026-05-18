@@ -14,13 +14,40 @@
     </head>
     <body>
         <h1>GG Highlights</h1>
-        <h2>Dota2-Epic Moments</h2>
-        <video src="1.mp4.mp4" controls width="600"></video>
 
-            <p>Bienvenido</p>
-            <audio controls autoplay loop>
-                <source src="doors-elevator-music.mp3"
-                type="audio/mpeg">
-        <script src="" async defer></script>
-    </body>
-</html>
+        <section>    
+        <h2 id="dotaTitle">Dota2-Epic Moments</h2>
+        <video id="dotaVideo" src="fly.mp4" controls width="600" style="display:none;"></video>
+    </section>
+
+    <p>Mejores Momentos del Dota Peruano</p>
+
+     <script>
+        // Mostrar video al hacer clic en el título
+        const titulo = document.getElementById("dotaTitle");
+        const video = document.getElementById("dotaVideo");
+
+        titulo.addEventListener("click", () => {
+            video.style.display = "block"; // muestra el video
+            video.play(); // lo reproduce automáticamente
+        });
+    </script>
+
+
+    <audio id="introAudio" src="audio.mp3.mp3" autoplay muted></audio>
+
+    <script>
+        const audio = document.getElementById("introAudio");
+
+        // Cuando el usuario haga clic en la página, se activa el sonido
+        document.body.addEventListener("click", () => {
+            audio.muted = false; 
+            audio.play();
+
+            setTimeout(() => {
+                audio.pause();
+                audio.currentTime = 0; // lo regresa al inicio
+                audio.removeAttribute("autoplay"); // evita que vuelva a sonar
+            }, 10000); // 10 segundos
+        }, { once: true }); // solo funciona la primera vez
+    </script>
