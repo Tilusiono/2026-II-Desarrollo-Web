@@ -3,88 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asesoría Canina - Bulldog Francés</title>
+    <title>ASESORÍA CANINA PARA FRENCHIES</title>
     
-    <style>
-        /* Estilos generales muy sencillos */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #fcfcfc;
-        }
-
-        /* Cambiamos un poco los colores para que se distingan las secciones */
-        header, footer {
-            background-color: #f0f0f0;
-            padding: 10px 20px;
-        }
-
-        section {
-            background-color: #ffffff;
-            padding: 15px;
-            margin: 20px 0;
-            border: 1px solid #ddd;
-        }
-
-        /* --- TRUCO DE CSS PARA EL CARRUSEL AUTOMÁTICO --- */
-        .contenedor-carrusel {
-            width: 600px;         /* Ancho fijo del carrusel */
-            height: 350px;        /* Alto fijo del carrusel */
-            overflow: hidden;     /* Oculta las fotos que están "en fila" esperando su turno */
-            position: relative;
-            margin: 10px 0;
-            border: 2px solid #333;
-        }
-
-        .carrete-fotos {
-            display: block;
-            width: 400%;          /* 400% porque son 4 fotos (100% para cada una) en fila horizontal */
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            
-            /* Indicamos la animación de CSS: se llama "moverse", dura 16 segundos en total y se repite infinitamente */
-            animation: moverse 16s infinite; 
-        }
-
-        .carrete-fotos li {
-            float: left;          /* Pone las fotos una al lado de la otra en horizontal */
-            width: 25%;           /* Cada foto ocupa exactamente la cuarta parte del 400% (o sea, el 100% del contenedor) */
-            height: 100%;
-            text-align: center;
-        }
-
-        .carrete-fotos img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-        }
-
-        /* Animación para que el carrete se desplace hacia la izquierda solo */
-        /* Dividimos el tiempo para que cada foto se quede quieta un momento y luego se desplace */
-        @keyframes moverse {
-            0% { margin-left: 0%; }          /* Muestra Foto 1 */
-            20% { margin-left: 0%; }
-            25% { margin-left: -100%; }      /* Muestra Foto 2 */
-            45% { margin-left: -100%; }
-            50% { margin-left: -200%; }      /* Muestra Foto 3 */
-            70% { margin-left: -200%; }
-            75% { margin-left: -300%; }      /* Muestra Foto 4 */
-            95% { margin-left: -300%; }
-            100% { margin-left: 0%; }        /* Regresa al inicio */
-        }
-    </style>
 </head>
 <body>
 
     <header>
         <h1>Centro de Asesoría Canina: Frenchies Especializados</h1>
-        <p>Todo lo que necesitas saber para el cuidado, salud y bienestar de tu Bulldog Francés.</p>
+        <p>Todo lo que necesitas saber para el cuidado, salud y bienestar de tu muchachito(a) gordo(a).</p>
         <nav>
             <ul>
-                <li><a href="#carrusel">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#servicios">Nuestros Servicios</a></li>
                 <li><a href="#productos">Productos Exclusivos</a></li>
                 <li><a href="#contacto">Contacto y Registro</a></li>
@@ -93,11 +22,24 @@
     </header>
 
     <main>
+        <section id=nosotros>
+            <header>
+                <h2>NOSOTROS</h2>
+                <h3>Conócenos</h3>
+                <p>En ASESORIA CANINA PARA FRENCHIES no solo somos asesores; somos apasionados incondicionales del Bulldog Francés. Sabemos que estos pequeños de orejas de murciélago no son solo una mascota, sino un miembro más de la familia con una personalidad única y, admitámoslo, un manual de instrucciones un poco particular.
+                Nuestra aventura nació de la propia experiencia: la fascinación por su carisma, pero también el entendimiento de sus necesidades específicas de salud, educación, cuidado y alimentación. Nos dimos cuenta de que la red está llena de información contradictoria, y que los dueños de frenchies necesitaban un faro de confianza. Por eso, creamos este espacio de asesoría especializada para acompañarte en cada etapa de su vida, asegurando que tu compañero crezca sano, feliz y equilibrado.</p>
+                <h4>Nuestra misión</h4>
+                <p>Guiar, educar y apoyar a los tutores de Bulldog Francés a través de asesorías personalizadas basadas en el respeto, la ciencia y el amor por la raza. Nos dedicamos a desmitificar los cuidados del frenchie, previniendo problemas comunes de salud y comportamiento para garantizarles la calidad de vida que se merecen y a ti, la tranquilidad de estar haciendo lo correcto.</p>
+                <h5>Nuestra visión</h5>
+                <p>Convertirnos en la comunidad de referencia global y la plataforma de asesoría número uno para los amantes del Bulldog Francés. Aspiramos a un mundo donde cada tutor esté completamente capacitado para entender el lenguaje de su perro, promoviendo una crianza responsable que erradique los abandonos y mejore el bienestar general de esta maravillosa raza.</p>
+            </header>
+        </section>
+
 
         <section id="carrusel">
             <header>
                 <h2>Galería: Conoce al Bulldog Francés</h2>
-                <p>Sección dedicada a la visualización de la raza (Movimiento automático con CSS Puro).</p>
+                <p>Sección dedicada a la visualización de la raza.</p>
             </header>
 
             <article>
@@ -114,11 +56,11 @@
                             <p>Imagen 2: Importancia del ejercicio moderado y recreación.</p>
                         </li>
                         <li>
-                            <img src="/pages/david-suyo/imagenes/pibbleveterinario.webp" alt="Bulldog Francés en consulta veterinaria">
+                            <img src="/pages/david-suyo/imagenes/pibbleveterinario.jpeg" alt="Bulldog Francés en consulta veterinaria">
                             <p>Imagen 3: Cuidados de salud y control de su respiración.</p>
                         </li>
                         <li>
-                            <img src="/pages/david-suyo/imagenes/pibbleadulto_x3x.jpg_554688468.jpg" alt="Bulldog Francés adulto posando">
+                            <img src="/pages/david-suyo/imagenes/pibbleadulto_x3x.jpg_554688468.jpeg" alt="Bulldog Francés adulto posando">
                             <p>Imagen 4: Estándar y postura del Frenchie adulto.</p>
                         </li>
                     </ul>
@@ -134,11 +76,13 @@
             <header>
                 <h2>Nuestros Servicios de Asesoría</h2>
                 <p>Ofrecemos acompañamiento profesional en cada etapa de su vida.</p>
+                <p></p>
             </header>
 
             <div>
                 <article>
                     <h3>1. Asesoría de Nutrición Especializada</h3>
+                    <img src="/pages/david-suyo/imagenes/gordotragon.jpg">
                     <p>Planes alimenticios para evitar alergias comunes en la raza.</p>
                     <p><strong>Precio:</strong> $45.00</p>
                     <button type="button">Contratar Servicio</button>
@@ -146,6 +90,7 @@
                 <br>
                 <article>
                     <h3>2. Guía de Cuidados Respiratorios</h3>
+                    <img src="/pages/david-suyo/imagenes/diganlequeestoymalito.jpg">
                     <p>Prevención del síndrome braquiocefálico y manejo del calor.</p>
                     <p><strong>Precio:</strong> $50.00</p>
                     <button type="button">Contratar Servicio</button>
@@ -153,6 +98,7 @@
                 <br>
                 <article>
                     <h3>3. Entrenamiento de Conducta Básica</h3>
+                    <img src="/pages/david-suyo/imagenes/gordosbienhelou.jpg">
                     <p>Educación en positivo para cachorros testarudos.</p>
                     <p><strong>Precio:</strong> $60.00</p>
                     <button type="button">Contratar Servicio</button>
@@ -160,6 +106,7 @@
                 <br>
                 <article>
                     <h3>4. Taller de Socialización</h3>
+                    <img src="/pages/david-suyo/imagenes/gordos.JPG">
                     <p>Ayuda a tu Frenchie a convivir pacíficamente con otros perros.</p>
                     <p><strong>Precio:</strong> $40.00</p>
                     <button type="button">Contratar Servicio</button>
@@ -167,6 +114,7 @@
                 <br>
                 <article>
                     <h3>5. Asesoría en Higiene y Pliegues</h3>
+                    <img src="/pages/david-suyo/imagenes/gordolimpio.jpg">
                     <p>Aprende a limpiar correctamente sus arrugas y orejas para evitar infecciones.</p>
                     <p><strong>Precio:</strong> $30.00</p>
                     <button type="button">Contratar Servicio</button>
@@ -174,6 +122,7 @@
                 <br>
                 <article>
                     <h3>6. Preparación para el Parto y Crianza</h3>
+                    <img src="/pages/david-suyo/imagenes/preñada.jpg">
                     <p>Asesoría exclusiva debido a las complicaciones de reproducción en la raza.</p>
                     <p><strong>Precio:</strong> $120.00</p>
                     <button type="button">Contratar Servicio</button>
@@ -181,6 +130,7 @@
                 <br>
                 <article>
                     <h3>7. Psicología Canina y Ansiedad</h3>
+                    <img src="/pages/david-suyo/imagenes/triste.jpg">
                     <p>Tratamiento para la ansiedad por separación, muy común en ellos.</p>
                     <p><strong>Precio:</strong> $55.00</p>
                     <button type="button">Contratar Servicio</button>
