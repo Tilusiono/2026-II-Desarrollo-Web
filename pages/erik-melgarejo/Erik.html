@@ -5,14 +5,14 @@
     <title>GG Highlights</title>
 </head>
 <body>
-    <h1>GG Highlights</h1>
+    <u>GG Highlights</u>
 
     <section>    
-        <h2 id="dotaTitle">Dota2-Epic Moments</h2>
+        <h2 id="dotaTitle">Dota2</h2>
         <video id="dotaVideo" src="fly.mp4" controls width="600" style="display:none;"></video>
     </section>
 
-    <p>Mejores Momentos del Dota2</p>
+    
 
     <script>
         // Mostrar video al hacer clic en el título
@@ -42,5 +42,49 @@
             }, 10000); // 10 segundos
         }, { once: true }); // solo funciona la primera vez
     </script>
+    <h2>Valorant</h2>
+    <p></p>
+
+
+    
+
+    
+    <section>    
+        <h2 id="LolTitle">League Of Legends</h2>
+        <video id="LolVideo" src="1jugadalol.mp4" controls width="600" style="display:none;"></video>
+    </section>
+    
+
+
+    <script>
+        // Mostrar video al hacer clic en el título
+        const titulo = document.getElementById("LolTitle");
+        const video = document.getElementById("LolVideo");
+
+        titulo.addEventListener("click", () => {
+            video.style.display = "block"; // muestra el video
+            video.play(); // lo reproduce automáticamente
+        });
+    </script>
+
+
+
+
+
+
+    <h2>Counter Strike 2</h2>
+    <div class="carrusel"
+        
+
+
+
+    
+        
+    
+        
+    
+    </footer>
+
+    </footer>
 </body>
 </html>
