@@ -6,10 +6,10 @@
     {
       "id": "5F7yNy4mctFdd5v_3f4f6",
       "type": "arrow",
-      "x": 325.45748789396976,
-      "y": 136.31891595955864,
-      "width": 243.66788511655284,
-      "height": 213.4602060854608,
+      "x": -2432.045974480136,
+      "y": -851.8302779880845,
+      "width": 385.3383803900979,
+      "height": 399.6724231054699,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -25,11 +25,11 @@
         "type": 2
       },
       "seed": 705655727,
-      "version": 543,
-      "versionNonce": 2012711502,
+      "version": 1478,
+      "versionNonce": 2036003763,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1779111271104,
+      "updated": 1779195613252,
       "link": null,
       "locked": false,
       "points": [
@@ -38,21 +38,21 @@
           0
         ],
         [
-          -243.66788511655284,
-          213.4602060854608
+          -243.96850034744602,
+          262.7585339223741
+        ],
+        [
+          -385.3383803900979,
+          399.6724231054699
         ]
       ],
       "lastCommittedPoint": null,
       "startBinding": {
         "elementId": "MCAPOhcOyq3n_D__i0Grl",
-        "focus": 0.3989537550891408,
-        "gap": 2.4412601868751835
+        "focus": 0.18957236977859435,
+        "gap": 6.280634595130323
       },
-      "endBinding": {
-        "elementId": "tehcS7Uq_-gTAMgc4mLZI",
-        "focus": -0.21201670853848287,
-        "gap": 3.6858004036708394
-      },
+      "endBinding": null,
       "startArrowhead": null,
       "endArrowhead": "arrow",
       "elbowed": false
@@ -60,10 +60,10 @@
     {
       "id": "Sg8Pi78-7_50QtCWZ1NmQ",
       "type": "arrow",
-      "x": 519.4526113183806,
-      "y": 139.6294102374915,
-      "width": 174.15314303079612,
-      "height": 238.17907730879907,
+      "x": -2327.995532664442,
+      "y": -845.3519827477974,
+      "width": 215.73511740251615,
+      "height": 391.4821455411718,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -79,11 +79,11 @@
         "type": 2
       },
       "seed": 880117281,
-      "version": 342,
-      "versionNonce": 749074126,
+      "version": 843,
+      "versionNonce": 835511261,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1779111260407,
+      "updated": 1779195600192,
       "link": null,
       "locked": false,
       "points": [
@@ -92,21 +92,17 @@
           0
         ],
         [
-          -174.15314303079612,
-          238.17907730879907
+          -215.73511740251615,
+          391.4821455411718
         ]
       ],
       "lastCommittedPoint": null,
       "startBinding": {
         "elementId": "MCAPOhcOyq3n_D__i0Grl",
-        "focus": -0.005579789187260256,
+        "focus": -0.019911442751169493,
         "gap": 1
       },
-      "endBinding": {
-        "elementId": "DSZEjvdLDoW4gOKjPzNCh",
-        "focus": -0.2896573144090894,
-        "gap": 3.2578927707030516
-      },
+      "endBinding": null,
       "startArrowhead": null,
       "endArrowhead": "arrow",
       "elbowed": false
@@ -114,11 +110,11 @@
     {
       "id": "FFXoBjq87LJAteYs8MlfU",
       "type": "arrow",
-      "x": 641.0029278588102,
-      "y": 139.57059168243063,
-      "width": 47.98749339352912,
-      "height": 216.46265385706914,
-      "angle": 0,
+      "x": -2275.3775793750597,
+      "y": -841.0192480903162,
+      "width": 81.41131234884324,
+      "height": 389.09316844358784,
+      "angle": 0.1369095877896278,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
       "fillStyle": "solid",
@@ -133,11 +129,11 @@
         "type": 2
       },
       "seed": 1957600239,
-      "version": 674,
-      "versionNonce": 140606226,
+      "version": 1810,
+      "versionNonce": 1336266589,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1779111227255,
+      "updated": 1779195595420,
       "link": null,
       "locked": false,
       "points": [
@@ -146,21 +142,21 @@
           0
         ],
         [
-          23.501614351934336,
-          110.06960460560475
+          61.801967749327105,
+          346.4563849095343
         ],
         [
-          47.98749339352912,
-          216.46265385706914
+          81.41131234884324,
+          389.09316844358784
         ]
       ],
       "lastCommittedPoint": null,
-      "startBinding": null,
-      "endBinding": {
-        "elementId": "aoqt9P4DjU-YH4qDFBrb5",
-        "focus": 0.047777888790006814,
-        "gap": 3.433128673978274
+      "startBinding": {
+        "elementId": "MCAPOhcOyq3n_D__i0Grl",
+        "focus": -0.1357106686004689,
+        "gap": 1
       },
+      "endBinding": null,
       "startArrowhead": null,
       "endArrowhead": "arrow",
       "elbowed": false
@@ -168,8 +164,8 @@
     {
       "id": "tehcS7Uq_-gTAMgc4mLZI",
       "type": "rectangle",
-      "x": -106.48838207078455,
-      "y": 353.4649224486903,
+      "x": -3002.66890371792,
+      "y": -451.7432074341222,
       "width": 272.7142857142857,
       "height": 170.37005615234375,
       "angle": 0,
@@ -187,28 +183,24 @@
         "type": 3
       },
       "seed": 103365999,
-      "version": 370,
-      "versionNonce": 1751228750,
+      "version": 555,
+      "versionNonce": 978558131,
       "isDeleted": false,
       "boundElements": [
         {
           "type": "text",
           "id": "b558eCPhbTxgjc7CzxtIK"
-        },
-        {
-          "id": "5F7yNy4mctFdd5v_3f4f6",
-          "type": "arrow"
         }
       ],
-      "updated": 1779111270422,
+      "updated": 1779195636443,
       "link": null,
       "locked": false
     },
     {
       "id": "b558eCPhbTxgjc7CzxtIK",
       "type": "text",
-      "x": -89.23115376442294,
-      "y": 376.14995052486216,
+      "x": -2985.411675411558,
+      "y": -429.05817935795034,
       "width": 238.1998291015625,
       "height": 125,
       "angle": 0,
@@ -224,11 +216,11 @@
       "index": "b0AG",
       "roundness": null,
       "seed": 1024142482,
-      "version": 75,
-      "versionNonce": 916078094,
+      "version": 259,
+      "versionNonce": 29593171,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1779111262233,
+      "boundElements": [],
+      "updated": 1779195636443,
       "link": null,
       "locked": false,
       "text": "Torneo Apertura (Primer\ntorneo corto del año,\njuegan 18 equipos todos\ncontra todos en 17\nfechas)",
@@ -244,8 +236,8 @@
     {
       "id": "DSZEjvdLDoW4gOKjPzNCh",
       "type": "rectangle",
-      "x": 210.99805504556593,
-      "y": 381.0663803169936,
+      "x": -2694.6008524251374,
+      "y": -466.2860163301419,
       "width": 272.7142857142857,
       "height": 135,
       "angle": 0,
@@ -263,28 +255,24 @@
         "type": 3
       },
       "seed": 1480680563,
-      "version": 424,
-      "versionNonce": 479930254,
+      "version": 624,
+      "versionNonce": 1923301107,
       "isDeleted": false,
       "boundElements": [
         {
           "type": "text",
           "id": "6QpLdfzfbKvxhoWKT2jUJ"
-        },
-        {
-          "id": "Sg8Pi78-7_50QtCWZ1NmQ",
-          "type": "arrow"
         }
       ],
-      "updated": 1779111253299,
+      "updated": 1779195616558,
       "link": null,
       "locked": false
     },
     {
       "id": "6QpLdfzfbKvxhoWKT2jUJ",
       "type": "text",
-      "x": 220.42528915026742,
-      "y": 386.0663803169936,
+      "x": -2685.1736183204357,
+      "y": -461.2860163301419,
       "width": 253.8598175048828,
       "height": 125,
       "angle": 0,
@@ -300,11 +288,11 @@
       "index": "b0c",
       "roundness": null,
       "seed": 1981963795,
-      "version": 192,
-      "versionNonce": 1445660110,
+      "version": 391,
+      "versionNonce": 1281681555,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1779111253299,
+      "updated": 1779195616558,
       "link": null,
       "locked": false,
       "text": "Torneo Clausura (Segundo\ntorneo corto, se invierten\nlas localías y el ganador\nasegura su pase a los\nPlayoffs)",
@@ -320,8 +308,8 @@
     {
       "id": "aoqt9P4DjU-YH4qDFBrb5",
       "type": "rectangle",
-      "x": 569.2431722330659,
-      "y": 359.46637421347805,
+      "x": -2364.1765258463615,
+      "y": -460.23852080605343,
       "width": 272.7142857142857,
       "height": 203.82998657226562,
       "angle": 0,
@@ -339,8 +327,8 @@
         "type": 3
       },
       "seed": 41883261,
-      "version": 362,
-      "versionNonce": 103984722,
+      "version": 549,
+      "versionNonce": 246638525,
       "isDeleted": false,
       "boundElements": [
         {
@@ -350,21 +338,17 @@
         {
           "id": "Ct7QtP0tiDL1VBVkW7_mN",
           "type": "arrow"
-        },
-        {
-          "id": "FFXoBjq87LJAteYs8MlfU",
-          "type": "arrow"
         }
       ],
-      "updated": 1779111226030,
+      "updated": 1779195621509,
       "link": null,
       "locked": false
     },
     {
       "id": "rbPBKJPhl3XZWn8nrc3RJ",
       "type": "text",
-      "x": 575.8504066429432,
-      "y": 386.38136749961086,
+      "x": -2357.569291436484,
+      "y": -433.3235275199206,
       "width": 259.49981689453125,
       "height": 150,
       "angle": 0,
@@ -380,11 +364,11 @@
       "index": "b0e",
       "roundness": null,
       "seed": 514932445,
-      "version": 175,
-      "versionNonce": 1595355406,
+      "version": 359,
+      "versionNonce": 1523148829,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1779111164846,
+      "updated": 1779195621509,
       "link": null,
       "locked": false,
       "text": "Tabla Acumulada (Suma\ntotal de puntos de ambos\ntorneos; define el\ndescenso, cupos a Copas y\nprioridad para los\nPlayoffs)",
@@ -400,8 +384,8 @@
     {
       "id": "G0L9MYryHQ0DjvbL6t09a",
       "type": "rectangle",
-      "x": 896.1130452799409,
-      "y": 343.0063827583999,
+      "x": -2013.3920613281316,
+      "y": -502.1760106335272,
       "width": 272.7142857142857,
       "height": 207.2300109863281,
       "angle": 0,
@@ -419,28 +403,24 @@
         "type": 3
       },
       "seed": 663600019,
-      "version": 350,
-      "versionNonce": 630157586,
+      "version": 579,
+      "versionNonce": 1006478931,
       "isDeleted": false,
       "boundElements": [
         {
           "type": "text",
           "id": "GWLihYje0KbTxxpXzluF-"
-        },
-        {
-          "id": "Ct7QtP0tiDL1VBVkW7_mN",
-          "type": "arrow"
         }
       ],
-      "updated": 1779111234198,
+      "updated": 1779195630759,
       "link": null,
       "locked": false
     },
     {
       "id": "GWLihYje0KbTxxpXzluF-",
       "type": "text",
-      "x": 908.5602683983143,
-      "y": 359.121388251564,
+      "x": -2000.9448382097582,
+      "y": -486.06100514036314,
       "width": 247.81983947753906,
       "height": 175,
       "angle": 0,
@@ -456,11 +436,11 @@
       "index": "b0g",
       "roundness": null,
       "seed": 1142346035,
-      "version": 158,
-      "versionNonce": 199668498,
+      "version": 386,
+      "versionNonce": 12280819,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1779111228932,
+      "updated": 1779195630759,
       "link": null,
       "locked": false,
       "text": "Playoffs (Definición)\n(Semifinales y Finales\ndonde clasifican los\nganadores de los torneos\ncortos y los mejores del\nacumulado para definir al\nCampeón Nacional)",
@@ -476,10 +456,10 @@
     {
       "id": "Ct7QtP0tiDL1VBVkW7_mN",
       "type": "arrow",
-      "x": 804.9947200516003,
-      "y": 141.40961097419518,
-      "width": 227.79035099962402,
-      "height": 202.75520427074514,
+      "x": -2072.2771163439284,
+      "y": -843.3572202909634,
+      "width": 163.3571181286377,
+      "height": 328.2427282956518,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -495,11 +475,11 @@
         "type": 2
       },
       "seed": 1060730749,
-      "version": 651,
-      "versionNonce": 1308872078,
+      "version": 1675,
+      "versionNonce": 1887272851,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1779111247216,
+      "updated": 1779195628949,
       "link": null,
       "locked": false,
       "points": [
@@ -508,25 +488,21 @@
           0
         ],
         [
-          45.269770889612914,
-          44.87056944469958
+          107.5057478263509,
+          215.700104596004
         ],
         [
-          227.79035099962402,
-          202.75520427074514
+          163.3571181286377,
+          328.2427282956518
         ]
       ],
       "lastCommittedPoint": null,
       "startBinding": {
         "elementId": "MCAPOhcOyq3n_D__i0Grl",
-        "focus": -0.40443725534763425,
-        "gap": 2.649434827761354
+        "focus": -0.507553370232668,
+        "gap": 2.192423101990812
       },
-      "endBinding": {
-        "elementId": "G0L9MYryHQ0DjvbL6t09a",
-        "focus": 0.4636469999447763,
-        "gap": 1.1584324865403914
-      },
+      "endBinding": null,
       "startArrowhead": null,
       "endArrowhead": "arrow",
       "elbowed": false
@@ -534,8 +510,8 @@
     {
       "id": "MCAPOhcOyq3n_D__i0Grl",
       "type": "rectangle",
-      "x": 226.06954465215074,
-      "y": 2.590162718699446,
+      "x": -2639.533482691599,
+      "y": -981.7196568206886,
       "width": 683.2349853515625,
       "height": 136.17001342773438,
       "angle": 0,
@@ -553,8 +529,8 @@
         "type": 3
       },
       "seed": 550771022,
-      "version": 103,
-      "versionNonce": 2129143246,
+      "version": 387,
+      "versionNonce": 401260787,
       "isDeleted": false,
       "boundElements": [
         {
@@ -562,11 +538,15 @@
           "id": "eL9xEKsyZKz2TObUck8Hb"
         },
         {
-          "id": "Ct7QtP0tiDL1VBVkW7_mN",
+          "id": "Sg8Pi78-7_50QtCWZ1NmQ",
           "type": "arrow"
         },
         {
-          "id": "Sg8Pi78-7_50QtCWZ1NmQ",
+          "id": "FFXoBjq87LJAteYs8MlfU",
+          "type": "arrow"
+        },
+        {
+          "id": "Ct7QtP0tiDL1VBVkW7_mN",
           "type": "arrow"
         },
         {
@@ -574,15 +554,15 @@
           "type": "arrow"
         }
       ],
-      "updated": 1779111270423,
+      "updated": 1779195608444,
       "link": null,
       "locked": false
     },
     {
       "id": "eL9xEKsyZKz2TObUck8Hb",
       "type": "text",
-      "x": 459.76708493535386,
-      "y": 58.17516943256663,
+      "x": -2405.835942408396,
+      "y": -926.1346501068214,
       "width": 215.83990478515625,
       "height": 25,
       "angle": 0,
@@ -598,11 +578,11 @@
       "index": "b0iV",
       "roundness": null,
       "seed": 1175796494,
-      "version": 29,
-      "versionNonce": 1651294098,
+      "version": 306,
+      "versionNonce": 1156873469,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1779111097178,
+      "boundElements": [],
+      "updated": 1779194524021,
       "link": null,
       "locked": false,
       "text": "LIGA 1 TE APUESTO",
