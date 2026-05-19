@@ -1,0 +1,10 @@
+body{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    padding: auto;
+
+}
+.carrusel{
+    border: 10px soldi black;
+    display: flex;
+}
