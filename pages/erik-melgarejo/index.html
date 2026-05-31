@@ -1,30 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GG Highlights</title>
+    <style>
+        body {
+            background: rgb(219, 211, 211);
+        }
+    </style>
 </head>
 <body>
     
+    <header>
+        <h1>GG Highlights</h1>
+        <p>GG Highlights está enfocada en el mundo gamer. La idea es mostrar clips y jugadas destacadas de videojuegos
+            populares como Dota 2, Valorant, League of Legends y Counter-Strike. Cada sección tiene imágenes
+            representativas y al hacer clic se pueden ver videos de jugadas épicas o momentos importantes. Es
+            básicamente un espacio para revivir lo más emocionante del gaming y del streaming.</p>
+    </header>
+
+    
+    <section id="videojuegos">
+        <h2>Videojuegos más jugados</h2>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.dota2.com/home" target="_blank">
+                    <img src="dotaimg.jpg" width="450" height="450" alt="Dota 2">
+                    </a>
+                     <p><a href="#clips-dota">DOTA2</a></p>
+
+                </td>
+               <td>
+                <a href="https://playvalorant.com/es-mx/" target="_blank">
+                  <img src="valorantimg.webp" width="450" height="450" alt="Valorant">
+                   </a>
+                    <p><a href="#clips-valorant">VALORANT</a></p>
+                     </td>
+
+                  <td>
+                  <a href="https://www.leagueoflegends.com/es-es/" target="_blank">
+                 <img src="lolimg.jpg" width="450" height="450" alt="League of Legends">
+                 </a>
+                   <p><a href="#clips-lol">LEAGUE OF LEGENDS</a></p>
+                 </td>
+
+                  <td>
+                 <a href="https://www.counter-strike.net/cs2?l=spanish" target="_blank">
+                  <img src="counterimg.jpg" width="450" height="450" alt="Counter‑Strike">
+                  </a>
+                <p><a href="#clips-cs">COUNTER‑STRIKE</a></p>
+            </td>
+
+            </tr>
+        </table>
+    </section>
+
+    
+    <section id="clips-dota">
+        <h2>Clips de Dota 2</h2>
+        <ul>
+            <li>
+                Clip 1
+                <video src="videos/1jugadadota.mp4" width="320" height="240" controls></video>
+            </li>
+            <li>
+                Clip 2
+                <video src="videos/universe.mp4" width="320" height="240" controls></video>
+            </li>
+        </ul>
+    </section>
+
+    
+    <section id="clips-valorant">
+        <h2>Clips de Valorant</h2>
+        <ul>
+            <li>
+                Clip 1
+                <video src="3jugadalol.mp4" width="320" height="240" controls></video>
+            </li>
+            <li>
+                Clip 2
+                <video src="4jugadavalorant.mp4" width="320" height="240" controls></video>
+            </li>
+        </ul>
+    </section>
+
+   
+    <section id="clips-lol">
+        <h2>Clips de League of Legends</h2>
+        <ul>
+            <li>Clip 1
+                <video src="videos/1jugadalol.mp4" width="320" height="240" controls></video>
+            </li>
+            <li>Clip 2 
+                <video src="videos/2jugadalol.mp4" width="320" height="240" controls></video>
+            </li>
+            <li>Clip 3
+                <video src="videos/3jugadalol.mp4" width="320" height="240" controls></video>
+            </li>
+        </ul>
+    </section>
+
+    <section id="clips-cs">
+        <h2>Clips de Counter‑Strike</h2>
+        <ul>
+            <li>Clip 1 - VIDEO CS1</li>
+            <li>Clip 2 - VIDEO CS2</li>
+        </ul>
+    </section>
+
+    
+    <footer>
+        <p>© 2026 GG Highlights - Creado por Erik</p>
+    </footer>
 </body>
 </html>
 
 
-<!-- 
-Header               0.5, falta el logo
-S1 Carrusel          0.0 , no hay imágenes de banners para usar en el carrusel
-S2 Categorización    2 (minimo 4) Deberias  
-S3 Ítems             0.0 (Minimo 12 ítems podrías hacer 4 por cada categoria)
-S4 Formulario        0 , Adicionar Formulario 
-Footer               0.5 , Le falta mas contenido 
-Sustentación 
-Observaciones : 
-- Revisar el código generado , no usar div
-- Considerar que solo es código HTML , si conservas el css y el JS se harán preguntas con respecto a esto.
-- Separar bien las secciones 
-- Hay muchos elementos que no tienen etiqueta de cierre
-- Seguir los lineamientos dados en clase.
 
-Nota Avance : 3 de 17
--->
