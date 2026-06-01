@@ -40,6 +40,7 @@ body{
 
 header{
     text-align: center;
+
     padding: 10px;
     margin: 10px;
 }
@@ -105,5 +106,6 @@ main{
 .accesorios{
     gap: 15px;
 }
+
 
 
