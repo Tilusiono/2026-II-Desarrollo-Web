@@ -12,6 +12,7 @@ body{
     margin:  10px 10px;
 }
 
+
 .menu >li{
     position: relative;
     display: inline-block;
@@ -40,6 +41,7 @@ body{
 
 header{
     text-align: center;
+
     padding: 10px;
     margin: 10px;
 }
@@ -105,5 +107,6 @@ main{
 .accesorios{
     gap: 15px;
 }
+
 
 
