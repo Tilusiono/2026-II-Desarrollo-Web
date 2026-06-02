@@ -14,9 +14,9 @@ body {
   background: #cce5ff;   /* azul */
   border: 3px solid #339af0;
   height: 120px;
-  text-align: center;
+  text-align: right;
   font-weight: bold;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .header ul {
@@ -37,7 +37,7 @@ section p {
   writing-mode: horizontal-tb;
   transform: none;
 }section img {
-  width: 200px;   /* o el tamaño que quieras */
+  width: 200px;   
   height: auto;
 }
 
@@ -46,8 +46,8 @@ section p {
 #seccion2 img, 
 #seccion3 img, 
 #seccion4 img {
-    max-width: 300px; /* Ajusta este número al tamaño que desees */
-    height: auto;     /* Mantiene la proporción para que no se deformen */
+    max-width: 300px; 
+    height: auto;     
 }
 .section2 ul {
     display: flex;
