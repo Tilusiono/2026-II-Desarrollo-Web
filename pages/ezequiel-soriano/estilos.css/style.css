@@ -1,14 +1,10 @@
-/* GENERAL */
 body{
     margin:0;
     font-family:Arial, sans-serif;
 }
-
 main, section{
     padding:20px;
 }
-
-/* HEADER */
 header{
     display:flex;
     justify-content:space-between;
@@ -20,25 +16,19 @@ header{
     color:white;
     padding:10px 20px;
 }
-
 header article{
     display:flex;
     align-items:center;
 }
-
 header img{width:60px;}
-
 header nav a{
     margin:0 10px;
     text-decoration:none;
     color:white;
 }
-
-/* CARRUSEL */
 #carrusel{
     margin-top:80px;
 }
-
 #carrusel img,
 #categorias img,
 .grupo-productos img,
@@ -46,7 +36,6 @@ header nav a{
     width:100%;
 }
 
-/* SECCIONES */
 #inicio{background:#fff;}
 #categorias{background:#dbeafe;}
 #menu{background:#f8fafc;}
@@ -54,12 +43,9 @@ header nav a{
 #locales{background:#fef3c7;}
 #registro{background:#fee2e2;}
 
-/* SCROLL FIX */
 #inicio,#categorias,#menu,#nosotros,#locales,#registro,footer{
     scroll-margin-top:90px;
 }
-
-/* GRIDS */
 #categorias nav,
 .grupo-productos,
 .grupo-locales,
@@ -67,20 +53,15 @@ header nav a{
     display:grid;
     gap:10px;
 }
-
 #categorias nav{grid-template-columns:repeat(4,1fr);}
 .grupo-productos{grid-template-columns:repeat(4,1fr);}
 .grupo-locales{grid-template-columns:repeat(3,1fr);}
 .footer-bloques{grid-template-columns:repeat(5,1fr);}
-
-/* FORM */
 #registro form{
     display:flex;
     flex-direction:column;
     gap:10px;
 }
-
-/* FOOTER */
 footer{
     background:#1f2937;
     color:white;
