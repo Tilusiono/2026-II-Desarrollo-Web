@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>GG Highlights</title>
@@ -9,8 +10,9 @@
         }
     </style>
 </head>
+
 <body>
-    
+
     <header>
         <h1>GG Highlights</h1>
         <p>GG Highlights está enfocada en el mundo gamer. La idea es mostrar clips y jugadas destacadas de videojuegos
@@ -19,44 +21,44 @@
             básicamente un espacio para revivir lo más emocionante del gaming y del streaming.</p>
     </header>
 
-    
+
     <section id="videojuegos">
         <h2>Videojuegos más jugados</h2>
         <table>
             <tr>
                 <td>
                     <a href="https://www.dota2.com/home" target="_blank">
-                    <img src="dotaimg.jpg" width="450" height="450" alt="Dota 2">
+                        <img src="dotaimg.jpg" width="450" height="450" alt="Dota 2">
                     </a>
-                     <p><a href="#clips-dota">DOTA2</a></p>
+                    <p><a href="#clips-dota">DOTA2</a></p>
 
                 </td>
-               <td>
-                <a href="https://playvalorant.com/es-mx/" target="_blank">
-                  <img src="valorantimg.webp" width="450" height="450" alt="Valorant">
-                   </a>
+                <td>
+                    <a href="https://playvalorant.com/es-mx/" target="_blank">
+                        <img src="valorantimg.webp" width="450" height="450" alt="Valorant">
+                    </a>
                     <p><a href="#clips-valorant">VALORANT</a></p>
-                     </td>
+                </td>
 
-                  <td>
-                  <a href="https://www.leagueoflegends.com/es-es/" target="_blank">
-                 <img src="lolimg.jpg" width="450" height="450" alt="League of Legends">
-                 </a>
-                   <p><a href="#clips-lol">LEAGUE OF LEGENDS</a></p>
-                 </td>
+                <td>
+                    <a href="https://www.leagueoflegends.com/es-es/" target="_blank">
+                        <img src="lolimg.jpg" width="450" height="450" alt="League of Legends">
+                    </a>
+                    <p><a href="#clips-lol">LEAGUE OF LEGENDS</a></p>
+                </td>
 
-                  <td>
-                 <a href="https://www.counter-strike.net/cs2?l=spanish" target="_blank">
-                  <img src="counterimg.jpg" width="450" height="450" alt="Counter‑Strike">
-                  </a>
-                <p><a href="#clips-cs">COUNTER STRIKE</a></p>
-            </td>
+                <td>
+                    <a href="https://www.counter-strike.net/cs2?l=spanish" target="_blank">
+                        <img src="counterimg.jpg" width="450" height="450" alt="Counter‑Strike">
+                    </a>
+                    <p><a href="#clips-cs">COUNTER STRIKE</a></p>
+                </td>
 
             </tr>
         </table>
     </section>
 
-    
+
     <section id="clips-dota">
         <h2>Clips de Dota 2</h2>
         <ul>
@@ -71,7 +73,7 @@
         </ul>
     </section>
 
-    
+
     <section id="clips-valorant">
         <h2>Clips de Valorant</h2>
         <ul>
@@ -86,14 +88,14 @@
         </ul>
     </section>
 
-   
+
     <section id="clips-lol">
         <h2>Clips de League of Legends</h2>
         <ul>
             <li>Clip 1
                 <video src="videos/1jugadalol.mp4" width="320" height="240" controls></video>
             </li>
-            <li>Clip 2 
+            <li>Clip 2
                 <video src="videos/2jugadalol.mp4" width="320" height="240" controls></video>
             </li>
             <li>Clip 3
@@ -112,25 +114,32 @@
         </ul>
     </section>
 
-    
+
     <footer>
         <p>© 2026 GG Highlights - Creado por Erik</p>
-        <footer>
-  <p>© 2026 GG Highlights - Creado por Dant</p>
-  <p>Síguenos en:</p>
-  <a href="https://www.youtube.com" target="_blank">
-    <img src="youtubeicon.png" alt="YouTube" width="30">
-  </a>
-  <a href="https://www.twitch.tv" target="_blank">
-    <img src="twitchicon.png" alt="Twitch" width="30">
-  </a>
-  <a href="https://discord.com" target="_blank">
-    <img src="discordicon.png" alt="Discord" width="30">
-  </a>
-</footer>
 
+        <p>Síguenos en:</p>
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="youtubeicon.png" alt="YouTube" width="30">
+        </a>
+        <a href="https://www.twitch.tv" target="_blank">
+            <img src="twitchicon.png" alt="Twitch" width="30">
+        </a>
+        <a href="https://discord.com" target="_blank">
+            <img src="discordicon.png" alt="Discord" width="30">
+        </a>
+
+        <!-- Input para suscripción -->
+        <p>Suscríbete para recibir novedades:</p>
+        <form action="procesar.php" method="post">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo">
+            <input type="submit" value="Suscribirme">
+        </form>
     </footer>
+
 </body>
+
 </html>
 
 
