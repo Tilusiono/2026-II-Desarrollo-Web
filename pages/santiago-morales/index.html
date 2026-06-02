@@ -30,7 +30,7 @@
             align-items: center;
             padding: 10px 20px;
             box-sizing: border-box;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .main-nav ul {
@@ -91,7 +91,7 @@
         .card {
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -137,7 +137,7 @@
             background: white;
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .form-registro p {
@@ -146,7 +146,8 @@
             flex-direction: column;
         }
 
-        .form-registro input, .form-registro select {
+        .form-registro input,
+        .form-registro select {
             padding: 8px;
             margin-top: 5px;
             border: 1px solid #ccc;
@@ -249,7 +250,7 @@
 <body>
 
     <!-- ==========================================
-         CABECERA PRINCIPAL (HEADER)
+         CABECERA PRINCIPAL (HEADER) 1.0
          ========================================== -->
     <header class="main-header">
         <picture class="logo-container">
@@ -268,10 +269,10 @@
     </header>
 
     <!-- ==========================================
-         CONTENIDO PRINCIPAL (MAIN)
+         CONTENIDO PRINCIPAL (MAIN) 3.0 (Agregar la semantica correctamente)
          ========================================== -->
     <main>
-        
+
         <!-- SECCIÓN 1: INICIO / CARRUSEL -->
         <section id="banners-carrusel">
             <h2>Campeonato Peruano 2026</h2>
@@ -283,16 +284,84 @@
             </section>
         </section>
 
-        <!-- SECCIÓN 2: EQUIPOS (Uso de tarjetas semánticas CARD) -->
+        <section>
+
+
+
+            <card>
+                <h2> Equipos Liga 1</h2> <img src="imagenes/arquero1.jpg">
+                <details>
+                    <summary>Información del equipo</summary>
+                    <p>Detalles sobre el equipo...</p>
+                    <ul>
+                        <li>Fundación de la liga 1 :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                    </ul>
+                </details>
+            </card>
+                  <card>
+                <h2> Equipos Liga 2</h2> <img src="imagenes/arquero1.jpg">
+                <details>
+                    <summary>Información del equipo</summary>
+                    <p>Detalles sobre el equipo...</p>
+                    <ul>
+                        <li>Fundación de la liga 1 :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                    </ul>
+                </details>
+            </card>
+                  <card>
+                <h2> Los mas destacados del Torneo</h2> <img src="imagenes/arquero1.jpg">
+                <details>
+                    <summary>Información del equipo</summary>
+                    <p>Detalles sobre el equipo...</p>
+                    <ul>
+                        <li>Fundación de la liga 1 :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                    </ul>
+                </details>
+            </card>
+                  <card>
+                <h2> Equipos Liga 1</h2> <img src="imagenes/arquero1.jpg">
+                <details>
+                    <summary>Información del equipo</summary>
+                    <p>Detalles sobre el equipo...</p>
+                    <ul>
+                        <li>Fundación de la liga 1 :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                        <li>Equipos participantes :</li>
+                    </ul>
+                </details>
+            </card>
+        </section>
+
+
+        <!-- SECCIÓN 3: EQUIPOS (Uso de tarjetas semánticas CARD) 2 -->
         <section id="equipos">
             <h2>Equipos de la Liga 1</h2>
             <section class="grid-container">
-                
-                <article class="card">
+
+                <article class="article">
                     <header>Universitario</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1924</li>
+                            <li>Apodo: "Los Cremas"</li>
+                            <li>Estadio: Estadio Monumental</li>
+                        </ul>
                         <img src="./imagenes/universitario.jpg" alt="Universitario de Deportes">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Lima</footer>
                 </article>
 
@@ -434,12 +503,12 @@
 
             </section>
         </section>
-        
+
         <!-- SECCIÓN 3: DESTACADOS -->
         <section id="destacados">
             <h2>Los Más Destacados del Torneo</h2>
             <section class="grid-container">
-                
+
                 <article class="card">
                     <header>Máximo Goleador</header>
                     <div class="card-body">
@@ -495,7 +564,7 @@
         <h2>Accesorios y Camisetas Oficiales</h2>
         <section id="tienda">
             <section class="grid-container">
-                
+
                 <article class="card">
                     <header>Camiseta Oficial</header>
                     <div class="card-body">
@@ -618,7 +687,7 @@
          ========================================== -->
     <footer class="main-footer">
         <div class="footer-columns">
-            
+
             <!-- Columna 1: Enlaces -->
             <div class="footer-column">
                 <h3>Enlaces Oficiales</h3>
@@ -662,17 +731,18 @@
     </footer>
 
 </body>
+
 </html>
 
 
 <!-- 
-Header               1.5 ,
-S1 Inicio            2.5 , falta header(descripcion y titulos) , footer(opcional)
+Header               1.0 , falta H1
+S1 Inicio            3.0 , falta header(descripcion ) , footer(opcional)
 S2 Categorización    0.0 , Agregar las categorias al igual que los items pero usando CARD
-S3 Ítems             2.0 (Minimo 12 ítems podrías hacer 4 por cada categoria , solo falta mejorar las semantica falta header, footer y contenido  por cada item, algunas imageenes no cargan)
+S3 Ítems             2.0 ( solo falta mejorar las semantica falta header, footer y contenido  por cada item, algunas imageenes no cargan, no USAR DIV)
 S4 Formulario        3.5, 12 inputs de 12 puntos
-S5 Adicionales       0.0
-Footer               1.0 ,Falta mas informacion separar bien las secciones (EN COLUMNAS). 
+S5 Adicionales       1.0
+Footer               1.5 ,Falta mas informacion separar bien las secciones (EN COLUMNAS). 
 Sustentación 
 Observaciones : 
 - La pagina principal deberia ser index.html y no index2.html
@@ -681,5 +751,5 @@ Observaciones :
 - Evitar usar etiqueta class a codigo de css , que no exista.
 - Separar bien las secciones (Afinar el diseño) .
 - Seguir los lineamientos dados en clase.
-Nota Avance : 11 de 17
+Nota Avance : 12 de 17
 -->
