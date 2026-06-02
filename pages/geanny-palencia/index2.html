@@ -57,14 +57,134 @@
             height: auto;
             border: 2px solid #e67e22;
         }
-        footer {
-            background-color: #111;
-            padding: 20px;
-            text-align: center;
+
+        /* ========================================== */
+        /* NUEVO CSS PARA EL FOOTER          */
+        /* ========================================== */
+        .main-footer {
+            background-color: #0f0f0f;
+            color: #bbb;
+            padding: 60px 40px 20px 40px;
+            border-top: 3px solid #e67e22; /* Línea naranja estilo Sekiro */
+            
+            /* Grid de 3 columnas para el contenido principal */
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            gap: 40px;
+        }
+
+        .main-footer h3 {
+            color: #e67e22;
+            margin-top: 0;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .main-footer p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Listas del Footer */
+        .footer-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-nav li {
+            margin-bottom: 10px;
+        }
+
+        .footer-nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .footer-nav a:hover {
+            color: #e67e22;
+        }
+
+        /* Formulario del Footer */
+        .footer-form {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .footer-form input {
+            padding: 10px;
+            background: #222;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 4px 0 0 4px;
+            width: 100%;
+        }
+
+        .footer-form button {
+            background: #e67e22;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            padding: 0 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .footer-form button:hover {
+            background: #d35400;
+        }
+
+        /* Fila de Derechos y Legales */
+        .footer-copy {
+            grid-column: 1 / 3;
+            border-top: 1px solid #2a2a2a;
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .footer-legal {
+            grid-column: 3 / 4;
+            border-top: 1px solid #2a2a2a;
+            padding-top: 20px;
+            text-align: right;
+        }
+
+        .footer-legal a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-left: 15px;
+        }
+
+        .footer-legal a:hover {
+            color: #aaa;
+        }
+
+        /* Responsivo para móviles */
+        @media (max-width: 768px) {
+            .main-footer {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 40px 20px;
+            }
+            .footer-copy, .footer-legal {
+                grid-column: 1;
+                text-align: center;
+            }
+            .footer-legal {
+                border-top: none;
+                padding-top: 0;
+            }
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Blog de Sekiro</h1>
         <nav>
@@ -76,11 +196,12 @@
             </ul>
         </nav>
     </header>
-<section id="carrusel">
-    <img src="../geanny-palencia/assets/img/mikiri.png" alt="Carrusel 1">
-    <img src="../geanny-palencia/assets/img/ejecusiones normales.png" alt="Carrusel 2">
-    <img src="../geanny-palencia/assets/img/hacienda recuerdo.png" alt="Carrusel 3"> 
-    <main>
+
+    <section id="carrusel">
+        <img src="../geanny-palencia/assets/img/mikiri.png" alt="Carrusel 1">
+        <img src="../geanny-palencia/assets/img/ejecusiones normales.png" alt="Carrusel 2">
+        <img src="../geanny-palencia/assets/img/hacienda recuerdo.png" alt="Carrusel 3"> 
+    </section> <main>
         <section id="seccion-1">
             <h2>📜 Historia y Lore</h2>
             <p> Aqui va el lore y la historia de sekiro, con detalles sobre los personajes, el mundo y los eventos que ocurren en el juego.
@@ -143,19 +264,5 @@
         </nav>
     </footer>
 
-
 </body>
 </html>
-
-<!-- 
-Header               1 , falta el logo
-S1 Carrusel          0.5 , no hay imágenes de banners para usar en el carrusel
-S2 Categorización    0.5 (minimo 4) Deberias  
-S3 Ítems             0.5 (Minimo 12 ítems podrías hacer 4 por cada categoria)
-S4 Formulario        0.5, Adicionar Formulario 
-Footer               0.5 , Le falta mas contenido 
-Sustentación 
-Observaciones : 
-- Considerar que solo es código HTML , si conservas el css y el JS se harán preguntas con respecto a esto.
-Nota Avance : 3.5 de 17
--->
