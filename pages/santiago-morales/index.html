@@ -7,6 +7,8 @@
     <title>Liga 1 - Campeonato Peruano</title>
     <link rel="stylesheet" href="estilos.css">
 
+    <link rel="stylesheet" href="../../css/estilo_global.css">
+
     <style>
         /* === ESTILOS GENERALES === */
         body {
@@ -253,12 +255,12 @@
          CABECERA PRINCIPAL (HEADER) 1.0
          ========================================== -->
     <header class="main-header">
-    <h1>
-        <picture class="logo-container">
-            <img src="./imagenes/logo_liga1.png" alt="Liga 1 official logo" width="200">
-        </picture>
-        <span>Portal Oficial</span>
-    </h1>
+        <h1>
+            <picture class="logo-container">
+                <img src="./imagenes/logo_liga1.png" alt="Liga 1 official logo" width="200">
+            </picture>
+            <span>Portal Oficial</span>
+        </h1>
         <nav class="main-nav">
             <ul>
                 <li><a href="#banners-carrusel">Inicio</a></li>
@@ -286,8 +288,8 @@
             </section>
         </section>
 
-        <section>
-
+        <section class="columnas_4">
+            <!--CARD1-->
             <card>
                 <h2> Equipos Liga 1</h2> <img src="imagenes/Equipos Liga 1.jfif">
                 <details>
@@ -302,7 +304,8 @@
                     </ul>
                 </details>
             </card>
-            <card>    
+            <!--CARD2-->
+            <card>
                 <h2> Equipos Liga 1</h2> <img src="imagenes/Equipos Liga 1.jfif">
                 <details>
                     <summary>Información del equipo</summary>
@@ -316,7 +319,7 @@
                     </ul>
                 </details>
             </card>
-
+            <!--CARD3-->
             <card>
                 <h2> Los mas destacados del Torneo</h2> <img src="imagenes/Los mas destacados del Torneo12.jpg">
                 <details>
@@ -331,7 +334,8 @@
                     </ul>
                 </details>
             </card>
-                  <card>
+            <!--CARD4-->
+            <card>
                 <h2> Equipos Liga 2</h2> <img src="imagenes/Equipos Liga 2.jfif">
                 <details>
                     <summary>Información del equipo</summary>
@@ -344,7 +348,6 @@
                         <li>ADA Jaén</li>
                     </ul>
                 </details>
-            </card>
             </card>
         </section>
 
@@ -491,10 +494,10 @@
                             <li>Apodo:"La Furia de Moquegua"</li>
                             <li>Estadio:Estadio 25 de Noviembre</li>
                         </ul>
-                    <figure class="card-body">
-                        <img src="./imagenes/CD_Moquegua.jpg" alt="Club Deportivo Moquegua">
-                    </figure>
-                    <footer>Liga 1 - Moquegua</footer>
+                        <figure class="card-body">
+                            <img src="./imagenes/CD_Moquegua.jpg" alt="Club Deportivo Moquegua">
+                        </figure>
+                        <footer>Liga 1 - Moquegua</footer>
                 </article>
 
                 <article class="article">
@@ -566,7 +569,7 @@
                     <header>FC Cajamarca</header>
                     <figure class="card-body">
                         <ul>
-                            <li>Fundado en  2023</li>
+                            <li>Fundado en 2023</li>
                             <li>Apodo:"Azul y Oro"</li>
                             <li>Estadio:Estadio Héroes de San Ramón</li>
                         </ul>
@@ -678,9 +681,9 @@
 
                 <article class="card">
                     <header>Bufanda Oficial</header>
-                <section class="card-body">
+                    <section class="card-body">
                         <img src="./imagenes/bufanda_hincha.jpg" alt="Bufanda">
-                </section>
+                    </section>
                     <footer>Identidad de Pasión</footer>
                 </article>
 
@@ -818,24 +821,22 @@
     </footer>
 
 </body>
+
 </html>
 
 
 
 <!-- 
-Header               1.0 , falta H1
+Header               1.5, falta H1
 S1 Carrusel          3.0 , Mas contenido (P ,FOOTER)
-S2 Categorización    0.0 , USO CARD
-S3 Ítems             3.0 ,Mejorar semantica , contenido
-S4 Formulario        3.0, Adicionar Formulario 
+S2 Categorización    3.5 , USO CARD
+S3 Ítems             3.5 ,Mejorar semantica , contenido
+S4 Formulario        3.5, Adicionar Formulario 
 Footer               1.5 , Le falta mas contenido 
 Sustentación :0
 Participacion:+1
 Observaciones : 
-- Revisar el código generado , no usar div
-- Considerar que solo es código HTML , si conservas el css y el JS se harán preguntas con respecto a esto.
 - Separar bien las secciones 
-- Hay muchos elementos que no tienen etiqueta de cierre
 - Seguir los lineamientos dados en clase.
-Nota Avance : 13 de 20
+Nota Avance : 18 de 20
 -->
