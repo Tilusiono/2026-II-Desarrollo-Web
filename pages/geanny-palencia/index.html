@@ -7,7 +7,7 @@
     <title>Sekiro Blog</title>
 
     <link rel="icon" type="image/png" href="../geanny-palencia/assets/img/icono.png">
-
+    <!--
     <style>
         html {
             scroll-behavior: smooth;
@@ -74,10 +74,15 @@
             text-align: center;
         }
     </style>
+-->
+
+    <link rel="stylesheet" href="../../css/estilo_global.css">
 </head>
 
 <body>
-    <header>
+
+    <!--HEADER-->
+    <header class="header">
         <h1>Blog de Sekiro</h1>
         <nav>
             <ul>
@@ -88,26 +93,35 @@
             </ul>
         </nav>
     </header>
-    <<<<<<< HEAD=======<section id="carrusel">
-        <h2>carrusel de imagenes</h2>
-        <p>aqui algunas imagenes del juego como tal</p>
-        <img src="../geanny-palencia/assets/img/mikiri.png" alt="Carrusel 1">
-        <p>Counter mikiri</p>
-        <img src="../geanny-palencia/assets/img/ejecusiones normales.png" alt="Carrusel 2">
-        <p>ejecusiones</p>
-        <img src="../geanny-palencia/assets/img/hacienda recuerdo.png" alt="Carrusel 3">
-        <p>una de las secciones del mapa</p>
-        </section>
-        >>>>>>> geanny-palencia
-        <main>
-            <!--columnas-->
-            <section>
-                <header></header>
-                <img src="../geanny-palencia/assets/img/mikiri.png" alt="Carrusel 1">
-                <img src="../geanny-palencia/assets/img/ejecusiones normales.png" alt="Carrusel 2">
-                <img src="../geanny-palencia/assets/img/hacienda recuerdo.png" alt="Carrusel 3">
+
+    <main>
+        <!-- SECCION 1-->
+        <section id="carrusel" class="section1">
+            <h2>carrusel de imagenes</h2>
+            <p>aqui algunas imagenes del juego como tal</p>
+
+            <section class="columnas_3">
+                <figure>
+                    <img src="../geanny-palencia/assets/img/mikiri.png" alt="Carrusel 1">
+                    <figcaption>Counter mikiri</figcaption>
+                </figure>
+                <figure>
+                    <img src="../geanny-palencia/assets/img/ejecusiones normales.png" alt="Carrusel 2">
+                    <figcaption>ejecusiones</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../geanny-palencia/assets/img/hacienda recuerdo.png" alt="Carrusel 3">
+                    <figcaption>una de las secciones del mapa</figcaption>
+                </figure>
             </section>
-            <section>
+
+        </section>
+
+
+        <!-- SECCION 2-->
+        <section class="section2 columnas_4">
+            <card>
                 <header>
                     <h2>📜 Historia y Lore</h2>
                     <p></p>
@@ -125,25 +139,28 @@
                     el juego y su historia, para que puedas disfrutarlo al maximo y apreciar cada detalle que se ha
                     puesto en el desarrollo del juego.
 
-
                 </details>
                 <img src="../geanny-palencia/assets/img/captura1.png" alt="Captura 1">
                 <footer></footer>
+            </card>
 
-            </section>
-
-            <section id="seccion-3">
+            <card>
                 <h2>🎒 Objetos y Habilidades</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus dolor excepturi
                     blanditiis quaerat optio repellat veritatis libero porro iste, nemo illo tempora dolorem
                     consequuntur sit eaque tempore! Beatae, soluta?</p>
                 <img src="../geanny-palencia/assets/img/captura3.png" alt="Captura 3">
-            </section>
-            <section id="seccion-4">
+            </card>
 
-                <h2>👥 Info de los Personajes y Enemigos</h2>
+        </section>
 
-                <article>
+
+        <section id="seccion-4" class="section3">
+
+            <h2>👥 Info de los Personajes y Enemigos</h2>
+
+            <section class="columnas_4">
+                <article class="article">
                     <h3>Wolf (Sekiro)</h3>
                     <img src="../geanny-palencia/assets/img/Sekiro.png" alt="Wolf">
                     <ul>
@@ -152,10 +169,7 @@
                     </ul>
                     <p>Shinobi principal del juego.</p>
                 </article>
-
-                <hr>
-
-                <article>
+                <article class="article">
                     <h3>Kuro</h3>
                     <img src="../geanny-palencia/assets/img/kuro.png" alt="Kuro">
                     <ul>
@@ -164,10 +178,7 @@
                     </ul>
                     <p>Clave en la historia del juego.</p>
                 </article>
-
-                <hr>
-
-                <article>
+                <article class="article">
                     <h3>Genichiro Ashina</h3>
                     <img src="../geanny-palencia/assets/img/genichiro.png" alt="Genichiro">
                     <ul>
@@ -176,10 +187,7 @@
                     </ul>
                     <p>Guerrero del clan Ashina.</p>
                 </article>
-
-                <hr>
-
-                <article>
+                <article class="article">
                     <h3>Isshin Ashina</h3>
                     <img src="../geanny-palencia/assets/img/isshin.png" alt="Isshin">
                     <ul>
@@ -188,10 +196,7 @@
                     </ul>
                     <p>Legendario espadachín.</p>
                 </article>
-
-                <hr>
-
-                <article>
+                <article class="article">
                     <h3>Emma</h3>
                     <img src="../geanny-palencia/assets/img/Emma.png" alt="Emma">
                     <ul>
@@ -199,10 +204,7 @@
                     </ul>
                     <p>Ayuda a Wolf durante su viaje.</p>
                 </article>
-
-                <hr>
-
-                <article>
+                <article class="article">
                     <h3>Owl (Father)</h3>
                     <img src="../geanny-palencia/assets/img/Buho.png" alt="Owl">
                     <ul>
@@ -210,10 +212,7 @@
                     </ul>
                     <p>Padre adoptivo de Wolf.</p>
                 </article>
-
-                <hr>
-
-                <article>
+                <article class="article">
                     <h3>Lady Butterfly</h3>
                     <img src="../geanny-palencia/assets/img/dama mariposa.png" alt="Lady Butterfly">
                     <ul>
@@ -221,10 +220,7 @@
                     </ul>
                     <p>Maestra de ilusiones.</p>
                 </article>
-
-                <hr>
-
-                <article>
+                <article class="article">
                     <h3>Guardian Ape</h3>
                     <img src="../geanny-palencia/assets/img/Simio guardian.png" alt="Guardian Ape">
                     <ul>
@@ -232,10 +228,7 @@
                     </ul>
                     <p>Bestia gigante muy poderosa.</p>
                 </article>
-
-                <hr>
-
-                <article>
+                <article class="article">
                     <h3>Great Shinobi Owl</h3>
                     <img src="../geanny-palencia/assets/img/Gran shinobi Buho.png" alt="Great Shinobi Owl">
                     <ul>
@@ -243,10 +236,7 @@
                     </ul>
                     <p>Versión más fuerte de Owl.</p>
                 </article>
-
-                <hr>
-
-                <article>
+                <article class="article">
                     <h3>Genichiro (Way of Tomoe)</h3>
                     <img src="../geanny-palencia/assets/img/Genichiro senda de Tomoe.png" alt="Genichiro Tomoe">
                     <ul>
@@ -254,10 +244,7 @@
                     </ul>
                     <p>Forma final de Genichiro.</p>
                 </article>
-
-                <hr>
-
-                <article>
+                <article class="article">
                     <h3>Divine Dragon</h3>
                     <img src="../geanny-palencia/assets/img/Dragon divino.png" alt="Divine Dragon">
                     <ul>
@@ -266,9 +253,8 @@
                     <p>Entidad mística del juego.</p>
                 </article>
 
-                <hr>
 
-                <article>
+                <article class="article">
                     <h3>Demon of Hatred</h3>
                     <img src="../geanny-palencia/assets/img/Demonio del odio.png" alt="Demon of Hatred">
                     <ul>
@@ -276,118 +262,119 @@
                     </ul>
                     <p>Formado por odio y sufrimiento.</p>
                 </article>
-
-            </section>
-            <hr>
-
-            <section id="formulario">
-
-                <h2>Formulario de Opinión</h2>
-
-                <form>
-
-                    <label for="nombre">
-                        Nombre:
-                    </label>
-
-                    <br>
-
-                    <input type="text" id="nombre" name="nombre">
-
-                    <br><br>
-
-                    <label for="correo">
-                        Correo Electrónico:
-                    </label>
-
-                    <br>
-
-                    <input type="email" id="correo" name="correo">
-
-                    <br><br>
-
-                    <label for="categoria">
-                        Categoría Favorita:
-                    </label>
-
-                    <br>
-
-                    <select id="categoria">
-
-                        <option>Historia y Lore</option>
-
-                        <option>Rutas y Finales</option>
-
-                        <option>Objetos y Habilidades</option>
-
-                        <option>Personajes y Jefes</option>
-
-                    </select>
-
-                    <br><br>
-
-                    <label for="comentario">
-                        Comentario:
-                    </label>
-
-                    <br>
-
-                    <textarea id="comentario" rows="5" cols="40"></textarea>
-
-                    <br><br>
-
-                    <input type="submit" value="Enviar">
-
-                </form>
-
             </section>
 
-        </main>
 
-        <footer>
+        </section>
 
-            <section>
-                <h3>Sobre el Proyecto</h3>
-                <p>Página creada para aprender HTML con Sekiro.</p>
-            </section>
+        <section id="formulario" class="section4">
 
-            <section>
-                <h3>Enlaces de Interés</h3>
-                <ul>
-                    <li>Wiki de Sekiro</li>
-                    <li>Comunidad de jugadores</li>
-                    <li>Noticias y actualizaciones</li>
-                </ul>
-            </section>
+            <h2>Formulario de Opinión</h2>
 
-            <section>
-                <h3>Contacto y Créditos</h3>
-                <p>correo@sekiroblog.com</p>
-                <p>Lima - Perú</p>
-                <p>Proyecto académico de HTML.</p>
+            <form>
 
-                <small>© 2026 Blog de Sekiro</small>
-            </section>
+                <label for="nombre">
+                    Nombre:
+                </label>
 
-        </footer>
+                <br>
+
+                <input type="text" id="nombre" name="nombre">
+
+                <br><br>
+
+                <label for="correo">
+                    Correo Electrónico:
+                </label>
+
+                <br>
+
+                <input type="email" id="correo" name="correo">
+
+                <br><br>
+
+                <label for="categoria">
+                    Categoría Favorita:
+                </label>
+
+                <br>
+
+                <select id="categoria">
+
+                    <option>Historia y Lore</option>
+
+                    <option>Rutas y Finales</option>
+
+                    <option>Objetos y Habilidades</option>
+
+                    <option>Personajes y Jefes</option>
+
+                </select>
+
+                <br><br>
+
+                <label for="comentario">
+                    Comentario:
+                </label>
+
+                <br>
+
+                <textarea id="comentario" rows="5" cols="40"></textarea>
+
+                <br><br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer columnas_3">
+
+        <section>
+            <h3>Sobre el Proyecto</h3>
+            <p>Página creada para aprender HTML con Sekiro.</p>
+        </section>
+
+        <section>
+            <h3>Enlaces de Interés</h3>
+            <ul>
+                <li>Wiki de Sekiro</li>
+                <li>Comunidad de jugadores</li>
+                <li>Noticias y actualizaciones</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Contacto y Créditos</h3>
+            <p>correo@sekiroblog.com</p>
+            <p>Lima - Perú</p>
+            <p>Proyecto académico de HTML.</p>
+
+            <small>© 2026 Blog de Sekiro</small>
+        </section>
+
+    </footer>
 
 </body>
 
 </html>
 
 <!-- 
-Header               1.5 , 
-S1 Carrusel          3.0 , falta semántica (HEADER,CONTENIDO,FOOTER)
-S2 Categorización    2.0 , falta semántica (HEADER,CONTENIDO,FOOTER)
-S3 Ítems             0.0 ,(Minimo 12 ítems podrías hacer 4 por cada categoria)
-S4 Formulario        0.0 , Adicionar Formulario 
-Footer               1.5, Le falta mas contenido 
-Nota HTML:8
+Header               1.0 , Falta icono y relacion # & id 
+S1 Carrusel          3.0 , falta semántica (HEADER)
+S2 Categorización    2.0 , son 4 items de CARD
+S3 Ítems             2.5 , Le falta semantica(HEADER,CONTENIDO,FOOTER) , El contenido esta OK pero falta separar la semantica
+S4 Formulario        1.5 , Adicionar Formulario 4 DE 12 INPUTS
+Footer               1.5, OK
+Nota HTML:12
 Sustentación :0
 Participacion:+2
 Observaciones : 
 - Considerar que solo es código HTML , si conservas el css y el JS se harán preguntas con respecto a esto.
 - Separar bien las secciones 
 - Seguir los lineamientos dados en clase.
-Nota Parcial : 10 de 20
+Nota Parcial : 14 de 20
 -->

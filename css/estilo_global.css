@@ -355,3 +355,8 @@ nav {
   width: 24px;
   height: 24px;
 }
+
+img{
+  max-width: 250px;
+  max-height: 250px;
+}
