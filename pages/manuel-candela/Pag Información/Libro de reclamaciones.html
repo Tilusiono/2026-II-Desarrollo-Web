@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Libro de Reclamaciones - Bextor</title>
+    <link rel="stylesheet" href="../css/estilo_global.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Libro de Reclamaciones</h1>
+    </header>
+    <main>
+        <section>
+            <p>En <strong>Bextor</strong>, tu satisfacción es nuestra prioridad. Si tuviste alguna incidencia, por favor
+                utiliza este formulario oficial. Nos comprometemos a revisar tu caso y brindarte una respuesta en el
+                menor tiempo posible.</p>
+
+            <form>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="asunto">Asunto:</label><br>
+                <input type="text" id="asunto" name="asunto" placeholder="Ej: Incidencia con el pedido #XXXX"
+                    required><br><br>
+
+                <label for="descripcion">Descripción del incidente:</label><br>
+                <textarea id="descripcion" name="descripcion" rows="8" cols="60"
+                    placeholder="Detalla aquí lo ocurrido para ayudarnos a resolverlo mejor..."
+                    required></textarea><br><br>
+
+                <button type="submit">Enviar Reclamo</button>
+            </form>
+        </section>
+        <a href="../index.html">Regresar a la tienda</a>
+    </main>
+</body>
+
+</html>
