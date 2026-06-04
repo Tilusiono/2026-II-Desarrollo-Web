@@ -1,6 +1,10 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;}
+body{
+    background: radial-gradient(circle,rgb(3, 150, 200) 0%, rgb(8, 214, 241) 50%, rgb(20, 255, 255) 100%);
+    width: 100%;
+}
 
 header{
     position: fixed;
@@ -38,19 +42,12 @@ li{
     font-size: 1.5rem;
     padding: 2rem;
 }
-main{
-    background-color: red;
-    height: 100vh;
-}
+
 
 section{
     width: 100%;
-    height: 100%;
-    background-color: aqua;
-}
-#inicio{
-    width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-color: transparent;
     overflow: hidden;
 }
 #imagenes{
@@ -61,7 +58,7 @@ section{
     
 }
 #nosotros{
-    background: linear-gradient(60deg,aqua, white) ;
+    background: transparent ;
     padding-top: 20%;
     padding-bottom: 20%;
     text-align: center;
@@ -76,8 +73,6 @@ p{
     color: blueviolet;
 }
 #productos{
-    width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -108,12 +103,12 @@ p{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-50%);
+        transform: translateX(-75%);
     }
 
 }
 #distribuidores{
-    background: linear-gradient(60deg,aqua, white) ;
+    background: transparent ;
     padding-top: 20%;
     padding-bottom: 20%;
     text-align: center;
@@ -124,7 +119,7 @@ h2{
     color: blue;
 }
 #contactenos{
-    background: linear-gradient(60deg,aqua, white) ;
+    background: transparent;
     padding-top: 20%;
     padding-bottom: 20%;
     text-align: center;
