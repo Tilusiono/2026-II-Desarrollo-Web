@@ -182,6 +182,14 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
+  <seccion class="carrusel-container">
+
+    <img src=" https://tse2.mm.bing.net/th/id/OIP.K8mQ4eHK-mPzlGsKs869BwHaE8?pid=Api&P=0&h=180" width="300">
+    <img src=" https://agendatransparencia.cl/wp-content/uploads/2025/05/image_C683G1NXC0.png" width="300">
+    <img src=" https://tse2.mm.bing.net/th/id/OIP.bYRPX0U_iZVIHhmjP1QGLwHaEC?pid=Api&P=0&h=180" width="300">
+
+  </seccion>
+
   <div class="container">
 
     <section id="servicios">
@@ -233,14 +241,28 @@
     <section class="contact" id="contacto">
       <h2>Contáctanos</h2>
 
-      <form>
-        <input type="text" placeholder="Tu nombre" required />
-        <input type="email" placeholder="Tu correo electrónico" required />
-        <textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
+      <form action="" method="post">
+        <fieldset>
+          <legend>Registro de Usuario</legend>
 
-        <button type="submit">Enviar Mensaje</button>
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+          <label for="apellidos">Apellidos:</label><br>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required><br><br>
+
+          <label for="email">Correo Electrónico:</label><br>
+          <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required><br><br>
+
+          <label for="password">Contraseña:</label><br>
+          <input type="password" id="password" name="password" placeholder="Tu contraseña" required><br><br>
+
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea><br><br>
+
+          <button type="submit">Enviar Mensaje</button>
+        </fieldset>
       </form>
-    </section>
 
   </div>
 
@@ -253,12 +275,13 @@
 
 <!-- 
 Header               1.0 , falta el logo
-S1 Carrusel          1.0 , no hay imágenes de banners para usar en el carrusel
-S2 Categorización    1.5 ,CARD(minimo 4) Deberias  
+S1 Carrusel          2.5 , no hay imágenes de banners para usar en el carrusel
+S2 Categorización    2.0 ,CARD(minimo 4) Deberias  
 S3 Ítems             1.0 ,ARTICLE(Minimo 12 ítems podrías hacer 4 por cada categoria)
-S4 Formulario        1.5 , Adicionar mas inputs 4/12 
+S4 Formulario        2.5 , Adicionar mas inputs 4/12 
 Footer               0.5 , Le falta mas contenido 
-Sustentación:0
+HTML  : 10
+Sustentación:+0
 Participación:0
 Observaciones : 
 - Revisar el código generado , no usar div
@@ -266,5 +289,5 @@ Observaciones :
 - Separar bien las secciones 
 - Hay muchos elementos que no tienen etiqueta de cierre
 - Seguir los lineamientos dados en clase.
-Nota Avance : 07 de 20
+NOTA PARCIAL : 10
 -->
