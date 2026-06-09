@@ -1,4 +1,4 @@
-body{margin:0;font-family:Arial, sans-serif;}
+/*body{margin:0;font-family:Arial, sans-serif;}
 main, section{padding:20px;}
 header{
     display:flex;
@@ -34,4 +34,26 @@ header nav a{margin:0 10px;text-decoration:none;color:white;}
 .grupo-locales{grid-template-columns:repeat(3,1fr);}
 .footer-bloques{grid-template-columns:repeat(5,1fr);}
 #registro form{display:flex;flex-direction:column;gap:10px;}
-footer{background:#1f2937;color:white;padding:20px;}
+footer{background:#1f2937;color:white;padding:20px;}*/
+*{color: rgb(255, 255, 255);}
+body{background-color: rgb(35, 42, 58);}
+header{width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;}
+.logo img{width: 50px;}
+img{width: 250px;}
+#carrusel img{ width: 100%;}
+.grupo-productos{
+    display: flex;
+    column-gap: 20px;
+}
+main{
+    margin: 20px;
+}
+#categorias nav{
+    display: flex;
+    column-gap: 20px;
+
+}
+
