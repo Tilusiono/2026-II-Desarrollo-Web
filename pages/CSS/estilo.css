@@ -1,10 +1,54 @@
-body{
-    background-color: rgb(255, 255, 255);
+/* ==================== 5 ETIQUETAS GENERALES ==================== */
+body {
+    background-color: #f4eae1;
+    color: #2b2b2b;
+    font-family: 'Georgia', serif;
 }
-
-.header{
-    background-color: tan;
+h1 {
+    color: #8b4513;
+    font-style: italic;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 5px;
 }
-main{
-    background-color: darkgoldenrod;
+p {
+    color: #4a4a4a;
+    line-height: 1.8;
+    text-align: justify;
+}
+button {
+    background-color: transparent;
+    color: #8b4513;
+    border: 2px solid #8b4513;
+    padding: 8px 16px;
+    font-family: inherit;
+}
+footer {
+    background-color: #eaddca;
+    border-top: 1px dashed #8b4513;
+    padding: 20px;
+}
+/* ==================== 5 ETIQUETAS ID ==================== */
+#inicio {
+    background-color: #fff8f0;
+    box-shadow: 4px 4px 0px #8b4513;
+    padding: 40px;
+}
+#productos {
+    background-color: #faf0e6;
+    border: 1px solid #d2b48c;
+    padding: 30px;
+}
+#elementos {
+    background-color: #f5f5dc;
+    border-top: 3px double #8b4513;
+    padding: 35px;
+}
+#formulario {
+    background-color: #fffdfa;
+    border: 1px solid #cdc0b0;
+    padding: 25px;
+}
+#formCompleto {
+    background-color: #fcf8f2;
+    border-radius: 4px;
 }
