@@ -1,3 +1,17 @@
+/* Cinco HTML */
+
+
 body{
   background-color:burlywood;
 }
+
+/*Cinco Class*/
+
+.imagen-centrada{
+  width: 144px;
+  display: flex;
+  justify-content: center;
+}
+/*Cinco id*/
+/*Cuatro atributos avanzados*/
+/*Cuatro Conbinadores*/
