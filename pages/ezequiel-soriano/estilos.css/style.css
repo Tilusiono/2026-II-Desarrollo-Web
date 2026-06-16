@@ -41,14 +41,29 @@ footer{background:#1f2937;color:white;padding:20px;}
     --color-primcipal: rgb(28, 28, 48);
     --color-secundario: rgb(58, 35, 35);
     --tamaño-texto: 22px;
+    --color-texto: #fff ;
     --espacaido: 20px;
 }
 
-*{background-color: var(--color-primcipal)}
+*{
+    background-color: var(--color-primcipal);
+    color:var(--color-texto);
+    font-family:Arial
+}
 header{width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+a{text-decoration: none;}
+.grupo-locales
+{
+    display: flex;
+    justify-content: center;
+  
+}
+
+
 .logo img{width: 50px;}
 img{width: 250px;}
 #carrusel img{ width: 100%;}
