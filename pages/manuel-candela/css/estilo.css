@@ -1,4 +1,6 @@
 /*ETIQUETAS*/
+
+/* 1. RESET Y BODY*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -88,7 +90,6 @@ footer {
 }
 
 /* 6. ENLACES*/
-
 a {
     text-decoration: none;
 }
