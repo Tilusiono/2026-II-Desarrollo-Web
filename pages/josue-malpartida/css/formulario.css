@@ -1,0 +1,15 @@
+form{
+    width: 300px;
+    margin-right: 0 auto;
+    background-color: white;
+    padding: 10px;
+    background-color: var(--color-secundario);
+
+}
+:root{
+    --color-principal: rgb(44, 92, 175);
+    --color-secundario: rgb(100,10,86);
+}
+body{
+    background-color: var(--color-principal);
+}
