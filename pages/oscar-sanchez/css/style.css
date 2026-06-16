@@ -19,7 +19,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    background: #263243;
+    background: #1063d7;
 }
 
 .logo {
@@ -289,7 +289,7 @@ html {
 footer {
     text-align: center;
     padding: 20px;
-    background: #263243;
+    background: #1f2b39;
     font-size: 0.9rem;
     color: #aaa;
 }
