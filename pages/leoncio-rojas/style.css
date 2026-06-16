@@ -1,16 +1,28 @@
-/*------------------------------------ Cinco HTML */
+/*-----------------------------------------------------Cinco HTML */
 body{
-  background-color:burlywood;
+  background-color:rgba(222, 184, 135, 0.819);
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
 }
 
-/*---------------------------------------Cinco Class*/
+/*------------------------------------------------------Cinco Class*/
 
 .imagen-centrada{
   width: 1350px;
   display: block;
   margin: 0 auto;
 }
-/*---------------------------------------Cinco id*/
-/*---------------------------------------Cuatro atributos avanzados*/
-/*---------------------------------------Cuatro Conbinadores*/
+/*------------------------------------------------------Cinco id*/
+#frase{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+}
+/*------------------------------------------------------Cuatro atributos avanzados*/
+/*------------------------------------------------------Cuatro Conbinadores*/
