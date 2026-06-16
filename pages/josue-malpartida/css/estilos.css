@@ -88,8 +88,10 @@ main{
     height: 300px;
     width: 300px;
 }
+figure{
+    text-align: center;
 
-
+}
 .social {
     display: inline-block;
     justify-content: center;
