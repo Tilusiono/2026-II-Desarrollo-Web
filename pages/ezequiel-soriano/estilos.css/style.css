@@ -36,7 +36,15 @@ header nav a{margin:0 10px;text-decoration:none;color:white;}
 #registro form{display:flex;flex-direction:column;gap:10px;}
 footer{background:#1f2937;color:white;padding:20px;}
 {color: rgb(255, 255, 255);}*/
-body{background-color: rgb(35, 42, 58);}
+:root{
+
+    --color-primcipal: rgb(28, 28, 48);
+    --color-secundario: rgb(58, 35, 35);
+    --tamaño-texto: 22px;
+    --espacaido: 20px;
+}
+
+*{background-color: var(--color-primcipal)}
 header{width: 100%;
 display: flex;
 justify-content: space-between;
