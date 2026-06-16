@@ -1,10 +1,105 @@
+/*ETIQUETAS*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+/* 2. HEADER Y NAVEGACIÓN*/
 header {
     background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C5A059;
+}
+
+/* 3. MAIN Y SECCIONES*/
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd; 
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 4. FORMULARIO*/
+form {
+    margin: 20px 0;
+}
+
+input, select, textarea {
+    color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+}
+
+/* 5. FOOTER*/
+footer {
+    background-color: #333333;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    border-top: 5px solid #C5A059;
+}
+
+/* 6. ENLACES*/
+
+a {
+    text-decoration: none;
+}
+
+footer a {
+    color: whitesmoke;
+    display: block;
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #C5A059;
 }
