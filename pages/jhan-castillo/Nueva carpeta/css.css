@@ -5,25 +5,33 @@
   font-family: 'Lato', sans-serif;
 }
 
+:root{color: black;
+    background-color: darkkhaki;
+    
+}
+
+
+
 body{
-    background-color: white(255, 255, 255);
+    background-color: black(255, 255, 255);
 }
 
 header{
-    background-color: rgba(157, 157, 255, 0.739);
+    background-color: white(255, 255, 255);
 }
 
+
 section{
-    background-color: rgba(83, 83, 228, 0.502);
+    background-color: white(255, 255, 255);
 }
 
 article{
-    background-color: rgba(196, 139, 139, 0.644);
+    background-color: white(255, 255, 255);
     border: 1px solid;
     border-radius: 10px;
     margin: 10px;
     padding: 5px;
-    border-color: rgb(225, 0, 0);
+    border-color:white(225, 0, 0);
 }
 
 main{
@@ -32,5 +40,5 @@ main{
 }
 
 footer{
-    background-color: rgb(255, 255, 45);
+    background-color: white(255, 255, 45);
 }
