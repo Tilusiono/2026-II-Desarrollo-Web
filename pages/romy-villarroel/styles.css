@@ -124,3 +124,6 @@ h2{
     padding-bottom: 20%;
     text-align: center;
 }
+h1, h2 {
+    color: green;
+}
