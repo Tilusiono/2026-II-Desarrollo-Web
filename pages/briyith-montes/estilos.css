@@ -1,17 +1,28 @@
 
  *{margin: 0px;}
  body{
-    background-color: rgb(178, 121, 231);
+    background-color: rgb(233, 228, 162);
  }
- img{ width: 50px;
-
- }
+ 
  .seccion1 img{ width: 100%
     ;
 
  }
 
 
- p{
-  size: 10p;  
+*{margin: 20px;}
+img{ width: 200px;}
+
+ .columnas_6{
+   width: 10%;
+   display: flex;
+   justify-items: center;
+ }
+:root{
+   --color-principal: rgb(247, 248, 176);
+   --color-secundario:
+
+ }
+ *{background-color:var(--color-principal)
+
  }
