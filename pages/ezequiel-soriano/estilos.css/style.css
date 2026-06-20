@@ -2,6 +2,7 @@ body {
 
     margin: 0px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
 }
 
 main, section {
@@ -37,6 +38,7 @@ header nav a {
 
 #carrusel {
     margin-top: 80px;
+    margin: -20px;
 }
 
 #inicio, #categorias, #menu, #nosotros, #locales, #registro, footer {
