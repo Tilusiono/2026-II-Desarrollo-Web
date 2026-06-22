@@ -1,8 +1,11 @@
 :root {
     --color-fondo-principal: rgb(12, 170, 233);
-    
+    --color-texto-oscuro: #cbe00d;
+    --color-secundario: #f06509;
+    --color-acento: #6bd5ff;
+    --color-superficie: #f7fafc;
+    --color-borde: #0be453;
 }
-
 
 body {
     margin: 0;
@@ -11,7 +14,7 @@ body {
 }
 
 .main-header {
-    background: #0b3d91;
+    background: var(--color-secundario);
     color: white;
     display: flex;
     justify-content: space-between;
