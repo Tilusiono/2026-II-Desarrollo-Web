@@ -7,7 +7,11 @@
     text-transform: capitalize;
     z-index: 0;
 }
-
+:root{
+    --color-primero: rgb(12,78,65);
+    --color_segundo: rgb(0,70,32);
+    --color-tercero: rgb(9,4,75);
+}
 body{
     padding: 10px 10px;
     margin:  10px 10px;
@@ -60,7 +64,15 @@ header{
 nav li{
     display: inline-flex;
 }
-
+.color1{
+    background-color: var(--color-primero);
+}
+.color2{
+    background-color: var(--color_segundo);
+}
+.color3{
+    background-color: var(--color-tercero);
+}
 .submenu{
     position: absolute;
     background-color: rgb(57, 24, 148);
@@ -84,8 +96,8 @@ nav li:hover .submenu{
 }
 
 main{
-    padding: 100px;
-    margin: 10px 10px;
+    width: 100%;
+    padding: auto;
     display: flex;
     justify-content: center;
     justify-content: space-around;
@@ -105,6 +117,9 @@ figure{
     border: 5px solid black;
     border-radius: 50px;
     width: 370px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    background-color: white;
 }
 .social {
     display: inline-block;
@@ -120,7 +135,8 @@ figure{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 50px;
+    gap: 60px;
+    padding: 20px;
 }
 
 
