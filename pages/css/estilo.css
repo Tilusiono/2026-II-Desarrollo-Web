@@ -1,0 +1,22 @@
+body {
+    background: #ffffff;
+}
+
+.logo-header img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.section-search {
+  text-align: center;
+  background: #0B0F1A;
+  padding: 20px;
+}
+.header {
+  text-align: center;
+  background: #0B0F1A; /* azul oscuro gamer */
+  color: white;
+  padding: 20px;
+}
+
