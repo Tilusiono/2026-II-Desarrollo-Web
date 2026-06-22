@@ -10,13 +10,13 @@ body {
 }
 .section-search {
   text-align: center;
-  background: #0B0F1A;
+  background: #ffffff;
   padding: 20px;
 }
 .header {
   text-align: center;
-  background: #0B0F1A; /* azul oscuro gamer */
-  color: white;
+  background: #000000; 
+  color: rgb(100, 76, 223);
   padding: 20px;
 }
 
