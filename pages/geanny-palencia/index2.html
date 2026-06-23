@@ -206,26 +206,82 @@
         </section>
     </main>
 
-    <footer class="footer columnas_3">
-        <section>
-            <h3>Sobre el Proyecto</h3>
-            <p>Página creada para aprender HTML con Sekiro.</p>
-        </section>
-        <section>
-            <h3>Enlaces de Interés</h3>
-            <ul>
-                <li><a href="#" style="color:white;">Wiki de Sekiro</a></li>
-                <li><a href="#" style="color:white;">Comunidad de jugadores</a></li>
-                <li><a href="#" style="color:white;">Noticias</a></li>
+<footer class="footer container py-5">
+    <section class="row">
+        
+        <section class="col-6 col-md-3 mb-3">
+            <h5>Sobre el Proyecto</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2 text-body-secondary">
+                    Página creada para aprender HTML con Sekiro.
+                </li>
+                <li class="nav-item mb-2 text-body-secondary">
+                    Proyecto académico de HTML.
+                </li>
             </ul>
         </section>
-        <section>
-            <h3>Contacto y Créditos</h3>
-            <p>correo@sekiroblog.com</p>
-            <p>Lima - Perú</p>
-            <small>© 2026 Blog de Sekiro</small>
-        </section>
-    </footer>
 
+        <section class="col-6 col-md-3 mb-3">
+            <h5>Enlaces de Interés</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-chevron-right"></i> Wiki de Sekiro</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-chevron-right"></i> Comunidad de jugadores</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-chevron-right"></i> Noticias y actualizaciones</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="col-6 col-md-3 mb-3">
+            <h5>Contacto y Créditos</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2 text-body-secondary">
+                    <i class="bi bi-envelope"></i> correo@sekiroblog.com
+                </li>
+                <li class="nav-item mb-2 text-body-secondary">
+                    <i class="bi bi-geo-alt"></i> Lima - Perú
+                </li>
+            </ul>
+        </section>
+
+        <section class="col-md-3 mb-3">
+            <form>
+                <h5>Suscríbete al Blog</h5>
+                <p class="text-body-secondary small">Recibe teorías del lore y guías de jefes mensualmente.</p>
+                <p class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Correo electrónico</label>
+                    <input id="newsletter1" type="email" class="form-control" placeholder="Tu correo electrónico" required />
+                    <button class="btn btn-primary" type="submit">Suscribirse</button>
+                </p>
+            </form>
+        </section>
+    </section>
+
+    <section class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2026 Blog de Sekiro. Todos los derechos reservados.</p>
+        
+        <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+                <a class="link-body-emphasis fs-4" href="#" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="link-body-emphasis fs-4" href="#" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="link-body-emphasis fs-4" href="#" aria-label="YouTube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+</footer>
 </body>
 </html>
