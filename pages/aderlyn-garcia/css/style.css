@@ -1,7 +1,18 @@
-:root{
+
+    :root{
     --color-fondo: red;
 }
 
 *{
     background-color: var(--color-fondo);
 }
+:section{
+ display: inline-block
+ margin-top: 35px;
+ color: rgh(217, 0,255);
+ text-decoration: rgb(43,226, 183);
+ padding: 15px 35 px;
+}
+ background - color: rgh(0, 255, 195);
+}
+

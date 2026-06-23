@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bienestar & Salud</title>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Bienestar & Salud</h1>
+    <p>
+      Encuentra consejos saludables, hábitos positivos y motivación
+      para mejorar tu bienestar físico y mental.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Nutrición</a>
+    <a href="#">Ejercicio</a>
+    <a href="#">Meditación</a>
+    <a href="#">Contacto</a>
+  </nav>
+    
+</section>
+  
+  
+  
+  
+  
+  <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop" alt="Nutrición">
+        <div class="card-content">
+          <h3>Nutrición Saludable</h3>
+          <p>
+            Aprende a mantener una alimentación balanceada
+            con frutas, verduras y alimentos naturales.
+          </p>
+          <button>Leer más</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop" alt="Ejercicio">
+        <div class="card-content">
+          <h3>Actividad Física</h3>
+          <p>
+            Descubre rutinas simples para mantener tu cuerpo activo
+            y lleno de energía.
+          </p>
+          <button>Ver rutinas</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop" alt="Meditación">
+        <div class="card-content">
+          <h3>Bienestar Mental</h3>
+          <p>
+            Practica meditación y técnicas de relajación
+            para reducir el estrés diario.
+          </p>
+          <button>Comenzar</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about">
+      <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Vida saludable">
+
+      <div class="about-text">
+        <h2>Vive una vida más saludable</h2>
+        <p>
+          El bienestar integral combina una buena alimentación,
+          ejercicio constante y equilibrio emocional.
+          Pequeños cambios diarios pueden mejorar tu calidad de vida.
+        </p>
+
+        <p style="margin-top:15px;">
+          Nuestro objetivo es ayudarte a construir hábitos positivos
+          y sostenibles para sentirte mejor cada día.
+        </p>
+
+        <button>Únete ahora</button>
+    </div>
+</section>
+
+<section class="container" id="consejos">
+    <div class="tips">
+        <h2 class="section-title">Consejos para una Vida Saludable</h2>
+
+        <ul>
+            <li>Beber al menos 2 litros de agua al día.</li>
+            <li>Dormir entre 7 y 9 horas cada noche.</li>
+            <li>Consumir frutas y verduras diariamente.</li>
+            <li>Realizar actividad física regularmente.</li>
+            <li>Reducir el estrés mediante respiración o meditación.</li>
+            <li>Evitar el consumo excesivo de azúcar y alimentos ultraprocesados.</li>
+    </ul>
+    </div>
+  
+</section>
+
+<section class="container" id="contacto">
+    <h2 class="section-title">Contáctanos</h2>
+
+    <form>
+        <label>Nombre</label>
+        <input type="text" placeholder="Ingresa tu nombre">
+
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="Ingresa tu correo">
+
+        <label>Mensaje</label>
+        <textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<section id="consejos">
+    <div class="contenedor">
+        <div class="card">
+            <h2>Consejo Saludable del Día</h2>
+
+            <button onclick="mostrarConsejo()">
+                Mostrar Consejo
+            </button>
+
+            <p id="mensaje" style="margin-top:15px;">
+                Haz clic en el botón.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="imc">
+    <div class="contenedor">
+        <div class="card">
+            <h2>Calculadora de IMC</h2>
+
+            <label>Peso (kg)</label>
+            <input type="number" id="peso">
+
+            <label>Altura (m)</label>
+            <input type="number" step="0.01" id="altura">
+
+            <button onclick="calcularIMC()">
+                Calcular IMC
+            </button>
+
+            <p id="resultadoIMC"></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Sitio Web de Bienestar y Salud</p>
+</footer>
+
+<script>
+
+function mostrarConsejo(){
+
+    let consejos = [
+        "Bebe al menos 2 litros de agua al día.",
+        "Realiza 30 minutos de ejercicio diariamente.",
+        "Duerme entre 7 y 8 horas cada noche.",
+        "Consume frutas y verduras frescas.",
+        "Practica la meditación para reducir el estrés.",
+        "Evita el exceso de azúcar y comida procesada.",
+        "Mantén una actitud positiva."
+    ];
+
+    let numero = Math.floor(Math.random() * consejos.length);
+
+    document.getElementById("mensaje").innerHTML =
+    consejos[numero];
+}
+
+function calcularIMC(){
+
+    let peso = parseFloat(document.getElementById("peso").value);
+    let altura = parseFloat(document.getElementById("altura").value);
+
+    if(isNaN(peso) || isNaN(altura) || altura <= 0){
+        document.getElementById("resultadoIMC").innerHTML =
+        "Ingrese valores válidos.";
+        return;
+    }
+
+    let imc = peso / (altura * altura);
+
+    let estado = "";
+
+    if(imc < 18.5){
+        estado = "Bajo peso";
+    }else if(imc < 25){
+        estado = "Peso normal";
+    }else if(imc < 30){
+        estado = "Sobrepeso";
+    }else{
+        estado = "Obesidad";
+    }
+
+    document.getElementById("resultadoIMC").innerHTML =
+    "Tu IMC es: " + imc.toFixed(2) +
+    " - " + estado;
+}
+
+</script>
+
+<footer>
+    <p> 2026 Bienestar y Salud | Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
