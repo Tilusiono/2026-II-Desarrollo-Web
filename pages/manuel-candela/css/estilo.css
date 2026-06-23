@@ -83,7 +83,7 @@ form legend {
     color: #333333;
 }
 
-fieldset input, select, textarea {
+form fieldset input, form fieldset select, form fieldset textarea {
     color: #333333;
     margin: 15px;
     padding: 5px;
