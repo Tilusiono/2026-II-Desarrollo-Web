@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,16 +7,20 @@
     text-transform: capitalize;
     z-index: 0;
 }
-:root{
-    --color-primero: rgb(12,78,65);
-    --color_segundo: rgb(0,70,32);
-    --color-tercero: rgb(9,4,75);
+
+:root {
+    --color-primero: rgb(140, 195, 247);
+    --color_segundo: rgb(130, 241, 149);
+    --color-tercero: rgb(238, 231, 134);
 }
-body{
+
+body {
     padding: 10px 10px;
-    margin:  10px 10px;
+    margin: 10px 10px;
+    background-color: whitesmoke
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -24,78 +28,88 @@ body{
     padding: 25px 0;
 }
 
-.menu >li{
+.menu>li {
     position: relative;
     display: inline-block;
     width: 200px;
 }
 
-.menu >li >a{
+.menu>li>a {
     display: block;
     padding: 15px 15px;
-    color: rgb(224, 181, 155);
+    color: rgb(39, 30, 24);
     text-decoration: none;
-    padding-left:90px ;
+    padding-left: 90px;
 }
 
-.menu li a:hover{
-    color: orange;
+.menu li a:hover {
+    color: rgb(87, 226, 32);
     transition: all .3s;
 }
 
 
-#bloque{
+#bloque {
     width: 93%;
     margin: 10px auto;
-    background-color: rgb(81, 84, 230) ;
+    background-color: rgb(214, 215, 238);
     background-position: center;
+    border-radius: 30px;
+    margin-bottom: 35px;
 }
 
-header{
+header {
     text-align: center;
     padding: 10px;
     margin: 10px;
 }
-#baner{
+
+#baner {
     width: 80%;
     height: 500px;
 }
 
-nav li{
+nav li {
     display: inline-flex;
 }
-.color1{
+
+.color1 {
     background-color: var(--color-primero);
+    border-radius: 30px;
 }
-.color2{
+
+.color2 {
     background-color: var(--color_segundo);
+    border-radius: 30px;
 }
-.color3{
+
+.color3 {
     background-color: var(--color-tercero);
+    border-radius: 30px;
 }
-.submenu{
+
+.submenu {
     position: absolute;
-    background-color: rgb(57, 24, 148);
+    background-color: rgb(153, 133, 209);
     width: 110%;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
 }
 
-.submenu li a{
+.submenu li a {
     display: block;
     padding: 10px;
-    color: rgb(61, 228, 145);
+    color: rgb(155, 224, 190);
     text-decoration: none;
 }
 
-nav li:hover .submenu{
+nav li:hover .submenu {
     visibility: visible;
     opacity: 1;
     z-index: 1;
 }
 
-main{
+main {
     width: 100%;
     padding: auto;
     display: flex;
@@ -104,15 +118,17 @@ main{
 
 }
 
-.celulares img{
+.celulares img {
     height: 300px;
     width: 300px;
 }
-img{
+
+img {
     border-radius: 20px;
     cursor: pointer;
 }
-figure{
+
+figure {
     text-align: center;
     border: 5px solid black;
     border-radius: 50px;
@@ -120,43 +136,62 @@ figure{
     padding-top: 15px;
     padding-bottom: 8px;
     background-color: white;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
 }
+
+button {
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
+    padding: 3px;
+    margin: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-style: oblique;
+}
+
+
 .social {
     display: inline-block;
     justify-content: center;
-    border-radius: 100px;
+    border-radius: 50%;
     object-fit: cover;
     width: 50px;
     height: 50px;
-    
+
 }
 
-.celulares{
+.celulares {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 60px;
     padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
 
 
-.foter{
+.foter {
     display: flex;
     flex-wrap: wrap;
     background-color: azure;
+    padding: 10px;
+    border-radius: 30px;
 }
-.foter h4{
+
+.foter h4 {
     font-size: 20px;
     color: red;
     margin-bottom: 20px;
     border-bottom: 2px solid #e24545;
 }
-.links{
+
+.links {
     width: 20%;
     padding: 0 15px;
 
 }
-.links h4{
+
+.links h4 {
     font-size: 20px;
     color: red;
     margin-bottom: 20px;
@@ -164,7 +199,8 @@ figure{
     padding-bottom: 10px;
     display: inline-block;
 }
-.links ul li a{
+
+.links ul li a {
     font-size: 18px;
     text-decoration: none;
     color: blue;
@@ -173,7 +209,7 @@ figure{
     transition: all 0.3s ease;
 }
 
-.links ul li a:hover{
-    color: aliceblue;
+.links ul li a:hover {
+    color: rgb(45, 154, 248);
     padding-left: 5px;
 }
