@@ -1,7 +1,9 @@
-/*-----------------------------------------------------Cinco HTML */
+/*-----------------------------------------------------Cuatro HTML */
 body{
   background-color:rgba(222, 184, 135, 0.819);
   margin: 0;
+  padding: 0;
+  border: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 h1{
@@ -9,20 +11,39 @@ h1{
   font-size: 50px;
   color: rgb(255, 255, 255);
 }
-
-/*------------------------------------------------------Cinco Class*/
+footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 0px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  margin: 5px;
+}
+/*------------------------------------------------------Cuatro Conbinadores */
+footer section{
+  padding: 20px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 5px;
+}
+/*------------------------------------------------------Cuatro Class*/
 
 .imagen-centrada{
   width: 1350px;
   display: block;
   margin: 0 auto;
 }
-/*------------------------------------------------------Cinco id*/
+/*------------------------------------------------------Cuatro Pseudo clases*/
+/*------------------------------------------------------Cuatro id*/
 #frase{
   text-align: center;
   font-size: 30px;
   color: rgb(255, 255, 255);
   font-family: 'Courier New', Courier, monospace;
 }
+/*------------------------------------------------------Cuatro Pseudo  Elementos*/
 /*------------------------------------------------------Cuatro atributos avanzados*/
-/*------------------------------------------------------Cuatro Conbinadores*/
+/*------------------------------------------------------Cuatro Combinadores logico modernos*/
