@@ -16,15 +16,7 @@ h1{
   font-size: 50px;
   color: rgb(255, 255, 255);
 }
-footer{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0px 0px;
-  background-color: gray;
-  color: white;
-  text-align: center;
-  margin: 5px;
-}
+
 blockquote{
   text-align: center;
   font-size: 30px;
@@ -33,14 +25,7 @@ blockquote{
   height: 59px;
 }
 /*------------------------------------------------------Cuatro Conbinadores */
-footer section{
-  padding: 20px;
-  border-radius: 8px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  margin: 5px;
-}
+
 .menu a{
   text-decoration: none;
   color: #4a5568;
@@ -48,11 +33,20 @@ footer section{
   font-weight: 700px;
   transition: color 0.3s ease;
 }
+#contacto h2{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  background-color: #4a5568;
+  margin: 5px;
+  border-radius: 50px;
+}
 /*------------------------------------------------------Cuatro Class*/
 .logo{
   height: 130px;
   width: auto;
   display: block;
+  margin-left: 40px;
 }
 .section-menu-container{
     display: flex;
@@ -66,16 +60,32 @@ footer section{
   display: flex;
   list-style: none;
   gap: 30px;
-}}
+}
+.subtitulo{
+  background-color: rgba(230, 233, 235, 0.856);
+  margin: 15px;
+  height: 90px;
+}
 /*------------------------------------------------------Cuatro Pseudo clases*/
 .menu a:hover{
   color: blue;
 }
 /*------------------------------------------------------Cuatro id*/
 #baner{
-  width: 1350px;
-
+  width: 100%;
+  height: 400px;
   height: auto;
+  display: block;
+}
+#contacto{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 0px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  margin: 5px;
+  margin: 0%;
 }
 /*------------------------------------------------------Cuatro Pseudo  Elementos*/
 /*------------------------------------------------------Cuatro atributos avanzados*/
