@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*-----------------------------------------------------Cuatro HTML */
 body{
   background-color:rgba(222, 184, 135, 0.819);
@@ -20,6 +25,13 @@ footer{
   text-align: center;
   margin: 5px;
 }
+blockquote{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  height: 59px;
+}
 /*------------------------------------------------------Cuatro Conbinadores */
 footer section{
   padding: 20px;
@@ -29,20 +41,41 @@ footer section{
   text-align: center;
   margin: 5px;
 }
-/*------------------------------------------------------Cuatro Class*/
-
-.imagen-centrada{
-  width: 1350px;
-  display: block;
-  margin: 0 auto;
+.menu a{
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 20px;
+  font-weight: 700px;
+  transition: color 0.3s ease;
 }
+/*------------------------------------------------------Cuatro Class*/
+.logo{
+  height: 130px;
+  width: auto;
+  display: block;
+}
+.section-menu-container{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 60px;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}}
 /*------------------------------------------------------Cuatro Pseudo clases*/
+.menu a:hover{
+  color: blue;
+}
 /*------------------------------------------------------Cuatro id*/
-#frase{
-  text-align: center;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  font-family: 'Courier New', Courier, monospace;
+#baner{
+  width: 1350px;
+
+  height: auto;
 }
 /*------------------------------------------------------Cuatro Pseudo  Elementos*/
 /*------------------------------------------------------Cuatro atributos avanzados*/
