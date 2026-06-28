@@ -5,7 +5,8 @@
 }
 /*-----------------------------------------------------Cuatro HTML */
 body{
-  background-color:rgba(222, 184, 135, 0.819);
+  /*background-color:rgba(222, 184, 135, 0.819);*/
+  background-color: rgba(0, 0, 0, 0.795);
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,14 +16,20 @@ h1{
   text-align: center;
   font-size: 50px;
   color: rgb(255, 255, 255);
+  background-color: rgb(0, 209, 209);
 }
 
 blockquote{
+  display: flex;
+  just
   text-align: center;
   font-size: 30px;
   color: rgb(255, 255, 255);
   font-family: 'Courier New', Courier, monospace;
   height: 59px;
+} 
+img{
+  border-radius: 15px;
 }
 /*------------------------------------------------------Cuatro Conbinadores */
 
@@ -50,7 +57,7 @@ blockquote{
 }
 .section-menu-container{
     display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 0px 60px;
   background-color: white;
@@ -63,8 +70,9 @@ blockquote{
 }
 .subtitulo{
   background-color: rgba(230, 233, 235, 0.856);
-  margin: 15px;
+  margin: 5px;
   height: 90px;
+  border-radius: 20px;
 }
 /*------------------------------------------------------Cuatro Pseudo clases*/
 .menu a:hover{
@@ -76,6 +84,8 @@ blockquote{
   height: 400px;
   height: auto;
   display: block;
+  border-radius: 0%;
+  background-color: rgba(255, 255, 255, 0.459);
 }
 #contacto{
   display: grid;
@@ -86,6 +96,7 @@ blockquote{
   text-align: center;
   margin: 5px;
   margin: 0%;
+  height: 200px;
 }
 /*------------------------------------------------------Cuatro Pseudo  Elementos*/
 /*------------------------------------------------------Cuatro atributos avanzados*/
