@@ -133,15 +133,23 @@ h2 {
    5. POSITION STICKY
 ================================ */
 
-.sticky-container {
-    height: 200px;
-    /* Altura del contenedor para ver el efecto sticky */
+
+
+
+
+nav {
+    background-color: #22c55e;
+}
+
+ul>li {
+    display: inline;
+    background-color: #2563eb;
 }
 
 .sticky {
     position: sticky;
     /* Cambia entre relative y fixed según el scroll */
-    top: 10px;
+    top: 0px;
     /* Cuando llega a 10px del borde superior se queda fijo */
     background: #f59e0b;
     /* Color del ejemplo */
