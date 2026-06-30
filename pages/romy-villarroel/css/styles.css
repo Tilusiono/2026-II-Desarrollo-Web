@@ -1,17 +1,21 @@
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;}
-:root{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
     --color-principal: white;
-    --color-secundario: rgb(0,50,30);
+    --color-secundario: rgb(0, 50, 30);
     --tamaño-pregunta: calc(2vw + 1em);
 }
-body{
-    background: radial-gradient(circle,rgb(3, 150, 200) 0%, rgb(8, 214, 241) 50%, rgb(20, 255, 255) 100%);
+
+body {
+    background: radial-gradient(circle, rgb(3, 150, 200) 0%, rgb(8, 214, 241) 50%, rgb(20, 255, 255) 100%);
     width: 100%;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -21,9 +25,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
-footer{
+
+footer {
     width: 100%;
     height: 100px;
     display: flex;
@@ -31,11 +36,13 @@ footer{
     align-items: center;
     font-size: 40px;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
 }
-ul{
+
+ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -44,90 +51,105 @@ ul{
     padding: 1rem 2rem;
     color: white;
 }
-li{
+
+li {
     font-size: 1.5rem;
     padding: 2rem;
 }
 
 
-section{
+section {
     width: 100%;
     height: 100vh;
     background-color: transparent;
     overflow: hidden;
 }
-#imagenes{
+
+#imagenes {
     display: flex;
     width: 400%;
     height: 100%;
     animation: desplazamiento 15s linear infinite;
-    
+
 }
-#nosotros{
-    background: transparent ;
+
+#nosotros {
+    background: transparent;
     padding-top: 20%;
     padding-bottom: 20%;
     text-align: center;
 }
-h1{
+
+h1 {
     font-size: 50px;
     padding-bottom: 30px;
     color: blue;
 }
-p{
+
+p {
     font-size: 30px;
     color: blueviolet;
 }
-#productos{
+
+#productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     overflow: hidden;
 }
-.helados{
+
+.helados {
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
-.yapa{
+
+.yapa {
     height: 100%;
     width: auto;
 }
-#logo{
+
+#logo {
     width: 150px;
     height: 100px;
     margin-left: 80px;
     margin-top: 40px;
 }
-.primero{
+
+.primero {
     width: 25%;
     height: 100%;
 }
+
 @keyframes desplazamiento {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(-75%);
     }
 
 }
-#distribuidores{
-    background: transparent ;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    text-align: center;
-}
-h2{
-    font-size: 50px;
-    padding-bottom: 30px;
-    color: blue;
-}
-#contactenos{
+
+#distribuidores {
     background: transparent;
     padding-top: 20%;
     padding-bottom: 20%;
     text-align: center;
-    color:var(--color-principal);
+}
+
+h2 {
+    font-size: 50px;
+    padding-bottom: 30px;
+    color: blue;
+}
+
+#contactenos {
+    background: transparent;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-align: center;
+    color: var(--color-principal);
 }
