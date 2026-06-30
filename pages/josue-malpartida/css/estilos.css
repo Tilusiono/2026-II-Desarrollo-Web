@@ -14,10 +14,10 @@
     --color-tercero: rgb(238, 231, 134);
 }
 
-body {
+body{
     padding: 10px 10px;
     margin: 10px 10px;
-    background-color: whitesmoke
+    background-color: blue;
 }
 
 .menu {
@@ -43,7 +43,7 @@ body {
 }
 
 .menu li a:hover {
-    color: rgb(87, 226, 32);
+    color: rgb(86, 155, 59);
     transition: all .3s;
 }
 
@@ -51,7 +51,7 @@ body {
 #bloque {
     width: 93%;
     margin: 10px auto;
-    background-color: rgb(214, 215, 238);
+    background-color: #FFE6E1;
     background-position: center;
     border-radius: 30px;
     margin-bottom: 35px;
@@ -89,7 +89,7 @@ nav li {
 
 .submenu {
     position: absolute;
-    background-color: rgb(153, 133, 209);
+    background-color: #075B5E;
     width: 110%;
     visibility: hidden;
     opacity: 0;
@@ -167,49 +167,28 @@ button {
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+    padding-left: 100px;
 }
 
-
-.foter {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: azure;
-    padding: 10px;
-    border-radius: 30px;
-}
-
-.foter h4 {
-    font-size: 20px;
-    color: red;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #e24545;
-}
-
-.links {
-    width: 20%;
-    padding: 0 15px;
-
-}
-
-.links h4 {
-    font-size: 20px;
-    color: red;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #e24545;
+.formulario {
+    background-color: #093FB4;
+    margin: 50px;
+    padding-left: 100px;
+    width: 600px;
     padding-bottom: 10px;
-    display: inline-block;
+    padding-top: 10px;
+    border-radius: 35px;
+
 }
 
-.links ul li a {
-    font-size: 18px;
-    text-decoration: none;
-    color: blue;
-    display: block;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
+.formulario>a {
+    font-style: oblique;
+    font-size: 40px;
+    color: #FFD8D8;
 }
 
-.links ul li a:hover {
-    color: rgb(45, 154, 248);
-    padding-left: 5px;
+.formulario p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #FFD8D8;
 }
