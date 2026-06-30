@@ -1,3 +1,6 @@
+/*ETIQUETAS HTML*/
+
+/* 1. RESET Y BODY */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,61 +14,11 @@ body {
     color: #333333;
 }
 
-header, main, footer {
+main, footer {
     padding: 30px;
 }
 
-/* 2. HEADER */
-header{
-    background: black;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-header img{
-    width: 50px;
-    display: block;
-    margin-right: 20px;
-    margin-top: 25px;
-}
-
-header form{ 
-    display: flex; 
-    align-items: center;
-}
-
-header form input{
-    width: 650px;
-    height: 36px;
-    margin: 0;
-    padding: 10px;
-    border-radius: 5px 0 0 5px;
-}
-
-header form button{
-    width: 70px;
-    height: 36px;
-    margin: 0;
-    padding: 0;
-    background: #333;
-    color: white;
-    border-radius: 0 5px 5px 0;
-}
-
-header nav{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-/* 3. MAIN Y SECCIONES */
-header h1, header h2, header h3 {
-    color: white;
-    font-weight: bold;
-}
+/* 2. MAIN Y SECCIONES */
 
 article header {
     background-color: #333333;
@@ -92,7 +45,7 @@ mark {
     border-radius: 2px;
 }
 
-/* 4. FORMULARIO */
+/* 3. FORMULARIO */
 fieldset {
     background-color: white;
     padding: 15px;
@@ -132,7 +85,7 @@ form button {
     margin-top: 15px;
 }
 
-/* 5. FOOTER */
+/* 4. FOOTER */
 footer {
     background-color: #333333;
     padding: 20px;
@@ -161,7 +114,7 @@ footer a:hover {
     color: #C5A059;
 }
 
-/* 6. ENLACES GENERALES */
+/* 5. ENLACES GENERALES */
 a {
     text-decoration: none;
     color: white;
@@ -175,4 +128,53 @@ a:hover {
 
 ul {
     list-style: none;
+}
+ 
+/* CLASES */
+.header {
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.header img {
+    width: 50px;
+    display: block;
+    margin-right: 20px;
+}
+
+.header form { 
+    display: flex; 
+    align-items: center;
+}
+
+.header form input {
+    width: 650px;
+    height: 36px;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none; /* Agregado para que no se vea el borde del navegador */
+}
+
+.header form button {
+    width: 70px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espacio entre buscador y links */
 }
