@@ -1,3 +1,4 @@
+/*1. SELECTORES DE ETIQUETA HTML (4)*/
 body {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -22,6 +23,7 @@ footer {
     padding: 20px;
 }
 
+/*2. SELECTORES DE CLASE (4)*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -47,6 +49,7 @@ footer {
     gap: 20px;
 }
 
+/*3. SELECTORES DE ID (4)*/
 #carrusel {
     background-color: #2a2a2a;
     padding: 20px;
@@ -72,14 +75,46 @@ footer {
     border-radius: 8px;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    background-color: #fff;
-    color: #000;
+/*4. SELECTORES LÓGICOS MODERNOS (4)*/
+
+.card:not(.destacado) {
+    opacity: 0.8;
 }
 
-input[type="email"] {
+main :is(h2, h3, h4) {
+    color: #e67e22;
+    letter-spacing: 1px;
+}
+
+.nav-links :where(a) {
+    text-decoration: none;
+}
+
+.card:has(img[alt]) {
+    border-color: #e67e22;
+}
+
+/*5. SELECTORES COMBINADOS (4)*/
+.card h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+#lore-objetos > p {
+    line-height: 1.6;
+}
+
+#formulario input + span {
+    font-size: 0.8rem;
+    color: #e74c3c;
+}
+
+#personajes h3 ~ p {
+    color: #ccc;
+}
+
+/*6. SELECTORES DE ATRIBUTOS (4)*/
+input[type="text"] {
     width: 100%;
     padding: 8px;
     background-color: #fff;
@@ -92,13 +127,57 @@ input[type="submit"] {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-weight: bold;
 }
 
 img[alt] {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-top: 10px;
-    border: 2px solid #e67e22;
+}
+
+a[href^="https://"] {
+    font-weight: bold;
+}
+
+/*7. SELECTORES DE PSEUDOCLASES (4)*/
+
+input[type="submit"]:hover {
+    background-color: #d35400;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid #e67e22;
+}
+
+.card:nth-child(odd) {
+    background-color: #151515;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/*8. SELECTORES DE PSEUDOELEMENTOS (4)*/
+
+.article p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: crimson;
+}
+
+::selection {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+#personajes h2::before {
+    content: "❖ ";
+    color: aqua;
+}
+
+#formulario::after {
+    content: "Campos obligatorios *";
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 15px;
 }
