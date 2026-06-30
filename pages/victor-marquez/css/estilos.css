@@ -1,0 +1,35 @@
+:root {
+    --color-principal: cadetblue;
+    --color-secundario: blue
+}
+* {
+    margin: 20px;   
+    background-color: var(--color-principal)
+}
+
+
+body {
+    background-color: var(--color-secundario);
+}
+
+.seccion1 img {
+    width: 100%;
+}
+
+img {
+    width: 200px;
+}
+
+.columnas_4 {
+    width: 10%;
+    display: flex;
+    justify-items: center;
+}
+
+a {
+    color: rgb(20, 50, 220)
+}
+
+a:hover {
+    color: rgb(143, 4, 4);
+}
