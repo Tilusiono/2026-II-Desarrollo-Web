@@ -1,7 +1,7 @@
 git checkout main
 git pull origin main
 
-$branch = "bernabe-inche"
+$branch = "berna-inche"
 $allowedPath = "pages/$branch"
 
 Write-Host ""

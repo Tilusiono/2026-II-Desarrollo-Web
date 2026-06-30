@@ -1,4 +1,4 @@
-$branch = "bernabe-inche"
+$branch = "berna-inche"
 $path = "pages/$branch"
 
 Write-Host "Sync main -> $branch (CONTROLADO)"
