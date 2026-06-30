@@ -4,9 +4,10 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>JHOALS Pollería - El mejor pollo a la brasa</title>
-      <link rel="stylesheet" href="css/css/paginaweb.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="css/paginaweb.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
    </head>
    <body>
       <header>
@@ -24,19 +25,54 @@
             <a href="#contacto">Contacto</a>
          </nav>
       </header>
+      <div id="carouselJhoals" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+   <!-- Indicadores (Las barritas de la parte inferior) -->
+   <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselJhoals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselJhoals" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselJhoals" data-bs-slide-to="2" aria-label="Slide 3"></button>
+   </div>
 
-      <section id="carrusel">
-         <img id="carrusel-img" src="img/banner1.png" alt="Promoción Especial JHOALS">
-         <script>
-            const imagenes = ["img/banner1.png", "img/banner2.png", "img/banner3.jpg"];
-            let indice = 0;
-            setInterval(() => {
-               indice = (indice + 1) % imagenes.length;
-               document.getElementById("carrusel-img").src = imagenes[indice];
-            }, 3000);
-         </script>
-      </section>
+   <!-- Diapositivas (Contenido) -->
+   <div class="carousel-inner">
+      <!-- Banner 1 -->
+      <div class="carousel-item active" data-bs-interval="3000">
+         <img src="img/banner1.png" class="d-block w-100" alt="El mejor Pollo a la Brasa">
+         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h3>¡El auténtico sabor peruano!</h3>
+            <p>Pollo dorado a las brasas con la receta secreta de la casa.</p>
+         </div>
+      </div>
 
+      <!-- Banner 2 -->
+      <div class="carousel-item" data-bs-interval="3000">
+         <img src="img/banner2.png" class="d-block w-100" alt="Papas Fritas Crocantes">
+         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h3>Papas Nativas Seleccionadas</h3>
+            <p>Crujientes por fuera, suaves por dentro. El acompañamiento perfecto.</p>
+         </div>
+      </div>
+
+      <!-- Banner 3 -->
+      <div class="carousel-item" data-bs-interval="3000">
+         <img src="img/banner3.jpg" class="d-block w-100" alt="Combos Familiares Jhoals">
+         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h3>Grandes Combos Familiares</h3>
+            <p>Disfruta y comparte momentos inolvidables con los que más quieres.</p>
+         </div>
+      </div>
+   </div>
+
+   <!-- Controles de Flechas (Izquierda y Derecha) -->
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselJhoals" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselJhoals" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+   </button>
+</div>
       <main>
          <!-- CORREGIDO: Se cambió 'section1' por 'section' -->
          <section id="inicio">
@@ -46,9 +82,7 @@
             <p>Disfruta de una experiencia gastronómica única en un ambiente cómodo, seguro y diseñado especialmente para compartir momentos inolvidables en familia.</p>
             <a href="#menu">Explorar Menú Completo</a>
          </section>
-         
          <hr>
-         
          <section id="categorias">
             <h2>Nuestras Especialidades</h2>
             <p>Explora nuestras 4 categorías principales preparadas con los más altos estándares de calidad.</p>
@@ -75,13 +109,10 @@
                </a>
             </nav>
          </section>
-         
          <hr>
-         
          <section id="menu">
             <h2>Menú JHOALS</h2>
             <p>Descubre el sabor crujiente y jugoso que nos caracteriza en cada una de nuestras presentaciones.</p>
-            
             <h3>Sección: Pollo Entero</h3>
             <section class="grupo-productos">
                <article>
@@ -113,7 +144,6 @@
                   <button>Pedir Ahora</button>
                </article>
             </section>
-            
             <h3>Sección: Medio Pollo</h3>
             <section class="grupo-productos">
                <article>
@@ -145,7 +175,6 @@
                   <button>Pedir Ahora</button>
                </article>
             </section>
-            
             <h3>Sección: Cuarto de Pollo</h3>
             <section class="grupo-productos">
                <article>
@@ -177,7 +206,6 @@
                   <button>Pedir Ahora</button>
                </article>
             </section>
-            
             <h3>Sección: Bebidas y Refrescos</h3>
             <section class="grupo-productos">
                <article>
@@ -210,9 +238,7 @@
                </article>
             </section>
          </section>
-         
          <hr>
-         
          <section id="locales">
             <h2>Nuestras Sedes Oficiales</h2>
             <p>Visita cualquiera de nuestros amplios y modernos locales distribuidos estratégicamente para brindarte la mejor comodidad.</p>
@@ -234,7 +260,6 @@
                </a>
             </section>
          </section>
-
          <section id="nosotros">
             <h2>Nosotros</h2>
             <p>En JHOALS Sabor Andino contamos con más de 15 años de experiencia ofreciendo el mejor pollo a la brasa y una atención de calidad para toda la familia.</p>
@@ -244,7 +269,6 @@
             <p>Ser la pollería preferida por las familias peruanas.</p>
          </section>
       </main>
-
       <footer id="contacto">
          <section class="footer-bloques">
             <article>
@@ -278,34 +302,33 @@
                <p> Visa | Mastercard | Yape | Plin</p>
             </article>
          </section>
-         
          <section class="footer-nosotros">
             <h2>Compromiso Corporativo JHOALS</h2>
             <p>En JHOALS nos esforzamos diariamente para superar las expectativas de nuestros comensales, garantizando una rigurosa cadena de bioseguridad alimentaria, un servicio al cliente rápido y eficiente, y por supuesto, el inconfundible aderezo artesanal que nos ha posicionado como la pollería preferida de las familias de Ate Vitarte.</p>
          </section>
-         
-         <section> 
+         <section>
             <p class="copyright">
                © 2026 JHOALS Sabor Andino. Todos los derechos reservados.
             </p>
          </section>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
    </body>
 </html>
 <!-- 
-Header               1.5 ,
-S1 Inicio            3.5 , falta header(descripcion y titulos) , footer(opcional)
-S2 Categorización    3.5 (minimo 4) Deberias (Falta imagenes , falta titulos y descripciones)
-S3 Ítems             3.5 (Minimo 12 ítems podrías hacer 4 por cada categoria)
-S4 Formulario        3.0, Le falta mas contenido 8/12 inputs (Los inputs deben ser diferentes)
-Footer               1.5 ,Falta mas informacion separar bien las secciones y agregar mas contenido. 
-Nota HTML: 17
-Sustentación :0
-Participacion:0
-Observaciones : 
-- Revisar el código generado , no usar div 10%
-- Evitar usar etiqueta class a codigo de css , que no exista.
-- Separar bien las secciones (Afinar el diseño) .
-- Seguir los lineamientos dados en clase.
-Nota Parcial : 17/20
--->
+   Header               1.5 ,
+   S1 Inicio            3.5 , falta header(descripcion y titulos) , footer(opcional)
+   S2 Categorización    3.5 (minimo 4) Deberias (Falta imagenes , falta titulos y descripciones)
+   S3 Ítems             3.5 (Minimo 12 ítems podrías hacer 4 por cada categoria)
+   S4 Formulario        3.0, Le falta mas contenido 8/12 inputs (Los inputs deben ser diferentes)
+   Footer               1.5 ,Falta mas informacion separar bien las secciones y agregar mas contenido. 
+   Nota HTML: 17
+   Sustentación :0
+   Participacion:0
+   Observaciones : 
+   - Revisar el código generado , no usar div 10%
+   - Evitar usar etiqueta class a codigo de css , que no exista.
+   - Separar bien las secciones (Afinar el diseño) .
+   - Seguir los lineamientos dados en clase.
+   Nota Parcial : 17/20
+   -->
