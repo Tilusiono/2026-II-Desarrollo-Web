@@ -1,27 +1,42 @@
-*{margin: 0px}
-body{
+* {
+    margin: 0px
+}
+
+body {
     background-color: cadetblue;
 }
-.seccion1 img{width: 100%
-    ;
+
+.seccion1 img {
+    width: 100%;
 }
-*{margin: 20px;}
-img{width: 200px;}
-.columnas_4{
+
+* {
+    margin: 20px;
+}
+
+img {
+    width: 200px;
+}
+
+.columnas_4 {
     width: 10%;
     display: flex;
     justify-items: center;
 }
-:root{
+
+:root {
     --color-principal: cadetblue;
     --color-secundario: blue
-
 }
-*{background-color:var(white)}
 
-a{
-    color:rgb(20, 50, 220)
+* {
+    background-color: var(white)
 }
-a:hover{
+
+a {
+    color: rgb(20, 50, 220)
+}
+
+a:hover {
     color: rgb(143, 4, 4);
 }
