@@ -1,5 +1,12 @@
+:root {
+   --color-principal: rgb(247, 248, 176);
+   --color-secundario:
+
+}
+
 * {
-   margin: 0px;
+   margin: 20px;
+   background-color: var(--color-principal)
 }
 
 body {
@@ -11,11 +18,6 @@ body {
 
 }
 
-
-* {
-   margin: 20px;
-}
-
 img {
    width: 200px;
 }
@@ -24,14 +26,4 @@ img {
    width: 10%;
    display: flex;
    justify-items: center;
-}
-
-:root {
-   --color-principal: rgb(247, 248, 176);
-   --color-secundario:
-
-}
-
-* {
-   background-color: var(--color-principal)
 }
