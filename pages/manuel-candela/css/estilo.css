@@ -11,9 +11,7 @@ body {
     color: #333333;
 }
 
-header,
-main,
-footer {
+header, main, footer {
     padding: 30px;
 }
 
@@ -189,16 +187,11 @@ p {
 }
 
 /* CLASES */
-.section2 header {
-    background-color: black; /* O el color que prefieras */
-    padding: 20px;
+
+.col-3 p, strong {
+    color: black;
+}
+
+.col-3 summary{
     text-align: center;
-}
-
-.section2 header h2 {
-    color: white; /* Ahora el texto será visible */
-}
-
-.section2 header p {
-    color: white; /* Texto descriptivo */
 }
