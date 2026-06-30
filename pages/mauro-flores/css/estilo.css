@@ -1,0 +1,12 @@
+:root {
+    --color-principal: black;
+    --color-secundario: rgb(53, 53, 194);
+}
+
+* {
+    background-color: var(--color-principal);
+}
+
+main {
+    background-color: var(--color-secundario);
+}
