@@ -1,6 +1,3 @@
-/*ETIQUETAS*/
-
-/* 1. RESET Y BODY*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,50 +5,74 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Fuente general de la página */
-    background-color: #f5f5f5; /* Fondo gris claro */
-    padding: 30px; /* Espacio alrededor del contenido */
-    line-height: 1.5; /* Altura base de línea */
-}
-
-/* 2. HEADER*/
-header {
-    background-color: black;
-    color: white;
-    padding: 30px; /*Tamaño del header*/
-    text-align: center;
-}
-
-header button {
-    background-color: #333333;
-    color: white;
-    padding: 10px; /* Espaciado interno del botón */
-    cursor: pointer; /* Cambia el cursor a una manito al pasar sobre el botón */
-    border: none; /* Elimina el borde gris que viene por defecto*/
-    width: 98.5%;
-}
-
-header input {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.5;
     color: #333333;
-    padding: 8px;
+}
+
+header, main, footer {
+    padding: 30px;
+}
+
+/* 2. HEADER */
+header{
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header img{
+    width: 50px;
+    display: block;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+header form{ 
+    display: flex; 
+    align-items: center;
+}
+
+header form input{
+    width: 650px;
+    height: 36px;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+header form button{
+    width: 70px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+header nav{
     width: 100%;
-    border-radius: 5px;
-    resize: none;
+    display: flex;
+    justify-content: center;
 }
 
-/* 3. MAIN Y SECCIONES*/
-main {
-    padding: 15px;
-
+/* 3. MAIN Y SECCIONES */
+header h1, header h2, header h3 {
+    color: white;
+    font-weight: bold;
 }
 
-section {
-    padding: 20px; /* Espacio interno de cada sección */
+article header {
+    background-color: #333333;
 }
 
 article {
-    border: 5px solid #ddd; /* Borde para cada artículo */
-    padding: 15px; /* Espacio interno del artículo */
+    padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
 }
@@ -59,22 +80,25 @@ article {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 
-/* 4. FORMULARIO*/
+mark {
+    background-color: #C5A059;
+    color: white;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 2px;
+}
 
+/* 4. FORMULARIO */
 fieldset {
     background-color: white;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
-}
-
-fieldset form {
-    margin: 15px;
-    border-radius: 15px;
-    background-color: white; 
-    border: none;
+    border: 1px solid #ccc;
 }
 
 form legend {
@@ -83,47 +107,72 @@ form legend {
     color: #333333;
 }
 
-form fieldset input, form fieldset select, form fieldset textarea {
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
     color: #333333;
-    margin: 15px;
-    padding: 5px;
-    width: 98.5%;
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
     border: 1px solid #333333;
-    border-radius: 5px; /* Bordes redondeados para inputs */
-    resize: none;
+    border-radius: 5px;
 }
 
 form button {
     background-color: #333333;
     color: white;
-    padding: 10px; /* Espaciado interno del botón */
-    cursor: pointer; /* Cambia el cursor a una manito al pasar sobre el botón */
-    border: none; /* Elimina el borde gris que viene por defecto*/
+    padding: 10px;
+    cursor: pointer;
+    border: none;
     width: 100%;
+    margin-top: 15px;
 }
 
-/* 5. FOOTER*/
+/* 5. FOOTER */
 footer {
     background-color: #333333;
-    padding: 25px; /*eliminrar??*/
+    padding: 20px;
     text-align: center;
     color: white;
-    border-top: 5px solid #C5A059; /* Línea decorativa en el footer */
+    border-top: 5px solid #C5A059;
+}
+
+footer button {
+    background: white;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
 footer a {
+    color: white;
     display: block;
+    margin: 5px;
 }
 
-/* 6. ENLACES*/
+footer a:hover {
+    color: #C5A059;
+}
+
+/* 6. ENLACES GENERALES */
 a {
     text-decoration: none;
-    color: whitesmoke;
-    padding:15px;
+    color: white;
     font-weight: 500;
+    padding: 10px;
 }
 
 a:hover {
     color: #C5A059;
 }
 
+ul {
+    list-style: none;
+}

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bextor</title>
-    <link rel="stylesheet" href="css/estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <input type="search" placeholder="Buscar productos, marcas y más...">
             <button type="submit">Buscar</button>
         </form>
-        <br>
+        
         <nav>
             <p>
                 <a href="#Categorías">Categorías</a>
@@ -41,14 +41,7 @@
             </section>
         </section>
 
-        <section id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
-
-            <section class="carousel-indicators">
-                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="2"></button>
-            </section>
-
+        <section id="Carrusel" class="carousel slide">
             <section class="carousel-inner">
                 <section class="carousel-item active">
                     <img src="Imagenes Carrusel/Banner Principal.jpg" class="d-block w-100" alt="Banner principal">
@@ -62,13 +55,16 @@
                 </section>
             </section>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#Carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </section>
+
         <!--SECCIÓN 2 (CATEGORÍAS)-->
         <section id="Categorías" class="section2">
             <header>
@@ -194,7 +190,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -219,7 +215,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -245,7 +241,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -271,7 +267,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -297,7 +293,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -322,7 +318,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -347,7 +343,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -372,7 +368,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -414,7 +410,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
 
                 </article>
@@ -441,7 +437,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -466,7 +462,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -492,7 +488,7 @@
                     </details>
 
                     <footer>
-                        <a href="#Pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
