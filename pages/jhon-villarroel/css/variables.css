@@ -1,8 +1,0 @@
-:root{
-    --naranja:rgb(238, 104, 14);
-}
-
-main{
-      background-color:var(--naranja)
-
-}
