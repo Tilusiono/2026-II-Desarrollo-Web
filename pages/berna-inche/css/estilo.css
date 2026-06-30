@@ -1,7 +1,0 @@
-#test > :is(article,figure) {
-   border: 2px;
-   border-color: aqua;
-   border-style: solid;
-   background-color: brown;
-}
-

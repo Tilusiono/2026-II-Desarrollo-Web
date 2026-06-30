@@ -91,6 +91,135 @@
         </section>
 
 
+
+        <section id="categorias">
+
+            <header>
+                <h2>Categorías de Videojuegos</h2>
+                <p>
+                    Explora nuestro catálogo organizado por categorías para encontrar
+                    fácilmente el videojuego que estás buscando.
+                </p>
+            </header>
+
+            <section class="columnas_4">
+
+                <card class="card">
+
+                    <header>
+                        <h3>Acción</h3>
+                    </header>
+
+                    <figure>
+                        <img src="img/categoria-accion.jpg" alt="Videojuegos de Acción">
+                        <figcaption>Adrenalina y combates intensos.</figcaption>
+                    </figure>
+
+                    <section>
+                        <p>
+                            Descubre juegos llenos de aventura, disparos, peleas y
+                            misiones desafiantes para todos los niveles.
+                        </p>
+
+                        <p><strong>Juegos disponibles:</strong> 35</p>
+                    </section>
+
+                    <footer>
+                        <a href="#catalogo">Ver categoría</a>
+                    </footer>
+
+                </card>
+
+                <card class="card">
+
+                    <header>
+                        <h3>Aventura</h3>
+                    </header>
+
+                    <figure>
+                        <img src="img/categoria-aventura.jpg" alt="Videojuegos de Aventura">
+                        <figcaption>Explora nuevos mundos.</figcaption>
+                    </figure>
+
+                    <section>
+                        <p>
+                            Vive historias inolvidables, resuelve acertijos y explora
+                            escenarios sorprendentes.
+                        </p>
+
+                        <p><strong>Juegos disponibles:</strong> 28</p>
+                    </section>
+
+                    <footer>
+                        <a href="#catalogo">Ver categoría</a>
+                    </footer>
+
+                </card>
+
+                <card class="card">
+
+                    <header>
+                        <h3>Deportes</h3>
+                    </header>
+
+                    <figure>
+                        <img src="img/categoria-deportes.jpg" alt="Videojuegos Deportivos">
+                        <figcaption>Compite como un profesional.</figcaption>
+                    </figure>
+
+                    <section>
+                        <p>
+                            Disfruta de los mejores videojuegos de fútbol, carreras,
+                            baloncesto y muchas disciplinas más.
+                        </p>
+
+                        <p><strong>Juegos disponibles:</strong> 18</p>
+                    </section>
+
+                    <footer>
+                        <a href="#catalogo">Ver categoría</a>
+                    </footer>
+
+                </card>
+
+                <card class="card">
+
+                    <header>
+                        <h3>Terror</h3>
+                    </header>
+
+                    <figure>
+                        <img src="img/categoria-terror.jpg" alt="Videojuegos de Terror">
+                        <figcaption>Suspenso y supervivencia.</figcaption>
+                    </figure>
+
+                    <section>
+                        <p>
+                            Atrévete a enfrentar criaturas, resolver misterios y
+                            sobrevivir en los escenarios más aterradores.
+                        </p>
+
+                        <p><strong>Juegos disponibles:</strong> 15</p>
+                    </section>
+
+                    <footer>
+                        <a href="#catalogo">Ver categoría</a>
+                    </footer>
+
+                </card>
+
+            </section>
+
+            <footer>
+                <p>
+                    Nuestro catálogo se actualiza constantemente con nuevos títulos para
+                    PC, PlayStation, Xbox y Nintendo, ofreciendo una amplia variedad de
+                    géneros para todos los jugadores.
+                </p>
+            </footer>
+
+        </section>
+
         <!-- S2: CATÁLOGO -->
         <section id="catalogo" class="seccion-catalogo">
             <h2 class="seccion-titulo">Catálogo</h2>
@@ -233,7 +362,8 @@
         <!-- S5: NEWSLETTER -->
         <section class="newsletter">
             <h2 class="newsletter-titulo">¡No te pierdas ninguna oferta!</h2>
-            <p class="newsletter-subtitulo">Suscríbete y recibe las mejores promociones de videojuegos directo a tu correo.</p>
+            <p class="newsletter-subtitulo">Suscríbete y recibe las mejores promociones de videojuegos directo a tu
+                correo.</p>
             <form class="newsletter-form" action="#" method="post">
                 <input type="email" placeholder="Ingresa tu correo electrónico" class="newsletter-input">
                 <button type="submit" class="newsletter-btn">Suscribirme</button>
@@ -305,29 +435,129 @@
                     <button type="submit">Enviar Pedido</button>
                     <button type="reset">Limpiar Formulario</button>
                 </p>
-    
-    <footer id="contacto">
-        <p>© 2026 Mi Página Web</p>
-    </footer>
+            </form>
+        </section>
 
-    <script>
-        let actual = 0;
-        const slides = document.querySelectorAll('.slide');
-        const puntos = document.querySelectorAll('.punto');
+        <footer id="footer">
 
-        function mostrar(index) {
-            slides.forEach(s => s.classList.remove('activo'));
-            puntos.forEach(p => p.classList.remove('activo'));
-            actual = (index + slides.length) % slides.length;
-            slides[actual].classList.add('activo');
-            puntos[actual].classList.add('activo');
-        }
+            <section>
 
-        function moverCarrusel(dir) { mostrar(actual + dir); }
-        function irA(index) { mostrar(index); }
+                <header>
+                    <h3>Game Store</h3>
+                </header>
 
-        setInterval(() => moverCarrusel(1), 5000);
-    </script>
+                <p>
+                    Somos una tienda especializada en videojuegos para PC y consolas.
+                    Ofrecemos los títulos más recientes, promociones exclusivas y una
+                    experiencia de compra segura para todos nuestros clientes.
+                </p>
+
+            </section>
+
+            <section>
+
+                <header>
+                    <h3>Categorías</h3>
+                </header>
+
+                <nav>
+                    <ul>
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="#mas-vendidos">Los más vendidos</a></li>
+                        <li><a href="#promociones">Promociones</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+
+            <section>
+
+                <header>
+                    <h3>Atención al Cliente</h3>
+                </header>
+
+                <address>
+                    <ul>
+                        <li>📧 soporte@gamestore.com</li>
+                        <li>📞 (+51) 987 654 321</li>
+                        <li>🕒 Lunes a Domingo: 9:00 a.m. - 9:00 p.m.</li>
+                        <li>📍 Av. La Marina 2450 - San Miguel, Lima</li>
+                    </ul>
+                </address>
+
+            </section>
+
+            <section>
+
+                <header>
+                    <h3>Síguenos</h3>
+                </header>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Discord</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+
+            <section>
+
+                <header>
+                    <h3>Información Legal</h3>
+                </header>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Reembolsos</a></li>
+                        <li><a href="#">Libro de Reclamaciones</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+
+            <section>
+
+                <header>
+                    <h3>Desarrollado por</h3>
+                </header>
+                <p>
+                    Oscar Sánchez - 2026-II Desarrollo Web
+                </p>
+
+                <small>
+                    © 2026 Game Store. Todos los derechos reservados.
+                </small>
+
+            </section>
+
+        </footer>
+
+        <script>
+            let actual = 0;
+            const slides = document.querySelectorAll('.slide');
+            const puntos = document.querySelectorAll('.punto');
+
+            function mostrar(index) {
+                slides.forEach(s => s.classList.remove('activo'));
+                puntos.forEach(p => p.classList.remove('activo'));
+                actual = (index + slides.length) % slides.length;
+                slides[actual].classList.add('activo');
+                puntos[actual].classList.add('activo');
+            }
+
+            function moverCarrusel(dir) { mostrar(actual + dir); }
+            function irA(index) { mostrar(index); }
+
+            setInterval(() => moverCarrusel(1), 5000);
+        </script>
 
 </body>
 

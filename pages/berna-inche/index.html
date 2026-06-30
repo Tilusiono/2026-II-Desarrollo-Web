@@ -1,257 +1,512 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="es">
 
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Page Title</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Estudios IDAT</title>
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
-            <section class="container-fluid">
-                <a class="navbar-brand" href="#">Mi sitio web</a>
-                <button class="btn btn-secondary"> PRUEBA</button>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="bi bi-123"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarsExample01">
-                    <ul class="navbar-nav me-auto mb-2">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">Lista Desplegable</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Item 1 </a></li>
-                                <li><a class="dropdown-item" href="#">Item 2</a></li>
-                                <li><a class="dropdown-item" href="#">Item 3</a> </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-                    </form>
-                </div>
-            </section>
-        </nav>
+        <img src="imagenes/logo-idat.png" alt="Logo de IDAT" width="120">
+        <h1>Centro de Estudios IDAT</h1>
+        <p>Formamos profesionales técnicos preparados para los retos del mundo laboral.</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#carreras">Carreras</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <br>
 
-        <section id="test" class="text-center row">
-            <article class="col">
-                Column
-            </article>
-            <article class="col">
-                Column
-            </article>
-            <article class="col">
-                Column
-            </article>
+        <section id="inicio">
+
+            <header>
+                <h2>Estudia una carrera técnica profesional</h2>
+                <p>Desarrolla habilidades prácticas y prepárate para ingresar al mercado laboral.</p>
+            </header>
+
+            <figure>
+                <img src="imagenes/banner-estudiantes.jpg" alt="Estudiantes en clase" width="300">
+                <figcaption>Ambientes de aprendizaje modernos.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagenes/banner-laboratorio.jpg" alt="Laboratorio de computación" width="300">
+                <figcaption>Laboratorios equipados para la práctica profesional.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagenes/banner-campus.jpg" alt="Campus educativo" width="300">
+                <figcaption>Espacios diseñados para el desarrollo académico.</figcaption>
+            </figure>
+
         </section>
 
-        <section id="test" class="row justify-content-md-center">
+        <section id="categorias">
 
-            <figure class="col col-3">
-                Variable width content
-            </figure>
-            <figure class="col col-5">
-                1 of 3
-            </figure>
-            <figure class="col col-3">
-                3 of 3
-            </figure>
-        </section>
+            <header>
+                <h2>Categorías Académicas</h2>
+                <p>Explora nuestras principales áreas de formación profesional.</p>
+            </header>
 
-        <section id="test" class="row justify-content-md-center">
+            <section>
 
-            <figure class="col col-2">
-            </figure>
-            <figure class="col col-8">
-                1 of 3
-            </figure>
-            <figure class="col col-2">
-            </figure>
-        </section>
-        <section>2</section>
-        <section class="container text-center">
+                <article>
+                    <header>
+                        <h3>Tecnología</h3>
+                    </header>
 
-            <section class="row row-cols-3  row-cols-sm-6 row-cols-md-4 row-cols-lg-5 g-2 g-lg-3">
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
-                <card class="col">
-                    <div class="p-3">Row column</div>
-                </card>
+                    <figure>
+                        <img src="imagenes/categorias/tecnologia.jpg" alt="Área de tecnología" width="200">
+                        <figcaption>Carreras orientadas al desarrollo digital.</figcaption>
+                    </figure>
+
+                    <p>
+                        Formación en programación, redes, bases de datos, desarrollo web y soluciones tecnológicas.
+                    </p>
+
+                    <footer>
+                        <a href="#carreras">Ver carreras</a>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Gestión Empresarial</h3>
+                    </header>
+
+                    <figure>
+                        <img src="imagenes/categorias/gestion.jpg" alt="Área de gestión empresarial" width="200">
+                        <figcaption>Administración y dirección de negocios.</figcaption>
+                    </figure>
+
+                    <p>
+                        Programas enfocados en administración, negocios, recursos humanos y gestión comercial.
+                    </p>
+
+                    <footer>
+                        <a href="#carreras">Ver carreras</a>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Diseño y Comunicación</h3>
+                    </header>
+
+                    <figure>
+                        <img src="imagenes/categorias/diseno.jpg" alt="Área de diseño" width="200">
+                        <figcaption>Creatividad aplicada a medios digitales.</figcaption>
+                    </figure>
+
+                    <p>
+                        Carreras relacionadas con diseño gráfico, comunicación visual, marketing y contenido digital.
+                    </p>
+
+                    <footer>
+                        <a href="#carreras">Ver carreras</a>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Contabilidad y Finanzas</h3>
+                    </header>
+
+                    <figure>
+                        <img src="imagenes/categorias/finanzas.jpg" alt="Área de finanzas" width="200">
+                        <figcaption>Gestión económica y financiera.</figcaption>
+                    </figure>
+
+                    <p>
+                        Formación orientada al análisis financiero, registro contable y gestión tributaria.
+                    </p>
+
+                    <footer>
+                        <a href="#carreras">Ver carreras</a>
+                    </footer>
+                </article>
+
             </section>
 
         </section>
-        <section>4</section>
+
+        <section id="carreras">
+
+            <header>
+                <h2>Carreras Técnicas Profesionales</h2>
+                <p>Conoce nuestras opciones académicas diseñadas para tu futuro profesional.</p>
+            </header>
+
+            <section>
+
+                <article>
+                    <header>
+                        <h3>Desarrollo de Sistemas de Información</h3>
+                    </header>
+                    <p>Aprende programación, bases de datos, análisis de sistemas y desarrollo de aplicaciones.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Presencial y semipresencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Administración de Empresas</h3>
+                    </header>
+                    <p>Desarrolla habilidades para gestionar organizaciones, equipos de trabajo y procesos empresariales.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Presencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Diseño Gráfico Digital</h3>
+                    </header>
+                    <p>Domina herramientas de diseño, identidad visual, piezas gráficas y comunicación digital.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Presencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Marketing Digital</h3>
+                    </header>
+                    <p>Aprende estrategias de redes sociales, publicidad digital, branding y análisis de campañas.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Semipresencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Contabilidad</h3>
+                    </header>
+                    <p>Gestiona información contable, estados financieros, impuestos y obligaciones empresariales.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Presencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Administración de Redes</h3>
+                    </header>
+                    <p>Aprende instalación, configuración y mantenimiento de redes informáticas empresariales.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Presencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Negocios Internacionales</h3>
+                    </header>
+                    <p>Conoce procesos de importación, exportación, comercio exterior y logística internacional.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Presencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Recursos Humanos</h3>
+                    </header>
+                    <p>Aprende procesos de selección, capacitación, clima laboral y gestión del talento humano.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Semipresencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Computación e Informática</h3>
+                    </header>
+                    <p>Desarrolla competencias en soporte técnico, software, hardware y herramientas informáticas.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Presencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Diseño de Experiencia de Usuario</h3>
+                    </header>
+                    <p>Aprende fundamentos de UX/UI, prototipado, investigación de usuarios e interfaces digitales.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Semipresencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Gestión Logística</h3>
+                    </header>
+                    <p>Estudia procesos de almacenamiento, distribución, compras, inventarios y cadena de suministro.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Presencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Soporte Técnico y Mantenimiento</h3>
+                    </header>
+                    <p>Aprende diagnóstico, reparación, instalación y mantenimiento de equipos tecnológicos.</p>
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Presencial</p>
+                    <footer>
+                        <button type="button">Solicitar información</button>
+                    </footer>
+                </article>
+
+            </section>
+
+        </section>
+
+        <section id="beneficios">
+
+            <header>
+                <h2>Beneficios de Estudiar con Nosotros</h2>
+            </header>
+
+            <ul>
+                <li>Docentes con experiencia profesional.</li>
+                <li>Laboratorios implementados para clases prácticas.</li>
+                <li>Malla curricular orientada al mercado laboral.</li>
+                <li>Bolsa de trabajo para estudiantes y egresados.</li>
+                <li>Horarios flexibles para estudiar y trabajar.</li>
+            </ul>
+
+        </section>
+
+        <section id="contacto">
+
+            <header>
+                <h2>Formulario de Inscripción</h2>
+                <p>Completa tus datos para recibir información sobre nuestras carreras.</p>
+            </header>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>Datos del Postulante</legend>
+
+                    <p>
+                        <label for="nombre">Nombres</label><br>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="apellidos">Apellidos</label><br>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </p>
+
+                    <p>
+                        <label for="dni">DNI</label><br>
+                        <input type="text" id="dni" name="dni" maxlength="8" required>
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo Electrónico</label><br>
+                        <input type="email" id="correo" name="correo" required>
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono</label><br>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </p>
+
+                    <p>
+                        <label for="fecha">Fecha de Nacimiento</label><br>
+                        <input type="date" id="fecha" name="fecha">
+                    </p>
+
+                    <p>
+                        <label for="edad">Edad</label><br>
+                        <input type="number" id="edad" name="edad" min="15" max="80">
+                    </p>
+
+                    <p>
+                        <label for="carrera">Carrera de Interés</label><br>
+                        <select id="carrera" name="carrera">
+                            <option value="">Seleccione una carrera</option>
+                            <option value="sistemas">Desarrollo de Sistemas de Información</option>
+                            <option value="administracion">Administración de Empresas</option>
+                            <option value="diseno">Diseño Gráfico Digital</option>
+                            <option value="marketing">Marketing Digital</option>
+                            <option value="contabilidad">Contabilidad</option>
+                            <option value="redes">Administración de Redes</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="modalidad">Modalidad de Estudio</label><br>
+                        <select id="modalidad" name="modalidad">
+                            <option value="">Seleccione una modalidad</option>
+                            <option value="presencial">Presencial</option>
+                            <option value="semipresencial">Semipresencial</option>
+                            <option value="virtual">Virtual</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="turno">Turno Preferido</label><br>
+                        <select id="turno" name="turno">
+                            <option value="">Seleccione un turno</option>
+                            <option value="manana">Mañana</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noche">Noche</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="documento">Adjuntar documento</label><br>
+                        <input type="file" id="documento" name="documento">
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones.</label>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar Inscripción</button>
+                        <button type="reset">Limpiar Formulario</button>
+                    </p>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
     </main>
 
-    <footer class="container py-5">
-        <div class="row">
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                    </li>
+    <footer>
+
+        <section>
+            <header>
+                <h3>Centro de Estudios IDAT</h3>
+            </header>
+
+            <p>
+                Institución educativa orientada a la formación técnica profesional,
+                con programas académicos enfocados en las necesidades del mercado laboral.
+            </p>
+        </section>
+
+        <section>
+            <header>
+                <h3>Enlaces</h3>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#carreras">Carreras</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
-            </div>
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary"> <i class="bi bi-vinyl"></i> Home</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                    </li>
+            </nav>
+        </section>
+
+        <section>
+            <header>
+                <h3>Contacto</h3>
+            </header>
+
+            <address>
+                <ul>
+                    <li>Correo: informes@idat.edu.pe</li>
+                    <li>Teléfono: (+51) 999 888 777</li>
+                    <li>Ubicación: Lima, Perú</li>
+                    <li>Horario: Lunes a sábado de 8:00 a.m. a 8:00 p.m.</li>
                 </ul>
-            </div>
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i> Facebook</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                    </li>
+            </address>
+        </section>
+
+        <section>
+            <header>
+                <h3>Redes Sociales</h3>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/">TikTok</a></li>
+                    <li><a href="https://www.youtube.com/">YouTube</a></li>
+                    <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
                 </ul>
-            </div>
-            <div class="col-md-5 offset-md-1 mb-3">
-                <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address" />
-                        <button class="btn btn-primary" type="button">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p>&copy; 2025 Company, Inc. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-                <li class="ms-3">
-                    <a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24"
-                            height="24">
-                            <use xlink:href="#instagram"></use>
-                        </svg></a>
-                </li>
-                <li class="ms-3">
-                    <a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"
-                            aria-hidden="true">
-                            <use xlink:href="#facebook"></use>
-                        </svg></a>
-                </li>
+            </nav>
+        </section>
+
+        <section>
+            <header>
+                <h3>Información Legal</h3>
+            </header>
+
+            <ul>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Libro de reclamaciones</a></li>
             </ul>
-        </div>
+        </section>
+
+        <section>
+            <header>
+                <h3>Página creada y desarrollada por</h3>
+            </header>
+
+            <p>Nombre del estudiante</p>
+
+            <small>
+                &copy; 2026 Centro de Estudios IDAT. Todos los derechos reservados.
+            </small>
+        </section>
+
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

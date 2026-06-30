@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Estudios IDAT</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <header class="container text-center py-4">
+        <img src="imagenes/logo-idat.png" alt="Logo de IDAT" width="120" class="img-fluid mb-3">
+        <h1 class="fw-bold">Centro de Estudios IDAT</h1>
+        <p class="lead">Formamos profesionales técnicos preparados para los retos del mundo laboral.</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <section class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">IDAT</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <section class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carreras">Carreras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+
+    <main>
+
+        <section id="inicio" class="container my-5">
+
+            <header class="text-center mb-4">
+                <h2 class="fw-bold">Estudia una carrera técnica profesional</h2>
+                <p class="text-secondary">
+                    Desarrolla habilidades prácticas y prepárate para ingresar al mercado laboral.
+                </p>
+            </header>
+
+            <section id="carruselIDAT" class="carousel slide" data-bs-ride="carousel">
+
+                <section class="carousel-inner rounded shadow">
+
+                    <section class="carousel-item active">
+                        <img src="imagenes/banner-estudiantes.jpg" class="d-block w-100" alt="Estudiantes en clase">
+                    </section>
+
+                    <section class="carousel-item">
+                        <img src="imagenes/banner-laboratorio.jpg" class="d-block w-100" alt="Laboratorio de computación">
+                    </section>
+
+                    <section class="carousel-item">
+                        <img src="imagenes/banner-campus.jpg" class="d-block w-100" alt="Campus educativo">
+                    </section>
+
+                </section>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselIDAT" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselIDAT" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </section>
+
+        </section>
+
+        <section id="categorias" class="container my-5">
+
+            <header class="text-center mb-4">
+                <h2 class="fw-bold">Categorías Académicas</h2>
+                <p class="text-secondary">Explora nuestras principales áreas de formación profesional.</p>
+            </header>
+
+            <section class="row g-4">
+
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <section class="card h-100 shadow-sm">
+                        <img src="imagenes/categorias/tecnologia.jpg" class="card-img-top" alt="Área de tecnología">
+                        <section class="card-body">
+                            <h3 class="card-title h5">
+                                <i class="bi bi-laptop"></i> Tecnología
+                            </h3>
+                            <p class="card-text">
+                                Formación en programación, redes, bases de datos y desarrollo web.
+                            </p>
+                        </section>
+                        <section class="card-footer bg-white">
+                            <a href="#carreras" class="btn btn-primary w-100">Ver carreras</a>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <section class="card h-100 shadow-sm">
+                        <img src="imagenes/categorias/gestion.jpg" class="card-img-top" alt="Gestión empresarial">
+                        <section class="card-body">
+                            <h3 class="card-title h5">
+                                <i class="bi bi-briefcase"></i> Gestión Empresarial
+                            </h3>
+                            <p class="card-text">
+                                Administración, negocios, recursos humanos y gestión comercial.
+                            </p>
+                        </section>
+                        <section class="card-footer bg-white">
+                            <a href="#carreras" class="btn btn-primary w-100">Ver carreras</a>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <section class="card h-100 shadow-sm">
+                        <img src="imagenes/categorias/diseno.jpg" class="card-img-top" alt="Diseño y comunicación">
+                        <section class="card-body">
+                            <h3 class="card-title h5">
+                                <i class="bi bi-palette"></i> Diseño y Comunicación
+                            </h3>
+                            <p class="card-text">
+                                Diseño gráfico, comunicación visual, marketing y contenido digital.
+                            </p>
+                        </section>
+                        <section class="card-footer bg-white">
+                            <a href="#carreras" class="btn btn-primary w-100">Ver carreras</a>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <section class="card h-100 shadow-sm">
+                        <img src="imagenes/categorias/finanzas.jpg" class="card-img-top" alt="Contabilidad y finanzas">
+                        <section class="card-body">
+                            <h3 class="card-title h5">
+                                <i class="bi bi-calculator"></i> Contabilidad y Finanzas
+                            </h3>
+                            <p class="card-text">
+                                Análisis financiero, registro contable y gestión tributaria.
+                            </p>
+                        </section>
+                        <section class="card-footer bg-white">
+                            <a href="#carreras" class="btn btn-primary w-100">Ver carreras</a>
+                        </section>
+                    </section>
+                </article>
+
+            </section>
+
+        </section>
+
+        <section id="carreras" class="container my-5">
+
+            <header class="text-center mb-4">
+                <h2 class="fw-bold">Carreras Técnicas Profesionales</h2>
+                <p class="text-secondary">Conoce nuestras opciones académicas diseñadas para tu futuro profesional.</p>
+            </header>
+
+            <section class="row g-4">
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Desarrollo de Sistemas de Información</h3>
+                            <p class="card-text">Aprende programación, bases de datos y desarrollo de aplicaciones.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Presencial y semipresencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Administración de Empresas</h3>
+                            <p class="card-text">Gestiona organizaciones, equipos y procesos empresariales.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Presencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Diseño Gráfico Digital</h3>
+                            <p class="card-text">Domina identidad visual, piezas gráficas y comunicación digital.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Presencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Marketing Digital</h3>
+                            <p class="card-text">Aprende publicidad digital, redes sociales y análisis de campañas.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Semipresencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Contabilidad</h3>
+                            <p class="card-text">Gestiona estados financieros, impuestos y obligaciones empresariales.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Presencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Administración de Redes</h3>
+                            <p class="card-text">Instala, configura y mantiene redes informáticas empresariales.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Presencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Negocios Internacionales</h3>
+                            <p class="card-text">Aprende comercio exterior, importación, exportación y logística.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Presencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Recursos Humanos</h3>
+                            <p class="card-text">Aprende selección, capacitación, clima laboral y gestión del talento.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Semipresencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Computación e Informática</h3>
+                            <p class="card-text">Desarrolla competencias en soporte técnico, software y hardware.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Presencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Diseño de Experiencia de Usuario</h3>
+                            <p class="card-text">Aprende UX/UI, prototipado e investigación de usuarios.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Semipresencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Gestión Logística</h3>
+                            <p class="card-text">Estudia almacenamiento, compras, inventarios y cadena de suministro.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Presencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-4">
+                    <section class="card h-100 border-primary">
+                        <section class="card-body">
+                            <h3 class="h5 card-title">Soporte Técnico y Mantenimiento</h3>
+                            <p class="card-text">Aprende diagnóstico, reparación y mantenimiento de equipos.</p>
+                            <p><strong>Duración:</strong> 3 años</p>
+                            <p><strong>Modalidad:</strong> Presencial</p>
+                            <button type="button" class="btn btn-primary">Solicitar información</button>
+                        </section>
+                    </section>
+                </article>
+
+            </section>
+
+        </section>
+
+        <section id="beneficios" class="container my-5">
+
+            <header class="text-center mb-4">
+                <h2 class="fw-bold">Beneficios de Estudiar con Nosotros</h2>
+            </header>
+
+            <section class="row g-3">
+
+                <article class="col-md-4">
+                    <section class="alert alert-primary">
+                        <i class="bi bi-person-workspace"></i> Docentes con experiencia profesional.
+                    </section>
+                </article>
+
+                <article class="col-md-4">
+                    <section class="alert alert-primary">
+                        <i class="bi bi-pc-display"></i> Laboratorios implementados para clases prácticas.
+                    </section>
+                </article>
+
+                <article class="col-md-4">
+                    <section class="alert alert-primary">
+                        <i class="bi bi-journal-check"></i> Malla curricular orientada al mercado laboral.
+                    </section>
+                </article>
+
+                <article class="col-md-6">
+                    <section class="alert alert-primary">
+                        <i class="bi bi-briefcase-fill"></i> Bolsa de trabajo para estudiantes y egresados.
+                    </section>
+                </article>
+
+                <article class="col-md-6">
+                    <section class="alert alert-primary">
+                        <i class="bi bi-clock-fill"></i> Horarios flexibles para estudiar y trabajar.
+                    </section>
+                </article>
+
+            </section>
+
+        </section>
+
+        <section id="contacto" class="container my-5">
+
+            <header class="text-center mb-4">
+                <h2 class="fw-bold">Formulario de Inscripción</h2>
+                <p class="text-secondary">Completa tus datos para recibir información sobre nuestras carreras.</p>
+            </header>
+
+            <form action="#" method="post" enctype="multipart/form-data" class="card shadow p-4">
+
+                <fieldset>
+                    <legend class="mb-4">Datos del Postulante</legend>
+
+                    <section class="row g-3">
+
+                        <section class="col-md-6">
+                            <label for="nombre" class="form-label">Nombres</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </section>
+
+                        <section class="col-md-6">
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" id="apellidos" name="apellidos" class="form-control" required>
+                        </section>
+
+                        <section class="col-md-6">
+                            <label for="dni" class="form-label">DNI</label>
+                            <input type="text" id="dni" name="dni" maxlength="8" class="form-control" required>
+                        </section>
+
+                        <section class="col-md-6">
+                            <label for="correo" class="form-label">Correo Electrónico</label>
+                            <input type="email" id="correo" name="correo" class="form-control" required>
+                        </section>
+
+                        <section class="col-md-6">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" class="form-control" required>
+                        </section>
+
+                        <section class="col-md-6">
+                            <label for="fecha" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" id="fecha" name="fecha" class="form-control">
+                        </section>
+
+                        <section class="col-md-6">
+                            <label for="edad" class="form-label">Edad</label>
+                            <input type="number" id="edad" name="edad" min="15" max="80" class="form-control">
+                        </section>
+
+                        <section class="col-md-6">
+                            <label for="carrera" class="form-label">Carrera de Interés</label>
+                            <select id="carrera" name="carrera" class="form-select">
+                                <option value="">Seleccione una carrera</option>
+                                <option value="sistemas">Desarrollo de Sistemas de Información</option>
+                                <option value="administracion">Administración de Empresas</option>
+                                <option value="diseno">Diseño Gráfico Digital</option>
+                                <option value="marketing">Marketing Digital</option>
+                                <option value="contabilidad">Contabilidad</option>
+                                <option value="redes">Administración de Redes</option>
+                            </select>
+                        </section>
+
+                        <section class="col-md-6">
+                            <label for="modalidad" class="form-label">Modalidad de Estudio</label>
+                            <select id="modalidad" name="modalidad" class="form-select">
+                                <option value="">Seleccione una modalidad</option>
+                                <option value="presencial">Presencial</option>
+                                <option value="semipresencial">Semipresencial</option>
+                                <option value="virtual">Virtual</option>
+                            </select>
+                        </section>
+
+                        <section class="col-md-6">
+                            <label for="turno" class="form-label">Turno Preferido</label>
+                            <select id="turno" name="turno" class="form-select">
+                                <option value="">Seleccione un turno</option>
+                                <option value="manana">Mañana</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noche">Noche</option>
+                            </select>
+                        </section>
+
+                        <section class="col-md-12">
+                            <label for="documento" class="form-label">Adjuntar documento</label>
+                            <input type="file" id="documento" name="documento" class="form-control">
+                        </section>
+
+                        <section class="col-md-12">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" class="form-control"></textarea>
+                        </section>
+
+                        <section class="col-md-12 form-check ms-2">
+                            <input type="checkbox" id="terminos" name="terminos" class="form-check-input" required>
+                            <label for="terminos" class="form-check-label">
+                                Acepto los términos y condiciones.
+                            </label>
+                        </section>
+
+                        <section class="col-md-12">
+                            <button type="submit" class="btn btn-success">
+                                <i class="bi bi-send"></i> Enviar Inscripción
+                            </button>
+
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="bi bi-arrow-clockwise"></i> Limpiar Formulario
+                            </button>
+                        </section>
+
+                    </section>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+
+        <section class="container">
+
+            <section class="row g-4">
+
+                <section class="col-md-4">
+                    <h3 class="h5">Centro de Estudios IDAT</h3>
+                    <p>
+                        Institución educativa orientada a la formación técnica profesional,
+                        con programas académicos enfocados en las necesidades del mercado laboral.
+                    </p>
+                </section>
+
+                <section class="col-md-2">
+                    <h3 class="h5">Enlaces</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#inicio" class="nav-link text-white p-0">Inicio</a></li>
+                        <li class="nav-item"><a href="#categorias" class="nav-link text-white p-0">Categorías</a></li>
+                        <li class="nav-item"><a href="#carreras" class="nav-link text-white p-0">Carreras</a></li>
+                        <li class="nav-item"><a href="#beneficios" class="nav-link text-white p-0">Beneficios</a></li>
+                        <li class="nav-item"><a href="#contacto" class="nav-link text-white p-0">Contacto</a></li>
+                    </ul>
+                </section>
+
+                <section class="col-md-3">
+                    <h3 class="h5">Contacto</h3>
+                    <address>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-envelope"></i> informes@idat.edu.pe</li>
+                            <li><i class="bi bi-telephone"></i> (+51) 999 888 777</li>
+                            <li><i class="bi bi-geo-alt"></i> Lima, Perú</li>
+                            <li><i class="bi bi-clock"></i> Lunes a sábado de 8:00 a.m. a 8:00 p.m.</li>
+                        </ul>
+                    </address>
+                </section>
+
+                <section class="col-md-3">
+                    <h3 class="h5">Redes Sociales</h3>
+                    <ul class="nav flex-column">
+                        <li><a href="https://www.facebook.com/" class="nav-link text-white p-0"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/" class="nav-link text-white p-0"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/" class="nav-link text-white p-0"><i class="bi bi-tiktok"></i> TikTok</a></li>
+                        <li><a href="https://www.youtube.com/" class="nav-link text-white p-0"><i class="bi bi-youtube"></i> YouTube</a></li>
+                        <li><a href="https://www.linkedin.com/" class="nav-link text-white p-0"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <hr>
+
+            <section class="row">
+
+                <section class="col-md-6">
+                    <p class="mb-0">
+                        &copy; 2026 Centro de Estudios IDAT. Todos los derechos reservados.
+                    </p>
+                </section>
+
+                <section class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Política de privacidad</a>
+                    <a href="#" class="text-white me-3">Términos</a>
+                    <a href="#" class="text-white">Libro de reclamaciones</a>
+                </section>
+
+            </section>
+
+        </section>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
