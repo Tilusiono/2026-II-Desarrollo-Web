@@ -1,6 +1,11 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;}
+:root{
+    --color-principal: white;
+    --color-secundario: rgb(0,50,30);
+    --tamaño-pregunta: calc(2vw + 1em);
+}
 body{
     background: radial-gradient(circle,rgb(3, 150, 200) 0%, rgb(8, 214, 241) 50%, rgb(20, 255, 255) 100%);
     width: 100%;
@@ -16,6 +21,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 footer{
     width: 100%;
@@ -123,4 +129,5 @@ h2{
     padding-top: 20%;
     padding-bottom: 20%;
     text-align: center;
+    color:var(--color-principal);
 }
