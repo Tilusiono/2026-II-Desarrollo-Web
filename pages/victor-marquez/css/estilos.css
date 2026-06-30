@@ -1,17 +1,19 @@
+:root {
+    --color-principal: cadetblue;
+    --color-secundario: blue
+}
 * {
-    margin: 0px
+    margin: 20px;   
+    background-color: var(--color-principal)
 }
 
+
 body {
-    background-color: cadetblue;
+    background-color: var(--color-secundario);
 }
 
 .seccion1 img {
     width: 100%;
-}
-
-* {
-    margin: 20px;
 }
 
 img {
@@ -22,15 +24,6 @@ img {
     width: 10%;
     display: flex;
     justify-items: center;
-}
-
-:root {
-    --color-principal: cadetblue;
-    --color-secundario: blue
-}
-
-* {
-    background-color: var(white)
 }
 
 a {
