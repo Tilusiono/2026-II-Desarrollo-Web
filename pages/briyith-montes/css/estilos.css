@@ -1,29 +1,161 @@
-:root {
-   --color-principal: rgb(247, 248, 176);
-   --color-secundario:
-
-}
-
+/* ==========================================
+   LO ESENCIAL (Fondo Lila Claro)
+   ========================================== */
 * {
-   margin: 20px;
-   background-color: var(--color-principal)
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
-   background-color: rgb(233, 228, 162);
+    background-color: #f6f0fa; /* Fondo lila pastel muy suave */
+    color: #443a4a;
+    padding: 15px;
 }
 
-.seccion1 img {
-   width: 100%;
+/* ==========================================
+   ESTRUCTURA ORDENADA (Secciones y Bloques)
+   ========================================== */
+header, section, main, footer {
+    background-color: #ffffff; /* Bloques blancos para resaltar orden */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #e5daf0;
+}
 
+/* El header principal se mantiene lila */
+.header, .seccion1 {
+    background-color: #ede2f5; 
+    text-align: center;
+}
+
+.header h1 {
+    color: #5a4278;
+    margin: 10px 0;
+}
+
+.header .logo {
+    max-width: 60px;
+}
+
+/* Menú simple en línea */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5a4278;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   CUADRÍCULAS AUTOMÁTICAS (Alineación Perfecta)
+   ========================================== */
+.columnas_4, .columnas_5, .columnas_6, .columnas_8 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
 }
 
 img {
-   width: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
 }
 
-.columnas_6 {
-   width: 10%;
-   display: flex;
-   justify-items: center;
+/* ==========================================
+   TARJETAS DE PRODUCTO (CARDS) Y BOTONES
+   ========================================= */
+.card {
+    background: #fdfbfe;
+    border: 1px solid #ede2f5;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.card h3, .card h2 {
+    color: #5a4278;
+    font-size: 1rem;
+}
+
+.card p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.card span {
+    color: #7d5da3;
+    font-weight: bold;
+}
+
+button {
+    background-color: #7d5da3;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #5a4278;
+}
+
+/* ==========================================
+   FORMULARIOS Y CAMPOS
+   ========================================== */
+fieldset {
+    border: 1px solid #ede2f5;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+legend {
+    color: #5a4278;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select {
+    width: 100%;
+    padding: 6px;
+    margin: 4px 0 10px 0;
+    border: 1px solid #ede2f5;
+    border-radius: 4px;
+}
+
+/* ==========================================
+   FOOTER LIMPIO
+   ========================================== */
+.footer {
+    background-color: #ede2f5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    font-size: 0.8rem;
+}
+
+.footer ul {
+    list-style: none;
 }
