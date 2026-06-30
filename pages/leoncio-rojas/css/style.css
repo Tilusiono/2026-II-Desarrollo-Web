@@ -1,10 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 /*-----------------------------------------------------Cuatro HTML */
-body{
+body {
   /*background-color:rgba(222, 184, 135, 0.819);*/
   background-color: rgb(255, 255, 255);
   margin: 0;
@@ -12,24 +13,28 @@ body{
   border: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-h1{
+
+h1 {
   text-align: center;
   font-size: 50px;
   color: rgb(0, 0, 0);
-} 
-img{
+}
+
+img {
   border-radius: 15px;
 }
+
 /*------------------------------------------------------Cuatro Conbinadores */
 
-.menu a{
+.menu a {
   text-decoration: none;
   color: #4a5568;
   font-size: 20px;
   font-weight: 700px;
   transition: color 0.3s ease;
 }
-#contacto h2{
+
+#contacto h2 {
   text-align: center;
   font-size: 30px;
   color: rgb(255, 255, 255);
@@ -37,20 +42,23 @@ img{
   margin: 5px;
   border-radius: 50px;
 }
-#presentacion[data-layout="card"] > img{
+
+#presentacion[data-layout="card"]>img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 0%;
 }
+
 /*------------------------------------------------------Cuatro Class*/
-.logo{
+.logo {
   height: 130px;
   width: auto;
   display: block;
   margin-left: 40px;
 }
-.section-menu-container{
+
+.section-menu-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -63,23 +71,27 @@ img{
   top: 0%;
   z-index: 1000;
 }
-.menu{
+
+.menu {
   display: flex;
   list-style: none;
   gap: 30px;
 }
-.subtitulo{
+
+.subtitulo {
   background-color: rgba(230, 233, 235, 0.856);
   margin: 5px;
   height: 90px;
   border-radius: 20px;
 }
+
 /*------------------------------------------------------Cuatro Pseudo clases*/
-.menu a:hover{
+.menu a:hover {
   color: blue;
 }
+
 /*------------------------------------------------------Cuatro id*/
-#contacto{
+#contacto {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0px 0px;
@@ -90,8 +102,9 @@ img{
   margin: 0%;
   height: 200px;
 }
+
 /*------------------------------------------------------Cuatro Pseudo  Elementos*/
-#presentacion[data-layout="card"]::before{
+#presentacion[data-layout="card"]::before {
   content: "";
   position: absolute;
   top: 0;
@@ -102,23 +115,25 @@ img{
   z-index: 1;
   pointer-events: none;
 }
+
 /*------------------------------------------------------Cuatro atributos avanzados*/
-#presentacion[data-layout="card"]{
+#presentacion[data-layout="card"] {
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
-img + :is(blockquote){
+
+img+ :is(blockquote) {
   color: rgba(250, 235, 215, 0.486);
   font-family: fantasy;
   letter-spacing: 5px;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0; 
+  right: 0;
   margin: 0%;
-  padding: 20px
-  color: white;
+  padding: 20px;
+   color: white;
   text-align: center;
   font-style: italic;
   z-index: 2;
