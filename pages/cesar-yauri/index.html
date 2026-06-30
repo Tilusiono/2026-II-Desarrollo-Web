@@ -7,24 +7,84 @@
     <title>Garage Melodic</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../css/estilo_global.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" type="img" href="img/gato dormido.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-
     <header class="header">
-        <img class="logo" src="icono/guitarra-electrica.png">
-        <h1>Garage Melodic</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Discografía</a></li>
-                <li><a href="#elementos">Productos</a></li>
-                <li><a href="#formulario">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <section class="container-fluid">
+                <article>
+                    <a class="navbar-brand" href="#">Garage Melodic</a>
+                    <img class="logo" src="icono/guitarra-electrica.png">
+                </article>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Merchandising</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#elementos">Discografía</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#formulario" data-bs-toggle="dropdown"
+                                aria-expanded="false">Contacto</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#tabla1">Registro</a></li>
+                                <li><a class="dropdown-item" href="#tabla2">Comprar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                    </form>
+                </section>
+            </section>
+        </nav>
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Never expand</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main class="main">
         <section id="inicio" class="section1">
             <header>
@@ -425,7 +485,7 @@
             <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
 
                 <!-- ====================== DATOS PERSONALES (10 elementos exactos del profesor) ====================== -->
-                <fieldset>
+                <fieldset id="tabla1">
                     <legend>Datos Personales</legend>
 
                     <!-- input text con valor por defecto -->
@@ -483,7 +543,7 @@
                 <br><br>
 
                 <!-- ====================== PEDIDO DE PRODUCTO (Siguientes 10 elementos exactos del profesor) ====================== -->
-                <fieldset>
+                <fieldset id="tabla2">
                     <legend>Pedido de Producto</legend>
 
                     <!-- Selección desde lista -->
@@ -507,12 +567,12 @@
                     <br><br>
 
                     <!-- Permite seleccionar varias opciones -->
-                    <label>Tecnologías:</label>
+                    <label>Productos:</label>
                     <select name="tech" multiple>
-                        <option selected>HTML</option>
-                        <option>CSS</option>
-                        <option>JavaScript</option>
-                        <option>Python</option>
+                        <option selected>Vinilos</option>
+                        <option>Guitarras</option>
+                        <option>Puas</option>
+                        <option>Otro</option>
                     </select>
                     <br> <br>
 
@@ -590,6 +650,9 @@
             </section>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
