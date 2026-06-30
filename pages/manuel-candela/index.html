@@ -5,27 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bextor</title>
-    <link rel="stylesheet" href="../../css/estilo_global.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
     <!--HEADER-->
     <header class="header">
         <figure>
-            <img src="Imagenes Bextor/Logotipo.png" alt="Logotipo Bextor" width="125">
+            <img src="Imagenes Bextor/Isotipo.png" alt="Isotipo Bextor">
         </figure>
 
         <form action="#" method="get">
-            <input type="search" placeholder="Buscar productos, marcas y más..." size="100" style="padding: 5px">
-            <button type="submit" style="padding: 5px">Buscar</button>
+            <input type="search" placeholder="Buscar productos, marcas y más...">
+            <button type="submit">Buscar</button>
         </form>
-        <br>
+        
         <nav>
             <p>
-                <a href="#Categorías">Categorías</a> |
-                <a href="#Productos">Productos</a> |
-                <a href="#Pedidos">Pedidos</a> |
+                <a href="#Categorías">Categorías</a>
+                <a href="#Productos">Productos</a>
+                <a href="#Pedidos">Pedidos</a>
                 <a href="#Contactanos">Contactanos</a>
             </p>
         </nav>
@@ -37,24 +38,33 @@
             <section>
                 <h2>Bienvenido a Bextor</h2>
                 <p>Tu destino de compras en línea para productos de calidad y ofertas exclusivas</p>
-                <img src="Imagenes Carrusel/Banner Principal.jpg" alt="Banner principal Bextor">
-            </section>
-
-            <section>
-                <h2>Los Favoritos de Nuestros Clientes</h2>
-                <p>Descubre nuestra selección de productos más vendidos y mejor valorados. Calidad, innovación y
-                    confianza en cada compra</p>
-                <img src="Imagenes Carrusel/Banner De Productos Destacados.jpg"
-                    alt="Banner de productos destacados Bextor">
-            </section>
-
-            <section>
-                <h2>Promociones Exclusivas 2026</h2>
-                <p>Aprovecha nuestras mejores ofertas por tiempo limitado y obtén productos de alta calidad a precios
-                    increíbles</p>
-                <img src="Imagenes Carrusel/Banner De Descuentos.jpg" alt="Banner de ofertas Bextor">
             </section>
         </section>
+
+        <section id="Carrusel" class="carousel slide">
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="Imagenes Carrusel/Banner Principal.jpg" class="d-block w-100" alt="Banner principal">
+                </section>
+                <section class="carousel-item">
+                    <img src="Imagenes Carrusel/Banner De Productos Destacados.jpg" class="d-block w-100"
+                        alt="Productos destacados">
+                </section>
+                <section class="carousel-item">
+                    <img src="Imagenes Carrusel/Banner De Descuentos.jpg" class="d-block w-100" alt="Promociones">
+                </section>
+            </section>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#Carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
         <!--SECCIÓN 2 (CATEGORÍAS)-->
         <section id="Categorías" class="section2">
             <header>
@@ -148,6 +158,7 @@
             </footer>
         </section>
 
+        <!--PRODUCTOS-->
         <section id="Productos" class="section3">
             <header>
                 <h2>Productos</h2>
@@ -179,7 +190,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -204,7 +215,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -230,7 +241,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -256,7 +267,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -282,7 +293,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -307,7 +318,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -332,7 +343,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -357,7 +368,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -368,6 +379,7 @@
         </section>
         </section>
 
+        <!--PRODUCTPS DESTACADOS-->
         <section class="section3">
             <header>
                 <h2>Productos Descatados</h2>
@@ -398,7 +410,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
 
                 </article>
@@ -425,7 +437,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -450,7 +462,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -476,7 +488,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Comprar</a>
+                        <button onclick="location.href='#Pedidos'">Comprar</button>
                     </footer>
                 </article>
 
@@ -533,7 +545,7 @@
                         <br>
                         <label>Dirección y referencias:</label>
                         <br>
-                        <textarea name="direccion" rows="3" style="width: 40%"></textarea>
+                        <textarea name="direccion" rows="5"></textarea>
                     </fieldset>
 
                     <fieldset>
@@ -558,7 +570,6 @@
                         <br>
                         <label>Calificación de atención (1-10):</label>
                         <input type="range" name="calificacion" min="1" max="10">
-
                         <input type="hidden" name="id_orden" value="BEX-2026">
                     </fieldset>
 
@@ -606,8 +617,7 @@
                 </figure>
                 <h3>Siguenos</h3>
                 <figure>
-                    <img src=" Imagenes Bextor/Redes Sociales.png"
-                        style="width: 135px; max-width: 100%; height: auto;">
+                    <img src=" Imagenes Bextor/Redes Sociales.png" style="width: 135px; max-width: 100%; height: auto;">
                 </figure>
 
             </article>
@@ -618,6 +628,9 @@
         </section>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
