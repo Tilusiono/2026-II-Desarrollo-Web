@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+:root{color: black;
+    background-color: rgb(255, 253, 225);
+    
+}
+
+
+
+body{
+    background-color: white(255, 255, 255);
+}
+
+header{
+    background-color: white(255, 255, 255);
+    border: 5px;
+    border-color: rgb(186, 28, 28);
+}
+
+
+section{
+    background-color: white(255, 255, 255);
+}
+
+article{
+    background-color: white(255, 255, 255);
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    border-color:white(225, 0, 0);
+}
+
+main{
+    display: flex;
+    
+}
+
+footer{
+    background-color: white(255, 255, 45);
+}
