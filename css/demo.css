@@ -1,0 +1,332 @@
+/* =========================================================
+VARIABLES GLOBALES
+========================================================= */
+
+:root {
+    --primary: #111111;
+    --secondary: #4b5563;
+    --light: #f8f9fa;
+    --border: #e5e7eb;
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+
+    --transition: 0.3s ease;
+}
+
+
+/* =========================================================
+SELECTORES UNIVERSALES
+========================================================= */
+
+* {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    transition: var(--transition);
+}
+
+
+/* =========================================================
+SELECTORES DE ETIQUETA HTML
+========================================================= */
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--primary);
+    animation: fadeUp 0.6s ease;
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeUp 0.6s ease;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+}
+
+p {
+    color: var(--secondary);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+SELECTORES DE IDENTIFICADOR
+========================================================= */
+
+#header_principal {
+    background: linear-gradient(90deg, var(--light), #e9ecef);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+}
+
+#categorias {
+    background: var(--light);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#carreras {
+    background: #ffffff;
+    padding: 70px 20px;
+}
+
+#contacto {
+    background: var(--light);
+    padding: 60px 25px;
+    border-radius: var(--radius-md);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+
+/* =========================================================
+SELECTORES DE CLASE
+========================================================= */
+
+.card {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* =========================================================
+SELECTORES ATRIBUTOS AVANZADOS
+========================================================= */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    border: 1px solid var(--border);
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
+    transform: scale(1.01);
+}
+
+
+/* =========================================================
+SELECTORES DE COMBINADORES
+========================================================= */
+
+#categorias .card {
+    background: #fff;
+    overflow: hidden;
+}
+
+#categorias .card-header {
+    background: var(--light);
+    font-weight: bold;
+    padding: 10px;
+}
+
+#carreras .card {
+    transition: var(--transition);
+}
+
+#contacto form input {
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+SELECTORES LÓGICOS MODERNOS
+========================================================= */
+
+:is(#categorias, #carreras) h3 {
+    letter-spacing: 0.3px;
+}
+
+:where(h1, h2, h3, h4) {
+    margin: 0;
+    color: var(--primary);
+}
+
+:not(.btn-primary) {
+    opacity: 0.95;
+}
+
+:has(img) {
+    border-radius: var(--radius-md);
+}
+
+
+/* =========================================================
+PSEUDO-CLASES
+========================================================= */
+
+.card:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.nav-link.active {
+    border-bottom: 2px solid var(--primary);
+    font-weight: bold;
+}
+
+
+/* =========================================================
+PSEUDO-ELEMENTOS
+========================================================= */
+
+h2::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--primary);
+    margin-bottom: 8px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--border);
+    margin-top: 8px;
+}
+
+p::first-line {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+
+/* =========================================================
+ANIMACIÓN 1: FLIP SUAVE DE CARDS
+========================================================= */
+
+@keyframes flipSoft {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: perspective(400px) rotateY(10deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+/* uso sugerido */
+.card:hover {
+    animation: flipSoft 0.6s ease;
+}
+
+
+/* =========================================================
+ANIMACIÓN 2: PULSO SUAVE (BUTTONS O ELEMENTOS IMPORTANTES)
+========================================================= */
+
+@keyframes pulseSoft {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    100% {
+        transform: scale(2);
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+}
+
+/* uso sugerido */
+.btn:hover {
+    animation: pulseSoft 2s ease;
+}
+
+
+/* =========================================================
+TRANSICIÓN 1: SMOOTH IMAGE ZOOM
+========================================================= */
+
+img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(4);
+}
+
+
+/* =========================================================
+TRANSICIÓN 2: LINK UNDERLINE ANIMADO
+========================================================= */
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #111;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
