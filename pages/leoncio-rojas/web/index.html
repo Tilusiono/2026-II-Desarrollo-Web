@@ -360,7 +360,8 @@
               <figcaption>ratón de computadora</figcaption>
             </figure>
             <p>
-                Facilita la navegación y la selección de elementos en pantalla.</p>
+              Facilita la navegación y la selección de elementos en pantalla.
+            </p>
           </article>
 
           <article class="item">
@@ -515,129 +516,74 @@
           <p>Lunes a Viernes, 9am - 6pm</p>
         </div>
       </section>
+<!--------------------- Carrusel hecho con bootstrap --------------------->
+      <section id="carouselAprendizaje" class="carousel slide carousel-fade" data-bs-ride="carousel" aria-roledescription="carousel" aria-label="Cursos de Tecnología Disponibles">
+  
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselAprendizaje" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Ver curso 1"></button>
+    <button type="button" data-bs-target="#carouselAprendizaje" data-bs-slide-to="1" aria-label="Ver curso 2"></button>
+    <button type="button" data-bs-target="#carouselAprendizaje" data-bs-slide-to="2" aria-label="Ver curso 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    
+    <article class="carousel-item active" data-bs-interval="5000" aria-roledescription="slide">
+      <div class="position-relative" style="height: 500px;">
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&h=500&q=80" 
+             class="d-block w-100 h-100" 
+             style="object-fit: cover;" 
+             alt="Líneas de código de programación en pantalla con el logo digital de Python">
+      </div>
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-4">
+        <h2>Programación con Python</h2>
+        <p>Domina el lenguaje más popular del mundo. Aprende desde la sintaxis básica hasta ciencia de datos e inteligencia artificial.</p>
+        <a href="#" class="btn btn-primary btn-sm mt-2">Empezar a aprender</a>
+      </div>
+    </article>
+
+    <article class="carousel-item" data-bs-interval="5000" aria-roledescription="slide">
+      <div class="position-relative" style="height: 500px;">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&h=500&q=80" 
+             class="d-block w-100 h-100" 
+             style="object-fit: cover;" 
+             alt="Pantallas de computadora mostrando datos de ciberseguridad, redes cifradas y candados digitales">
+      </div>
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-4">
+        <h2>Herramientas de Seguridad de la PC</h2>
+        <p>Protege tus sistemas contra amenazas. Aprende a configurar firewalls, auditorías de red y software de defensa contra malware.</p>
+        <a href="#" class="btn btn-success btn-sm mt-2">Ver herramientas</a>
+      </div>
+    </article>
+
+    <article class="carousel-item" data-bs-interval="5000" aria-roledescription="slide">
+      <div class="position-relative" style="height: 500px;">
+        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=1200&h=500&q=80" 
+             class="d-block w-100 h-100" 
+             style="object-fit: cover;" 
+             alt="Técnico de soporte de TI ensamblando hardware y memoria RAM en la placa madre de una computadora de escritorio">
+      </div>
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-4">
+        <h2>Mantenimiento del Hardware y Software</h2>
+        <p>Aprende a diagnosticar fallas, optimizar el rendimiento de tu sistema operativo y realizar limpieza física y ensamble de componentes.</p>
+        <a href="#" class="btn btn-warning btn-sm text-dark mt-2">Explorar guía básica</a>
+      </div>
+    </article>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselAprendizaje" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselAprendizaje" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+
+</section>       
     </main>
-    <!--Carrusel con bootstrap-->
-    <div
-      id="carouselComponentes"
-      class="carousel slide vh-100 w-100"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators mb-4">
-        <button
-          type="button"
-          data-bs-target="#carouselComponentes"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselComponentes"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselComponentes"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
 
-      <div class="carousel-inner h-100">
-        <div
-          class="carousel-item active h-100"
-          style="
-            background:
-              linear-gradient(
-                to top,
-                rgba(0, 0, 0, 0.9) 0%,
-                rgba(0, 0, 0, 0.2) 50%,
-                rgba(0, 0, 0, 0) 100%
-              ),
-              url(&quot;tarjeta-grafica.jpg&quot;) center/cover no-repeat;
-          "
-        >
-          <div
-            class="carousel-caption d-flex flex-column align-items-start text-start position-absolute start-0 bottom-0 pb-5 ps-5 ms-md-4"
-            style="max-width: 550px; z-index: 10"
-          >
-            <p
-              class="text-uppercase text-secondary small fw-bold mb-1"
-              style="letter-spacing: 2px"
-            >
-              Programa • con python
-            </p>
-            <h2 class="display-4 fw-bold lh-1 mb-3">Acerca de python</h2>
-            <p class="fs-5 text-light-50 mb-4 opacity-75">
-              Domina y crea programas sin esfuerzo.
-            </p>
-            <a
-              href="#"
-              class="btn btn-light text-black fw-bold px-4 py-2 rounded-pill shadow-sm"
-              >Ver ahora</a
-            >
-          </div>
-        </div>
-
-        <div
-          class="carousel-item h-100"
-          style="
-            background:
-              linear-gradient(
-                to top,
-                rgba(0, 0, 0, 0.9) 0%,
-                rgba(0, 0, 0, 0.2) 50%,
-                rgba(0, 0, 0, 0) 100%
-              ),
-              url(&quot;procesador.jpg&quot;) center/cover no-repeat;
-          "
-        >
-          <div
-            class="carousel-caption d-flex flex-column align-items-start text-start position-absolute start-0 bottom-0 pb-5 ps-5 ms-md-4"
-            style="max-width: 550px; z-index: 10"
-          >
-            <p
-              class="text-uppercase text-secondary small fw-bold mb-1"
-              style="letter-spacing: 2px"
-            >
-              Red • centro
-            </p>
-            <h2 class="display-4 fw-bold lh-1 mb-3">Acerca de redes</h2>
-            <p class="fs-5 text-light-50 mb-4 opacity-75">
-              La velocidad definitiva esta en la red
-            </p>
-            <a
-              href="#"
-              class="btn btn-light text-black fw-bold px-4 py-2 rounded-pill shadow-sm"
-              >Ver ahora</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselComponentes"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselComponentes"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
-    <!--FOOTER HECHO CON BOOTSTRAP-->
+    <!---------------------------FOTER HECHO CON BOOTESTRAP----------------------------->
     <footer class="bg-white text-dark py-5 border-top">
       <div class="container">
         <div class="row">
