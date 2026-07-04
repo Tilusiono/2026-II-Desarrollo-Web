@@ -484,11 +484,52 @@
         </footer>
       </section>
     </main>
+    <!--Carrusel con bootstrap-->
+  <div id="carouselComponentes" class="carousel slide vh-100 w-100" data-bs-ride="carousel">
+    
+    <div class="carousel-indicators mb-4">
+      <button type="button" data-bs-target="#carouselComponentes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselComponentes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselComponentes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner h-100">
+      
+      <div class="carousel-item active h-100" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%), url('tarjeta-grafica.jpg') center/cover no-repeat;">
+        <div class="carousel-caption d-flex flex-column align-items-start text-start position-absolute start-0 bottom-0 pb-5 ps-5 ms-md-4" style="max-width: 550px; z-index: 10;">
+          <p class="text-uppercase text-secondary small fw-bold mb-1" style="letter-spacing: 2px;">Programa • con python</p>
+          <h2 class="display-4 fw-bold lh-1 mb-3">Acerca de python</h2>
+          <p class="fs-5 text-light-50 mb-4 opacity-75">Domina y crea programas sin esfuerzo.</p>
+          <a href="#" class="btn btn-light text-black fw-bold px-4 py-2 rounded-pill shadow-sm">Ver ahora</a>
+        </div>
+      </div>
+
+      <div class="carousel-item h-100" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%), url('procesador.jpg') center/cover no-repeat;">
+        <div class="carousel-caption d-flex flex-column align-items-start text-start position-absolute start-0 bottom-0 pb-5 ps-5 ms-md-4" style="max-width: 550px; z-index: 10;">
+          <p class="text-uppercase text-secondary small fw-bold mb-1" style="letter-spacing: 2px;">Red • centro</p>
+          <h2 class="display-4 fw-bold lh-1 mb-3">Acerca de redes</h2>
+          <p class="fs-5 text-light-50 mb-4 opacity-75">La velocidad definitiva esta en la red</p>
+          <a href="#" class="btn btn-light text-black fw-bold px-4 py-2 rounded-pill shadow-sm">Ver ahora</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselComponentes" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselComponentes" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+    <!--FOOTER HECHO CON BOOTSTRAP-->
     <footer class="bg-white text-dark py-5 border-top">
   <div class="container">
     <div class="row">
-      
-      <!-- Columna 1: Navegación de Tienda -->
+
       <nav class="col-md mb-4 mb-md-0" aria-label="Enlaces de la Tienda">
         <h2 class="h5 fw-bold mb-3">Contacto</h2>
         <ul class="list-unstyled">
@@ -498,8 +539,7 @@
           <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">correo electronico</a></li>
         </ul>
       </nav>
-      
-      <!-- Columna 2: Navegación Institucional -->
+
       <nav class="col-md mb-4 mb-md-0" aria-label="Enlaces Corporativos">
         <h2 class="h5 fw-bold mb-3">Nosotros</h2>
         <ul class="list-unstyled">
@@ -511,8 +551,7 @@
           <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Contacto</a></li>
         </ul>
       </nav>
-      
-      <!-- Columna 3: Navegación Legal -->
+
       <nav class="col-md mb-4 mb-md-0" aria-label="Enlaces Legales">
         <h2 class="h5 fw-bold mb-3">Legal</h2>
         <ul class="list-unstyled">
@@ -521,8 +560,7 @@
           <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Licencia de Autor</a></li>
         </ul>
       </nav>
-      
-      <!-- Columna Suscribirse -->
+
       <section class="col-md-4 mb-4 mb-md-0">
         <h2 class="h5 fw-bold mb-3">Inscribete</h2>
         <p class="text-secondary small mb-3">Via rapida para recibir las ultimas actualizaciones</p>
@@ -535,13 +573,11 @@
 
     <hr class="my-4 text-muted">
 
-    <!-- Fila Inferior: Copyright y Redes Sociales -->
     <div class="row align-items-center">
       <div class="col-md-6 text-center text-md-start">
         <p class="text-secondary mb-0"><small>&copy; 2026 Todos los derechos reservados.</small></p>
       </div>
-      
-      <!-- Redes Sociales Semánticas -->
+
       <nav class="col-md-6 text-center text-md-end mt-3 mt-md-0" aria-label="Enlaces de Redes Sociales">
         <a href="#" class="text-secondary me-3 text-decoration-none"><i class="bi bi-facebook"></i> Facebook</a>
         <a href="#" class="text-secondary me-3 text-decoration-none"><i class="bi bi-twitter-x"></i> Twitter</a>
