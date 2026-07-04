@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*-----------------------------------------------------Cuatro HTML */
+body{
+  /*background-color:rgba(222, 184, 135, 0.819);*/
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  margin: 30px 0;
+}
+img{
+  border-radius: 15px;
+}
+p{
+  line-height: 1.6;
+  color: #333;
+  margin: 8px 0;
+}
+section{
+  padding: 30px 40px;
+}
+/*------------------------------------------------------Cuatro Conbinadores*/
+
+.menu a{
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 20px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+#contacto h2{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  background-color: #4a5568;
+  margin: 5px;
+  border-radius: 50px;
+  grid-column: 1 / -1;
+  padding: 10px 0;
+}
+#presentacion[data-layout="card"] > img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0%;
+}
+.columnas_4 > article{
+  margin: 0;
+}
+.columnas_3 > article{
+  margin: 0;
+}
+/*------------------------------------------------------Cuatro Class*/
+.logo{
+  height: 130px;
+  width: auto;
+  display: block;
+  margin-left: 40px;
+}
+.section-menu-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 0px;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  height: 80px;
+  position: sticky;
+  top: 0%;
+  z-index: 1000;
+}
+.menu{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.subtitulo{
+  background-color: rgba(230, 233, 235, 0.856);
+  margin: 5px auto 20px auto;
+  height: 90px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.item{
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: #fafafa;
+  text-align: center;
+}
+/*------------------------------------------------------Cuatro Pseudo clases*/
+.menu a:hover{
+  color: blue;
+}
+.item:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+  border-color: #4a5568;
+}
+.menu li:first-child a{
+  font-weight: bold;
+}
+.menu li:last-child a{
+  color: #4a5568;
+}
+/*------------------------------------------------------Cuatro id*/
+#contacto{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  margin: 0%;
+  gap: 10px;
+}
+#presentacion{
+  margin-bottom: 10px;
+}
+#baner{
+  max-height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+#formulario{
+  max-width: 650px;
+  margin: 0 auto;
+}
+#inicio{
+  padding-bottom: 40px;
+}
+/*------------------------------------------------------Cuatro Pseudo  Elementos*/
+#presentacion[data-layout="card"]::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+::selection{
+  background-color: #4a5568;
+  color: white;
+}
+input::placeholder, textarea::placeholder{
+  color: #999;
+}
+.item::first-letter{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/*------------------------------------------------------Cuatro atributos avanzados*/
+#presentacion[data-layout="card"]{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
+input[required]{
+  border-left: 3px solid #4a5568;
+}
+input[type="email"]{
+  background-color: #f7f7f7;
+}
+a[href^="#"]{
+  cursor: pointer;
+}
+img[alt]{
+  vertical-align: middle;
+}
+img + :is(blockquote){
+  color: rgba(250, 235, 215, 0.486);
+  font-family: fantasy;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  z-index: 2;
+}
+
+/*------------------------------------------------------Cuatro Combinadores logico modernos*/
+:is(h1, h2, h3){
+  font-family: Arial, Helvetica, sans-serif;
+}
+:where(.card, .item){
+  background-color: #fafafa;
+}
+.menu a:not(:last-child){
+  border-right: 1px solid #e2e2e2;
+  padding-right: 20px;
+}
+input:not([type="checkbox"]):not([type="radio"]){
+  width: 100%;
+  max-width: 350px;
+}
+
+/*------------------------------------------------------Estilos de estructura (layout necesario para que la página tome forma)*/
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.carrusel{
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 15px 0;
+}
+.slide{
+  flex: 0 0 250px;
+  text-align: center;
+}
+.slide img{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+.columnas_4{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.columnas_3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.item img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+form fieldset{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+legend{
+  font-weight: bold;
+  padding: 0 10px;
+}
+label{
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: 600;
+}
+select, textarea{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+input{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button[type="submit"]{
+  background-color: #4a5568;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button[type="submit"]:hover{
+  background-color: #2d3748;
+}
+
+/*------------------------------------------------------Dos bootstrap
+El footer esta hecho con bootstrap
+eEl carousel esta hecho con bootstrap
+*/
