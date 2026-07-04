@@ -219,7 +219,14 @@ input:not([type="checkbox"]):not([type="radio"]){
   max-width: 350px;
 }
 
-/*------------------------------------------------------Estilos de estructura (layout necesario para que la página tome forma)*/
+
+
+/*------------------------------------------------------Dos bootstrap
+El footer esta hecho con bootstrap
+eEl carousel esta hecho con bootstrap
+*/
+
+
 main{
   max-width: 1200px;
   margin: 0 auto;
@@ -292,8 +299,3 @@ button[type="submit"]{
 button[type="submit"]:hover{
   background-color: #2d3748;
 }
-
-/*------------------------------------------------------Dos bootstrap
-El footer esta hecho con bootstrap
-eEl carousel esta hecho con bootstrap
-*/
