@@ -1,30 +1,67 @@
 /*1. SELECTORES DE ETIQUETA HTML (5)*/
 body {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-family: sans-serif;
+    background-color: #121212; 
+    color: #e0d8c3; 
+    font-family: 'Georgia', serif; 
     margin: 0;
     padding: 0;
 }
 
 p {
-    color: #ffffff;
+    color: #d0c9b5; 
 }
 
 header {
-    background-color: crimson;
-    padding: 10px 20px;
+    background-color: #8a1c14; 
+    padding: 15px 20px;
+    border-bottom: 3px solid #d4af37; 
 }
 
 main {
-    background-color: #252525;
+    background-color: #1a1a1a;
     padding: 20px;
 }
 
 footer {
-    background-color: yellowgreen; 
-    color: #111;
+    background-color: #2c3126; 
+    color: #e0d8c3;
     padding: 20px;
+    border-top: 2px solid #8a1c14;
+}
+
+/* ESTILOS PARA EL DESPLEGABLE DE LORE */
+details summary {
+    color: #d4af37;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+    list-style: none; 
+}
+
+details summary:hover {
+    color: #e0d8c3; 
+}
+
+/* CORRECCIÓN DE COLORES DE TEXTO SECUNDARIOS */
+.text-body-secondary, 
+.footer p, 
+.footer li,
+.footer h5 {
+    color: #e0d8c3 !important; 
+}
+
+.footer a {
+    color: #b5ad98 !important;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #d4af37 !important; 
+}
+
+#seccion-4 article p,
+#seccion-4 article ul li {
+    color: #d0c9b5 !important;
 }
 
 /*2. SELECTORES DE CLASE (4)*/
@@ -34,63 +71,79 @@ footer {
     align-items: center;
 }
 
-.card {
-    background-color: #111;
-    border: 1px solid #444;
-    padding: 15px;
+/* PARCHE SEKIRO: Forzamos el fondo oscuro e impedimos que Bootstrap lo vuelva blanco */
+.card, .card-sekiro {
+    background-color: #161616 !important;
+    background: #161616 !important;
+    color: #e0d8c3 !important; 
+    border: 1px solid #3a3121 !important; 
+    padding: 20px;
     margin-bottom: 15px;
 }
 
 .article {
     background-color: #1c1c1c;
-    border-radius: 5px;
+    border-radius: 0px; 
     padding: 15px;
+}
+
+/* FORZAR LEGIBILIDAD EXTREMA CONTRA BOOTSTRAP */
+.card-sekiro p, 
+.card-sekiro h3, 
+.card-sekiro h2,
+.card-sekiro li,
+.article p,
+.article h3 {
+    color: #d0c9b5 !important; /* Tono arena claro y legible */
+}
+
+.card-sekiro h2, 
+.card-sekiro h3,
+.article h3 {
+    color: #d4af37 !important; /* Títulos y subtítulos en dorado */
 }
 
 .columnas_4 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
-/*3. SELECTORES DE ID (5)*/
+/*3. SELECTORES DE ID (4 EXACTOS)*/
 #carrusel {
-    background-color: #2a2a2a;
-    padding: 20px;
+    background-color: #161616;
+    padding: 10px;
     margin-bottom: 30px;
+    border: 2px solid #3a3121;
 }
 
-#lore-objetos {
-    background-color: #222;
-    padding: 20px;
+#seccion-4 { 
+    background-color: #151515;
+    padding: 30px 20px;
     margin-bottom: 30px;
-}
-
-#personajes {
-    background-color: #1e1e1e;
-    padding: 20px;
-    margin-bottom: 30px;
+    border: 1px solid #3a3121;
 }
 
 #formulario {
-    background-color: aqua; 
-    color: #000;
-    padding: 30px;
-    border-radius: 8px;
+    background-color: #242424; 
+    color: #e0d8c3;
+    padding: 35px;
+    border: 1px solid #d4af37; 
 }
 
-#formulario p {
-    color: #000000;
+#newsletter1 {
+    border-color: #8a1c14;
 }
 
 /*4. SELECTORES LÓGICOS MODERNOS (4)*/
 .card:not(.destacado) {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 main :is(h2, h3, h4) {
-    color: #e67e22;
-    letter-spacing: 1px;
+    color: #d4af37; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .nav-links :where(a) {
@@ -98,42 +151,48 @@ main :is(h2, h3, h4) {
 }
 
 .card:has(img[alt]) {
-    border-color: #e67e22;
+    border-color: #8a1c14; 
 }
 
 /*5. SELECTORES COMBINADOS (4)*/
 .card h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    color: #d4af37;
     margin-top: 0;
+    border-bottom: 1px solid #3a3121;
+    padding-bottom: 10px;
 }
 
-#lore-objetos > p {
-    line-height: 1.6;
+.section2 > .card > p { 
+    line-height: 1.7;
 }
 
 #formulario input + span {
     font-size: 0.8rem;
-    color: #e74c3c;
+    color: #8a1c14;
 }
 
-#personajes h3 ~ p {
-    color: #ccc;
+#seccion-4 h3 ~ p { 
+    color: #d0c9b5; 
 }
 
 /*6. SELECTORES DE ATRIBUTOS (4)*/
-input[type="text"] {
+input[type="text"], input[type="email"], textarea, select {
     width: 100%;
-    padding: 8px;
-    background-color: #fff;
-    color: #000;
+    padding: 10px;
+    background-color: #111 !important;
+    color: #e0d8c3 !important;
+    border: 1px solid #3a3121;
 }
 
 input[type="submit"] {
-    background-color: #e67e22;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+    background-color: #8a1c14; 
+    color: #fff;
+    padding: 12px 25px;
+    border: 1px solid #d4af37;
     cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 img[alt] {
@@ -142,21 +201,24 @@ img[alt] {
     display: block;
 }
 
-a[href^="https://"] {
+a[href^="#seccion"] { 
     font-weight: bold;
+    color: #e0d8c3;
+    transition: color 0.3s;
 }
 
 /*7. SELECTORES DE PSEUDOCLASES (4)*/
 input[type="submit"]:hover {
-    background-color: #d35400;
+    background-color: #b3241b;
+    color: #fff;
 }
 
-input[type="text"]:focus {
-    outline: 2px solid #e67e22;
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: 1px solid #d4af37;
 }
 
 .card:nth-child(odd) {
-    background-color: #151515;
+    background-color: #191919;
 }
 
 p:last-child {
@@ -165,35 +227,67 @@ p:last-child {
 
 /*8. SELECTORES DE PSEUDOELEMENTOS (4)*/
 .article p::first-letter {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
-    color: crimson;
+    color: #8a1c14;
 }
 
 ::selection {
-    background-color: #e67e22;
+    background-color: #8a1c14;
     color: #fff;
 }
 
-#personajes h2::before {
-    content: "❖ ";
-    color: aqua;
+#seccion-4 h2::before { 
+    content: "⛩️ "; 
 }
 
 #formulario::after {
-    content: "Campos obligatorios *";
+    content: "Que los hilos del destiny guíen tu opinión *";
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    color: #8a1c14;
+    font-style: italic;
     margin-top: 15px;
 }
 
-/*carrusel*/
-/* Oculta las diapositivas por defecto */
+/* CONTROL DE TAMAÑO DE IMÁGENES */
+.herramientas, .habilidades {
+    display: block;
+    max-width: 100%;
+    width: 450px; /* Tamaño controlado ideal para las viñetas */
+    height: 220px; 
+    object-fit: cover; 
+    border: 1px solid #3a3121;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.img-personaje {
+    width: 100%;
+    height: 380px; 
+    object-fit: cover; 
+    object-position: top; 
+    border: 2px solid #3a3121;
+    margin-bottom: 15px;
+}
+
+.img-carrusel {
+    height: 500px; 
+    object-fit: cover;
+}
+
+.img-lore {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid #3a3121;
+    margin-top: 15px;
+}
+
 .carrusel-item {
     display: none;
 }
 
-/* Muestra solo la diapositiva que tiene la clase activo */
 .carrusel-item.activo {
     display: block;
 }
