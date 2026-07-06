@@ -1,1 +1,173 @@
+/* ==========================================
+   0. CONFIGURACIÓN DE VARIABLES (Custom Properties)
+   ========================================== */
+:root {
+    /* Paleta de Colores */
+    --clr-bg-warm: #fcf8f2;
+    --clr-bg-card: #ffffff;
+    --clr-bg-dark: #1a1a1a;
+    --clr-border: #e0d5c1;
+    
+    /* Colores de Marca (JHOALS / Brasa) */
+    --clr-brand-gold: #ffc107;
+    --clr-brand-red: #b22222;
+    --clr-brand-orange: #ff4500;
+    --clr-text-main: #333333;
+    --clr-text-muted: #666666;
+    --clr-text-light: #ffffff;
+    --clr-text-nav: #e0e0e0;
 
+    /* Animaciones y Transiciones */
+    --transition-smooth: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-navbar: background-color 0.4s ease-in-out, padding 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* ==========================================
+   1. SELECTORES DE ELEMENTOS (Etiquetas)
+   ========================================== */
+body {
+    background-color: var(--clr-bg-warm);
+    color: var(--clr-text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6; /* Mejora la legibilidad general */
+}
+
+hr {
+    border-color: var(--clr-border);
+    opacity: 0.5;
+}
+
+/* Forzar que las imágenes del carrusel mantengan buena proporción */
+
+
+/* Componente Navbar (Optimizado con Nesting Nativo) */
+.navbar-custom {
+    background-color: rgba(33, 37, 41, 0.7) !important;
+    backdrop-filter: blur(8px); /* Aumentado ligeramente para mejor contraste */
+    -webkit-backdrop-filter: blur(8px); /* Soporte para Safari */
+    transition: var(--transition-navbar);
+    z-index: 1050;
+
+    /* Estado Activo: Se activa AUTOMÁTICAMENTE al hacer scroll */
+    &.navbar-scrolled {
+        background-color: var(--clr-bg-dark) !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        border-bottom: 3px solid var(--brand-gold);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        /* Resaltado extra para los enlaces cuando el menú está activo */
+        .nav-link {
+            color: var(--clr-text-light) !important;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+    }
+}
+
+/* Selector Lógico (:not): Aplica estilo a nav-links excepto al de "Únete" */
+.navbar-nav .nav-link:not([href="formulario.html"]) {
+    color: var(--clr-text-nav);
+    transition: color var(--transition-smooth);
+
+    &:hover {
+        color: var(--clr-brand-gold) !important;
+    }
+}
+
+/* ==========================================
+   2. SELECTORES DE ID (#)
+   ========================================== */
+#inicio {
+    padding: 3rem 1.5rem;
+    background: radial-gradient(circle, #ffffff 0%, #fdf6ec 100%);
+    border-radius: 15px;
+}
+
+#carrusel {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#contacto {
+    background-color: var(--clr-bg-dark);
+    color: var(--clr-text-light); /* Asegura legibilidad sobre fondo negro */
+    border-top: 5px solid var(--clr-brand-gold);
+}
+
+/* ==========================================
+   3. SELECTORES DE CLASES (.)
+   ========================================== */
+.card {
+    border: none;
+    background-color: var(--clr-bg-card);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px; /* Bordes suavizados para consistencia */
+    overflow: hidden; /* Evita que las imágenes se salgan de las esquinas redondeadas */
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.card-title {
+    color: var(--clr-brand-red);
+    font-weight: 700;
+}
+
+.grupo-productos {
+    margin-top: 1.5rem;
+}
+
+/* ==========================================
+   4. SELECTORES DE ATRIBUTOS Y PSEUDO-ELEMENTOS
+   ========================================== */
+/* Enlaces externos */
+a[target="_blank"] {
+    font-weight: bold;
+    display: inline-flex; /* Alinea el icono de la flecha perfectamente */
+    align-items: center;
+    gap: 0.25rem;
+    transition: color var(--transition-smooth);
+
+    &::after {
+        content: "↗";
+        font-size: 0.85em;
+        color: var(--clr-brand-gold);
+    }
+}
+
+/* Imagen específica de promoción */
+img[alt="Promoción JHOALS"] {
+    filter: brightness(0.95);
+    transition: filter var(--transition-smooth);
+    
+    &:hover {
+        filter: brightness(1); /* Recupera brillo al pasar el cursor */
+    }
+}
+
+/* ==========================================
+   5. COMBINADORES Y LÓGICA DE HERENCIA
+   ========================================== */
+
+/* Descendiente (Espacio): H5 dentro de card-body */
+.card-body h5 {
+    letter-spacing: 0.5px;
+}
+
+/* Combinador de Hijo Directo (>): Tarjetas dentro de las especialidades */
+#categorias section.row > article .card {
+    border-bottom: 4px solid var(--clr-brand-orange);
+}
+
+/* Combinador de Hermano Adyacente (+): Párrafo que sigue a H4 de Sede */
+.card-body h4 + p {
+    color: var(--clr-text-muted);
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+/* Efecto Hover unificado: Estabilidad de rendimiento mediante hardware-acceleration */
+.col-md-3 a:hover .card, 
+.col-lg-3 a:hover .card,
+.col-md-4 a:hover .card {
+    transform: translateY(-6px); /* Un salto un poco más sutil e igual de elegante */
+    box-shadow: 0 12px 24px rgba(178, 34, 34, 0.18);
+    will-change: transform; /* Avisa al navegador para optimizar la animación */
+}

@@ -1,263 +1,223 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>JHOALS Pollería - El mejor pollo a la brasa</title>
-      <link rel="stylesheet" href="">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   </head>
-   <body>
-      <header class="container my-3 d-flex justify-content-between align-items-center">
-         <article class="logo d-flex align-items-center gap-2">
-            <img src="img/logo.png" alt="Logo JHOALS" style="height: 50px;">
-            <h1 class="h3 mb-0">JHOALS</h1>
-         </article>
-         <nav class="d-flex gap-3">
-            <a href="#inicio" class="text-decoration-none text-dark">Inicio</a>
-            <a href="#menu" class="text-decoration-none text-dark">Menú</a>
-            <a href="#categorias" class="text-decoration-none text-dark">Especialidades</a>
-            <a href="#locales" class="text-decoration-none text-dark">Locales</a>
-            <a href="#nosotros" class="text-decoration-none text-dark">Nosotros</a>
-            <a href="formulario.html" class="text-decoration-none text-dark">Únete</a>
-            <a href="#contacto" class="text-decoration-none text-dark">Contacto</a>
-         </nav>
-      </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHOALS Pollería - El mejor pollo a la brasa</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/paginaweb.css">
+</head>
+<body>
 
-      <div id="carouselJhoals" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselJhoals" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselJhoals" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselJhoals" data-bs-slide-to="2" aria-label="Slide 3"></button>
-         </div>
-         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-               <img src="img/banner1.png" class="d-block w-100" alt="El mejor Pollo a la Brasa">
-               <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-                  <h3>¡El auténtico sabor peruano!</h3>
-                  <p>Pollo dorado a las brasas con la receta secreta de la casa.</p>
-               </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-               <img src="img/banner2.png" class="d-block w-100" alt="Papas Fritas Crocantes">
-               <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-                  <h3>Papas Nativas Seleccionadas</h3>
-                  <p>Crujientes por fuera, suaves por dentro. El acompañamiento perfecto.</p>
-               </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-               <img src="img/banner3.jpg" class="d-block w-100" alt="Combos Familiares Jhoals">
-               <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-                  <h3>Grandes Combos Familiares</h3>
-                  <p>Disfruta y comparte momentos inolvidables con los que más quieres.</p>
-               </div>
-            </div>
-         </div>
-         <button class="carousel-control-prev" type="button" data-bs-target="#carouselJhoals" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-         </button>
-         <button class="carousel-control-next" type="button" data-bs-target="#carouselJhoals" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-         </button>
-      </div>
-
-      <main class="container my-5">
-         
-         <section id="inicio" class="text-center my-5">
-            <h2>Bienvenidos a JHOALS Pollería</h2>
-            <h3 class="text-muted h4">El auténtico e inigualable sabor del pollo a la brasa peruano</h3>
-            <p class="mx-auto" style="max-width: 800px;">En JHOALS nos apasiona mantener viva la tradición. Seleccionamos los mejores ingredientes, papas nativas seleccionadas y un tierno pollo marinado con nuestra receta secreta de la casa...</p>
-            <a href="#menu" class="btn btn-danger btn-lg mt-3">Explorar Menú Completo</a>
-         </section>
-         
-         <hr>
-
-         <section id="categorias" class="my-5 text-center">
-            <h2>Nuestras Especialidades</h2>
-            <p>Explora nuestras 4 categorías principales preparadas con los más altos estándares de calidad.</p>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-3">
-               <div class="col">
-                  <a href="#entero" class="text-decoration-none text-dark d-block p-3 border rounded h-100 hover-shadow">
-                     <img src="img/POLLOENTERO.jpg" class="img-fluid rounded mb-3" alt="Categoría Pollo Entero">
-                     <h3>Pollo Entero</h3>
-                     <p class="small text-muted">Ideales para banquetes familiares y reuniones grandes.</p>
-                  </a>
-               </div>
-               <div class="col">
-                  <a href="#medio" class="text-decoration-none text-dark d-block p-3 border rounded h-100">
-                     <img src="img/MEDIOPOLLO.jpg" class="img-fluid rounded mb-3" alt="Categoría Medio Pollo">
-                     <h3>1/2 Pollo</h3>
-                     <p class="small text-muted">La porción perfecta para compartir en pareja o saciar un gran apetito.</p>
-                  </a>
-               </div>
-               <div class="col">
-                  <a href="#cuarto" class="text-decoration-none text-dark d-block p-3 border rounded h-100">
-                     <img src="img/CUARTOPOLLO.jpg" class="img-fluid rounded mb-3" alt="Categoría Cuarto de Pollo">
-                     <h3>1/4 Pollo</h3>
-                     <p class="small text-muted">El clásico almuerzo personal acompañado de tus guarniciones favoritas.</p>
-                  </a>
-               </div>
-               <div class="col">
-                  <a href="#bebidas" class="text-decoration-none text-dark d-block p-3 border rounded h-100">
-                     <img src="img/bebidas.png" class="img-fluid rounded mb-3" alt="Categoría Bebidas">
-                     <h3>Bebidas</h3>
-                     <p class="small text-muted">Gaseosas heladas y refrescos tradicionales para acompañar tu plato.</p>
-                  </a>
-               </div>
-            </div>
-         </section>
-         
-         <hr>
-
-         <section id="menu" class="my-5">
-            <div class="text-center mb-4">
-               <h2>Menú JHOALS</h2>
-               <p>Descubre el sabor crujiente y jugoso que nos caracteriza en cada una de nuestras presentaciones.</p>
-            </div>
-
-            <h3 class="mt-4 border-bottom pb-2">Sección: Pollo Entero</h3>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 my-2">
-               <div class="col">
-                  <article class="card h-100 text-center p-2">
-                     <img src="img/pollo1.1.jpg" class="card-img-top img-fluid rounded" alt="Pollo Entero Clásico">
-                     <div class="card-body d-flex flex-column justify-content-between">
-                        <h4 class="h5 card-title">Pollo Entero Clásico</h4>
-                        <p class="card-text small text-muted">1 Pollo entero a la brasa, porción grande de papas fritas crocantes y selección de cremas JHOALS.</p>
-                        <h5 class="text-danger">S/ 69.90</h5>
-                        <button class="btn btn-warning w-100 mt-2">Pedir Ahora</button>
-                     </div>
-                  </article>
-               </div>
-               <div class="col">
-                  <article class="card h-100 text-center p-2">
-                     <img src="img/pollo1.2.jpg" class="card-img-top img-fluid rounded" alt="Pollo Familiar">
-                     <div class="card-body d-flex flex-column justify-content-between">
-                        <h4 class="h5 card-title">Pollo Familiar</h4>
-                        <p class="card-text small text-muted">1 Pollo entero a la brasa, papas fritas crocantes, ensalada fresca familiar y cremas surtidas.</p>
-                        <h5 class="text-danger">S/ 74.90</h5>
-                        <button class="btn btn-warning w-100 mt-2">Pedir Ahora</button>
-                     </div>
-                  </article>
-               </div>
-               <div class="col">
-                  <article class="card h-100 text-center p-2">
-                     <img src="img/pollo1.3.jpg" class="card-img-top img-fluid rounded" alt="Pollo Mega Combo">
-                     <div class="card-body d-flex flex-column justify-content-between">
-                        <h4 class="h5 card-title">Pollo Mega Combo</h4>
-                        <p class="card-text small text-muted">1 Pollo entero a la brasa, porción gigante de papas, ensalada clásica y una gaseosa de 1.5L.</p>
-                        <h5 class="text-danger">S/ 79.90</h5>
-                        <button class="btn btn-warning w-100 mt-2">Pedir Ahora</button>
-                     </div>
-                  </article>
-               </div>
-               <div class="col">
-                  <article class="card h-100 text-center p-2">
-                     <img src="img/pollo1.1.jpg" class="card-img-top img-fluid rounded" alt="Combo Especial JHOALS">
-                     <div class="card-body d-flex flex-column justify-content-between">
-                        <h4 class="h5 card-title">Combo Especial JHOALS</h4>
-                        <p class="card-text small text-muted">1 Pollo a la brasa, papas, ensalada, gaseosa de 1.5L y una porción de tequeños de cortesía.</p>
-                        <h5 class="text-danger">S/ 84.90</h5>
-                        <button class="btn btn-warning w-100 mt-2">Pedir Ahora</button>
-                     </div>
-                  </article>
-               </div>
-            </div>
-
+    <!-- Navbar -->
+<header>
+    <!-- Se cambió 'bg-dark' por un estilo personalizado controlado por CSS -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+        <section class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.png" alt="Logo JHOALS" class="me-2" style="height: 50px;">
+                <h1 class="h4 mb-0">JHOALS</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categorias">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#locales">Locales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formulario.html" target="_blank">Únete</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
             </section>
-         
-         <hr>
+        </section>
+    </nav>
+</header>
 
-         <section id="locales" class="my-5 text-center">
-            <h2>Nuestras Sedes Oficiales</h2>
-            <p class="mb-4">Visita cualquiera de nuestros amplios y modernos locales distribuidos estratégicamente.</p>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-               <div class="col">
-                  <a href="https://maps.app.goo.gl/9cpgfV5aufwKf2Rq6" target="_blank" class="text-decoration-none text-dark border d-block p-3 rounded h-100">
-                     <img src="img/americas.jpg" class="img-fluid rounded mb-2" alt="Sede Las Américas">
-                     <h4>Sede Las Américas</h4>
-                     <p class="text-muted small">Av. Las Américas 450 - Zona Central</p>
-                  </a>
-               </div>
-               <div class="col">
-                  <a href="https://maps.app.goo.gl/S6DbCE4Fr9pgmKzs7" target="_blank" class="text-decoration-none text-dark border d-block p-3 rounded h-100">
-                     <img src="img/santaclara.png" class="img-fluid rounded mb-2" alt="Sede Santa Clara">
-                     <h4>Sede Santa Clara</h4>
-                     <p class="text-muted small">Calle Los Ángeles 120 - Frente a la Plaza</p>
-                  </a>
-               </div>
-               <div class="col">
-                  <a href="https://maps.app.goo.gl/aBbSSjUNwLSmmH2U9" target="_blank" class="text-decoration-none text-dark border d-block p-3 rounded h-100">
-                     <img src="img/vallegrande.jpg" class="img-fluid rounded mb-2" alt="Sede Valle Grande">
-                     <h4>Sede Valle Grande</h4>
-                     <p class="text-muted small">Jr. Progreso 785 - Entrada Principal</p>
-                  </a>
-               </div>
-            </div>
-         </section>
+<!-- Carrusel -->
+<section id="carrusel" class="p-0 m-0">
+    <article id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <section class="carousel-inner">
+            <figure class="carousel-item active mb-0">
+                <img src="img/banner1.png" class="d-block w-100" alt="Promoción JHOALS">
+            </figure>
+            <figure class="carousel-item mb-0">
+                <img src="img/banner2.png" class="d-block w-100" alt="Promoción JHOALS">
+            </figure>
+            <figure class="carousel-item mb-0">
+                <img src="img/banner3.png" class="d-block w-100" alt="Promoción JHOALS">
+            </figure>
+        </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </article>
+</section>
 
-         <hr>
-         
-         <section id="nosotros" class="my-5 text-center">
-            <h2>Nosotros</h2>
-            <p>En JHOALS Sabor Andino contamos con más de 15 años de experiencia...</p>
-            <div class="row mt-4">
-               <div class="col-md-6">
-                  <h3>Misión</h3>
-                  <p>Brindar una experiencia gastronómica única con productos de calidad y excelente servicio.</p>
-               </div>
-               <div class="col-md-6">
-                  <h3>Visión</h3>
-                  <p>Ser la pollería preferida por las familias peruanas.</p>
-               </div>
-            </div>
-         </section>
-      </main>
+<main class="container py-5">
 
-      <footer id="contacto" class="bg-dark text-light pt-5 pb-3">
-         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-4 border-bottom pb-4">
-               <div class="col">
-                  <h3 class="h5 text-warning">JHOALS SABOR ANDINO</h3>
-                  <p class="small text-secondary">Empresa líder en el rubro gastronómico peruano, dedicada a rescatar el verdadero sabor del pollo a la brasa.</p>
-               </div>
-               <div class="col">
-                  <h3 class="h5 text-warning">Central de Contacto</h3>
-                  <p class="small text-secondary mb-1">Sede Central: Ate Vitarte, Lima</p>
-                  <p class="small text-secondary mb-1">Teléfono: 970 992 724</p>
-                  <p class="small text-secondary">Correo: polleria.giganton@gmail.com</p>
-               </div>
-               <div class="col">
-                  <h3 class="h5 text-warning">Comunidad Digital</h3>
-                  <p class="small text-secondary">Sigue nuestras redes:</p>
-                  <nav class="d-flex flex-column gap-1">
-                     <a href="https://www.facebook.com/..." target="_blank" class="text-decoration-none text-info small">Facebook</a>
-                     <a href="https://www.instagram.com/..." target="_blank" class="text-decoration-none text-info small">Instagram</a>
-                     <a href="https://www.tiktok.com/..." target="_blank" class="text-decoration-none text-info small">TikTok</a>
-                  </nav>
-               </div>
-               <div class="col">
-                  <h3 class="h5 text-warning">Horarios</h3>
-                  <p class="small text-secondary mb-1">Lunes a Domingo</p>
-                  <p class="small text-secondary">12:00 PM - 11:00 PM</p>
-               </div>
-               <div class="col">
-                  <h3 class="h5 text-warning">Aceptamos:</h3>
-                  <p class="small text-secondary">Visa | Mastercard | Yape | Plin</p>
-               </div>
-            </div>
-            
-            <div class="text-center mt-4">
-               <h2>Compromiso Corporativo JHOALS</h2>
-               <p class="small text-secondary mx-auto" style="max-width: 700px;">En JHOALS nos esforzamos diariamente para superar las expectativas...</p>
-               <p class="copyright text-muted small mt-3 mb-0">
-                  © 2026 JHOALS Sabor Andino. Todos los derechos reservados.
-               </p>
-            </div>
-         </div>
-      </footer>
+        <!-- Inicio -->
+        <section id="inicio" class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Bienvenidos a JHOALS Pollería</h2>
+            <h3 class="text-muted mb-4">El auténtico e inigualable sabor del pollo a la brasa peruano</h3>
+            <p class="lead">En JHOALS nos apasiona mantener viva la tradición. Seleccionamos los mejores ingredientes, papas nativas y un tierno pollo marinado con nuestra receta secreta, cocinado al calor de las brasas de carbón natural.</p>
+            <a href="#menu" class="btn btn-danger btn-lg mt-4">Explorar Menú Completo <i class="bi bi-arrow-right-circle"></i></a>
+        </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   </body>
+        <hr class="my-5">
+
+        <!-- Categorías -->
+        <section id="categorias" class="mb-5">
+            <h2 class="text-center mb-5">Nuestras Especialidades</h2>
+            <section class="row g-4 text-center">
+                <article class="col-md-3">
+                    <a href="#menu" class="text-decoration-none">
+                        <section class="card h-100">
+                            <img src="img/POLLOENTERO.jpg" class="card-img-top" alt="Pollo Entero">
+                            <section class="card-body">
+                                <h3 class="card-title h5">Pollo Entero</h3>
+                                <p class="card-text">Ideales para banquetes familiares</p>
+                            </section>
+                        </section>
+                    </a>
+                </article>
+                <article class="col-md-3">
+                    <a href="#menu" class="text-decoration-none">
+                        <section class="card h-100">
+                            <img src="img/MEDIOPOLLO.jpg" class="card-img-top" alt="Medio Pollo">
+                            <section class="card-body">
+                                <h3 class="card-title h5">1/2 Pollo</h3>
+                                <p class="card-text">La porción perfecta para compartir</p>
+                            </section>
+                        </section>
+                    </a>
+                </article>
+                <article class="col-md-3">
+                    <a href="#menu" class="text-decoration-none">
+                        <section class="card h-100">
+                            <img src="img/CUARTOPOLLO.jpg" class="card-img-top" alt="Cuarto de Pollo">
+                            <section class="card-body">
+                                <h3 class="card-title h5">1/4 Pollo</h3>
+                                <p class="card-text">El clásico almuerzo personal</p>
+                            </section>
+                        </section>
+                    </a>
+                </article>
+                <article class="col-md-3">
+                    <a href="#menu" class="text-decoration-none">
+                        <section class="card h-100">
+                            <img src="img/bebidas.png" class="card-img-top" alt="Bebidas">
+                            <section class="card-body">
+                                <h3 class="card-title h5">Bebidas</h3>
+                                <p class="card-text">Gaseosas y refrescos</p>
+                            </section>
+                        </section>
+                    </a>
+                </article>
+            </section>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- Menú -->
+        <section id="menu">
+            <h2 class="text-center mb-5">Menú JHOALS</h2>
+
+            <h3 class="mb-4">Pollo Entero</h3>
+            <section class="row g-4 grupo-productos">
+                <article class="col-lg-3 col-md-6"><section class="card h-100"><img src="img/pollo1.1.jpg" class="card-img-top" alt=""><section class="card-body"><h5>Pollo Entero Clásico</h5><p>1 Pollo entero, papas fritas y cremas</p><h5 class="text-danger">S/ 69.90</h5><button class="btn btn-danger w-100 mt-2">Pedir Ahora</button></section></section></article>
+                <article class="col-lg-3 col-md-6"><section class="card h-100"><img src="img/pollo1.2.jpg" class="card-img-top" alt=""><section class="card-body"><h5>Pollo Familiar</h5><p>1 Pollo, papas, ensalada familiar</p><h5 class="text-danger">S/ 74.90</h5><button class="btn btn-danger w-100 mt-2">Pedir Ahora</button></section></section></article>
+                <article class="col-lg-3 col-md-6"><section class="card h-100"><img src="img/pollo1.3.jpg" class="card-img-top" alt=""><section class="card-body"><h5>Pollo Mega Combo</h5><p>1 Pollo, papas gigante + gaseosa</p><h5 class="text-danger">S/ 79.90</h5><button class="btn btn-danger w-100 mt-2">Pedir Ahora</button></section></section></article>
+                <article class="col-lg-3 col-md-6"><section class="card h-100"><img src="img/pollo1.1.jpg" class="card-img-top" alt=""><section class="card-body"><h5>Combo Especial JHOALS</h5><p>Pollo + tequeños de cortesía</p><h5 class="text-danger">S/ 84.90</h5><button class="btn btn-danger w-100 mt-2">Pedir Ahora</button></section></section></article>
+            </section>
+
+            <h3 class="mt-5 mb-4">Medio Pollo</h3>
+            <section class="row g-4 grupo-productos">
+                <article class="col-lg-3 col-md-6"><section class="card h-100"><img src="img/pollo2.1.jpg" class="card-img-top" alt=""><section class="card-body"><h5>1/2 Pollo Clásico</h5><p>Medio pollo + papas + cremas</p><h5 class="text-danger">S/ 39.90</h5><button class="btn btn-danger w-100 mt-2">Pedir Ahora</button></section></section></article>
+                <article class="col-lg-3 col-md-6"><section class="card h-100"><img src="img/pollo2.2.jpg" class="card-img-top" alt=""><section class="card-body"><h5>1/2 Pollo Saludable</h5><p>Medio pollo + ensalada</p><h5 class="text-danger">S/ 42.90</h5><button class="btn btn-danger w-100 mt-2">Pedir Ahora</button></section></section></article>
+                <article class="col-lg-3 col-md-6"><section class="card h-100"><img src="img/pollo2.3.jpg" class="card-img-top" alt=""><section class="card-body"><h5>1/2 Pollo Dúo</h5><p>Medio pollo + 2 gaseosas</p><h5 class="text-danger">S/ 46.90</h5><button class="btn btn-danger w-100 mt-2">Pedir Ahora</button></section></section></article>
+                <article class="col-lg-3 col-md-6"><section class="card h-100"><img src="img/pollo2.1.jpg" class="card-img-top" alt=""><section class="card-body"><h5>1/2 Pollo Parrillero</h5><p>Con salsa anticuchera</p><h5 class="text-danger">S/ 49.90</h5><button class="btn btn-danger w-100 mt-2">Pedir Ahora</button></section></section></article>
+            </section>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- Locales -->
+        <section id="locales" class="mb-5">
+            <h2 class="text-center mb-5">Nuestras Sedes Oficiales</h2>
+            <section class="row g-4">
+                <article class="col-md-4"><a href="https://maps.app.goo.gl/9cpgfV5aufwKf2Rq6" target="_blank" class="text-decoration-none"><section class="card h-100"><img src="img/americas.jpg" class="card-img-top" alt=""><section class="card-body"><h4>Sede Las Américas</h4><p>Av. Las Américas 450</p></section></section></a></article>
+                <article class="col-md-4"><a href="https://maps.app.goo.gl/S6DbCE4Fr9pgmKzs7" target="_blank" class="text-decoration-none"><section class="card h-100"><img src="img/santaclara.png" class="card-img-top" alt=""><section class="card-body"><h4>Sede Santa Clara</h4><p>Calle Los Ángeles 120</p></section></section></a></article>
+                <article class="col-md-4"><a href="https://maps.app.goo.gl/aBbSSjUNwLSmmH2U9" target="_blank" class="text-decoration-none"><section class="card h-100"><img src="img/vallegrande.jpg" class="card-img-top" alt=""><section class="card-body"><h4>Sede Valle Grande</h4><p>Jr. Progreso 785</p></section></section></a></article>
+            </section>
+        </section>
+
+        <!-- Nosotros -->
+        <section id="nosotros" class="mb-5">
+            <h2 class="text-center mb-4">Nosotros</h2>
+            <p class="lead text-center">Más de 15 años ofreciendo el mejor pollo a la brasa en Ate Vitarte.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-dark text-light py-5">
+        <section class="container">
+            <section class="row g-5">
+                <article class="col-md-3">
+                    <h5>JHOALS SABOR ANDINO</h5>
+                    <p>Empresa líder en pollo a la brasa con insumos 100% nacionales.</p>
+                </article>
+                <article class="col-md-3">
+                    <h5>Central de Contacto</h5>
+                    <p>Sede Central: Ate Vitarte, Lima</p>
+                    <p>Teléfono: 970 992 724</p>
+                    <p>polleria.giganton@gmail.com</p>
+                </article>
+                <article class="col-md-3">
+                    <h5>Comunidad Digital</h5>
+                    <p><i class="bi bi-facebook"></i> Facebook</p>
+                    <p><i class="bi bi-instagram"></i> Instagram</p>
+                    <p><i class="bi bi-tiktok"></i> TikTok</p>
+                </article>
+                <article class="col-md-3">
+                    <h5>Horarios</h5>
+                    <p>Lunes a Domingo</p>
+                    <p>12:00 PM - 11:00 PM</p>
+                </article>
+            </section>
+            <hr class="my-4">
+            <p class="text-center mb-0">© 2026 JHOALS Sabor Andino. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script personalizado para el efecto de Scroll en el Header -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            // Si el usuario baja más de 50 píxeles, añade la clase; si vuelve arriba, la quita
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+</body>
+</body>
 </html>
