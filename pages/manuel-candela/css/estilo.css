@@ -12,7 +12,8 @@ body {
 }
 
 header, main, footer {
-    padding: 30px;
+    padding: 60px 200px;
+
 }
 
 /* 2. HEADER */
@@ -195,3 +196,27 @@ p {
 .col-3 summary{
     text-align: center;
 }
+
+.col-3 header {
+    background-color: #333333 !important;
+    padding: 5px !important;
+    margin-bottom: 1px !important;
+    max-width: 600px !important;
+    font-size: 0.9em !important; /* Reduce el tamaño (prueba con 1em o 0.9em si sigue sin caber) */
+    white-space: nowrap !important; /* Fuerza a que no haga salto de línea */
+    overflow: hidden !important; /* Oculta si se pasa de largo */
+    text-overflow: ellipsis !important; /* Pone puntos suspensivos (...) si el texto es muy largo */
+}
+
+/* ID */
+
+#Categorías header {
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column; /* ESTO ES LA CLAVE: apila los elementos */
+    align-items: center;    /* Centra horizontalmente el título y el párrafo */
+    text-align: center;
+}
+
