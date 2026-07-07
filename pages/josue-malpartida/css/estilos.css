@@ -192,3 +192,8 @@ button {
     font-style: italic;
     color: #FFD8D8;
 }
+
+#seccion main>figure{
+    margin: 20px;
+
+}
