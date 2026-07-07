@@ -132,25 +132,19 @@ input:focus, textarea:focus, select:focus{
   margin-bottom: 10px;
   display: block;
   color: black;
-  opacity: 0%;
+  
 }
 #baner{
   max-height: 500px;
   object-fit: cover;
   width: 100%;
-  opacity: 0%;
 }
 #formulario{
   max-width: 650px;
   margin: 0 auto;
-  height: auto;
-  height: auto;
 }
 #inicio{
   padding-bottom: 40px;
-  height: auto;
-  width: auto;
-  margin: 20%;
 }
 /*------------------------------------------------------Cuatro Pseudo  Elementos*/
 #presentacion[data-layout="card"]::before{
@@ -167,11 +161,9 @@ input:focus, textarea:focus, select:focus{
 ::selection{
   background-color: #4a5568;
   color: white;
-  -webkit-text-stroke: 1px #00ffcc;
 }
 input::placeholder, textarea::placeholder{
   color: #999;
-  -webkit-text-stroke: 1px #00ffcc;
 }
 .item::first-letter{
   font-size: 1.2em;
@@ -186,20 +178,15 @@ input::placeholder, textarea::placeholder{
 }
 input[required]{
   border-left: 3px solid #4a5568;
-  field-sizing: content;
 }
 input[type="email"]{
   background-color: #f7f7f7;
-  field-sizing: content;
 }
 a[href^="#"]{
   cursor: pointer;
-  field-sizing: content;
 }
 img[alt]{
   vertical-align: middle;
-  field-sizing: content;
-  outline: 3px solid #ff0000
 }
 img + :is(blockquote){
   color: rgba(250, 235, 215, 0.486);
@@ -231,6 +218,10 @@ img + :is(blockquote){
 input:not([type="checkbox"]):not([type="radio"]){
   width: 100%;
   max-width: 350px;
+}
+.olo{
+  border-radius: 10%;
+  width: 100%;
 }
 
 
