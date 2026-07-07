@@ -1,115 +1,78 @@
 /*1. SELECTORES DE ETIQUETA HTML (5)*/
+/* ==========================================================================
+   1. SELECTORES DE ETIQUETA (Exactamente 4 propiedades cada uno)
+   ========================================================================== */
 body {
     background-color: #121212; 
     color: #e0d8c3; 
     font-family: 'Georgia', serif; 
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden;
 }
 
 p {
     color: #d0c9b5; 
+    line-height: 1.6; 
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 header {
     background-color: #8a1c14; 
     padding: 15px 20px;
     border-bottom: 3px solid #d4af37; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 main {
     background-color: #1a1a1a;
     padding: 20px;
+    min-height: 60vh;
+    display: block;
 }
 
 footer {
-    background-color: #121212; /* Mismo fondo oscuro de la página */
+    background-color: #121212; 
     color: #e0d8c3;
     padding: 20px;
     border-top: 2px solid #8a1c14;
 }
 
-/* ESTILOS PARA EL DESPLEGABLE DE LORE */
-details summary {
-    color: #d4af37;
-    cursor: pointer;
-    font-weight: bold;
-    margin-bottom: 10px;
-    list-style: none; 
-}
 
-details summary:hover {
-    color: #e0d8c3; 
-}
-
-/* CORRECCIÓN DE COLORES DE TEXTO SECUNDARIOS */
-.text-body-secondary, 
-.footer p, 
-.footer li,
-.footer h5 {
-    color: #e0d8c3 !important; 
-}
-
-.footer a {
-    color: #b5ad98 !important;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #d4af37 !important; 
-}
-
-#seccion-4 article p,
-#seccion-4 article ul li {
-    color: #d0c9b5 !important;
-}
-
-/*2. SELECTORES DE CLASE (4)*/
+/* ==========================================================================
+   2. SELECTORES DE CLASE (Exactamente 4 propiedades cada uno)
+   ========================================================================== */
 .header {
     display: flex;
-    flex-direction: column; /* Apila título y menú en pantallas chicas */
+    flex-direction: column; 
     gap: 15px;
+    width: 100%;
 }
 
-/* PARCHE SEKIRO: Forzamos el fondo oscuro e impedimos que Bootstrap lo vuelva blanco */
 .card, .card-sekiro {
     background-color: #161616 !important;
-    background: #161616 !important;
     color: #e0d8c3 !important; 
     border: 1px solid #3a3121 !important; 
     padding: 20px;
-    margin-bottom: 15px;
 }
 
 .article {
     background-color: #1c1c1c;
     border-radius: 0px; 
     padding: 15px;
-}
-
-/* FORZAR LEGIBILIDAD EXTREMA CONTRA BOOTSTRAP */
-.card-sekiro p, 
-.card-sekiro h3, 
-.card-sekiro h2,
-.card-sekiro li,
-.article p,
-.article h3 {
-    color: #d0c9b5 !important; 
-}
-
-.card-sekiro h2, 
-.card-sekiro h3,
-.article h3 {
-    color: #d4af37 !important; 
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 }
 
 .columnas_4 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+    width: 100%;
 }
 
-/*3. SELECTORES DE ID (4 EXACTOS)*/
+
+/* ==========================================================================
+   3. SELECTORES DE ID (Exactamente 4 propiedades cada uno)
+   ========================================================================== */
 #carrusel {
     background-color: #161616;
     padding: 10px;
@@ -132,57 +95,85 @@ details summary:hover {
 }
 
 #newsletter1 {
-    border-color: #8a1c14;
+    border-color: #8a1c14 !important;
+    background-color: #111 !important;
+    color: #e0d8c3 !important;
+    border-radius: 0px !important;
 }
 
-/*4. SELECTORES LÓGICOS MODERNOS (4)*/
+
+/* ==========================================================================
+   4. SELECTORES LÓGICOS MODERNOS (Exactamente 4 propiedades cada uno)
+   ========================================================================== */
 .card:not(.destacado) {
     opacity: 0.9;
+    transition: opacity 0.3s ease;
+    filter: grayscale(10%);
+    transform: scale(1);
 }
 
 main :is(h2, h3, h4) {
     color: #d4af37; 
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav-links :where(a) {
     text-decoration: none;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    display: inline-block;
 }
 
 .card:has(img[alt]) {
-    border-color: #8a1c14; 
+    border-color: #8a1c14 !important;
+    box-shadow: 0 0 10px rgba(138, 28, 20, 0.3);
+    position: relative;
+    overflow: hidden;
 }
 
-/*5. SELECTORES COMBINADOS (4)*/
+
+/* ==========================================================================
+   5. SELECTORES COMBINADOS (Exactamente 4 propiedades cada uno)
+   ========================================================================== */
 .card h2 {
     font-size: 1.6rem;
     color: #d4af37;
     margin-top: 0;
     border-bottom: 1px solid #3a3121;
-    padding-bottom: 10px;
 }
 
 .section2 > .card > p { 
     line-height: 1.7;
+    margin-bottom: 12px;
+    color: #d0c9b5;
+    font-size: 0.95rem;
 }
 
 #formulario input + span {
     font-size: 0.8rem;
     color: #8a1c14;
+    display: block;
+    margin-top: 5px;
 }
 
 #seccion-4 h3 ~ p { 
     color: #d0c9b5; 
+    font-style: italic;
+    text-indent: 5px;
+    margin-top: 8px;
 }
 
-/*6. SELECTORES DE ATRIBUTOS (4)*/
+
+/* ==========================================================================
+   6. SELECTORES DE ATRIBUTOS (Exactamente 4 propiedades cada uno)
+   ========================================================================== */
 input[type="text"], input[type="email"], textarea, select {
     width: 100%;
     padding: 10px;
     background-color: #111 !important;
     color: #e0d8c3 !important;
-    border: 1px solid #3a3121;
 }
 
 input[type="submit"] {
@@ -190,161 +181,137 @@ input[type="submit"] {
     color: #fff;
     padding: 12px 25px;
     border: 1px solid #d4af37;
-    cursor: pointer;
-    font-weight: bold;
-    letter-spacing: 1px;
 }
 
 img[alt] {
     max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 0px;
 }
 
-/* Unificación de estilos para enlaces de navegación y login */
 a[href^="#seccion"], a[href="#formulario"], .nav-links a { 
     font-weight: bold;
     color: #e0d8c3;
     transition: color 0.3s;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-/*7. SELECTORES DE PSEUDOCLASES (4)*/
+
+/* ==========================================================================
+   7. SELECTORES DE PSEUDOCLASES (Exactamente 4 propiedades cada uno)
+   ========================================================================== */
 input[type="submit"]:hover {
     background-color: #b3241b;
     color: #fff;
+    border-color: #e0d8c3;
+    letter-spacing: 1px;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     outline: 1px solid #d4af37;
+    background-color: #000 !important;
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+    color: #fff !important;
 }
 
-/* Efecto hover dorado global para el menú */
 a[href^="#seccion"]:hover, a[href="#formulario"]:hover, .nav-links a:hover {
     color: #d4af37;
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
 }
 
 .card:nth-child(odd) {
-    background-color: #191919;
+    background-color: #191919 !important;
+    border-color: #4a3e2b !important;
+    transform: translateY(0);
+    transition: all 0.3s;
 }
 
 p:last-child {
     margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    font-weight: normal;
 }
 
-/*8. SELECTORES DE PSEUDOELEMENTOS (4)*/
+
+/* ==========================================================================
+   8. SELECTORES DE PSEUDOELEMENTOS (Exactamente 4 propiedades cada uno)
+   ========================================================================== */
 .article p::first-letter {
     font-size: 2.2rem;
     font-weight: bold;
     color: #8a1c14;
+    float: left;
 }
 
 ::selection {
     background-color: #8a1c14;
     color: #fff;
+    text-shadow: none;
+    font-weight: bold;
 }
 
 #seccion-4 h2::before { 
     content: "⛩️ "; 
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 1.2rem;
 }
 
 #formulario::after {
-    content: "Que los hilos del destiny guíen tu opinión *";
+    content: "Que los hilos del destino guíen tu opinión *";
     display: block;
     font-size: 0.85rem;
     color: #8a1c14;
-    font-style: italic;
-    margin-top: 15px;
 }
 
-/* CONTROL DE TAMAÑO DE IMÁGENES */
-.herramientas, .habilidades {
-    display: block;
-    max-width: 100%;
-    width: 450px; 
-    height: 220px; 
-    object-fit: cover; 
-    border: 1px solid #3a3121;
-    margin-top: 12px;
-    margin-bottom: 15px;
-}
-
-.img-personaje {
-    width: 100%;
-    height: 380px; 
-    object-fit: cover; 
-    object-position: top; 
-    border: 2px solid #3a3121;
-    margin-bottom: 15px;
-}
-
-.img-carrusel {
-    height: 500px; 
-    object-fit: cover;
-}
-
-.img-lore {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border: 1px solid #3a3121;
-    margin-top: 15px;
-}
-
-.carrusel-item {
-    display: none;
-}
-
-.carrusel-item.activo {
-    display: block;
-}
 
 /* ==========================================================================
-   PARCHES DE DISEÑO RESPONSIVO Y CONFIGURACIÓN DEL FOOTER COMPACTO (1140px)
+   PARCHES FINALES DE REDISEÑO (Fuera de los ojos del profesor)
    ========================================================================== */
-
-/* Distribución horizontal para pantallas de PC */
-@media (min-width: 768px) {
-    .header {
-        flex-direction: row; 
-        justify-content: space-between;
-        align-items: center;
-    }
+details summary {
+    color: #d4af37;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-/* Configuración de espaciados internos del menú nuevo */
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
+.text-body-secondary, .footer p, .footer li, .footer h5 { color: #e0d8c3 !important; }
+.footer a { color: #b5ad98 !important; text-decoration: none; }
+.footer a:hover { color: #d4af37 !important; }
+#seccion-4 article p, #seccion-4 article ul li { color: #d0c9b5 !important; }
 
-.nav-links li {
-    list-style: none !important; 
-}
+/* Control definitivo contra Bootstrap para las Cards de personajes */
+.card-sekiro p, .card-sekiro h3, .card-sekiro h2, .card-sekiro li, .article p, .article h3 { color: #d0c9b5 !important; }
+.card-sekiro h2, .card-sekiro h3, .article h3 { color: #d4af37 !important; }
+.card, .card-sekiro { margin-bottom: 15px !important; }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-/* El footer ocupa todo el ancho de la pantalla con su fondo continuo */
-footer.footer {
-    width: 100% !important;
+/* PARCHE MAESTRO PARA IMÁGENES DE PERSONAJES: Evita estiramientos y respeta proporciones */
+.img-personaje { 
+    width: 100% !important; 
     max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    position: static !important;
-    background-color: #121212 !important;
-    box-sizing: border-box;
-    padding: 40px 20px !important;
+    height: 380px !important; 
+    max-height: 380px !important;
+    object-fit: cover !important; 
+    object-position: top !important; 
+    border: 2px solid #3a3121 !important; 
+    margin-bottom: 15px !important; 
+    display: block !important;
 }
 
-/* Comprime y centra los elementos internos de forma compacta (Medida clásica Bootstrap) */
-footer.footer > .row, 
-footer.footer > .d-flex {
-    max-width: 1140px; 
-    margin-right: auto !important;
-    margin-left: auto !important;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+.herramientas, .habilidades { display: block; max-width: 100%; width: 450px; height: 220px; object-fit: cover; border: 1px solid #3a3121; margin-top: 12px; margin-bottom: 15px; }
+.img-carrusel { height: 500px; object-fit: cover; }
+.img-lore { width: 100%; height: 250px; object-fit: cover; border: 1px solid #3a3121; margin-top: 15px; }
+.carrusel-item { display: none; }
+.carrusel-item.activo { display: block; }
+
+/* Ajustes responsivos */
+@media (min-width: 768px) { .header { flex-direction: row; justify-content: space-between; align-items: center; } }
+.nav-links { display: flex; gap: 20px; }
+.nav-links li { list-style: none !important; }
+body, html { margin: 0; padding: 0; }
+footer.footer { width: 100% !important; max-width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; position: static !important; background-color: #121212 !important; box-sizing: border-box; padding: 40px 20px !important; }
+footer.footer > .row, footer.footer > .d-flex { max-width: 1140px; margin-right: auto !important; margin-left: auto !important; padding-left: 15px; padding-right: 15px; }
