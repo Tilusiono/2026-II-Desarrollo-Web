@@ -240,6 +240,9 @@ section > header h2 {
     margin: 12px 0;
 }
 
+.card-header{
+    height: 125px;
+}
 /* ===== PSEUDOELEMENTOS ===== */
 
 .section2 h2::after,
