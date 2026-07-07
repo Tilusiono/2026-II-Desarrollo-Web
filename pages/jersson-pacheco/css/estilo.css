@@ -1,10 +1,101 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+body {
+    background-color: #2b2b2b;
+    color: #fdf6ec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
-body{
-    background:#101423;
-    color: white;
+hr {
+    border-color: #ffffff;
+    opacity: 0.5;
+}
+
+.navbar-custom {
+    background-color: rgba(33, 37, 41, 0.7) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1050;
+
+    &.navbar-scrolled {
+        background-color: #2b2b2b !important;
+        box-shadow: 0 4px 20px rgba(255, 196, 196, 0.4);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        .nav-link {
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+        }
+    }
+}
+
+/* ID (#) */
+
+#inicio {
+    padding: 3rem 1.5rem;
+    background: radial-gradient(circle, #ffffff 0%, #fdf6ec 100%);
+    border-radius: 15px;
+}
+
+#carrusel {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#contacto {
+    background-color: var(--clr-bg-dark);
+    color: var(--clr-text-light);
+    border-top: 5px solid var(--clr-brand-gold);
+}
+
+/* CLASES (.) */
+
+.card {
+    border: none;
+    background-color: #999999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-title {
+    color: #f1c80f;
+    font-weight: 700;
+}
+
+.grupo-productos {
+    margin-top: 1.5rem;
+}
+
+a[target="_blank"] {
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    &::after {
+        content: "↗";
+        font-size: 0.85em;
+    }
+}
+
+img[alt="imagen"] {
+    filter: brightness(0.95);
+    
+    &:hover {
+        filter: brightness(1);
+    }
+}
+
+/* COMBINADORES Y HERENCIA */
+
+.card-body h5 {
+    letter-spacing: 0.5px;
+}
+
+#categorias section.row > article .card {
+    border-bottom: 4px solid #f17c0f;
+}
+
+.card-body h4 + p {
+    color: #9ad60d;
+    font-style: italic;
 }
