@@ -57,7 +57,7 @@ hr {
 }
 
 .card-title {
-    color: #f1c80f;
+    color: #0f69f1;
     font-weight: 700;
 }
 
@@ -92,7 +92,7 @@ img[alt="imagen"] {
 }
 
 #categorias section.row > article .card {
-    border-bottom: 4px solid #f17c0f;
+    border-bottom: 4px solid #0f71f1;
 }
 
 .card-body h4 + p {
