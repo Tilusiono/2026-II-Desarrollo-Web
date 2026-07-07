@@ -1,0 +1,405 @@
+/* --- ETIQUETAS --- */
+
+/* 1. RESET Y BODY */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.5;
+    color: #333333;
+}
+
+/* 2. ETIQUETAS GENERALES */
+p {
+    color: white; 
+}
+
+mark {
+    background-color: #C5A059;
+    color: white;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #C5A059;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* 3. SECCIONES PRINCIPALES */
+header {
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+main {
+    padding: 20px 200px;
+}
+
+footer {
+    background-color: transparent;
+    padding: 10px 0;
+    color: inherit;
+    width: 100%;
+}
+
+/* 4. ELEMENTOS DE HEADER */
+header h1, header h2, header h3 {
+    color: white;
+    font-weight: bold;
+}
+
+header img {
+    width: 50px;
+    display: block;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header form input {
+    width: 650px;
+    height: 36px;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+header form button {
+    width: 70px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    white-space: nowrap;
+    hyphens: none;
+}
+
+/* 5. ARTÍCULOS Y CONTENIDO */
+article {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+article header {
+    background-color: transparent !important;
+}
+
+/* 6. FORMULARIO */
+fieldset {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333333;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    color: #333333;
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* 7. ELEMENTOS DEL FOOTER */
+footer button {
+    background: #333333;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 100%; 
+}
+
+
+/* --- CLASES --- */
+
+.section1 {
+    display: block !important;
+    text-align: center !important;
+    padding: 20px 0 !important;
+    background-color: #000000 !important;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.derechos {
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 30px !important;
+}
+
+
+/* --- IDENTIFICADORES --- */
+
+#Categorías {
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1px !important;
+}
+
+#Productos {
+    margin-top: 25px;
+    padding-top: 5px;
+    display: block;
+    border: none;
+}
+
+#Pedidos {
+    outline: none;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+#Carrusel {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+/* --- FIJACIÓN DEL FOOTER PRINCIPAL (ESTILO RIPLEY A LA IZQUIERDA) --- */
+
+main + footer {
+    background-color: #333333 !important;
+    padding: 40px 200px !important;
+    border-top: 5px solid #C5A059 !important;
+}
+
+#Contactanos {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+}
+
+#Contactanos article {
+    text-align: left !important;
+    padding: 0 !important;
+}
+
+#Contactanos h3 {
+    text-align: left !important;
+    margin-bottom: 15px !important;
+    font-size: 1.2rem !important;
+    color: white !important;
+}
+
+#Contactanos ul, #Contactanos figure {
+    text-align: left !important;
+    padding-left: 0 !important;
+}
+
+#Contactanos a {
+    text-align: left !important;
+    padding: 5px 0 !important;
+    display: block !important;
+    color: white !important;
+}
+
+
+/* --- ARREGLO DE PROPORCIONES Y FONDOS EN EL CATÁLOGO --- */
+
+card header, article header {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 10px !important;
+    height: 55px !important; 
+}
+
+card header h3, article header h2 {
+    font-size: 1.15rem !important;
+    color: #333333 !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+
+card p, card strong, article p, article strong, details summary {
+    color: #333333 !important;
+}
+
+
+/* --- PSEUDO-CLASES --- */
+
+a:hover {
+    color: #C5A059;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+form input:focus {
+    border-color: #C5A059;
+    outline: none;
+    box-shadow: 0 0 5px rgba(197, 160, 89, 0.5);
+    background-color: #ffffff;
+}
+
+form button:active {
+    background-color: #1a1a1a;
+    transform: scale(0.98);
+    color: #C5A059;
+    border-width: 1px;
+}
+
+.carousel-control-next:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+
+/* --- PSEUDO-ELEMENTOS --- */
+
+header form input::placeholder {
+    font-style: italic;
+    color: #999999;
+    font-size: 0.9rem;
+    text-transform: none;
+}
+
+main::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+p::first-line {
+    font-weight: inherit;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+
+/* --- ATRIBUTOS --- */
+
+html[lang="es"] {
+    font-smoothing: antialiased;
+    text-size-adjust: 100%;
+}
+
+form[method="get"] {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="search"] {
+    appearance: none;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    border: none;
+}
+
+
+/* --- COMBINADORES Y LÓGICOS --- */
+
+header > nav {
+    width: 100%;
+    display: flex;
+}
+
+section .carousel-item {
+    position: relative;
+    width: 100%;
+}
+
+card ul li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.row + .derechos {
+    width: 100%;
+    border-top: 1px solid #444;
+}
