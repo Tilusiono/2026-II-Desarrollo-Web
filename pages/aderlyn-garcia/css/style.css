@@ -12,5 +12,100 @@ section {
     color: rgb(217, 0, 255);
     text-decoration: none;
     padding: 15px 35px;
-    background-color: rgb(220, 243, 238);
+    background-color: rgb(178, 240, 226);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Navegación */
+nav {
+    background-color: var(--color-blanco);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: var(--color-principal);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2E7D32;
+}
+
+/* Tarjetas */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: var(--color-principal);
+    margin-bottom: 15px;
+}
+
+/* Botones */
+
+
+button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Formularios */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #C8E6C9;
+    border-radius: 10px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--color-principal);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienestar y Salud</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color:#f4fff8;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .navbar{
+            background:#198754;
+        }
+
+        .navbar-brand,
+        .nav-link{
+            color:white !important;
+            font-weight:bold;
+        }
+
+        .carousel-item img{
+            height:550px;
+            object-fit:cover;
+        }
+
+        .carousel-caption{
+            background:rgba(0,0,0,.5);
+            border-radius:10px;
+            padding:15px;
+        }
+
+        .titulo{
+            color:#198754;
+            font-weight:bold;
+            margin-top:40px;
+        }
+
+        .card{
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        footer{
+            background:#198754;
+            color:white;
+            padding:20px;
+            margin-top:50px;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- Menú -->
+
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+
+<a class="navbar-brand" href="#">🌿 Bienestar y Salud</a>
+
+<button class="navbar-toggler bg-light" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#inicio">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#beneficios">Beneficios</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contacto">Contacto</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<!-- Carrusel -->
+
+<div id="inicio" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-indicators">
+
+<button type="button"
+data-bs-target="#inicio"
+data-bs-slide-to="0"
+class="active"></button>
+
+<button type="button"
+data-bs-target="#inicio"
+data-bs-slide-to="1"></button>
+
+<button type="button"
+data-bs-target="#inicio"
+data-bs-slide-to="2"></button>
+
+</div>
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+
+<img src="imagenes/salud1.jpg"
+class="d-block w-100"
+alt="Bienestar">
+
+<div class="carousel-caption">
+<h2>Cuida tu cuerpo</h2>
+<p>Una vida saludable comienza con buenos hábitos.</p>
+</div>
+
+</div>
+
+<div class="carousel-item">
+
+<img src="imagenes/salud2.jpg"
+class="d-block w-100"
+alt="Ejercicio">
+
+<div class="carousel-caption">
+<h2>Haz ejercicio</h2>
+<p>30 minutos diarios mejoran tu salud física y mental.</p>
+</div>
+
+</div>
+
+<div class="carousel-item">
+
+<img src="imagenes/salud3.jpg"
+class="d-block w-100"
+alt="Alimentación">
+
+<div class="carousel-caption">
+<h2>Alimentación saludable</h2>
+<p>Come balanceado y mantente lleno de energía.</p>
+</div>
+
+</div>
+
+</div>
+
+<button class="carousel-control-prev"
+type="button"
+data-bs-target="#inicio"
+data-bs-slide="prev">
+
+<span class="carousel-control-prev-icon"></span>
+
+</button>
+
+<button class="carousel-control-next"
+type="button"
+data-bs-target="#inicio"
+data-bs-slide="next">
+
+<span class="carousel-control-next-icon"></span>
+
+</button>
+
+</div>
+
+<!-- Contenido -->
+
+<div class="container">
+
+<h2 class="text-center titulo" id="beneficios">
+Beneficios de una vida saludable
+</h2>
+
+<div class="row mt-5">
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="imagenes/comida.jpg"
+class="card-img-top"
+alt="Comida saludable">
+
+<div class="card-body">
+
+<h4>🥗 Alimentación</h4>
+
+<p>
+Consumir frutas, verduras y proteínas fortalece el organismo y ayuda a prevenir enfermedades.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="imagenes/ejercicio.jpg"
+class="card-img-top"
+alt="Ejercicio">
+
+<div class="card-body">
+
+<h4>🏃 Actividad Física</h4>
+
+<p>
+El ejercicio mejora la circulación, fortalece el corazón y reduce el estrés.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="imagenes/mental.jpg"
+class="card-img-top"
+alt="Salud mental">
+
+<div class="card-body">
+
+<h4>🧘 Salud Mental</h4>
+
+<p>
+Dormir bien, relajarte y mantener una actitud positiva favorece tu bienestar.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+
+<footer id="contacto" class="text-center">
+
+<h4>Bienestar y Salud</h4>
+
+<p>
+Vive sano, cuida tu cuerpo y disfruta de una mejor calidad de vida.
+</p>
+
+<p>
+© 2026 Todos los derechos reservados.
+</p>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
