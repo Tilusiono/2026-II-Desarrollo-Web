@@ -54,18 +54,6 @@ hr {
     margin-top: 1.5rem;
 }
 
-a[target="_blank"] {
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-
-    &::after {
-        content: "↗";
-        font-size: 0.85em;
-    }
-}
-
 img[alt="imagen"] {
     filter: brightness(0.95);
     
