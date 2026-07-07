@@ -139,6 +139,8 @@ header img {
 .card footer a:hover {
   color: #ff00ff;
   text-shadow: 0 0 10px #ff00ff;
+   transform: scale(1.1);       
+  transition: all 0.3s ease; 
 }
 
 /*  Secciones de clips */
@@ -157,6 +159,9 @@ header img {
 
 .section3 .card h3::first-line {
   color: #ff00ff;
+  font-size: 2rem;
+  text-transform: uppercase; 
+  letter-spacing: 2px;
 }
 
 /*  Formulario */
@@ -168,6 +173,10 @@ header img {
 
 .section4 h2 {
   color: #00fff2;
+  font-size: 2rem;
+  text-transform: uppercase; 
+  letter-spacing: 2px;   
+
 }
 
 .section4 article {
@@ -184,7 +193,7 @@ header img {
   margin: 5px 0;
   border: 2px solid #00fff2;
   border-radius: 10px;
-  background-color: #0d0d0d;
+  background-color: #252dc7;
   color: #f2f2f2;
 }
 
@@ -224,10 +233,21 @@ footer {
 footer a[target="_blank"] {
   color: #00fff2;
   text-decoration: none;
+  font-weight: bold;      
+  letter-spacing: 1px;     
 }
 
 footer a:hover {
   color: #ff00ff;
   text-decoration: underline;
+  text-decoration: underline;  
+  font-weight: bold;           
+  letter-spacing: 1px; 
 }
 
+fieldset legend,
+label {
+  color: #073dff;      
+  font-weight: 600;    
+  text-shadow: 0 0 5px #ff00bb; 
+}

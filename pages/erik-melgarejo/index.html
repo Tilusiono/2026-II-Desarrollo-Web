@@ -27,7 +27,7 @@
 
   <!-- LOGO -->
   <header>
-    <img src="logodejuego.jpg" alt="Logo GG Highlights" width="2000" height="300">
+    <img src="imagenes/logodejuego.jpg" alt="Logo GG Highlights" width="2000" height="300">
 
   </header>
 
@@ -54,7 +54,7 @@
       <article class="card">
         <h3>Dota 2</h3>
         <a href="https://www.dota2.com/home" target="_blank">
-          <img src="dotaimg.jpg" alt="Dota 2" width="250">
+          <img src="imagenes/dotaimg.jpg" alt="Dota 2" width="250">
         </a>
         <footer><a href="#clips-dota">Clips Dota 2</a></footer>
       </article>
@@ -62,7 +62,7 @@
       <article class="card">
         <h3>Valorant</h3>
         <a href="https://playvalorant.com/" target="_blank">
-          <img src="valorantimg.webp" alt="Valorant" width="250">
+          <img src="imagenes/valorantimg.webp" alt="Valorant" width="250">
         </a>
         <footer><a href="#clips-valorant">Clips Valorant</a></footer>
       </article>
@@ -70,7 +70,7 @@
       <article class="card">
         <h3>League of Legends</h3>
         <a href="https://www.leagueoflegends.com/" target="_blank">
-          <img src="lolimg.jpg" alt="LoL" width="250">
+          <img src="imagenes/lolimg.jpg" alt="LoL" width="250">
         </a>
         <footer><a href="#clips-lol">Clips LoL</a></footer>
       </article>
@@ -78,7 +78,7 @@
       <article class="card">
         <h3>Counter Strike 2</h3>
         <a href="https://www.counter-strike.net/cs2" target="_blank">
-          <img src="counterimg.jpg" alt="CS2" width="250">
+          <img src="imagenes/counterimg.jpg" alt="CS2" width="250">
         </a>
         <footer><a href="#clips-cs">Clips CS2</a></footer>
       </article>
@@ -229,35 +229,37 @@
 
       <!-- Bloque 3: Ubicación -->
       <article>
-        <fieldset>
-          <legend>Ubicación</legend>
+  <fieldset>
+    <legend>Ubicación</legend>
 
-          <label>Seleccione País:</label>
-          <select name="pais">
-            <option value="">Seleccione</option>
+    <label for="pais">Seleccione País:</label>
 
-            <!-- optgroup agrupa opciones -->
-            <optgroup label="Sudamérica">
-              <option value="pe" selected>Perú</option>
-              <option value="ar">Argentina</option>
-              <option value="co">Colombia</option>
-              <option value="cl">Chile</option>
-              <option value="uy">Uruguay</option>
-              <option value="ve">Venezuela</option>
-            </optgroup>
+    <!-- Select grande con Bootstrap -->
+    <select class="form-select form-select-lg mb-3" name="pais" id="pais" aria-label="Large select example">
+      <option value="">Seleccione</option>
 
-            <optgroup label="Europa">
-              <option value="de">Alemania</option>
-              <option value="es">España</option>
-              <option value="fr">Francia</option>
-              <option value="it">Italia</option>
-              <option value="uk">Reino Unido</option>
-              <option value="ru">Rusia</option>
-              <option value="nl">Países Bajos</option>
-            </optgroup>
-          </select>
-        </fieldset>
-      </article>
+      <optgroup label="Sudamérica">
+        <option value="pe" selected>Perú</option>
+        <option value="ar">Argentina</option>
+        <option value="co">Colombia</option>
+        <option value="cl">Chile</option>
+        <option value="uy">Uruguay</option>
+        <option value="ve">Venezuela</option>
+      </optgroup>
+
+      <optgroup label="Europa">
+        <option value="de">Alemania</option>
+        <option value="es">España</option>
+        <option value="fr">Francia</option>
+        <option value="it">Italia</option>
+        <option value="uk">Reino Unido</option>
+        <option value="ru">Rusia</option>
+        <option value="nl">Países Bajos</option>
+      </optgroup>
+    </select>
+  </fieldset>
+</article>
+
 
       <!-- Bloque 4 -->
       <article>
