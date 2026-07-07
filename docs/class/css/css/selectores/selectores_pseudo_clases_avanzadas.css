@@ -38,13 +38,13 @@ span{
 
 /* 1 hover */
 .enlace-hover:hover{
-    color: red;
+    color: violet;
     text-decoration: underline;
 }
 
 /* 2 active */
 .boton-active:active{
-    background-color: orange;
+    background-color: rgb(0, 255, 174);
     color: white;
 }
 
@@ -68,12 +68,17 @@ span{
 }
 
 /* 6 nth-child() */
-.lista-nth li:nth-child(2){
+.demo-nth-child :is(ul,ol) li:nth-child(2){
     background-color: yellow;
 }
 
+.demo-nth-child :is(ul,ol) >li:nth-child(3){
+    background-color: violet;
+}
+
+
 /* 7 nth-last-child() */
-.lista-nth-last li:nth-last-child(2){
+.lista-nth-last li:nth-last-child(3){
     background-color: lightblue;
 }
 
@@ -100,8 +105,8 @@ span{
 }
 
 /* 12 is() */
-.demo-is :is(h2, h3).grupo-titulo{
-    color: darkblue;
+.demo-is :is(h2,h3).grupo-titulo{
+    color: rgb(43, 164, 19);
 }
 
 /* 13 where() */
