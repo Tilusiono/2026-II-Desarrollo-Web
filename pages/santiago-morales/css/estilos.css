@@ -3,7 +3,7 @@
     --color-texto-oscuro: #cbe00d;
     --color-secundario: #f06509;
     --color-acento: #6bd5ff;
-    --color-superficie: #f7fafc;
+    --color-superficie: #c4ec10;
     --color-borde: #0be453;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .main-nav a {
-    color: white;
+    color: rgb(226, 230, 5);
     text-decoration: none;
 }
 
@@ -67,7 +67,7 @@ body {
 
 .main-footer {
     background: #222;
-    color: white;
+    color: rgb(236, 221, 9);
     text-align: center;
     padding: 20px;
     
