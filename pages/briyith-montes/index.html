@@ -351,149 +351,91 @@
             </section>
         </section>
 
-        <section id="formulario" class="py-5 my-4 bg-white rounded-4 shadow-sm p-4 p-md-5 mx-auto" style="max-width: 800px;">
-            <h2 class="text-center custom-section-title mb-4">Formulario de Pedido &amp; Registro</h2>
+<section id="formulario" class="py-5 my-4 bg-white rounded-4 shadow-sm p-4 p-md-5 mx-auto" style="max-width: 650px;">
+    <h2 class="text-center custom-section-title mb-3">Hacer Pedido &amp; Registro</h2>
+    <p class="text-center text-muted small mb-4">Completa tus datos para procesar tu orden de cosmética coreana.</p>
+
+    <form action="/procesar" method="post" autocomplete="on">
+        
+        <!-- Datos Personales -->
+        <fieldset class="border p-4 rounded-3 mb-4">
+            <legend class="float-none w-auto px-3 fs-5 fw-bold custom-legend">Datos Personales</legend>
             
-            <section class="progress mb-4" style="height: 12px;">
-                <span class="progress-bar custom-progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100% Completado</span>
+            <section class="mb-3">
+                <label for="nombre" class="form-label fw-semibold">Nombre Completo:</label>
+                <input type="text" id="nombre" class="form-control" name="nombre_completo" placeholder="Ej. Lim Ju-kyung" required minlength="3">
+            </section>
+            
+            <section class="mb-3">
+                <label for="dni" class="form-label fw-semibold">DNI (8 dígitos):</label>
+                <input type="text" id="dni" class="form-control" name="documento_identidad" minlength="8" maxlength="8" pattern="\d{8}" placeholder="12345678" required>
             </section>
 
-            <form action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
-                
-                <fieldset class="border p-4 rounded-3 mb-4">
-                    <legend class="float-none w-auto px-3 fs-5 fw-bold custom-legend">Datos Personales</legend>
-                    
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Nombre de usuario:</label>
-                        <input type="text" class="form-control" name="nombre_usuario" value="Lim Ju-kyung" required minlength="3">
-                    </section>
-                    
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Nombre Completo:</label>
-                        <input type="text" class="form-control" name="nombre_completo" placeholder="Ingrese sus nombres y apellidos">
-                    </section>
-                    
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">DNI (8 dígitos):</label>
-                        <input type="text" class="form-control" name="documento_identidad" minlength="8" maxlength="8" pattern="\d{8}" title="Ingrese un DNI válido de 8 dígitos" required>
-                    </section>
-                    
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Nivel de Miembro:</label>
-                        <input type="text" class="form-control bg-light" value="Chok-Chok Skin Glow (VIP)" readonly>
-                    </section>
+            <section class="mb-3">
+                <label for="email" class="form-label fw-semibold">Email:</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="tu_piel@kbeauty.com" required>
+            </section>
 
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Puntos K-Points:</label>
-                        <input type="text" class="form-control bg-light" value="450 puntos acumulados" disabled>
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Cupón de Descuento:</label>
-                        <input type="text" class="form-control" name="cupon" minlength="4" placeholder="Ej: KGLOW10">
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Código de Cliente:</label>
-                        <input type="text" class="form-control bg-light" name="codigo_cliente" value="KBT-8892-PE" readonly required>
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Email:</label>
-                        <input type="email" class="form-control" name="email" placeholder="tu_piel@kbeauty.com" required autocomplete="email">
-                    </section>
-
-                    <section class="mb-2">
-                        <span class="d-block form-label fw-semibold">Género:</span>
-                        <section class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="genero" id="gen-f" value="F" checked>
-                            <label class="form-check-label" for="gen-f">Femenino</label>
-                        </section>
-                        <section class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="genero" id="gen-m" value="M">
-                            <label class="form-check-label" for="gen-m">Masculino</label>
-                        </section>
-                    </section>
-                </fieldset>
-
-                <fieldset class="border p-4 rounded-3 mb-4">
-                    <legend class="float-none w-auto px-3 fs-5 fw-bold custom-legend">Pedido de Producto &amp; Rutina</legend>
-                    
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">País de Envío:</label>
-                        <select class="form-select" name="pais_envio">
-                            <option value="">Seleccione País</option>
-                            <option value="co">Colombia</option>
-                            <option value="pe" selected>Perú</option> 
-                            <option value="ar">Argentina</option>
-                            <option value="kr">Corea del Sur (Pick-up)</option>
-                        </select>
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Marca Favorita:</label>
-                        <input class="form-control" list="marcas_kbeauty" name="marca_preferida" placeholder="Seleccione o escriba...">
-                        <datalist id="marcas_kbeauty">
-                            <option value="COSRX"></option>
-                            <option value="Beauty of Joseon"></option>
-                            <option value="Anua"></option>
-                            <option value="Some By Mi"></option>
-                            <option value="Innisfree"></option>
-                            <option value="Laneige"></option>
-                        </datalist> 
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Métodos de Pago (Multiselección Ctrl+Click):</label>
-                        <select class="form-select" name="metodos_pago" multiple style="height: 100px;">
-                            <option selected>YAPE / PLIN</option>
-                            <option>Tarjeta de Crédito/Débito</option>
-                            <option>PayPal</option>
-                            <option>PagoEfectivo</option>
-                        </select>
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Fecha de la Orden:</label>
-                        <input type="date" class="form-control" name="fecha_orden" value="2026-06-02">
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Fecha de nacimiento:</label>
-                        <input type="date" class="form-control" name="fecha_nacimiento" value="2000-01-01" min="1940-01-01" max="2016-12-31">
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Mes de inicio de suscripción:</label>
-                        <input type="month" class="form-control" value="2026-03" min="2024-01" max="2030-12" required>
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Semana de entrega preferida:</label>
-                        <input type="week" class="form-control" value="2026-W24" min="2026-W01" max="2026-W52">
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Asesoría de Piel en Vivo (Online):</label>
-                        <input type="datetime-local" class="form-control" name="cita_asesoria" value="2026-06-15T16:00" min="2026-06-01T08:00" max="2026-12-31T20:00" step="1800">
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Horario de atención al cliente:</label>
-                        <input type="time" class="form-control bg-light" value="09:00" min="09:00" max="18:00" step="1800" readonly>
-                    </section>
-
-                    <section class="mb-3">
-                        <label class="form-label fw-semibold">Hora inicio reparto (Delivery):</label>
-                        <input type="time" class="form-control" name="hora_entrega_inicio" value="08:30" min="08:00" max="13:00">
-                    </section>
-                </fieldset>
-
-                <section class="text-center">
-                    <button type="submit" class="btn btn-rosa px-5 py-2 rounded-pill fw-bold fs-5 shadow-sm">Enviar Formulario</button>
+            <section class="mb-2">
+                <span class="d-block form-label fw-semibold">Género:</span>
+                <section class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" id="gen-f" value="F" checked>
+                    <label class="form-check-label" for="gen-f">Femenino</label>
                 </section>
-            </form>
+                <section class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" id="gen-m" value="M">
+                    <label class="form-check-label" for="gen-m">Masculino</label>
+                </section>
+            </section>
+        </fieldset>
+
+        <!-- Detalles del Pedido -->
+        <fieldset class="border p-4 rounded-3 mb-4">
+            <legend class="float-none w-auto px-3 fs-5 fw-bold custom-legend">Detalles del Pedido</legend>
+            
+            <section class="mb-3">
+                <label for="pais" class="form-label fw-semibold">País de Envío:</label>
+                <select id="pais" class="form-select" name="pais_envio" required>
+                    <option value="" disabled>Seleccione País</option>
+                    <option value="pe" selected>Perü</option> 
+                    <option value="co">Colombia</option>
+                    <option value="ar">Argentina</option>
+                </select>
+            </section>
+
+            <section class="mb-3">
+                <label for="pago" class="form-label fw-semibold">Método de Pago Preferido:</label>
+                <select id="pago" class="form-select" name="metodo_pago" required>
+                    <option value="yape" selected>YAPE / PLIN</option>
+                    <option value="tarjeta">Tarjeta de Crédito / Débito</option>
+                    <option value="pagoefectivo">PagoEfectivo</option>
+                </select>
+            </section>
+
+            <section class="mb-3">
+                <label class="form-label fw-semibold">Marca Favorita (Opcional):</label>
+                <input class="form-control" list="marcas_kbeauty" name="marca_preferida" placeholder="Busca o escribe tu marca...">
+                <datalist id="marcas_kbeauty">
+                    <option value="COSRX"></option>
+                    <option value="Beauty of Joseon"></option>
+                    <option value="Anua"></option>
+                    <option value="Tocobo"></option>
+                    <option value="Tony Moly"></option>
+                </datalist> 
+            </section>
+
+            <section class="mb-3">
+                <label for="cupon" class="form-label fw-semibold">Cupón de Descuento:</label>
+                <input type="text" id="cupon" class="form-control" name="cupon" placeholder="Ej: KGLOW10">
+            </section>
+        </fieldset>
+
+        <!-- Botón de Envío -->
+        <section class="text-center">
+            <button type="submit" class="btn btn-rosa px-5 py-2 rounded-pill fw-bold fs-5 shadow-sm w-100">Confirmar Pedido</button>
         </section>
+    </form>
+</section>
     </main>
 
     <footer class="bg-dark text-light py-5 mt-5">
