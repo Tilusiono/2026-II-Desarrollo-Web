@@ -202,7 +202,7 @@
                                 <h4 class="text-success fw-bold mb-3">S/. 99</h4>
                                 <button class="btn btn-primary w-100">Comprar</button>
                             </details>
-                            
+
                         </section>
                     </article>
 
@@ -390,7 +390,7 @@
 
         </section>
 
-<!--SECCION FORMULARIO -->
+        <!--SECCION FORMULARIO -->
 
         <section class="container my-5" id="contacto">
             <header class="text-center mb-5">
@@ -399,8 +399,23 @@
 
             <form class="row g-5">
 
-                <fieldset class="col-md-6 border-0">
-                    <legend class="h4 mb-4 text-primary">Datos Personales</legend>
+                <section class="col-md-4">
+                    <h3 class="h4 mb-4 text-primary">Instrucciones de Ayuda</h3>
+
+                    <section class="p-3 bg-light rounded border">
+                        <label class="form-label d-block fw-bold mb-2">Escucha el audio explicativo:</label>
+                        <audio controls class="w-100 mb-3">
+                            <source src="instrucciones.mp3" type="audio/mpeg">
+                        </audio>
+
+                        <label class="form-label d-block fw-bold mb-2">Mira el video tutorial:</label>
+                        <iframe class="w-100 rounded" height="220" src="https://www.youtube.com/embed/dD2EISBDjWM"
+                            title="Video de ayuda" allowfullscreen></iframe>
+                    </section>
+                </section>
+
+                <section class="col-md-4">
+                    <h3 class="h4 mb-4 text-primary">Datos Personales</h3>
 
                     <section class="mb-3">
                         <label for="nombre" class="form-label">Nombre completo:</label>
@@ -435,19 +450,10 @@
                             <label class="form-check-label" for="otro">Otro</label>
                         </section>
                     </section>
+                </section>
 
-                    <section class="mt-4 p-3 bg-light rounded">
-                        <label class="form-label d-block fw-bold">Instrucciones de ayuda:</label>
-                        <audio controls class="w-100 mb-3">
-                            <source src="instrucciones.mp3" type="audio/mpeg">
-                        </audio>
-                        <iframe class="w-100 rounded" height="200" src="https://www.youtube.com/embed/dD2EISBDjWM"
-                            title="Video de ayuda"></iframe>
-                    </section>
-                </fieldset>
-
-                <fieldset class="col-md-6 border-0">
-                    <legend class="h4 mb-4 text-primary">Detalles del Contacto</legend>
+                <section class="col-md-4">
+                    <h3 class="h4 mb-4 text-primary">Detalles del Contacto</h3>
 
                     <section class="mb-3">
                         <label for="servicio" class="form-label">ID del servicio:</label>
@@ -490,61 +496,61 @@
                     </section>
 
                     <section class="d-flex gap-2">
-                        <button type="submit" class="btn btn-primary px-4">Enviar </button>
+                        <button type="submit" class="btn btn-primary px-4">Enviar</button>
                         <button type="reset" class="btn btn-outline-secondary">Borrar</button>
                     </section>
-                </fieldset>
+                </section>
 
             </form>
         </section>
 
-        <!-- SECCION FOOTER -->
-        <footer class="bg-dark text-light py-5 mt-5">
-            <section class="container">
-                <section class="row">
+            <!-- SECCION FOOTER -->
+            <footer class="bg-dark text-light py-5 mt-5">
+                <section class="container">
+                    <section class="row">
 
-                    <section class="col-md-3">
-                        <h3 class="h5 text-warning mb-3">Redes Sociales</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a href="https://www.facebook.com/"
-                                    class="text-secondary text-decoration-none">Facebook</a></li>
-                            <li class="mb-2"><a href="https://www.instagram.com/"
-                                    class="text-secondary text-decoration-none">Instagram</a></li>
-                            <li class="mb-2"><a href="https://www.tiktok.com/"
-                                    class="text-secondary text-decoration-none">TikTok</a></li>
-                        </ul>
+                        <section class="col-md-3">
+                            <h3 class="h5 text-warning mb-3">Redes Sociales</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="https://www.facebook.com/"
+                                        class="text-secondary text-decoration-none">Facebook</a></li>
+                                <li class="mb-2"><a href="https://www.instagram.com/"
+                                        class="text-secondary text-decoration-none">Instagram</a></li>
+                                <li class="mb-2"><a href="https://www.tiktok.com/"
+                                        class="text-secondary text-decoration-none">TikTok</a></li>
+                            </ul>
+                        </section>
+
+                        <section class="col-md-3">
+                            <h3 class="h5 text-warning mb-3">Links</h3>
+                            <ul class="list-unstyled text-secondary">
+                                <li class="mb-2">Información legal</li>
+                                <li class="mb-2">Política de privacidad</li>
+                                <li class="mb-2">Términos y Condiciones</li>
+                            </ul>
+                        </section>
+
+                        <section class="col-md-3">
+                            <h3 class="h5 text-warning mb-3">Contacto soporte:</h3>
+                            <ul class="list-unstyled text-secondary">
+                                <li class="mb-2">peruhosting@peru.com</li>
+                                <li class="mb-2">Horario de atención: 24/7</li>
+                                <li class="mb-2">Ubicación: Lima, Perú</li>
+                            </ul>
+                        </section>
+
+                        <section class="col-md-3">
+                            <h3 class="h5 text-warning mb-3">Desarrollo</h3>
+                            <p class="text-secondary small">
+                                Página creada y desarrollada por:<br>
+                                <span class="text-light fw-bold">Michael Pacheco</span><br>
+                                &copy; 2026 Derechos reservados
+                            </p>
+                        </section>
+
                     </section>
-
-                    <section class="col-md-3">
-                        <h3 class="h5 text-warning mb-3">Links</h3>
-                        <ul class="list-unstyled text-secondary">
-                            <li class="mb-2">Información legal</li>
-                            <li class="mb-2">Política de privacidad</li>
-                            <li class="mb-2">Términos y Condiciones</li>
-                        </ul>
-                    </section>
-
-                    <section class="col-md-3">
-                        <h3 class="h5 text-warning mb-3">Contacto soporte:</h3>
-                        <ul class="list-unstyled text-secondary">
-                            <li class="mb-2">peruhosting@peru.com</li>
-                            <li class="mb-2">Horario de atención: 24/7</li>
-                            <li class="mb-2">Ubicación: Lima, Perú</li>
-                        </ul>
-                    </section>
-
-                    <section class="col-md-3">
-                        <h3 class="h5 text-warning mb-3">Desarrollo</h3>
-                        <p class="text-secondary small">
-                            Página creada y desarrollada por:<br>
-                            <span class="text-light fw-bold">Michael Pacheco</span><br>
-                            &copy; 2026 Derechos reservados
-                        </p>
-                    </section>
-
                 </section>
-            </section>
-        </footer>
+            </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
