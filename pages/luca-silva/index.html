@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA DESPENSA</title>
 
-    <link rel="stylesheet" href="../../css/estilo_global.css">
-    <link rel="stylesheet" href="estilo.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../luca-silva/estilo.css">
 </head>
 
 <body>
@@ -24,8 +27,17 @@
                 <li><a href="#secciones">Secciones</a></li>
                 <li><a href="#productos">Nuestros Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+
+                <li>
+                    <a href="#carrito" class="carrito">
+                        <i class="bi bi-cart3"></i>
+                        <span class="contador">0</span>
+                    </a>
+                </li>
+
             </ul>
         </nav>
+
 
     </header>
 
@@ -134,7 +146,7 @@
 
                     <img src="Imagenes/frutas y verduras.png" alt="Frutas y Verduras">
 
-                    <a href="#frutas"><button>Ver productos</button></a>
+                    <a href="#frutas"><button class="btn btn-success">Ver productos</button></a>
 
                 </article>
 
@@ -146,7 +158,7 @@
 
                     <img src="Imagenes/carnes y pescados..png" alt="Carnes y Pescados">
 
-                    <a href="#carnes"><button>Ver productos</button></a>
+                    <a href="#carnes"><button class="btn btn-success">Ver productos</button></a>
                 </article>
 
                 <article class="card">
@@ -157,7 +169,7 @@
 
                     <img src="Imagenes/panadería.png" alt="Panadería">
 
-                    <a href="#panaderia"><button>Ver productos</button></a>
+                    <a href="#panaderia"><button class="btn btn-success">Ver productos</button></a>
                 </article>
 
                 <article class="card">
@@ -168,7 +180,7 @@
 
                     <img src="Imagenes/Abarrotes.png" alt="Abarrotes">
 
-                    <a href="#abarrotes"><button>Ver productos</button></a>
+                    <a href="#abarrotes"><button class="btn btn-success">Ver productos</button></a>
                 </article>
 
                 <article class="card">
@@ -179,7 +191,7 @@
 
                     <img src="Imagenes/Productos de limpieza.png" alt="Productos de Limpieza">
 
-                    <a href="#limpieza"><button>Ver productos</button></a>
+                    <a href="#limpieza"><button class="btn btn-success">Ver productos</button></a>
                 </article>
 
                 <article class="card">
@@ -190,7 +202,7 @@
 
                     <img src="Imagenes/Bebidas.png" alt="Bebidas">
 
-                    <a href="#bebidas"><button>Ver productos</button></a>
+                    <a href="#bebidas"><button class="btn btn-success">Ver productos</button></a>
                 </article>
 
                 <article class="card">
@@ -201,7 +213,7 @@
 
                     <img src="Imagenes/Snacks y Golosinas.png" alt="Snacks y Golosinas">
 
-                    <a href="#snacks"><button>Ver productos</button></a>
+                    <a href="#snacks"><button class="btn btn-success">Ver productos</button></a>
                 </article>
 
                 <article class="card">
@@ -212,7 +224,7 @@
 
                     <img src="Imagenes/Congelados.png" alt="Congelados">
 
-                    <a href="#congelados"><button>Ver productos</button></a>
+                    <a href="#congelados"><button class="btn btn-success">Ver productos</button></a>
                 </article>
 
                 <article class="card">
@@ -223,7 +235,7 @@
 
                     <img src="Imagenes/Lácteos y Huevos.png" alt="Lácteos y Huevos">
 
-                    <a href="#lácteos"><button>Ver productos</button></a>
+                    <a href="#lácteos"><button class="btn btn-success">Ver productos</button></a>
                 </article>
 
                 <article class="card">
@@ -234,7 +246,7 @@
 
                     <img src="Imagenes/Hogar y Utilidades.png" alt="Hogar y Utilidades">
 
-                    <a href="#hogar"><button>Ver productos</button></a>
+                    <a href="#hogar"><button class="btn btn-success">Ver productos</button></a>
                 </article>
 
             </section>
@@ -288,7 +300,8 @@
                             <li>
                                 <h3>Naranjas</h3><mark>S/ 3.20</mark><sub>el kilo</sub>
                             </li>
-                            <h3>Lechuga</h3><mark>S/ 1.50</mark><sub>cada unidad</sub>
+                            <li>
+                                <h3>Lechuga</h3><mark>S/ 1.50</mark><sub>cada unidad</sub>
                             </li>
                             <li>
                                 <h3>Pepino</h3><mark>S/ 1.20</mark><sub>cada unidad</sub>
@@ -311,8 +324,8 @@
                         </ul>
                     </details>
                     <footer>
-                        <button>Agregar al carrito</button>
-                        <button>Comprar ahora</button>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                        <button class="btn btn-danger">Comprar ahora</button>
                     </footer>
                 </article>
 
@@ -358,8 +371,8 @@
                         </ul>
                     </details>
                     <footer>
-                        <button>Agregar al carrito</button>
-                        <button>Comprar ahora</button>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                        <button class="btn btn-danger">Comprar ahora</button>
                     </footer>
                 </article>
 
@@ -405,8 +418,8 @@
                         </ul>
                     </details>
                     <footer>
-                        <button>Agregar al carrito</button>
-                        <button>Comprar ahora</button>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                        <button class="btn btn-danger">Comprar ahora</button>
                     </footer>
                 </article>
 
@@ -452,8 +465,8 @@
                         </ul>
                     </details>
                     <footer>
-                        <button>Agregar al carrito</button>
-                        <button>Comprar ahora</button>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                        <button class="btn btn-danger">Comprar ahora</button>
                     </footer>
                 </article>
 
@@ -499,8 +512,8 @@
                         </ul>
                     </details>
                     <footer>
-                        <button>Agregar al carrito</button>
-                        <button>Comprar ahora</button>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                        <button class="btn btn-danger">Comprar ahora</button>
                     </footer>
                 </article>
 
@@ -544,11 +557,10 @@
                                 <h3>Red Bull</h3><mark>S/ 8.50</mark><sub>por lata</sub>
                             </li>
                         </ul>
-                        </ul>
                     </details>
                     <footer>
-                        <button>Agregar al carrito</button>
-                        <button>Comprar ahora</button>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                        <button class="btn btn-danger">Comprar ahora</button>
                     </footer>
                 </article>
 
@@ -594,8 +606,8 @@
                         </ul>
                     </details>
                     <footer>
-                        <button>Agregar al carrito</button>
-                        <button>Comprar ahora</button>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                        <button class="btn btn-danger">Comprar ahora</button>
                     </footer>
                 </article>
 
@@ -641,8 +653,8 @@
                         </ul>
                     </details>
                     <footer>
-                        <button>Agregar al carrito</button>
-                        <button>Comprar ahora</button>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                        <button class="btn btn-danger">Comprar ahora</button>
                     </footer>
                 </article>
 
@@ -653,7 +665,7 @@
                     <details>
                         <ul>
                             <li>
-                                <h3>Queso Fresco</h3><mark>> S/ 2.50</mark><sub>por 100 g
+                                <h3>Queso Fresco</h3><mark>S/ 2.50</mark><sub>por 100 g
                             </li>
                             <li>
                                 <h3>Mantequilla</h3><mark>S/ 9.30</mark><sub>180 g</sub>
@@ -688,8 +700,8 @@
                         </ul>
                     </details>
                     <footer>
-                        <button>Agregar al carrito</button>
-                        <button>Comprar ahora</button>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                        <button class="btn btn-danger">Comprar ahora</button>
                     </footer>
                 </article>
 
@@ -735,8 +747,8 @@
                         </ul>
                     </details>
                     <footer>
-                        <button>Agregar al carrito</button>
-                        <button>Comprar ahora</button>
+                        <button class="btn btn-success">Agregar al carrito</button>
+                        <button class="btn btn-danger">Comprar ahora</button>
                     </footer>
                 </article>
 
@@ -784,21 +796,20 @@
 
                             <!-- input text con valor por defecto -->
                             <label>Nombres:</label>
-                            <input type="text" name="Nombres" required>
+                            <input class="form-control" type="text" name="Nombres" required>
 
                             <label>Apellidos:</label>
-                            <input type="text" name="Apellidos">
+                            <input class="form-control" type="text" name="Apellidos">
 
                             <!-- Maximo 8  caracteres -->
                             <label>DNI:</label>
-                            <input type="text" maxlength="8">
-
+                            <input class="form-control" type="text" maxlength="8">
                             <!-- email con valor inicial -->
                             <label>Email:</label>
-                            <input type="email" name="email">
+                            <input class="form-control" type="email" name="email">
                             <!-- Poner edad máximo hasta los 99 años -->
                             <label>Edad:</label>
-                            <input type="number" min="18" max="99">
+                            <input class="form-control" type="number" min="18" max="99">
                         </fieldset>
                     </section>
 
@@ -821,7 +832,7 @@
 
                             <!-- Selección desde lista -->
                             <label>País:</label>
-                            <select name="pais">
+                            <select class="form-control" name="pais">
 
                                 <option>Seleccione País</option>
                                 <option>Perú</option>
@@ -838,7 +849,7 @@
                             <!-- Lista de sugerencias -->
 
                             <label>Ciudad:</label>
-                            <input list="ciudades">
+                            <input class="form-control" list="ciudades">
 
                             <datalist id="ciudades">
                                 <option value="Lima">
@@ -851,7 +862,7 @@
 
                             <!-- Selección desde lista -->
                             <label>Distrito:</label>
-                            <input list="distritos">
+                            <input class="form-control" list="distritos">
 
                             <datalist id="distritos">
                                 <option value="Lurigancho-Chosica">
@@ -866,7 +877,7 @@
                             </datalist>
                             <!-- Permite seleccionar fecha de nacimiento -->
                             <label>Fecha de nacimiento:</label>
-                            <input type="date">
+                            <input class="form-control" type="date">
                         </fieldset>
                     </section>
 
@@ -876,14 +887,14 @@
                             <legend>Contacto y Comentarios</legend>
                             <!-- Campo para ingresar números telefónicos -->
                             <label>Teléfono:</label>
-                            <input type="tel">
+                            <input class="form-control" type="tel">
 
                             <!-- Campo para contraseñas, oculta los caracteres -->
                             <label>Contraseña:</label>
-                            <input type="password">
+                            <input class="form-control" type="password">
 
                             <label>Dirección:</label>
-                            <input type="text">
+                            <input class="form-control" type="text">
 
                             <!-- Elegir el método de pago -->
                             <label>Método de pago:</label>
@@ -895,7 +906,7 @@
                             </select>
                             <!-- Campo para escribir textos largos -->
                             <label>Comentarios:</label>
-                            <textarea rows="5"></textarea>
+                            <textarea class="form-control" rows="5"></textarea>
 
                             <menu>
                                 <button type="submit">Guardar</button>
@@ -1029,6 +1040,11 @@
         .El objetivo principal de mi footer es proporcionar información institucional, datos de contacto, métodos de pago, enlaces de navegación y otros recursos complementarios que mejoren la experiencia del usuario que ingrese a mi sitio web.
         -->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
@@ -1057,17 +1073,12 @@
 Header               1.5 , 
 S1 Carrusel          3.5 
 S2 Categorización    3.5 
-S3 Ítems             3.0, Uso de Articulo en ves de CARD y adicionar footer 
-S4 Formulario        3.5, Adicionar Formulario 
+S3 Ítems             3.0, 
+S4 Formulario        3.5, 
 Footer               1.5, 
 Nota HTML : 17
 Sustentación :+2
 Pariticipacion:+1
 Observaciones : 
-- Revisar el código generado , no usar div
-- Considerar que solo es código HTML , si conservas el css y el JS se harán preguntas con respecto a esto.
-- Separar bien las secciones 
-- Hay muchos elementos que no tienen etiqueta de cierre
-- Seguir los lineamientos dados en clase.
 Nota Parcial : 20 de 20
 -->
