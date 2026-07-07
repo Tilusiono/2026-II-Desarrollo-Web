@@ -190,3 +190,13 @@ mark{
     background:#8b0000;
     color:white;
 }
+html,
+body{
+    background:#000000;
+    margin:0;
+    padding:0;
+}
+
+main{
+    background:#737373;
+}
