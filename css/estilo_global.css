@@ -11,9 +11,16 @@ body {
 }
 
 .header {
+<<<<<<< HEAD
   background: #cce5ff;   /* azul */
   border: 3px solid #339af0;
   height: 120px;
+=======
+  background: #cce5ff;
+  /* azul */
+  border: 3px solid #339af0;
+  height: 20%;
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   text-align: center;
   font-weight: bold;
   justify-content: center;
@@ -32,7 +39,12 @@ body {
 
 /* SECTION */
 .section {
+<<<<<<< HEAD
   background: #df845a;   /* verde */
+=======
+  background: #df845a;
+  /* verde */
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   border: 3px solid #79c485;
   min-height: 20vh;
   padding: 20px;
@@ -43,6 +55,7 @@ body {
 }
 
 .section1 {
+<<<<<<< HEAD
   background: #eb3407; 
   border: 3px solid #0523e7;
 }
@@ -64,21 +77,65 @@ body {
 .logo{
   width: 40px;
   height: 40px;
+=======
+  background: #e2bfb6;
+  border: 3px solid #0523e7;
+}
+
+.header img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.section1 img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+
+.section2 {
+  background: #f3d4ae;
+  border: 3px solid #d35400;
+}
+
+.section3 {
+  background: #c9cca9;
+  border: 3px solid #d35400;
+}
+
+.section4 {
+  background: #b9dcbb;
+  /* azul oscuro */
+  border: 3px solid #1b2838;
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
 }
 
 .card {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   background: #5aa9c9;   
   border: 3px solid #141311;
   align-items: center;
   justify-content: center;
   
+=======
+  background: #5aa9c9;
+  border: 3px solid #141311;
+  align-items: center;
+  justify-content: center;
+
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
 }
 
 /* ARTICLE */
 .article {
+<<<<<<< HEAD
   background: #fff3bf;  
+=======
+  background: #fff3bf;
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   border: 3px solid #d4b557;
   display: flex;
   align-items: center;
@@ -89,7 +146,12 @@ body {
 
 /* ASIDE */
 .aside {
+<<<<<<< HEAD
   background: #e7f5ff;   /* celeste */
+=======
+  background: #e7f5ff;
+  /* celeste */
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   border: 3px solid #88193e;
   display: flex;
   align-items: center;
@@ -97,14 +159,23 @@ body {
 }
 
 /* FOOTER */
+<<<<<<< HEAD
 .footer{
+=======
+.footer {
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   background: #f1d176;
   border: 3px solid #868e96;
 }
 
 /* FORM */
 .form {
+<<<<<<< HEAD
   background: #ffe3e3;   /* rosado */
+=======
+  background: #ffe3e3;
+  /* rosado */
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   border: 3px solid #ff6b6b;
   display: flex;
   align-items: center;
@@ -113,7 +184,12 @@ body {
 
 /* BUTTON */
 .button {
+<<<<<<< HEAD
   background: #d0ebff;   /* azul claro */
+=======
+  background: #d0ebff;
+  /* azul claro */
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   border: 3px solid #339af0;
   height: 60px;
   width: 220px;
@@ -139,9 +215,12 @@ body {
   gap: 20px;
 }
 
+<<<<<<< HEAD
 .columnas_1 {
   align-items: center;
 }
+=======
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
 
 .columnas_2 {
   grid-template-columns: repeat(2, 1fr);
@@ -150,6 +229,10 @@ body {
 .columnas_3 {
   grid-template-columns: repeat(3, 1fr);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
 .columnas_4 {
   grid-template-columns: repeat(4, 1fr);
 }
@@ -157,12 +240,24 @@ body {
 .columnas_5 {
   grid-template-columns: repeat(5, 1fr);
 }
+<<<<<<< HEAD
 .columnas_6 {
   grid-template-columns: repeat(6, 1fr);
 }
 .columnas_7 {
   grid-template-columns: repeat(7, 1fr);
 }
+=======
+
+.columnas_6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.columnas_7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
 .columnas_8 {
   grid-template-columns: repeat(8, 1fr);
 }
@@ -204,14 +299,22 @@ body {
 }
 
 /* H1 */
+<<<<<<< HEAD
 .hero > .header {
+=======
+.hero>.header {
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   grid-column: 1;
   grid-row: 1;
   background-color: #79c485;
 }
 
 /* BOTÓN */
+<<<<<<< HEAD
 .hero > .button {
+=======
+.hero>.button {
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   grid-column: 2;
   grid-row: 1;
   background-color: #358bb3;
@@ -219,14 +322,22 @@ body {
 }
 
 /* STATS ABAJO */
+<<<<<<< HEAD
 .hero > .stats {
+=======
+.hero>.stats {
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   background-color: #072635;
   grid-column: 1 / -1;
   grid-row: 2;
 }
 
 /* STATS ABAJO */
+<<<<<<< HEAD
 .hero > .stats2 {
+=======
+.hero>.stats2 {
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   background-color: #072635;
   grid-column: 1 / -1;
   grid-row: 3;
@@ -238,13 +349,23 @@ body {
   width: 100%;
   border-collapse: collapse;
   background: #965959;
+<<<<<<< HEAD
   border: 4px solid #7048e8; /* marco general */
+=======
+  border: 4px solid #7048e8;
+  /* marco general */
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   font-weight: bold;
 }
 
 /* THEAD */
 .table thead {
+<<<<<<< HEAD
   background: #0c4b36;        /* verde claro */
+=======
+  background: #afebd7;
+  /* verde claro */
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   border: 3px solid #20b2c9;
 }
 
@@ -263,7 +384,12 @@ body {
 
 /* TBODY */
 .table tbody {
+<<<<<<< HEAD
   background: #fff9db;        /* amarillo claro */
+=======
+  background: #fff9db;
+  /* amarillo claro */
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   border: 3px solid #fcc419;
 }
 
@@ -297,19 +423,26 @@ body {
   display: block;
 }
 
+<<<<<<< HEAD
 .article img  {
+=======
+.article img {
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
+<<<<<<< HEAD
 section img  {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+=======
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
 
 .card {
   width: 100%;
@@ -334,9 +467,15 @@ nav {
   display: block;
 }
 
+<<<<<<< HEAD
 .img{
   width: 300px;
   height:300px;
+=======
+.img {
+  width: 300px;
+  height: 300px;
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
 }
 
 .icon {
@@ -344,3 +483,137 @@ nav {
   height: 24px;
 }
 
+<<<<<<< HEAD
+=======
+img{
+  max-width: 250px;
+  max-height: 250px;
+}
+
+/* Contenedor principal */
+.formulario {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Fieldsets */
+.formulario fieldset {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Títulos */
+.formulario legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #333;
+}
+
+/* Labels */
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Inputs, selects y textarea */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="url"],
+.formulario input[type="tel"],
+.formulario input[type="date"],
+.formulario input[type="time"],
+.formulario input[type="month"],
+.formulario input[type="week"],
+.formulario input[type="datetime-local"],
+.formulario input[type="number"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Textarea */
+.formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Radios y checkbox */
+.formulario input[type="radio"],
+.formulario input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Range */
+.formulario input[type="range"] {
+    width: 100%;
+}
+
+/* File */
+.formulario input[type="file"] {
+    margin-bottom: 15px;
+}
+
+/* Botones */
+.formulario button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+/* Submit */
+.formulario button[type="submit"] {
+    background-color: #198754;
+    color: white;
+}
+
+/* Reset */
+.formulario button[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Hover */
+.formulario button:hover {
+    opacity: 0.9;
+}
+
+/* Footer botones */
+.formulario footer,
+.formulario menu {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .formulario {
+        padding: 10px;
+    }
+
+    .formulario footer,
+    .formulario menu {
+        flex-direction: column;
+    }
+
+    .formulario button {
+        width: 100%;
+    }
+}
+>>>>>>> 127be9d5914a5c289f9b357bc3deab01866f423d
