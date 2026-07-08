@@ -1,4 +1,3 @@
-/* ==================== 5 ETIQUETAS GENERALES ==================== */
 body {
     background-color: #f4eae1;
     color: #2b2b2b;
@@ -20,58 +19,26 @@ button {
     color: #8b4513;
     border: 2px solid #8b4513;
     padding: 8px 16px;
-    font-family: inherit;
 }
 footer {
     background-color: #eaddca;
     border-top: 1px dashed #8b4513;
     padding: 20px;
 }
-/* ==================== 5 ETIQUETAS ID ==================== */
 #inicio {
     background-color: #fff8f0;
     box-shadow: 4px 4px 0px #8b4513;
-    padding: 40px;
-}
-h1 {
-    color: #8b4513;
-    font-style: italic;
-    border-bottom: 2px solid #8b4513;
-    padding-bottom: 5px;
-}
-p {
-    color: #4a4a4a;
-    line-height: 1.8;
-    text-align: justify;
-}
-button {
-    background-color: transparent;
-    color: #8b4513;
-    border: 2px solid #8b4513;
-    padding: 8px 16px;
-    font-family: inherit;
-}
-footer {
-    background-color: #eaddca;
-    border-top: 1px dashed #8b4513;
-    padding: 20px;
-}
-
-/* ==================== 5 ETIQUETAS ID ==================== */
-#inicio {
-    background-color: #fff8f0;
-    box-shadow: 4px 4px 0px #8b4513;
-    padding: 40px;
+    border: 1px solid #8b4513;
 }
 #productos {
     background-color: #faf0e6;
     border: 1px solid #d2b48c;
-    padding: 30px;
+    padding: 50px 20px;
 }
 #elementos {
     background-color: #f5f5dc;
     border-top: 3px double #8b4513;
-    padding: 35px;
+    padding: 60px 20px;
 }
 #formulario {
     background-color: #fffdfa;
@@ -81,43 +48,146 @@ footer {
 #formCompleto {
     background-color: #fcf8f2;
     border-radius: 4px;
-}
-
-/* ==================== 5 ETIQUETAS CLASS ==================== */
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f2e6d9;
     padding: 15px;
+}
+.header {
+    background-color: #f4eae1;
+    border-bottom: 1px solid #8b4513;
 }
 .logo {
     height: 30px;
     filter: sepia(1) contrast(1.2);
+    display: inline-block;
+    color: #e0e0e0;
 }
 .columnas_3 {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     gap: 20px;
-}
-.columnas_4 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
 }
 .card {
     background-color: #fffdfa;
     border: 1px solid #d7ccc8;
     box-shadow: 5px 5px 0px #8b4513;
     padding: 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-/* ==================== LOS ÚLTIMOS DOS SELECTORES REQUERIDOS ==================== */
-/* Pseudo-clases */
-button:hover { background-color: #8b4513; color: #ffffff; }
-input:disabled { background-color: #e0e0e0; color: #a0a0a0; }
-/* Selectores Descendientes */
-.header nav ul li a { color: #8b4513; text-decoration: underline; }
-.card figure img { max-width: 90%; border: 3px solid #8b4513; margin: 0 auto; display: block; }
+.columnas_4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+    padding: 20px 0;
+}
+input[type="text"] {
+    border: 2px solid #8b4513;
+    background-color: #fffdfa;
+    color: #2b2b2b;
+}
+input[readonly] {
+    background-color: #f0e6df;
+    color: #7a7a7a;
+    border-style: dashed;
+}
+input[disabled] {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+}
+input[type="email"] {
+    border: 2px solid #8b4513;
+    border-radius: 4px;
+    padding: 6px;
+}
+button:hover { 
+    background-color: #8b4513; 
+    color: #ffffff; 
+    cursor: pointer;
+}
+.header nav ul li a { 
+    color: #8b4513; 
+    text-decoration: underline; 
+    font-weight: bold;
+}
+.card figure img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 3px solid #8b4513;
+    display: block;
+    margin: 0 auto;
+}
+.card footer {
+    margin-top: auto;
+    padding-top: 15px;
+}
+.card figure {
+    margin: 0 0 15px 0;
+    width: 100%;
+    overflow: hidden;
+}
+label + input {
+    margin-left: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+legend ~ section {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: transparent;
+}
+#navbar-principal {
+    background-color: #8b5a2b;
+    padding: 15px 20px;
+    border-bottom: 2px solid #5c3a17;
+}
+#navbar-principal .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#navbar-principal .nav-link:hover {
+    color: #f4eae1;
+    text-decoration: underline;
+}
+#navbar-principal .navbar-brand {
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+.grid-discos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+details > summary {
+    color: #8b4513;
+    font-weight: bold;
+    cursor: pointer;
+}
+img[alt*="Portada"] {
+    filter: sepia(0.2) contrast(1.1);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0px #5c3a17;
+    transition: all 0.2s ease;
+}
+/* ==================== RESPONSIVO PARA CELULARES ==================== */
+@media (max-width: 768px) {
+    .grid-discos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .columnas_4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
