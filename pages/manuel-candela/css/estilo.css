@@ -5,12 +5,14 @@
     padding: 0;
 }
 
-/* ETIQUETAS HTML */
+/* ---------------------- */
+/* --- ETIQUETAS HTML --- */
+/* ---------------------- */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    line-height: 1.5;
-    color: #333333;
+    line-height: 1.2;
 }
 
 header {
@@ -24,7 +26,7 @@ mark {
     background-color: #C5A059;
     color: white;
     font-weight: bold;
-    padding: 2px 8px;
+    padding: 8px 12px;
     border-radius: 4px;
 }
 
@@ -36,169 +38,248 @@ footer {
 }
 
 a {
-    color: white;         /* Usamos el color de detalle para contraste */
-    text-decoration: none;  /* Sin subrayado */
-    font-weight: 500;       /* Grosor de fuente */
-    transition: 0.3s;       /* Suavizado en interacción */
+    color: white;        
+    text-decoration: none; 
+    font-weight: 500;       
+    transition: 0.3s;       
 }
 
 ul {
-    list-style: none;       /* Sin puntos */
-    padding: 0;             /* Sin margen interno */
-    margin: 10px 0;         /* Espacio vertical */
-    line-height: 1.8;       /* Legibilidad */
+    list-style: none;
+    padding: 0;         
+    margin: 10px 0;    
+    line-height: 1.8;  
 }
 
 img {
+    width: 100%; 
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
     display: block;
 }
 
-/* CLASES+ */
+/* -------------- */
+/* --- CLASES --- */
+/* -------------- */
+
 .header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 20px 40px;
-    background-color: #000000;
-    padding: 20px 50px;
-}
-
-.navbar-brand {
-    align-self: center;
-    width: 80px;
-    margin: 0;
-    padding: 0;
-}
-
-/* --- BUSCADOR BLANCO Y BOTÓN OSCURO --- */
-
-.d-flex {
-    grid-column: 2;
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px 50px 0px 50px;
+}
+
+/* Isotipo */
+.navbar-brand {
+    width: 65px !important;        
+    margin: 0;                     
+    padding: 0;                    
+    flex-shrink: 0;                
+}
+
+/* Buscador y botón*/
+.d-flex {
+    display: flex;
+    width: 50%;  
+    border-radius: 4px;
+    overflow: hidden;
     margin: 0;
 }
 
 .form-control {
     flex-grow: 1;
     padding: 12px;
-    background-color: #ffffff; /* Buscador blanco (como al principio) */
-    color: #333333;
-    border: none;
+    background-color: #ffffff; 
+    margin-right: 0px !important;  
+    border-radius: 0px !important; 
 }
 
 .btn {
     padding: 12px 25px;
-    background-color: #333333; /* Botón oscuro (lo que pediste) */
+    background-color: #333333;
     color: #ffffff;
     border: none;
+    box-shadow: none;   
     cursor: pointer;
+    border-radius: 0px; 
 }
 
-/* --- LINKS EN BLANCO --- */
-
-nav {
-    grid-column: 2;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+/* Enlaces*/
+.header nav {
+    width: 100%;                   
+    margin-top: -15px;
+    margin-bottom: 15px; 
+    padding: 0;                    
+    display: flex;                 
+    justify-content: center;  
 }
 
-nav ul {
+.header nav ul {
     display: flex;
     gap: 30px;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;     
 }
 
-nav a {
-    color: #ffffff; /* Links blancos */
+.header nav a {
+    color: #ffffff !important; 
     text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 0.9rem;
 }
 
+/* Carrusel */
 .section1 { 
-    background-color: #FFFFFF; 
-    padding: 40px 20px; 
-    text-align: center;
-    margin-bottom: 20px;
+    width: 80%;
+    margin: 50px auto 1px auto;
+    text-align: center;         
+    overflow: hidden;          
+    padding-bottom: 0px; 
 }
 
-.footer { 
-    background-color: #333333; 
-    color: #FFFFFF; 
-    padding: 40px 20px;
-    text-align: center;
-}
-
-
-/* --- PRODUCTOS Y CONTENEDORES --- */
-.col-3 { 
-    border: 1px solid #EEEEEE; 
-    padding: 15px; 
-    border-radius: 8px; 
-    background-color: #FFFFFF; 
-    transition: 0.3s; 
-}
-
-.col-3:hover { 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transform: translateY(-5px);
-    border-color: #C5A059;
-    cursor: pointer;
-}
-
-
-/* --- ELEMENTOS DE DISEÑO Y ACCIÓN --- */
-.mark { 
-    background-color: #C5A059; 
-    color: #FFFFFF; 
-    padding: 2px 8px; 
-    border-radius: 4px; 
-    font-weight: bold; 
-}
-
-.button { 
-    background-color: #C5A059; 
-    color: #FFFFFF; 
-    border: none; 
-    padding: 10px 20px; 
-    border-radius: 4px; 
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.button:hover { 
-    background-color: #A8874A;
-    transform: scale(1.05);
-    transition: 0.2s;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-/* --- ENLACES Y TEXTO --- */
-.header a { 
-    color: #C5A059; 
-    text-decoration: none; 
-    font-weight: 500;
-    margin-right: 15px;
-}
-
-.footer a { 
-    color: #C5A059; 
-    text-decoration: none; 
-    display: block;
-    margin-bottom: 8px;
-}
-
+/* Footer */
 .derechos { 
     text-align: center; 
     margin-top: 30px; 
-    font-size: 0.8rem; 
-    border-top: 1px solid #444444; 
+    font-size: 1rem; 
+    border-top: 2px solid #444444; 
     padding-top: 20px; 
+}
+
+/* ----------------------- */
+/* --- IDENTIFICADORES --- */
+/* ----------------------- */
+
+#Carrusel {
+    width: 80%;         
+    max-width: none;    
+    margin: 0 auto;     
+    overflow: hidden;   
+}
+
+/* Formulario */
+#Formulario {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+#Formulario fieldset {
+    border: 2px solid #eeeeee;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+#Formulario legend h3, legend h2 {
+    color: #333;
+    padding: 0;
+    font-size: 1.65rem;
+    font-weight: 600;  
+}
+
+#Formulario label {
+    display: block; /* Pone cada label encima de su input */
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Footer */
+#Footer {
+    background-color: #333333;
+    width: 100%;
+    margin-left: 72px;
+    margin-top: 20px;
+    padding: 10px 300px;
+    box-sizing: border-box; 
+}
+
+#Footer h3 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#Footer a {
+    color: #F2F0EF;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Efecto hover para los enlaces */
+#Footer a:hover {
+    color: #C5A059;
+}
+/* Categorías, Productos y Productos Destacados */
+#Categorías .col-3, #Productos .col-3, #ProductosDestacados .col-3 { 
+    border: 3px solid #EEEEEE; 
+    padding: 20px; 
+    border-radius: 8px; 
+    background-color: #FFFFFF; 
+    overflow: hidden;
+}
+
+#Categorías .col-3:hover, #Productos .col-3:hover, #ProductosDestacados .col-3:hover { 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    border-color: #C5A059;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* ----------------- */
+/* --- ATRIBUTOS --- */
+/* ----------------- */
+
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="search"] {
+    width: 100%;            
+    padding: 12px;  
+    display: block;         
+    margin-bottom: 15px;    
+}
+
+select[name="producto"], textarea[name="direccion"] {
+    background: #f9f9f9;    
+    width: 100%;            
+    padding: 12px;       
+    border-radius: 4px;     
+}
+
+input[type="number"], input[type="date"], input[type="time"] {
+    width: 100%;            
+    padding: 10px;          
+    margin-bottom: 15px;  
+    box-sizing: border-box;
+}
+
+#Formulario button[type="submit"] {
+    background-color: #C5A059;
+    color: white;
+    padding: 12px 25px;     
+    font-weight: bold;      
+    cursor: pointer;        
+    border-radius: 4px;     
+    border: none;           
+}
+
+input[type="reset"] {
+    padding: 12px 25px;     
+    font-weight: bold;      
+    cursor: pointer;        
+    border-radius: 4px;     
+    border: none;     
+    background-color: #333333;
+    color: white;
+    margin-left: 10px;      
 }
