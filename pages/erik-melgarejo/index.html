@@ -211,78 +211,73 @@
 
 
   <!-- FORMULARIO -->
-  <section class="section4">
-    <h2>Suscríbete para recibir novedades</h2>
+<form class="section4" action="procesar.php" method="post">
+  <h2>Suscríbete para recibir novedades</h2>
 
-    <section class="columnas_4">
-      <!-- Bloque 1 -->
-      <article>
-        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-        <input type="email" name="correo" placeholder="Ingresa tu correo">
-      </article>
+  <section class="columnas_4">
+    <!-- Bloque 1 -->
+    <article>
+      <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+      <input type="email" name="correo" placeholder="Ingresa tu correo">
+    </article>
 
-      <!-- Bloque 2 -->
-      <article>
-        <input type="text" name="nickname" placeholder="Ingresa tu nickname">
-        <input type="number" name="edad" placeholder="Ingresa tu edad">
-      </article>
+    <!-- Bloque 2 -->
+    <article>
+      <input type="text" name="nickname" placeholder="Ingresa tu nickname">
+      <input type="number" name="edad" placeholder="Ingresa tu edad">
+    </article>
 
-      <!-- Bloque 3: Ubicación -->
-      <article>
-  <fieldset>
-    <legend>Ubicación</legend>
+    <!-- Bloque 3: Ubicación -->
+    <article>
+      <fieldset>
+        <legend>Ubicación</legend>
+        <label for="pais">Seleccione País:</label>
+        <select class="form-select form-select-lg mb-3" name="pais" id="pais">
+          <option value="">Seleccione</option>
+          <optgroup label="Sudamérica">
+            <option value="pe" selected>Perú</option>
+            <option value="ar">Argentina</option>
+            <option value="co">Colombia</option>
+            <option value="cl">Chile</option>
+            <option value="uy">Uruguay</option>
+            <option value="ve">Venezuela</option>
+          </optgroup>
+          <optgroup label="Europa">
+            <option value="de">Alemania</option>
+            <option value="es">España</option>
+            <option value="fr">Francia</option>
+            <option value="it">Italia</option>
+            <option value="uk">Reino Unido</option>
+            <option value="ru">Rusia</option>
+            <option value="nl">Países Bajos</option>
+          </optgroup>
+        </select>
+      </fieldset>
+    </article>
 
-    <label for="pais">Seleccione País:</label>
+    <!-- Bloque 4 -->
+    <article>
+      <input type="tel" name="telefono" placeholder="Ingresa tu número de teléfono">
+      <input type="text" name="ID_juego" placeholder="Ingresa tu ID del juego favorito">
+    </article>
 
-    <!-- Select grande con Bootstrap -->
-    <select class="form-select form-select-lg mb-3" name="pais" id="pais" aria-label="Large select example">
-      <option value="">Seleccione</option>
+    <!-- Bloque 5 -->
+    <article>
+      <input type="text" name="plataforma" placeholder="Tu plataforma favorita">
+      <input type="text" name="juego" placeholder="Tu juego favorito">
+    </article>
 
-      <optgroup label="Sudamérica">
-        <option value="pe" selected>Perú</option>
-        <option value="ar">Argentina</option>
-        <option value="co">Colombia</option>
-        <option value="cl">Chile</option>
-        <option value="uy">Uruguay</option>
-        <option value="ve">Venezuela</option>
-      </optgroup>
-
-      <optgroup label="Europa">
-        <option value="de">Alemania</option>
-        <option value="es">España</option>
-        <option value="fr">Francia</option>
-        <option value="it">Italia</option>
-        <option value="uk">Reino Unido</option>
-        <option value="ru">Rusia</option>
-        <option value="nl">Países Bajos</option>
-      </optgroup>
-    </select>
-  </fieldset>
-</article>
-
-
-      <!-- Bloque 4 -->
-      <article>
-        <input type="tel" name="telefono" placeholder="Ingresa tu número de teléfono">
-        <input type="text" name="ID del juego" placeholder="Ingresa tu ID del juego favorito">
-      </article>
-
-      <!-- Bloque 5 -->
-      <article>
-        <input type="text" name="plataforma" placeholder="Tu plataforma favorita">
-        <input type="text" name="juego" placeholder="Tu juego favorito">
-      </article>
-
-      <!-- Bloque 6 -->
-      <article>
-        <label>
-          <input type="checkbox" name="acepto"> Acepto recibir novedades por correo
-        </label>
-        <br>
-        <input type="submit" value="Suscribirme">
-      </article>
-    </section>
+    <!-- Bloque 6 -->
+    <article>
+      <label>
+        <input type="checkbox" name="acepto"> Acepto recibir novedades por correo
+      </label>
+      <br>
+      <input type="submit" value="Suscribirme">
+    </article>
   </section>
+</form>
+
 
 
 
