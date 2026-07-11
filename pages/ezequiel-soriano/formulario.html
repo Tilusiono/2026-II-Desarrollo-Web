@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Pollería JHOALS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body class="d-flex align-items-center min-vh-100 py-5 bg-light">
+
+    <!-- El contenedor principal define el ancho máximo directamente -->
+    <main class="container px-3" style="max-width: 580px;">
+        
+        <nav class="mb-4 d-flex justify-content-center justify-content-sm-start" aria-label="Navegación de retorno">
+            <a href="index.html" class="volver-link text-decoration-none d-inline-flex align-items-center gap-2 py-2 px-3 bg-white border rounded-pill shadow-sm">
+                <i class="bi bi-arrow-left" aria-hidden="true"></i> 
+                <span class="small fw-semibold">Volver a la web</span>
+            </a>
+        </nav>
+
+        <section class="card card-registro p-4 p-sm-5 shadow-sm">
+            
+            <header class="text-center mb-4">
+                <img src="img/logo.png" alt="Logo JHOALS" class="logo-branding mb-2" width="60" height="auto" onerror="this.style.display='none'">
+                <h1 class="fw-bold h3 mb-1 text-grafito">Crear Cuenta</h1>
+                <p class="text-gris-medio small mb-0">Únete para recibir promociones y novedades exclusivas.</p>
+            </header>
+
+            <!-- El formulario actúa directamente como la fila (row) de Bootstrap -->
+            <form id="registroForm" class="row g-3" action="#" method="post" novalidate>
+                
+                <!-- Las clases de columna se aplican directo a las etiquetas <label> -->
+                <label for="nombres" class="col-sm-6 form-label label-personalizado">
+                    Nombres
+                    <input type="text" class="form-control mt-1" id="nombres" name="nombres" autocomplete="given-name" required>
+                    <small class="invalid-feedback fw-normal">Escribe tus nombres.</small>
+                </label>
+                
+                <label for="apellidos" class="col-sm-6 form-label label-personalizado">
+                    Apellidos
+                    <input type="text" class="form-control mt-1" id="apellidos" name="apellidos" autocomplete="family-name" required>
+                    <small class="invalid-feedback fw-normal">Escribe tus apellidos.</small>
+                </label>
+
+                <label for="email" class="col-12 form-label label-personalizado">
+                    Correo electrónico
+                    <input type="email" class="form-control mt-1" id="email" name="email" placeholder="ejemplo@correo.com" autocomplete="email" required>
+                    <small class="invalid-feedback fw-normal">Ingresa un correo electrónico válido.</small>
+                </label>
+
+                <label for="telefono" class="col-sm-6 form-label label-personalizado">
+                    Teléfono
+                    <input type="tel" class="form-control mt-1" id="telefono" name="telefono" placeholder="999123456" pattern="[0-9]{9}" autocomplete="tel" required>
+                    <small class="invalid-feedback fw-normal">Ingresa un número de 9 dígitos.</small>
+                </label>
+                
+                <label for="fechaNacimiento" class="col-sm-6 form-label label-personalizado">
+                    Fecha de nacimiento
+                    <input type="date" class="form-control mt-1" id="fechaNacimiento" name="fechaNacimiento" autocomplete="bday" required>
+                    <small class="invalid-feedback fw-normal">Selecciona tu fecha.</small>
+                </label>
+
+                <label for="direccion" class="col-sm-8 form-label label-personalizado">
+                    Dirección
+                    <input type="text" class="form-control mt-1" id="direccion" name="direccion" autocomplete="street-address" required>
+                    <small class="invalid-feedback fw-normal">Ingresa tu dirección.</small>
+                </label>
+                
+                <label for="distrito" class="col-sm-4 form-label label-personalizado">
+                    Distrito
+                    <input type="text" class="form-control mt-1" id="distrito" name="distrito" required>
+                    <small class="invalid-feedback fw-normal">Especifica tu distrito.</small>
+                </label>
+
+                <label for="password" class="col-12 form-label label-personalizado">
+                    Contraseña
+                    <input type="password" class="form-control mt-1" id="password" name="password" minlength="8" aria-describedby="passwordHelp" required>
+                    <small id="passwordHelp" class="form-text text-gris-medio mt-1 d-block fw-normal" style="font-size: 0.75rem;">Mínimo 8 caracteres.</small>
+                    <small class="invalid-feedback fw-normal">La contraseña debe tener al menos 8 caracteres.</small>
+                </label>
+
+                <!-- El contenedor del checkbox pasa a ser un párrafo semántico <p> -->
+                <p class="col-12 form-check my-4 ms-3">
+                    <input class="form-check-input" type="checkbox" id="terminos" required>
+                    <label class="form-check-label small text-gris-medio" for="terminos">
+                        Acepto las políticas de privacidad.
+                    </label>
+                    <small class="invalid-feedback d-block fw-normal" style="font-size: 0.75rem;">Debes aceptar para continuar.</small>
+                </p>
+
+                <!-- El botón ocupa su propia columna sin envoltorios -->
+                <footer class="col-12">
+                    <button type="submit" class="btn btn-jhoals w-100 py-2.5 fw-bold">
+                        Registrarme
+                    </button>
+                </footer>
+            </form>
+
+        </section>
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.classList.add('was-validated');
+            if (this.checkValidity()) {
+                alert('¡Registro exitoso! 🍗 Bienvenido a JHOALS.');
+            }
+        });
+    </script>
+</body>
+</html>

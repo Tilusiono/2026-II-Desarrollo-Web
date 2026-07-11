@@ -1,0 +1,33 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--fondo-tarjeta);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1030;
+}
+
+.header-spacer {
+    height: 80px;
+    display: block;
+}
+
+.btn-custom {
+    background-color: var(--naranja-marca);
+    color: var(--texto-blanco);
+    border: none;
+    transition: transform var(--animacion-suave), background-color var(--animacion-suave);
+}
+
+.btn-custom:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+}
+
+.nav-link-custom {
+    color: var(--naranja-marca) !important;
+    font-weight: 600;
+    transition: color var(--animacion-suave);
+}

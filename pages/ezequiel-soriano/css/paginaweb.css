@@ -1,0 +1,136 @@
+:root {
+    --fondo-crema: #fcf8f2;
+    --fondo-tarjeta: #ffffff;
+    --fondo-oscuro: #1a1a1a;
+    --color-borde: #e0d5c1;
+    --dorado-marca: #ffc107;
+    --rojo-marca: #b22222;
+    --naranja-marca: #ff4500;
+    --texto-principal: #333333;
+    --texto-gris: #666666;
+    --texto-blanco: #ffffff;
+    --texto-menu: #e0e0e0;
+    --animacion-suave: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --animacion-menu: background-color 0.4s ease-in-out, padding 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+body {
+    background-color: var(--fondo-crema);
+    color: var(--texto-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+hr {
+    border-color: var(--color-borde);
+    opacity: 0.5;
+}
+
+.navbar-custom {
+    background-color: rgba(33, 37, 41, 0.7) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: var(--animacion-menu);
+    z-index: 1050;
+
+    &.navbar-scrolled {
+        background-color: var(--fondo-oscuro) !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        border-bottom: 3px solid var(--dorado-marca);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        .nav-link {
+            color: var(--texto-blanco) !important;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+    }
+}
+
+.navbar-nav .nav-link:not([href="formulario.html"]) {
+    color: var(--texto-menu);
+    transition: color var(--animacion-suave);
+
+    &:hover {
+        color: var(--dorado-marca) !important;
+    }
+}
+
+#inicio {
+    padding: 3rem 1.5rem;
+    background: radial-gradient(circle, #ffffff 0%, #fdf6ec 100%);
+    border-radius: 15px;
+}
+
+#carrusel {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#contacto {
+    background-color: var(--fondo-oscuro);
+    color: var(--texto-blanco);
+    border-top: 5px solid var(--dorado-marca);
+}
+
+.card {
+    border: none;
+    background-color: var(--fondo-tarjeta);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform var(--animacion-suave), box-shadow var(--animacion-suave);
+    will-change: transform;
+}
+
+.card-title {
+    color: var(--rojo-marca);
+    font-weight: 700;
+}
+
+.grupo-productos {
+    margin-top: 1.5rem;
+}
+
+a[target="_blank"] {
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: color var(--animacion-suave);
+
+    &::after {
+        content: "↗";
+        font-size: 0.85em;
+        color: var(--dorado-marca);
+    }
+}
+
+img[alt="Promoción JHOALS"] {
+    filter: brightness(0.95);
+    transition: filter var(--animacion-suave);
+    
+    &:hover {
+        filter: brightness(1);
+    }
+}
+
+.card-body h5 {
+    letter-spacing: 0.5px;
+}
+
+#categorias section.row > article .card {
+    border-bottom: 4px solid var(--naranja-marca);
+}
+
+.card-body h4 + p {
+    color: var(--texto-gris);
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+.col-md-3 a:hover .card, 
+.col-lg-3 a:hover .card,
+.col-md-4 a:hover .card {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(178, 34, 34, 0.18);
+}
