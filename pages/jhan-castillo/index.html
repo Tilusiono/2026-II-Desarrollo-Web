@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+    <head>
     <meta charset="UTF-8">
-    <title>PC STYLES - HARDWARE DE PC</title>
-    <link rel="icon" href="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/PC STYLES.png" type="image/png">
-    <link rel="stylesheet" href="css/estilo.css">
-    
-</head>
-<body>
-    <!-- HEADER -->
+    <title>PC STYLES</title>
+    <link rel="icon" href="./imagenes/LOGO.jpg" type="image/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
     <header>
-        <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/PC STYLES.png" alt="LOGO DE PC STYLES" class="logo">
-        <h1 class="pcstyles"> PC STYLES</h1>
+    <img src="./imagenes/LOGO_PAGINA.png" alt="LOGO DE PC STYLES" class="logo"><h1>PC STYLES</h1>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#PROCESADORES">PROCESADORES</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#TARJETAS">TARJETAS GRÁFICAS</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#MEMORIA">MEMORIA RAM</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#ALMACENAMIENTO">ALMACENAMIENTO</a>
+        </li>
+    </ul>
     </header>
 
-     <!-- S1 CARRUSEL -->
+    
      <section id="banner-carrusel">
          <h2>OFERTAS CON POTENCIA</h2>
              <ul>
                  <li>
                     <article>
-                        <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/PROMOCION GPU.webp" width="1200" height="400">
+                        <img src="./imagenes/logo.jpg" width="1200" height="400">
                         <h3>LA MÁXIMA POTENCIA GRÁFICA</h3>
                     </article>
                  </li>
@@ -40,26 +51,21 @@
      </section>
 
     <!-- S2 CATEGORIZACIÓN Y S3 ÍTEMS (4 CATEGORÍAS, 12 ÍTEMS EN TOTAL) -->
-     <section id="productos">
-            <nav>
-            <ul>
-                <li><a href="#procesadores">Procesadores</a></li>
-                <li><a href="#tarjetas-graficas">Tarjetas Gráficas</a></li>
-                <li><a href="#memoria-ram">Memoria RAM</a></li>
-                <li><a href="#almacenamiento">Almacenamiento</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+     <section id="productos" class="contenedor">
+          
             </nav>
             <h2>CATÁLOGO DE COMPONENTES</h2>
 
            <!-- CATEGORÍA 1: PROCESADORES -->
-        <main class="contenedor">
-            <section id="procesadores">
+        <main class="contenedor1">
+
+
+            <section id="PROCESADORES" class="contenedor">
                 <h3>Procesadores</h3>
                 <ol>
                     <li>
                         <article class="tarjeta-producto">
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/Intel Core i9-14900K.webp" alt="Intel Core i9-14900K">
+                            <img src="./imagenes/inteli9.jpg" alt="Intel Core i9-14900K">
                             <h4>Intel Core i9-14900K</h4>
                             <p>Procesador de alta gama con 24 núcleos para gaming y streaming.</p>
                             <p>Precio: $580.00</p>
@@ -67,7 +73,7 @@
                     </li>
                     <li>
                         <article class="tarjeta-producto">
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/AMD Ryzen 7 7800X3D.jpg" alt="AMD Ryzen 7 7800X3D">
+                            <img src="./imagenes/R77800X3Dportada2.webp" alt="AMD Ryzen 7 7800X3D">
                             <h4>AMD Ryzen 7 7800X3D</h4>
                             <p>El mejor procesador para videojuegos con tecnología 3D V-Cache.</p>
                             <p>Precio: $399.00</p>
@@ -75,7 +81,7 @@
                     </li>
                     <li>
                         <article class="tarjeta-producto">
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/Intel Core i5-14600K.webp" alt="Intel Core i5-14600K">
+                            <img src="./imagenes/intel 5.jpg" alt="Intel Core i5-14600K">
                             <h4>Intel Core i5-14600K</h4>
                             <p>Excelente rendimiento precio-calidad para tareas exigentes.</p>
                             <p>Precio: $320.00</p>
@@ -85,28 +91,28 @@
             </section>
 
             <!-- CATEGORÍA 2: TARJETAS GRÁFICAS -->
-            <section id="tarjetas-graficas">
+            <section id="TARJETAS" class="container" >
                 <h3>Tarjetas Gráficas</h3>
-                <ol>
-                    <li>
+                <ol class="row">
+                    <li class="col-4">
                         <article class="tarjeta-producto">
-                         <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/NVIDIA GeForce RTX 4080 Super.webp" alt="NVIDIA GeForce RTX 4080 Super">
+                         <img src="./imagenes/4080 super.webp" alt="NVIDIA GeForce RTX 4080 Super">
                             <h4>NVIDIA GeForce RTX 4080 Super</h4>
                             <p>Gráficos ultra realistas con trazado de rayos y DLSS 3.0.</p>
                             <p>Precio: $999.00</p>
                         </article>
                     </li>
-                    <li>
+                    <li class="col-4">
                         <article class="tarjeta-producto">
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/AMD Radeon RX 7900 XTX.png" alt="AMD Radeon RX 7900 XTX">
+                            <img src="./imagenes/7900.jpg" alt="AMD Radeon RX 7900 XTX">
                             <h4>AMD Radeon RX 7900 XTX</h4>
                             <p>Potencia pura con 24GB de memoria VRAM para jugar en 4K.</p>
                             <p>Precio: $929.00</p>
                         </article>
                     </li>
-                    <li>
+                    <li class="col-4">
                         <article class="tarjeta-producto">
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/NVIDIA GeForce RTX 4060 Ti.webp" alt="NVIDIA GeForce RTX 4060 Ti">
+                            <img src="./imagenes/4060 super.webp" alt="NVIDIA GeForce RTX 4060 Ti">
                             <h4>NVIDIA GeForce RTX 4060 Ti</h4>
                             <p>Ideal para jugar a 1080p de forma competitiva con bajo consumo.</p>
                             <p>Precio: $389.00</p>
@@ -116,12 +122,12 @@
             </section>
 
             <!-- CATEGORÍA 3: MEMORIA RAM -->
-            <section id="memoria-ram">
+            <section id="MEMORIA" class="col-3">
                 <h3>Memoria RAM</h3>
                 <ol>
                     <li>
                         <article class="tarjeta-producto">
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/Corsair Vengeance DDR5 32GB.jpg" alt="Corsair Vengeance DDR5 32GB">
+                            <img src="./imagenes/CORSAIR.webp" alt="Corsair Vengeance DDR5 32GB">
                             <h4>Corsair Vengeance DDR5 32GB</h4>
                             <p>Kit de 2x16GB a 6000MHz optimizado para perfiles Intel XMP.</p>
                             <p>Precio: $115.00</p>
@@ -129,7 +135,7 @@
                     </li>
                     <li>
                         <article class="tarjeta-producto">
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/G.Skill Trident Z5 Neo RGB 32GB.webp" alt="G.Skill Trident Z5 Neo RGB 32GB">
+                            <img src="./imagenes/memoria.jpg" alt="G.Skill Trident Z5 Neo RGB 32GB">
                             <h4>G.Skill Trident Z5 Neo RGB 32GB</h4>
                             <p>Memoria de alto rendimiento optimizada para procesadores AMD.</p>
                             <p>Precio: $125.00</p>
@@ -137,7 +143,7 @@
                     </li>
                     <li>
                         <article class="tarjeta-producto">
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/Kingston Fury Beast DDR4 16GB.jpg" alt="Kingston Fury Beast DDR4 16GB">
+                            <img src="./imagenes/fury.jpg" alt="Kingston Fury Beast DDR4 16GB">
                             <h4>Kingston Fury Beast DDR4 16GB</h4>
                             <p>Memoria confiable a 3200MHz para actualizaciones de sistemas.</p>
                             <p>Precio: $45.00</p>
@@ -147,12 +153,12 @@
             </section>
 
             <!-- CATEGORÍA 4: ALMACENAMIENTO -->
-            <section" id="almacenamiento">
+            <section" id="ALMACENAMIENTO" class="col-3">
                 <h3>Almacenamiento</h3>
                 <ol>
                     <li>
                         <article class="tarjeta-producto">
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/Samsung 990 Pro 2TB.webp" alt="Samsung 990 Pro 2TB">
+                            <img src="./imagenes/990PRO.png" alt="Samsung 990 Pro 2TB">
                             <h4>Samsung 990 Pro 2TB</h4>
                             <p>SSD NVMe M.2 con velocidades de lectura de hasta 7450 MB/s.</p>
                             <p>Precio: $170.00</p>
@@ -160,7 +166,7 @@
                     </li>
                     <li>
                         <article class="tarjeta-producto">
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/Crucial P3 Plus 1TB.webp" alt="Crucial P3 Plus 1TB">
+                            <img src="./imagenes/crucial.webp" alt="Crucial P3 Plus 1TB">
                             <h4>Crucial P3 Plus 1TB</h4>
                             <p>Almacenamiento PCIe 4.0 veloz a un precio accesible.</p>
                             <p>Precio: $70.00</p>
@@ -168,7 +174,7 @@
                     </li>
                     <li>
                         <article class="tarjeta-producto"   >
-                            <img src="/Desarrollo-Web-jhan-castillo/pages/jhan-castillo/assets/imagen/Seagate BarraCuda 2TB HDD.jpg" alt="Seagate BarraCuda 2TB HDD">
+                            <img src="./imagenes/barracuda 2gb.jpg" alt="Seagate BarraCuda 2TB HDD">
                             <h4>Seagate BarraCuda 2TB HDD</h4>
                             <p>Disco duro mecánico ideal para almacenamiento masivo de archivos.</p>
                             <p>Precio: $55.00</p>
@@ -180,7 +186,7 @@
         </section>
 
         <!-- S4 FORMULARIO -->
-        <section id="contacto">
+        <section id="contacto" class="contenedor">
             <h2>Formulario de Contacto y Cotización</h2>
             <form action="#" method="post">
                 <fieldset>
@@ -261,29 +267,69 @@
             <h5>Horario de Atención</h5>
             <p>Lunes a Viernes: 8:00 AM - 12:00 AM</p>
             <p>Sábados: 8:00 AM - 4:00 PM</p>
+            <i class="bi bi-telephone"></i>
         </section>
 
-        <hr>
-        <p> &copy; 2026 PC STYLES S.A. Todos los derechos reservados.</p>
+        <footer class="bg-dark text-white pt-5 pb-4 border-top border-secondary">
+  <div class="container text-center text-md-start">
+    <div class="row text-center text-md-start">
+
+      
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-primary">PC STYLES</h5>
+        <p class="text-secondary small">Ofrecemos los mejores componentes para tu PC, aumenta la potencia de tu PC con los procesadores más recientes y actualizados.</p>
+      </div>
+
+      <!-- Columna 2: Enlaces Útiles -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-white small">Compañía</h5>
+        <p class="mb-2"><a href="#" class="text-secondary text-decoration-none small hover-white">Inicio</a></p>
+        <p class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Servicios</a></p>
+        <p class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Precios</a></p>
+      </div>
+
+      <!-- Columna 3: Soporte / Legal -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 fw-bold text-white small">Soporte</h5>
+        <p class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Contacto</a></p>
+        <p class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Privacidad</a></p>
+        <p class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Términos</a></p>
+      </div>
+
+      <!-- Columna 4: Contacto directo -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-secondary small">
+        <h5 class="text-uppercase mb-4 fw-bold text-white small">Contacto</h5>
+        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Lima, Perú</p>
+        <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>info@pcstyles.com</p>
+        <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i>+51 905 493 210</p>
+      </div>
+
+    </div>
+
+    <hr class="mb-4 border-secondary">
+
+    <!-- Fila Inferior: Copyright y Redes Sociales -->
+    <div class="row align-items-center">
+      <div class="col-md-7 col-lg-8 text-center text-md-start">
+        <p class="text-secondary small mb-0">&copy; © 2026 <strong class="text-white">PC STYLES</strong>. Todos los derechos reservados.</p>
+      </div>
+
+      <div class="col-md-5 col-lg-4 text-center text-md-end mt-3 mt-md-0">
+        <!-- Iconos de Redes Sociales (Requiere Bootstrap Icons) -->
+        <a href="#" class="text-secondary me-3 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-secondary me-3 fs-5"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-secondary me-3 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-secondary fs-5"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+   
     </footer>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ </body>
 </html>
-
-
-
-<!-- 
-
-Header               1.5 , falta el logo
-S1 Carrusel          3.5 , no hay imágenes de banners para usar en el carrusel
-S2 Categorización    1.5, (Procesadores , Tarjetas Gráficas , RAM , ETC ,minimo 4) Deberias  
-S3 Ítems             3.5 (Minimo 12 ítems podrías hacer 4 por cada categoria)
-S4 Formulario        2.5, Adicionar Formulario (12 INPUT)
-Footer               1.0 , Le falta las columnas 
-Nota HTML:14
-Sustentación :+4
-Participación en clase : +2
-Observaciones : 
-- Separar bien las secciones 
-Nota Avance : 20 de 20
--->
