@@ -12,33 +12,39 @@
 
 <body>
     <!--HEADER-->
-    <header class="header">
-        <figure>
+    <header class="header navbar">
+
+        <figure class="navbar-brand">
             <img src="Imagenes Bextor/Isotipo.png" alt="Isotipo Bextor">
         </figure>
 
-        <form action="#" method="get">
-            <input type="search" placeholder="Buscar productos, marcas y más...">
-            <button type="submit">Buscar</button>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar productos, marcas y más..."
+                aria-label="Buscar">
+
+            <button class="btn btn-outline-success" type="submit">
+                Buscar
+            </button>
         </form>
-        
+
         <nav>
-            <p>
-                <a href="#Categorías">Categorías</a>
-                <a href="#Productos">Productos</a>
-                <a href="#Pedidos">Pedidos</a>
-                <a href="#Contactanos">Contactanos</a>
-            </p>
+            <ul>
+                <li><a href="#Categorías">Categorías</a></li>
+                <li><a href="#Productos">Productos</a></li>
+                <li><a href="#Pedidos">Pedidos</a></li>
+                <li><a href="#Contactanos">Contáctanos</a></li>
+            </ul>
         </nav>
+
     </header>
 
     <main>
         <!--SECCION 1 (CARRUSEL)-->
         <section class="section1">
-            <section>
+            <header>
                 <h2>Bienvenido a Bextor</h2>
                 <p>Tu destino de compras en línea para productos de calidad y ofertas exclusivas</p>
-            </section>
+            </header>
         </section>
 
         <section id="Carrusel" class="carousel slide">
@@ -66,16 +72,16 @@
         </section>
 
         <!--SECCIÓN 2 (CATEGORÍAS)-->
-        <section id="Categorías" class="section2">
+        <section id="Categorías" class="container my-5">
             <header>
                 <h2>Categorías</h2>
                 <p>Descubre nuestras categorías exclusivas y encuentra productos pensados para ofrecer calidad,
                     funcionalidad y una excelente experiencia.</p>
             </header>
 
-            <section class="columnas_4">
+            <section class="row g-4">
                 <!-- Categoría: Perfumes Árabes -->
-                <card class="card">
+                <card class="col-3">
                     <header>
                         <h3>Perfumes Árabes</h3>
                     </header>
@@ -94,7 +100,7 @@
                     </details>
                 </card>
                 <!-- Categoría: Productos Smart Lifes -->
-                <card class="card">
+                <card class="col-3">
                     <header>
                         <h3>Productos Smart Lifes</h3>
                     </header>
@@ -113,7 +119,7 @@
                     </details>
                 </card>
                 <!-- Categoría: Productos Gadgets De Cocina -->
-                <card class="card">
+                <card class="col-3">
                     <header>
                         <h3>Productos Gadgets De Cocina</h3>
                     </header>
@@ -132,7 +138,7 @@
                     </details>
                 </card>
                 <!-- Categoría: Productos Pet Tech -->
-                <card class="card">
+                <card class="col-3">
                     <header>
                         <h3>Productos Pet Tech</h3>
                     </header>
@@ -159,18 +165,18 @@
         </section>
 
         <!--PRODUCTOS-->
-        <section id="Productos" class="section3">
+        <section id="Productos" class="container my-5">
             <header>
                 <h2>Productos</h2>
                 <p>Conoce nuestra selección de productos pensados para ofrecer calidad, funcionalidad y una excelente
                     experiencia</p>
             </header>
 
-            <section class="columnas_4">
+            <section class="row g-4">
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>25% de Descuento</mark>
+                        <mark>Ahorra 25%</mark>
                     </header>
                     <figure>
                         <img src="Imagenes Productos/Perfume Afnan 9pm.jpg" alt="Producto 1">
@@ -178,9 +184,8 @@
 
                     <details>
                         <summary><strong>Perfume Afnan 9pm</strong></summary>
-                        <p>Antes: <del>S/ 200.00</del></p>
-                        <p>Ahora: <strong>S/ 150.00</strong></p>
-
+                        <p><strong>Antes:</strong> <del>S/ 200.00</del></p>
+                        <p><strong>Ahora: S/ 150.00</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Estilo:</strong> Fragancia dulce, moderna y magnética.</li>
@@ -194,9 +199,9 @@
                     </footer>
                 </article>
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>20% de Descuento</mark>
+                        <mark>Ahorra 20%</mark>
                     </header>
                     <figure>
                         <img src="Imagenes Productos/Perfume Khamrah Qahwa.jpg" alt="Producto 2">
@@ -204,8 +209,8 @@
 
                     <details>
                         <summary><strong>Perfume Khamrah Qahwa</strong></summary>
-                        <p>Antes: <del>S/ 160.00</del></p>
-                        <p>Ahora: <strong>S/ 128.00</strong></p>
+                        <p><strong>Antes:</strong> <del>S/ 160.00</del></p>
+                        <p><strong>Ahora: S/ 128.00</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Aroma:</strong> Notas intensas de café, especias y dátiles.</li>
@@ -220,9 +225,9 @@
                 </article>
 
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>15% de Descuento</mark>
+                        <mark>Ahorra 15%</mark>
                     </header>
                     <figure>
                         <img src="Imagenes Productos/Cargador Inalámbrico MS2.jpg" alt="Producto 3">
@@ -230,8 +235,8 @@
 
                     <details>
                         <summary><strong>Cargador Inalámbrico MS2</strong></summary>
-                        <p>Antes: <del>S/ 100.00</del></p>
-                        <p>Ahora: <strong>S/ 85.00</strong></p>
+                        <p><strong>Antes:</strong> <del>S/ 100.00</del></p>
+                        <p><strong>Ahorra: S/ 85.00</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Funcionalidad:</strong>Carga rápida en reposo.</li>
@@ -245,9 +250,9 @@
                     </footer>
                 </article>
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>10% de Descuento</mark>
+                        <mark>Ahorra 10%</mark>
                     </header>
 
                     <figure>
@@ -256,8 +261,8 @@
 
                     <details>
                         <summary><strong>Reloj Proyector Digital</strong></summary>
-                        <p>Antes: <del>S/ 80.00</del></p>
-                        <p>Ahora: <strong>S/ 72.00</strong></p>
+                        <p><strong>Antes:</strong> <del>S/ 80.00</del></p>
+                        <p><strong>Ahora: S/ 72.00</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Tecnología:</strong> Proyecta la hora en cualquier superficie.</li>
@@ -271,9 +276,9 @@
                     </footer>
                 </article>
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>20% de Descuento</mark>
+                        <mark>Ahorra 20%</mark>
                     </header>
 
                     <figure>
@@ -282,8 +287,8 @@
 
                     <details>
                         <summary><strong>Termómetro Digital de Cocina</strong></summary>
-                        <p>Antes: <del>S/ 50.00</del></p>
-                        <p>Ahora: <strong>S/ 40.00</strong></p>
+                        <p><strong>Antes:</strong> <del>S/ 50.00</del></p>
+                        <p><strong>Ahora: S/ 40.00</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Precisión:</strong> Lectura rápida y exacta de temperaturas.</li>
@@ -297,9 +302,9 @@
                     </footer>
                 </article>
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>15% de Descuento</mark>
+                        <mark>Ahorra 15%</mark>
                     </header>
                     <figure>
                         <img src="Imagenes Productos/Soporte Magnético Para Cuchillos.jpg" alt="Producto 6">
@@ -307,8 +312,8 @@
 
                     <details>
                         <summary><strong>Soporte Magnético para Cuchillos</strong></summary>
-                        <p>Antes: <del>S/ 80.00</del></p>
-                        <p>Ahora: <strong>S/ 68.00</strong></p>
+                        <p><strong>Antes:</strong> <del>S/ 80.00</del></p>
+                        <p><strong>Ahora: S/ 68.00</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Organización:</strong> Ahorra espacio en tu cocina.</li>
@@ -322,9 +327,9 @@
                     </footer>
                 </article>
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>25% de Descuento</mark>
+                        <mark>Ahorra 25%</mark>
                     </header>
                     <figure>
                         <img src="Imagenes Productos/Pup Jet.jpg" alt="Producto 7">
@@ -332,8 +337,8 @@
 
                     <details>
                         <summary><strong>Kit Pup Jet Limpiador</strong></summary>
-                        <p>Antes: <del>S/ 120.00</del></p>
-                        <p>Ahora: <strong>S/ 90.00</strong></p>
+                        <p><strong>Antes:</strong> <del>S/ 120.00</del></p>
+                        <p><strong>Ahora: S/ 90.00</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Eficiencia:</strong> Facilita el baño y limpieza profunda.</li>
@@ -347,9 +352,9 @@
                     </footer>
                 </article>
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>10% de Descuento</mark>
+                        <mark>Ahorra 10%</mark>
                     </header>
                     <figure>
                         <img src="Imagenes Productos/Lanzador De Pelotas Para Perros.jpg" alt="Producto 8">
@@ -357,8 +362,8 @@
 
                     <details>
                         <summary><strong>Lanzador de Pelotas</strong></summary>
-                        <p>Antes: <del>S/ 200.00</del></p>
-                        <p>Ahora: <strong>S/ 180.00</strong></p>
+                        <p><strong>Antes:</strong> <del>S/ 200.00</del></p>
+                        <p><strong>Ahora: S/ 180.00</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Diversión:</strong> Entrenamiento activo e interactivo.</li>
@@ -379,18 +384,18 @@
         </section>
         </section>
 
-        <!--PRODUCTPS DESTACADOS-->
-        <section class="section3">
+        <!--PRODUCTOS DESTACADOS-->
+        <section id="ProductosDestacados" class="container my-5">
             <header>
-                <h2>Productos Descatados</h2>
+                <h2>Productos Destacados</h2>
                 <p>Descubre los productos que destacan por su calidad, popularidad y excelente valoración</p>
             </header>
 
-            <section class="columnas_4">
+            <section class="row g-4">
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>15% de Descuento</mark>
+                        <mark>Ahorra 15%</mark>
                     </header>
                     <figure>
                         <img src="Imagenes Productos Destacados/Perfume Al Haramain Amber Oud Gold.jpg"
@@ -399,8 +404,8 @@
 
                     <details>
                         <summary><strong>Al Haramain Amber Oud Gold</strong></summary>
-                        <p>Antes: <del>S/ 250.00</del></p>
-                        <p>Ahora: <strong>S/ 212.50</strong></p>
+                        <p><strong>Antes:</strong> <del>S/ 250.00</del></p>
+                        <p><strong>Ahora: S/ 212.50</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Perfil:</strong> Fragancia frutal, dulce y lujosa.</li>
@@ -415,9 +420,9 @@
 
                 </article>
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>20% de Descuento</mark>
+                        <mark>Ahorra 20%</mark>
                     </header>
                     <figure>
                         <img src="Imagenes Productos Destacados/Humidificador Efecto Llama 3D.jpg"
@@ -426,8 +431,8 @@
 
                     <details>
                         <summary><strong>Humidificador Efecto Llama 3D</strong></summary>
-                        <p>Antes: <del>S/ 90.00</del></p>
-                        <p>Ahora: <strong>S/ 72.00</strong></p>
+                        <p><strong>Antes: </strong> <del>S/ 90.00</del></p>
+                        <p><strong>Ahora: S/ 72.00</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Ambiente:</strong> Efecto visual de llama real muy relajante.</li>
@@ -441,9 +446,9 @@
                     </footer>
                 </article>
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>15% de Descuento</mark>
+                        <mark>Ahorra 15%</mark>
                     </header>
                     <figure>
                         <img src="Imagenes Productos Destacados/Cortador De Verduras.jpg" alt="Producto destacado 3">
@@ -451,8 +456,8 @@
 
                     <details>
                         <summary><strong>Cortador de Verduras</strong></summary>
-                        <p>Antes: <del>S/ 70.00</del></p>
-                        <p>Ahora: <strong>S/ 59.50</strong></p>
+                        <p><strong>Ahora:</strong> <del>S/ 70.00</del></p>
+                        <p><strong>Ahora: S/ 59.50</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Versatilidad:</strong> Incluye múltiples cuchillas de acero.</li>
@@ -466,9 +471,9 @@
                     </footer>
                 </article>
 
-                <article class="article">
+                <article class="col-3">
                     <header>
-                        Oferta Especial: <mark>10% de Descuento</mark>
+                        <mark>Ahorra 10%</mark>
                     </header>
                     <figure>
                         <img src="Imagenes Productos Destacados/Collar Con Cámara Para Mascotas.jpg"
@@ -477,8 +482,8 @@
 
                     <details>
                         <summary><strong>Collar con Cámara para Mascotas</strong></summary>
-                        <p>Antes: <del>S/ 150.00</del></p>
-                        <p>Ahora: <strong>S/ 135.00</strong></p>
+                        <p><strong>Antes:</strong> <del>S/ 150.00</del></p>
+                        <p><strong>Ahora: S/ 135.00</strong></p>
                         <p><strong>Detalles del producto:</strong></p>
                         <ol>
                             <li><strong>Visión:</strong> Mira el mundo con los ojos de tu mascota.</li>
@@ -498,13 +503,12 @@
             </footer>
         </section>
 
-        <section id="Pedidos" class="section4">
-            <fieldset>
+        <form id="Formulario" class="container my-5">
                 <legend>
                     <h2>Realizar Pedido</h2>
                 </legend>
 
-                <form action="#" method="post">
+                <section action="#" method="post">
                     <fieldset>
                         <legend>
                             <h3>Información Personal</h3>
@@ -550,9 +554,8 @@
 
                     <fieldset>
                         <legend>
-                            <h3>Pago</h3>
+                            <h3>Métodos de Pago</h3>
                         </legend>
-                        <label>Método de Pago:</label><br>
                         <input type="radio" name="pago" value="yape" id="yape"> <label for="yape">Yape</label>
                         <input type="radio" name="pago" value="plin" id="plin"> <label for="plin">Plin</label>
                         <input type="radio" name="pago" value="transf" id="transf"> <label
@@ -575,15 +578,14 @@
 
                     <button type="submit">Enviar Pedido</button>
                     <input type="reset" value="Limpiar">
-                </form>
-
-        </section>
+                </section>
+        </form>
     </main>
 
     <footer>
-        <section id="Contactanos" class="columnas_4">
+        <section id="Footer" class="row g-4">
             <!-- Columna 1 -->
-            <article>
+            <article class="col-3">
                 <h3>Sobre Bextor</h3>
                 <ul>
                     <li><a href="Pag Sobre Bextor/Quienes somos.html">¿Quiénes somos?</a></li>
@@ -592,7 +594,7 @@
                 </ul>
             </article>
             <!-- Columna 2 -->
-            <article>
+            <article class="col-3">
                 <h3>Atención al cliente</h3>
                 <ul>
                     <li><a href="Pag Atencíon al Cliente/Centro de Ayuda.html">Centro de Ayuda</a></li>
@@ -601,7 +603,7 @@
                 </ul>
             </article>
             <!-- Columna 3 -->
-            <article>
+            <article class="col-3">
                 <h3>Información</h3>
                 <ul>
                     <li><a href="Pag Información/Terminos de servicios.html">Términos de servicios</a></li>
@@ -610,7 +612,7 @@
                 </ul>
             </article>
             <!-- Columna 4 -->
-            <article>
+            <article class="col-3">
                 <h3>Medios de Pago</h3>
                 <figure>
                     <img src="Imagenes Bextor/Medios de Pago.png" style="width: 135px; max-width: 100%; height: auto;">
