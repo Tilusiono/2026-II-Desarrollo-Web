@@ -71,8 +71,8 @@ git clone <url-del-repositorio>
 ---
 
 ## 👨‍🏫 Docente
-
-**Bernabe Daniel Inche Ticlavilca**
+ 
+[**Bernabe Daniel Inche Ticlavilca**]([https://ejemplo.com](https://www.linkedin.com/in/danielinche/))
 
 Curso: Desarrollo Web
 Periodo académico: **2026-IIA**
