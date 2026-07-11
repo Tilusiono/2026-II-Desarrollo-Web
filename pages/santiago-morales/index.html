@@ -5,250 +5,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liga 1 - Campeonato Peruano</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <!--
-    <link rel="stylesheet" href="../../css/estilo_global.css">
+    
+    <!-- Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts (Fuentes Personalizadas) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
--->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-   
-   <style>
-        /* === ESTILOS GENERALES === */
+    <style>
+        /* === VARIABLES Y CONFIGURACIÓN GENERAL === */
+        :root {
+            --primary-color: #dc3545;       /* Rojo Pasión */
+            --secondary-color: #ffc107;     /* Oro Campeón */
+            --dark-color: #111111;          /* Negro Elegante */
+            --light-bg: #f8f9fa;            /* Fondo Claro */
+            --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
         body {
-            padding-top: 110px;
-            margin: 0;
-            font-family: Arial, sans-serif;
+            padding-top: 85px;
+            font-family: 'Poppins', sans-serif;
             background-color: #f4f6f9;
             color: #333;
+            overflow-x: hidden;
         }
 
-        /* === HEADER / CABECERA === */
-        .main-header {
-            position: fixed;
-            top: 0;
+        /* === 1. ANIMACIONES GENERALES (Mínimo 5 requeridas) === */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulseGold {
+            0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 193, 7, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+        }
+        @keyframes floatEffect {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes scaleUp {
+            from { transform: scale(0.95); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        /* === 2. ESTILOS DE CABECERA (BOOTSTRAP HEADER OPTIMIZADO) === */
+        .custom-navbar {
+            background: linear-gradient(135deg, var(--dark-color) 70%, var(--primary-color) 100%) !important;
+            border-bottom: 4px solid var(--secondary-color);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            animation: fadeInDown 0.6s ease-out;
+        }
+        .navbar-brand span {
+            color: var(--secondary-color);
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
             left: 0;
+            background-color: var(--secondary-color);
+            transition: var(--transition-smooth);
+        }
+        .nav-link:hover::after {
             width: 100%;
-            z-index: 1000;
-            background-color: #02fff2;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            box-sizing: border-box;
-            box-shadow: 0 4px 6px rgba(11, 199, 5, 0.1);
+        }
+        .nav-link:hover {
+            color: var(--secondary-color) !important;
         }
 
-        .main-nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            margin: 0;
-            padding: 0;
-        }
-
-        .main-nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* === DISEÑO DE CONTENEDORES Y TARJETAS (S2 & S3 CARDS) === */
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
+        /* === 3. SECCIONES Y ENCABEZADOS === */
         section {
-            margin-bottom: 50px;
+            padding: 40px 0;
+            animation: scaleUp 0.8s ease-out;
+        }
+        h2.section-title {
+            font-weight: 700;
+            color: var(--dark-color);
+            border-left: 6px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
         }
 
-        h2 {
-            border-bottom: 3px solid #06d321;
-            padding-bottom: 10px;
-            color: #0ac41a;
-        }
-
-        /* Descripción de introducción pedida en S1 */
-        .section-description {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        /* Carrusel simple */
-        .carousel-container {
-            display: flex;
-            gap: 15px;
-            overflow-x: auto;
-            padding-bottom: 10px;
-        }
-
-        /* Grid de Tarjetas (Cards) */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        /* Estructura Semántica de las Cards (S3) */
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card header {
-            background-color: #f8f9fa;
-            padding: 10px;
-            font-weight: bold;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .card .card-body {
-            padding: 15px;
-            flex-grow: 1;
-            text-align: center;
-        }
-
-        .card .card-body img {
-            max-width: 100%;
-            height: auto;
-            object-fit: contain;
-            border-radius: 4px;
-        }
-
-        .card footer {
-            background-color: #f8f9fa;
-            padding: 10px;
-            font-size: 0.9em;
-            color: #666;
-            text-align: center;
-            border-top: 1px solid #ddd;
-        }
-
-        /* === FORMULARIO DE REGISTRO === */
-        .form-registro {
-            max-width: 800px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px 30px;
-            background: rgb(207, 1, 1);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(11, 141, 158, 0.801);
-        }
-
-        .form-registro p {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-registro input,
-        .form-registro select {
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .form-registro p.gender-row {
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .form-registro .button-container {
-            grid-column: span 2;
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .form-registro button {
-            padding: 12px 40px;
-            cursor: pointer;
-            font-weight: bold;
-            background-color: #a00028af;
-            color: white;
+        /* === 4. EFECTOS EN TARJETAS (CARDS AVANZADAS) === */
+        .custom-card {
+            background: #ffffff;
             border: none;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-
-        .form-registro button:hover {
-            background-color: #002266;
-        }
-
-        /* === FOOTER EN COLUMNAS === */
-        .main-footer {
-            background-color: #111;
-            color: white;
-            padding: 40px 20px 20px 20px;
-            margin-top: 60px;
-        }
-
-        .footer-columns {
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: var(--transition-smooth);
+            height: 100%;
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
+            flex-direction: column;
+            overflow: hidden;
         }
-
-        .footer-column {
-            flex: 1;
-            min-width: 250px;
+        /* Interacción suave de cambio de estado posicional y visual */
+        .custom-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 15px 30px rgba(220, 53, 69, 0.15);
+            border-bottom: 4px solid var(--primary-color);
         }
-
-        .footer-column h3 {
-            color: #061deb;
-            border-bottom: 2px solid #333;
-            padding-bottom: 8px;
-            margin-top: 0;
+        .custom-card img {
+            transition: var(--transition-smooth);
+            object-fit: cover;
+            height: 200px;
         }
-
-        .footer-column ul {
-            list-style: none;
-            padding: 0;
+        .custom-card:hover img {
+            transform: scale(1.05);
         }
-
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-column ul li a {
-            color: #ee0505;
-            text-decoration: none;
-        }
-
-        .footer-column ul li a:hover {
-            color: white;
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .copyright {
+        .card-header-custom {
+            background-color: var(--dark-color);
+            color: #ffffff;
+            padding: 12px;
+            font-weight: 700;
             text-align: center;
-            margin-top: 40px;
-            border-top: 1px solid #202020;
-            padding-top: 20px;
-            font-size: 0.9em;
-            color: #686865;
+        }
+
+        /* === 5. CARRUSEL / BANNER INTERACTIVO === */
+        .carousel-item img {
+            height: 450px;
+            object-fit: cover;
+            filter: brightness(0.85);
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            padding: 20px;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        /* === 6. FORMULARIO ESTILIZADO DE ALTO IMPACTO === */
+        .form-section-bg {
+            background: linear-gradient(135deg, #1e1e1e 0%, #0a0a0a 100%);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .form-control, .form-select {
+            background-color: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border-radius: 8px;
+            padding: 12px;
+            transition: var(--transition-smooth);
+        }
+        .form-control:focus, .form-select:focus {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 8px rgba(255, 193, 7, 0.5);
+            color: #ffffff;
+        }
+        .form-label {
+            font-weight: 600;
+            color: rgba(255,255,255,0.85);
+        }
+        /* Botón con animación de pulso infinito al posarse */
+        .btn-submit-animate {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 14px 30px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            text-transform: uppercase;
+            transition: var(--transition-smooth);
+        }
+        .btn-submit-animate:hover {
+            background-color: #b21f2d;
+            animation: pulseGold 1.5s infinite;
+            color: #fff;
+        }
+
+        /* === 7. PIE DE PÁGINA PROFESIONAL (BOOTSTRAP FOOTER) === */
+        .custom-footer {
+            background-color: var(--dark-color);
+            color: rgba(255,255,255,0.7);
+            border-top: 5px solid var(--primary-color);
+            padding-top: 50px;
+        }
+        .custom-footer h5 {
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .custom-footer h5::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            bottom: -8px;
+            left: 0;
+        }
+        .custom-footer a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+        .custom-footer a:hover {
+            color: var(--secondary-color);
+            padding-left: 5px;
+        }
+        .social-link img {
+            transition: var(--transition-smooth);
+            border-radius: 50%;
+        }
+        .social-link:hover img {
+            transform: scale(1.2) rotate(8deg);
+            box-shadow: 0 0 12px var(--secondary-color);
         }
     </style>
 </head>
@@ -256,594 +241,725 @@
 <body>
 
     <!-- ==========================================
-         CABECERA PRINCIPAL (HEADER) 1.0
+         CABECERA PRINCIPAL (BOOTSTRAP NAVBAR SEMÁNTICA)
          ========================================== -->
-    <header class="main-header">
-        <h1>
-            <picture class="logo-container">
-                <img src="./imagenes/logo_liga1.png" alt="Liga 1 official logo" width="200">
-            </picture>
-            <span>Portal Oficial</span>
-        </h1>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#banners-carrusel">Inicio</a></li>
-                <li><a href="#equipos">Equipos</a></li>
-                <li><a href="#destacados">Resultados</a></li>
-                <li><a href="#tienda">Tienda</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./imagenes/logo_liga1.png" alt="Liga 1 Logo Oficial" width="140" class="me-2">
+                    <span>PORTAL OFICIAL</span>
+                </a>
+                <button class="navbar-toggler" type="text/content" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavigation">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resumen">Resumen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#equipos">Equipos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destacados">Resultados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tienda">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- ==========================================
-         CONTENIDO PRINCIPAL (MAIN) 3.0 (Agregar la semantica correctamente)
+         CONTENIDO PRINCIPAL (MAIN COMPLETO)
          ========================================== -->
-    <main>
+    <main class="container my-5">
 
-        <!-- SECCIÓN 1: INICIO / CARRUSEL -->
-        <section id="banners-carrusel">
-            <h2>Campeonato Peruano 2026</h2>
-            <p class="section-description">
-            <section class="carousel-container">
-                <img src="./imagenes/banner_liga1.jpg.jpg" alt="Liga 1 championship banner" width="300">
-                <img src="./imagenes/banner_estadio.jpg.jpg" alt="National Stadium banner" width="300">
-                <img src="./imagenes/banner_hinchada.jpg.jpg" alt="Peruvian football supporters" width="300">
-            </section>
+        <!-- SECCIÓN 1: CARRUSEL RESPONSIVO DE INTERACTIVIDAD -->
+        <section id="inicio">
+            <div id="bannerLiga1" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imagenes/banner_liga1.jpg.jpg" class="d-block w-100" alt="Banner Campeonato Peruano">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-warning fw-bold">Campeonato Peruano 2026</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/banner_estadio.jpg.jpg" class="d-block w-100" alt="Estadio Nacional del Perú">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-warning fw-bold">Escenarios de Primera</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/banner_hinchada.jpg.jpg" class="d-block w-100" alt="Hinchada Peruana">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-warning fw-bold">La Mejor Hinchada</h2>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#bannerLiga1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#bannerLiga1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
         </section>
 
-        <section class="columnas_4">
-            <!--CARD1-->
-            <card>
-                <h2> Equipos Liga 1</h2> <img src="imagenes/Equipos Liga 1.jfif">
-                <details>
-                    <summary>Información del equipo</summary>
-                    <p>Detalles sobre el equipo...</p>
-                    <ul>
-                        <li>Fundación de la liga 1:1912</li>
-                        <li>Universitario</li>
-                        <li>Alianza Lima</li>
-                        <li>Sporting Cristal</li>
-                        <li>Melgar</li>
-                    </ul>
-                </details>
-            </card>
-            <!--CARD2-->
-            <card>
-                <h2> Equipos Liga 1</h2> <img src="imagenes/Equipos Liga 1.jfif">
-                <details>
-                    <summary>Información del equipo</summary>
-                    <p>Detalles sobre el equipo...</p>
-                    <ul>
-                        <li>Fundación de la liga 1:1912</li>
-                        <li>Cienciano</li>
-                        <li>Sport Huancayo</li>
-                        <li>Cusco FC</li>
-                        <li>Atlético Grau</li>
-                    </ul>
-                </details>
-            </card>
-            <!--CARD3-->
-            <card>
-                <h2> Los mas destacados del Torneo</h2> <img src="imagenes/Los mas destacados del Torneo12.jpg">
-                <details>
-                    <summary>Información del equipo</summary>
-                    <p>Detalles sobre el equipo...</p>
-                    <ul>
-                        <li>Criterio de selección:Tabla acumulada</li>
-                        <li>Equipo con más goles:Club Cienciano(34 goles)</li>
-                        <li>Valla menos batida:Alianza Lima</li>
-                        <li>Mejor localía:Cusco FC</li>
-                        <li>Vigente Campeón:Universitario</li>
-                    </ul>
-                </details>
-            </card>
-            <!--CARD4-->
-            <card>
-                <h2> Equipos Liga 2</h2> <img src="imagenes/Equipos Liga 2.jfif">
-                <details>
-                    <summary>Información del equipo</summary>
-                    <p>Detalles sobre el equipo...</p>
-                    <ul>
-                        <li>Fundación de la liga 2:1943</li>
-                        <li>Santos FC</li>
-                        <li>Alianza Universidad</li>
-                        <li>Carlos A. Mannucci</li>
-                        <li>ADA Jaén</li>
-                    </ul>
-                </details>
-            </card>
+        <!-- SECCIÓN 2: TARJETAS DESPLEGABLES DE INFORMACIÓN GENERAL -->
+        <section id="resumen">
+            <h2 class="section-title">Resumen de Torneos</h2>
+            <div class="row g-4">
+                <!-- CARD 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="custom-card p-3">
+                        <h4 class="fw-bold text-center text-danger">Equipos Liga 1</h4>
+                        <img src="imagenes/Equipos Liga 1.jfif" class="img-fluid rounded my-2" alt="Equipos Primera División">
+                        <details class="mt-2">
+                            <ul class="list-group list-group-flush mt-2">
+                                <li class="list-group-item">Fundación Liga: 1912</li>
+                                <li class="list-group-item">Universitario</li>
+                                <li class="list-group-item">Alianza Lima</li>
+                                <li class="list-group-item">Sporting Cristal</li>
+                                <li class="list-group-item">Melgar</li>
+                            </ul>
+                        </details>
+                    </article>
+                </div>
+                <!-- CARD 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="custom-card p-3">
+                        <h4 class="fw-bold text-center text-danger">Equipos Liga 1</h4>
+                        <img src="imagenes/Equipos Liga 1.jfif" class="img-fluid rounded my-2" alt="Equipos Primera División B">
+                        <details class="mt-2">
+                            <ul class="list-group list-group-flush mt-2">
+                                <li class="list-group-item">Fundación Liga: 1912</li>
+                                <li class="list-group-item">Cienciano</li>
+                                <li class="list-group-item">Sport Huancayo</li>
+                                <li class="list-group-item">Cusco FC</li>
+                                <li class="list-group-item">Atlético Grau</li>
+                            </ul>
+                        </details>
+                    </article>
+                </div>
+                <!-- CARD 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="custom-card p-3">
+                        <h4 class="fw-bold text-center text-danger">Estadísticas</h4>
+                        <img src="imagenes/Los mas destacados del Torneo12.jpg" class="img-fluid rounded my-2" alt="Destacados del torneo">
+                        <details class="mt-2">
+                            <ul class="list-group list-group-flush mt-2">
+                                <li class="list-group-item small">Goles: Cienciano (34)</li>
+                                <li class="list-group-item small">Valla Menos Batida: Alianza Lima</li>
+                                <li class="list-group-item small">Mejor Local: Cusco FC</li>
+                                <li class="list-group-item small">Campeón Vigente: Universitario</li>
+                            </ul>
+                        </details>
+                    </article>
+                </div>
+                <!-- CARD 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="custom-card p-3">
+                        <h4 class="fw-bold text-center text-secondary">Equipos Liga 2</h4>
+                        <img src="imagenes/Equipos Liga 2.jfif" class="img-fluid rounded my-2" alt="Segunda división peruana">
+                        <details class="mt-2">
+                            <ul class="list-group list-group-flush mt-2">
+                                <li class="list-group-item">Fundación L2: 1943</li>
+                                <li class="list-group-item">Santos FC</li>
+                                <li class="list-group-item">Alianza Universidad</li>
+                                <li class="list-group-item">Carlos A. Mannucci</li>
+                                <li class="list-group-item">ADA Jaén</li>
+                            </ul>
+                        </details>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <!-- SECCIÓN 3: EQUIPOS (Uso de tarjetas semánticas CARD) 2 -->
+        <!-- ==========================================
+             SECCIÓN 3: CLUBES PARTICIPANTES (FICHAS TÉCNICAS)
+             ========================================== -->
         <section id="equipos">
-            <h2>Equipos de la Liga 1</h2>
-            <section class="grid-container">
+            <h2 class="section-title">Clubes de la Liga 1 (Fichas Técnicas)</h2>
+            <div class="row g-4">
+                
+                <!-- 1. Club Universitario -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Universitario de Deportes</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1924</li>
+                                <li><strong>Apodo:</strong> "Los Cremas"</li>
+                                <li><strong>Estadio:</strong> Estadio Monumental</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/universitario.jpg" alt="Universitario de Deportes" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Lima</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Universitario</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1924</li>
-                            <li>Apodo: "Los Cremas"</li>
-                            <li>Estadio: Estadio Monumental</li>
-                        </ul>
-                        <img src="./imagenes/universitario.jpg" alt="Universitario de Deportes">
-                    </figure>
-                    <footer>Liga 1 - Lima</footer>
-                </article>
+                <!-- 2. Club Alianza Lima -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Alianza Lima</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1901</li>
+                                <li><strong>Apodo:</strong> "Los Blanquiazules"</li>
+                                <li><strong>Estadio:</strong> Alejandro Villanueva</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/alianza_lima.jpg" alt="Alianza Lima" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Lima</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Alianza Lima</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1924</li>
-                            <li>Apodo: "los Blanquiazules"</li>
-                            <li>Estadio:Estadio Alejandro Villanueva</li>
-                        </ul>
-                        <img src="./imagenes/alianza_lima.jpg" alt="Alianza Lima">
-                    </figure>
-                    <footer>Liga 1 - Lima</footer>
-                </article>
+                <!-- 3. Club Sporting Cristal -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Sporting Cristal</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1955</li>
+                                <li><strong>Apodo:</strong> "Los Cerveceros"</li>
+                                <li><strong>Estadio:</strong> Alberto Gallardo</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/sporting_cristal.jpg" alt="Sporting Cristal" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Lima</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Sporting Cristal</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1924</li>
-                            <li>Apodo: "Los Cerveceros"</li>
-                            <li>Estadio:Estadio Alberto Gallardo</li>
-                        </ul>
-                        <img src="./imagenes/sporting_cristal.jpg" alt="Sporting Cristal">
-                    </figure>
-                    <footer>Liga 1 - Lima</footer>
-                </article>
+                <!-- 4. Club FBC Melgar -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">FBC Melgar</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1915</li>
+                                <li><strong>Apodo:</strong> "Los Rojinegros"</li>
+                                <li><strong>Estadio:</strong> Monumental de la UNSA</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/melgar.jpg" alt="FBC Melgar" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Arequipa</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>FBC Melgar</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1915</li>
-                            <li>Apodo: "Los Rojinegros"</li>
-                            <li>Estadio:Estadio Monumental de la UNSA</li>
-                        </ul>
-                        <img src="./imagenes/melgar.jpg" alt="FBC Melgar">
-                    </figure>
-                    <footer>Liga 1 - Arequipa</footer>
-                </article>
+                <!-- 5. Club Cienciano -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Cienciano</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1901</li>
+                                <li><strong>Apodo:</strong> "El Papá de América"</li>
+                                <li><strong>Estadio:</strong> Inca Garcilaso de la Vega</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/cienciano.jpg" alt="Cienciano" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Cusco</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Cienciano</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1901</li>
-                            <li>Apodo:"El Papá"</li>
-                            <li>Estadio:Estadio Inca Garcilaso de la Vega</li>
-                        </ul>
-                        <img src="./imagenes/cienciano.jpg" alt="Cienciano">
-                    </figure>
-                    <footer>Liga 1 - Cusco</footer>
-                </article>
+                <!-- 6. Club Sport Boys -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Sport Boys</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1927</li>
+                                <li><strong>Apodo:</strong> "Los Chalacos"</li>
+                                <li><strong>Estadio:</strong> Miguel Grau</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/sport_boys.jpg" alt="Sport Boys" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Callao</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Sport Boys</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1927</li>
-                            <li>Apodo:"Los Chalacos"</li>
-                            <li>Estadio:Estadio Miguel Grau</li>
-                        </ul>
-                        <img src="./imagenes/sport_boys.jpg" alt="Sport Boys">
-                    </figure>
-                    <footer>Liga 1 - Callao</footer>
-                </article>
+                <!-- 7. Los Chankas CYC -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Los Chankas CYC</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1989</li>
+                                <li><strong>Apodo:</strong> "Los Guerreros"</li>
+                                <li><strong>Estadio:</strong> Los Chankas</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/Chankas_CYC.jpg" alt="Los Chankas CYC" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Apurímac</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Chankas CYC</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 2021</li>
-                            <li>Apodo:"Los Guerreros Chankas"</li>
-                            <li>Estadio:Estadio Los Chankas</li>
-                        </ul>
-                        <img src="./imagenes/Chankas_CYC.jpg" alt="Los Chankas CYC">
-                    </figure>
-                    <footer>Liga 1 - Apurímac</footer>
-                </article>
+                <!-- 8. Cusco FC -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Cusco FC</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 2009</li>
+                                <li><strong>Apodo:</strong> "Los Dorados"</li>
+                                <li><strong>Estadio:</strong> Inca Garcilaso de la Vega</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/cusco_fc.jpg" alt="Cusco FC" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Cusco</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Cusco FC</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 2009</li>
-                            <li>Apodo:"Los Guerreros Dorados"</li>
-                            <li>Estadio:Estadio Inca Garcilaso de la Vega</li>
-                        </ul>
-                        <img src="./imagenes/cusco_fc.jpg" alt="Cusco FC">
-                    </figure>
-                    <footer>Liga 1 - Cusco</footer>
-                </article>
+                <!-- 9. Alianza Atlético -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Alianza Atlético</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1920</li>
+                                <li><strong>Apodo:</strong> "El Vendaval del Chira"</li>
+                                <li><strong>Estadio:</strong> Campeones del 36</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/alianza_atletico.jpg" alt="Alianza Atlético de Sullana" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Piura</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Alianza Atlético</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1920</li>
-                            <li>Apodo:"Los Churres"</li>
-                            <li>Estadio:Estadio Campeones del 36</li>
-                        </ul>
-                        <img src="./imagenes/alianza_atletico.jpg" alt="Alianza Atlético Sullana">
-                    </figure>
-                    <footer>Liga 1 - Piura</footer>
-                </article>
+                <!-- 10. Atlético Grau -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Atlético Grau</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1919</li>
+                                <li><strong>Apodo:</strong> "Los Académicos"</li>
+                                <li><strong>Estadio:</strong> Miguel Grau (Piura)</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/Atlético_Grau.jpg" alt="Atlético Grau" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Piura</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Atlético Grau</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1919</li>
-                            <li>Apodo:"El Patrimonio de Piura"</li>
-                            <li>Estadio:Estadio Miguel Grau (Piura)</li>
-                        </ul>
-                        <img src="./imagenes/Atlético_Grau.jpg" alt="Atlético Grau">
-                    </figure>
-                    <footer>Liga 1 - Piura</footer>
-                </article>
+                <!-- 11. CD Moquegua -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">CD Moquegua</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 2023</li>
+                                <li><strong>Apodo:</strong> "La Furia de la Región"</li>
+                                <li><strong>Estadio:</strong> 25 de Noviembre</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/cd_moquegua.jpg" alt="CD Moquegua" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Moquegua</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>CD Moquegua</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 2013</li>
-                            <li>Apodo:"La Furia de Moquegua"</li>
-                            <li>Estadio:Estadio 25 de Noviembre</li>
-                        </ul>
-                        <figure class="card-body">
-                            <img src="./imagenes/CD_Moquegua.jpg" alt="Club Deportivo Moquegua">
-                        </figure>
-                        <footer>Liga 1 - Moquegua</footer>
-                </article>
+                <!-- 12. ADT Tarma -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">ADT Tarma</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1929</li>
+                                <li><strong>Apodo:</strong> "El Vendaval Celeste"</li>
+                                <li><strong>Estadio:</strong> Unión Tarma</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/ADT.jpg" alt="ADT Tarma" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Junín</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>ADT Tarma</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1929</li>
-                            <li>Apodo:"El Vendaval Celeste""</li>
-                            <li>Estadio:Estadio Unión Tarma</li>
-                        </ul>
-                        <img src="./imagenes/ADT.jpg" alt="Asociación Deportiva Tarma">
-                    </figure>
-                    <footer>Liga 1 - Junín</footer>
-                </article>
+                <!-- 13. Deportivo Garcilaso -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Deportivo Garcilaso</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1957</li>
+                                <li><strong>Apodo:</strong> "El Pedacito de Cielo"</li>
+                                <li><strong>Estadio:</strong> Inca Garcilaso de la Vega</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/Deportivo-Garcilaso.jpg" alt="Deportivo Garcilaso" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Cusco</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Deportivo Garcilaso</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1957</li>
-                            <li>Apodo:"El Pedacito de Cielo"</li>
-                            <li>Estadio:Estadio Inca Garcilaso de la Vega</li>
-                        </ul>
-                        <img src="./imagenes/Deportivo-Garcilaso.jpg" alt="Deportivo Garcilaso">
-                    </figure>
-                    <footer>Liga 1 - Cusco</footer>
-                </article>
+                <!-- 14. Juan Pablo II -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Juan Pablo II College</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 2015</li>
+                                <li><strong>Apodo:</strong> "Los Papales"</li>
+                                <li><strong>Estadio:</strong> Municipal de Chongoyape</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/Juan_Pablo-II.jpg" alt="Juan Pablo II College" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Lambayeque</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Juan Pablo II</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 2015</li>
-                            <li>Apodo:"El Cuadro Santo"</li>
-                            <li>Estadio:Estadio Municipal de Juventud de Chongoyape</li>
-                        </ul>
-                        <img src="./imagenes/Juan_Pablo-II.jpg" alt="Juan Pablo II College">
-                    </figure>
-                    <footer>Liga 1 - Lambayeque</footer>
-                </article>
+                <!-- 15. Comerciantes Unidos -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Comerciantes Unidos</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 2002</li>
+                                <li><strong>Apodo:</strong> "Las Águilas de Cutervo"</li>
+                                <li><strong>Estadio:</strong> Juan Maldonado Gamarra</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/Comerciantes_Unidos.jpg" alt="Comerciantes Unidos" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Cajamarca</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Comerciantes Unidos</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 2002</li>
-                            <li>Apodo:"Las Águilas de Cutervo"</li>
-                            <li>Estadio:Estadio Juan Maldonado Gamarra</li>
-                        </ul>
-                        <img src="./imagenes/Comerciantes_Unidos.jpg" alt="Comerciantes Unidos">
-                    </figure>
-                    <footer>Liga 1 - Cajamarca</footer>
-                </article>
+                <!-- 16. Sport Huancayo -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">Sport Huancayo</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 2007</li>
+                                <li><strong>Apodo:</strong> "El Rojo Matador"</li>
+                                <li><strong>Estadio:</strong> IPD Huancayo</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/Sport_Huancayo.jpg" alt="Sport Huancayo" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Junín</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>Sport Huancayo</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 2007</li>
-                            <li>Apodo:"El Rojo Matador"</li>
-                            <li>Estadio:Estadio IPD de Huancayo</li>
-                        </ul>
-                        <img src="./imagenes/Sport_Huancayo.jpg" alt="Sport Huancayo">
-                    </figure>
-                    <footer>Liga 1 - Junín</footer>
-                </article>
+                <!-- 17. FC Cajamarca -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">FC Cajamarca</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 2022</li>
+                                <li><strong>Apodo:</strong> "El Gavilán del Norte"</li>
+                                <li><strong>Estadio:</strong> Héroes de San Ramón</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/FC_Cajamarca.jpg" alt="FC Cajamarca" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Cajamarca</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>FC Cajamarca</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 2023</li>
-                            <li>Apodo:"Azul y Oro"</li>
-                            <li>Estadio:Estadio Héroes de San Ramón</li>
-                        </ul>
-                        <img src="./imagenes/FC_Cajamarca.jpg" alt="FC Cajamarca">
-                    </figure>
-                    <footer>Liga 1 - Cajamarca</footer>
-                </article>
+                <!-- 18. UTC Cajamarca -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom">UTC</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-between">
+                            <ul class="list-unstyled mb-3 text-start bg-light p-2 rounded">
+                                <li><strong>Fundado:</strong> 1964</li>
+                                <li><strong>Apodo:</strong> "El Gavilán del Norte"</li>
+                                <li><strong>Estadio:</strong> Héroes de San Ramón</li>
+                            </ul>
+                            <div class="overflow-hidden rounded">
+                                <img src="./imagenes/UTCajamarca.jpg" alt="UTC de Cajamarca" class="img-fluid w-100" width="350" height="200" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="mt-auto bg-light text-center py-2 fw-semibold border-top text-muted">Liga 1 - Cajamarca</div>
+                    </article>
+                </div>
 
-                <article class="article">
-                    <header>UTC Cajamarca</header>
-                    <figure class="card-body">
-                        <ul>
-                            <li>Fundado en 1964</li>
-                            <li>Apodo:"El Gavilán del Norte"</li>
-                            <li>Estadio:Estadio Héroes de San Ramón</li>
-                        </ul>
-                        <img src="./imagenes/UTCajamarca.jpg" alt="UTC Cajamarca">
-                    </figure>
-                    <footer>Liga 1 - Cajamarca</footer>
-                </article>
-
-            </section>
+            </div>
         </section>
 
-        <!-- SECCIÓN 3: DESTACADOS -->
+        <!-- ==========================================
+             SECCIÓN 4: PREMIACIONES Y DESTACADOS
+             ========================================== -->
         <section id="destacados">
-            <h2>Los Más Destacados del Torneo</h2>
-            <section class="grid-container">
+            <h2 class="section-title">Galardones Oficiales del Torneo</h2>
+            <div class="row g-4">
+                
+                <!-- 1. Máximo Goleador -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom bg-danger text-white">Máximo Goleador</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-center bg-white">
+                            <div class="overflow-hidden rounded mb-2">
+                                <img src="./imagenes/goleador1.jpg" alt="Máximo Goleador del año" class="img-fluid w-100" width="350" height="250" loading="lazy">
+                            </div>
+                        </div>
+                        <footer class="bg-light text-center py-2 border-top text-dark fw-bold mt-auto">Premio de Oro</footer>
+                    </article>
+                </div>
 
-                <article class="card">
-                    <header>Máximo Goleador</header>
-                    <section class="card-body">
-                        <img src="./imagenes/goleador1.jpg" alt="Tournament top scorer">
-                    </section>
-                    <footer>Premio de Oro</footer>
-                </article>
+                <!-- 2. Mejor Guardameta -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom bg-danger text-white">Mejor Guardameta</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-center bg-white">
+                            <div class="overflow-hidden rounded mb-2">
+                                <img src="./imagenes/arquero1.jpg" alt="Mejor guardameta del campeonato" class="img-fluid w-100" width="350" height="250" loading="lazy">
+                            </div>
+                        </div>
+                        <footer class="bg-light text-center py-2 border-top text-dark fw-bold mt-auto">Guardián de Oro</footer>
+                    </article>
+                </div>
 
-                <article class="card">
-                    <header>Mejor Guardameta</header>
-                    <section class="card-body">
-                        <img src="./imagenes/arquero1.jpg" alt="Goalkeeper">
-                    </section>
-                    <footer>Guardián de Oro</footer>
-                </article>
+                <!-- 3. Director Técnico -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom bg-danger text-white">Director Técnico</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-center bg-white">
+                            <div class="overflow-hidden rounded mb-2">
+                                <img src="./imagenes/dt.jpg" alt="Mejor Director Técnico de la temporada" class="img-fluid w-100" width="350" height="250" loading="lazy">
+                            </div>
+                        </div>
+                        <footer class="bg-light text-center py-2 border-top text-dark fw-bold mt-auto">Técnico del Año</footer>
+                    </article>
+                </div>
 
-                <article class="card">
-                    <header>Director Técnico</header>
-                    <section class="card-body">
-                        <img src="./imagenes/dt.jpg" alt="Best technical director">
-                    </section>
-                    <footer>tecnico del año</footer>
-                </article>
+                <!-- 4. Jugador Revelación -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom bg-danger text-white">Jugador Revelación</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-center bg-white">
+                            <div class="overflow-hidden rounded mb-2">
+                                <img src="./imagenes/jugador_revelacion.jpg" alt="Mejor jugador revelación sub-21" class="img-fluid w-100" width="350" height="250" loading="lazy">
+                            </div>
+                        </div>
+                        <footer class="bg-light text-center py-2 border-top text-dark fw-bold mt-auto">Promesa de Oro</footer>
+                    </article>
+                </div>
 
-                <article class="card">
-                    <header>Jugador Revelación</header>
-                    <section class="card-body">
-                        <img src="./imagenes/jugador_revelacion.jpg" alt="Breakout player">
-                    </section>
-                    <footer>Promesa del Torneo</footer>
-                </article>
+                <!-- 5. Mejor Hinchada -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom bg-danger text-white">Mejor Hinchada</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-center bg-white">
+                            <div class="overflow-hidden rounded mb-2">
+                                <img src="./imagenes/mejor_hinchada.jpg" alt="Premio a la mejor hinchada organizada" class="img-fluid w-100" width="350" height="250" loading="lazy">
+                            </div>
+                        </div>
+                        <footer class="bg-light text-center py-2 border-top text-dark fw-bold mt-auto">Aliento Incondicional</footer>
+                    </article>
+                </div>
 
-                <article class="card">
-                    <header>Mejor Hinchada</header>
-                    <section class="card-body">
-                        <img src="./imagenes/mejor_hinchada.jpg" alt="Fans">
-                    </section>
-                    <footer>Premio a la Fidelidad</footer>
-                </article>
+                <!-- 6. Premio Fair Play -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="custom-card d-flex flex-column h-100">
+                        <div class="card-header-custom bg-danger text-white">Premio Fair Play</div>
+                        <div class="p-3 text-center d-flex flex-column flex-grow-1 justify-content-center bg-white">
+                            <div class="overflow-hidden rounded mb-2">
+                                <img src="./imagenes/fair_play.jpg" alt="Premio al juego limpio y conducta deportiva" class="img-fluid w-100" width="350" height="250" loading="lazy">
+                            </div>
+                        </div>
+                        <footer class="bg-light text-center py-2 border-top text-dark fw-bold mt-auto">Juego Limpio</footer>
+                    </article>
+                </div>
 
-                <article class="card">
-                    <header>Premio Fair Play</header>
-                    <section class="card-body">
-                        <img src="./imagenes/fair_play.jpg" alt="Fair play award">
-                    </section>
-                    <footer>recta final 2026</footer>
-                </article>
-
-            </section>
+            </div>
         </section>
 
-        <!-- SECCIÓN 4: TIENDA OFICIAL (Corregida con grid-container y cards) -->
-        <h2>Accesorios y Camisetas Oficiales</h2>
+        <!-- SECCIÓN 5: TIENDA DE PRODUCTOS OFICIALES -->
         <section id="tienda">
-            <section class="grid-container">
-
-                <article class="card">
-                    <header>Camiseta Oficial</header>
-                    <section class="card-body">
-                        <img src="./imagenes/camiseta_oficial.jpg" alt="Camiseta oficial">
-                    </section>
-                    <footer>Temporada 2026</footer>
-                </article>
-
-                <article class="card">
-                    <header>Balón Oficial</header>
-                    <section class="card-body">
-                        <img src="./imagenes/pelota_oficial.jpg" alt="Pelota oficial">
-                    </section>
-                    <footer>Edición Especial</footer>
-                </article>
-
-                <article class="card">
-                    <header>Gorra Oficial</header>
-                    <section class="card-body">
-                        <img src="./imagenes/gorra_campeonato.jpg" alt="Gorra oficial">
-                    </section>
-                    <footer>Estilo Urbano</footer>
-                </article>
-
-                <article class="card">
-                    <header>Bufanda Oficial</header>
-                    <section class="card-body">
-                        <img src="./imagenes/bufanda_hincha.jpg" alt="Bufanda">
-                    </section>
-                    <footer>Identidad de Pasión</footer>
-                </article>
-
-            </section>
+            <h2 class="section-title">Accesorios y Camisetas Oficiales</h2>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="custom-card text-center">
+                        <div class="card-header-custom bg-secondary">Camiseta Oficial</div>
+                        <div class="p-3"><img src="./imagenes/camiseta_oficial.jpg" alt="Camiseta Oficial" class="img-fluid rounded"></div>
+                        <footer class="p-2 bg-light border-top text-muted small">Temporada 2026</footer>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="custom-card text-center">
+                        <div class="card-header-custom bg-secondary">Balón Oficial</div>
+                        <div class="p-3"><img src="./imagenes/pelota_oficial.jpg" alt="Balón de fútbol Oficial" class="img-fluid rounded"></div>
+                        <footer class="p-2 bg-light border-top text-muted small">Edición Especial</footer>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="custom-card text-center">
+                        <div class="card-header-custom bg-secondary">Gorra Oficial</div>
+                        <div class="p-3"><img src="./imagenes/gorra_campeonato.jpg" alt="Gorra Campeonato" class="img-fluid rounded"></div>
+                        <footer class="p-2 bg-light border-top text-muted small">Estilo Urbano</footer>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="custom-card text-center">
+                        <div class="card-header-custom bg-secondary">Bufanda Oficial</div>
+                        <div class="p-3"><img src="./imagenes/bufanda_hincha.jpg" alt="Bufanda Oficial" class="img-fluid rounded"></div>
+                        <footer class="p-2 bg-light border-top text-muted small">Identidad de Pasión</footer>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <!-- SECCIÓN 5: FORMULARIO DE REGISTRO -->
-        <section id="contacto">
-            <h2>Regístrate para Recibir Entradas y Novedades</h2>
-
-            <form action="#" method="POST" class="form-registro">
-                <p>
-                    <label for="nombre">Nombre Completo:</label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
-                </p>
-
-                <p>
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
-                </p>
-
-                <p>
-                    <label for="dni">DNI:</label>
-                    <input type="text" id="dni" name="dni" required placeholder="Ej. 12345678">
-                </p>
-
-                <p>
-                    <label for="direccion">Dirección:</label>
-                    <input type="text" id="direccion" name="direccion">
-                </p>
-
-                <p>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono">
-                </p>
-
-                <p>
-                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
-                </p>
-
-                <p>
-                    <label for="edad">Edad:</label>
-                    <input type="number" id="edad" name="edad">
-                </p>
-
-                <p>
-                    <label>Género:</label>
-                    <span class="gender-row">
-                        <input type="radio" name="genero" id="masculino"><label for="masculino">Masculino</label>
-                        <input type="radio" name="genero" id="femenino"><label for="femenino">Femenino</label>
-                    </span>
-                </p>
-
-                <p>
-                    <label for="ciudad">Ciudad:</label>
-                    <input type="text" id="ciudad" name="ciudad">
-                </p>
-
-                <p>
-                    <label for="entradas">Cantidad de Entradas:</label>
-                    <input type="number" id="entradas" name="entradas">
-                </p>
-
-                <p>
-                    <label for="hora">Hora Preferida:</label>
-                    <input type="time" id="hora" name="hora">
-                </p>
-
-                <p>
-                    <label for="equipo_favorito">Equipo Favorito:</label>
-                    <select id="equipo_favorito" name="equipo_favorito">
-                        <option value="universitario">Universitario</option>
-                        <option value="alianza_lima">Alianza Lima</option>
-                        <option value="sporting_cristal">Sporting Cristal</option>
-                        <option value="melgar">FBC Melgar</option>
-                        <option value="otros">Otros equipos</option>
-                    </select>
-                </p>
-
-                <p class="button-container">
-                    <button type="submit">Enviar Registro</button>
-                </p>
-            </form>
+        <!-- SECCIÓN 6: FORMULARIO DE ACCESIBILIDAD Y REGISTRO -->
+        <section id="contacto" class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="form-section-bg">
+                    <h3 class="text-center text-warning fw-bold mb-4">Regístrate para Recibir Entradas y Novedades</h3>
+                    
+                    <form action="#" method="POST" class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Ej. Juan Pérez">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="correo" class="form-label">Correo Electrónico:</label>
+                            <input type="email" id="correo" name="correo" class="form-control" required placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="dni" class="form-label">DNI:</label>
+                            <input type="text" id="dni" name="dni" class="form-control" required placeholder="Ej. 12345678">
+                        </div>
+                        <div class="col-md-8">
+                            <label for="direccion" class="form-label">Dirección Doméstica:</label>
+                            <input type="text" id="direccion" name="direccion" class="form-control" placeholder="Av. Principal 123">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="telefono" class="form-label">Teléfono Celular:</label>
+                            <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="987654321">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento:</label>
+                            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="edad" class="form-label">Edad:</label>
+                            <input type="number" id="edad" name="edad" class="form-control" min="0" max="100">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label d-block">Género:</label>
+                            <div class="form-check form-check-inline mt-2">
+                                <input class="form-check-input" type="radio" name="genero" id="masculino" value="M">
+                                <label class="form-check-label" href="#masculino" for="masculino">Masculino</label>
+                            </div>
+                            <div class="form-check form-check-inline mt-2">
+                                <input class="form-check-input" type="radio" name="genero" id="femenino" value="F">
+                                <label class="form-check-label" href="#femenino" for="femenino">Femenino</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="ciudad" class="form-label">Ciudad Residencial:</label>
+                            <input type="text" id="ciudad" name="ciudad" class="form-control" placeholder="Lima, Arequipa...">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="entradas" class="form-label">Cantidad de Entradas:</label>
+                            <input type="number" id="entradas" name="entradas" class="form-control" min="1" max="10" value="1">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="hora" class="form-label">Hora Preferida de Contacto:</label>
+                            <input type="time" id="hora" name="hora" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="equipo_favorito" class="form-label">Club de Preferencia:</label>
+                            <select id="equipo_favorito" name="equipo_favorito" class="form-select">
+                                <option value="universitario">Universitario</option>
+                                <option value="alianza_lima">Alianza Lima</option>
+                                <option value="sporting_cristal">Sporting Cristal</option>
+                                <option value="melgar">FBC Melgar</option>
+                                <option value="otros">Otros equipos</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-center mt-4">
+                            <button type="submit" class="btn btn-submit-animate">Enviar Registro Oficial</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <!-- ==========================================
-         PIE DE PÁGINA (FOOTER EN COLUMNAS)
+         PIE DE PÁGINA (BOOTSTRAP FOOTER ESTRUCTURADO)
          ========================================== -->
-    <footer class="main-footer">
-        <section class="footer-columns">
-
-            <!-- Columna 1: Enlaces -->
-            <section class="footer-column">
-                <h3>Enlaces Oficiales</h3>
-                <ul>
-                    <li><a href="#banners-carrusel">Inicio</a></li>
-                    <li><a href="#equipos">Equipos</a></li>
-                    <li><a href="#destacados">Resultados</a></li>
-                    <li><a href="#tienda">Tienda</a></li>
-                </ul>
-            </section>
-
-            <!-- Columna 2: Soporte / Info Extra -->
-            <section class="footer-column">
-                <h3>Institucional</h3>
-                <ul>
-                    <li><a href="#">Reglamento del Torneo</a></li>
-                    <li><a href="#">Federación Peruana de Fútbol</a></li>
-                    <li><a href="#">Prensa y Acreditaciones</a></li>
-                </ul>
-            </section>
-
-            <!-- Columna 3: Redes Sociales -->
-            <section class="footer-column">
-                <h3>Redes Oficiales</h3>
-                <section class="social-icons">
-                    <a href="https://www.facebook.com/santiago.morales.77520?locale=es_LA" target="_blank">
-                        <img src="./imagenes/logo_facebook.jfif" alt="Facebook" width="40">
-                    </a>
-                    <a href="https://www.instagram.com/santiagomoraleszurita/" target="_blank">
-                        <img src="./imagenes/logo_Instagram.jfif" alt="Instagram" width="40">
-                    </a>
-                    <a href="https://www.tiktok.com/@santiagozurita73" target="_blank">
-                        <img src="./imagenes/logo_tiktok.jfif" alt="TikTok" width="55">
-                    </a>
-                </section>
-            </section>
-
-        </section>
-
-        <p class="copyright">&copy; 2026 Liga 1 de Perú - Todos los derechos reservados.</p>
+    <footer class="custom-footer text-center text-md-start">
+        <div class="container pb-4">
+            <div class="row g-4">
+                <!-- Columna 1: Enlaces Rápidos -->
+                <div class="col-12 col-md-4">
+                    <h5>Enlaces Oficiales</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#inicio">Inicio</a></li>
+                        <li class="mb-2"><a href="#equipos">Equipos de Primera</a></li>
+                        <li class="mb-2"><a href="#destacados">Resultados Generales</a></li>
+                        <li class="mb-2"><a href="#tienda">Tienda Multimedia</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 2: Institucional -->
+                <div class="col-12 col-md-4">
+                    <h5>Área Institucional</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Reglamento de Competición</a></li>
+                        <li class="mb-2"><a href="#">Federación Peruana de Fútbol</a></li>
+                        <li class="mb-2"><a href="#">Prensa y Acreditaciones de Medios</a></li>
+                    </ul>
+                </div>
+                <!-- Columna 3: Redes Sociales con efecto Hover -->
+                <div class="col-12 col-md-4">
+                    <h5>Comunidad Digital</h5>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-link" aria-label="Facebook Oficial">
+                            <img src="./imagenes/logo_facebook.jfif" alt="Enlace a Facebook" width="40" height="40">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-link" aria-label="Instagram Oficial">
+                            <img src="./imagenes/logo_Instagram.jfif" alt="Enlace a Instagram" width="40" height="40">
+                        </a>
+                        <a href="https://www.tiktok.com/" target="_blank" class="social-link" aria-label="TikTok Oficial">
+                            <img src="./imagenes/logo_tiktok.jfif" alt="Enlace a TikTok" width="40" height="40">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Derechos Reservados -->
+        <div class="text-center p-3 bg-dark text-white-50 small border-top border-secondary">
+            &copy; 2026 Liga 1 de Fútbol Profesional de Perú - Todos los derechos reservados de usabilidad.
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 5JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
-
-
-<!-- 
-Header               1.5, falta H1
-S1 Carrusel          3.0 , Mas contenido (P ,FOOTER)
-S2 Categorización    3.5 , USO CARD
-S3 Ítems             3.0 ,Mejorar semantica , contenido
-S4 Formulario        3.5, Adicionar Formulario 
-Footer               1.5 , Le falta mas contenido 
-Nota HTML:16
-Sustentación :0
-Participacion:+2
-Observaciones : 
-- Separar bien las secciones 
-- Seguir los lineamientos dados en clase.
-Nota Final : 18 de 20
--->
