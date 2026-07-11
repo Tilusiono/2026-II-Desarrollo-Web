@@ -139,6 +139,8 @@ header img {
 .card footer a:hover {
   color: #ff00ff;
   text-shadow: 0 0 10px #ff00ff;
+  transform: scale(1.1);       
+  transition: all 0.3s ease; 
 }
 
 /*  Secciones de clips */
@@ -157,58 +159,64 @@ header img {
 
 .section3 .card h3::first-line {
   color: #ff00ff;
+  font-size: 2rem;
+  text-transform: uppercase; 
+  letter-spacing: 2px;
 }
 
 /*  Formulario */
-.section4 {
+form.section4 {
   padding: 40px;
   background-color: #121212;
   text-align: center;
 }
 
-.section4 h2 {
+form.section4 h2 {
   color: #00fff2;
+  font-size: 2rem;
+  text-transform: uppercase; 
+  letter-spacing: 2px;   
 }
 
-.section4 article {
+form.section4 article {
   border: 2px solid #00fff2;
   border-radius: 10px;
   padding: 10px;
   width: 280px;
 }
 
-.section4 input[type],
-.section4 select {
+form.section4 input[type],
+form.section4 select {
   width: 100%;
   padding: 8px;
   margin: 5px 0;
   border: 2px solid #00fff2;
   border-radius: 10px;
-  background-color: #0d0d0d;
+  background-color: #252dc7;
   color: #f2f2f2;
 }
 
-.section4 input:focus,
-.section4 select:focus {
+form.section4 input:focus,
+form.section4 select:focus {
   border-color: #ff00ff;
 }
 
-.section4 input::placeholder {
+form.section4 input::placeholder {
   color: gray;
 }
 
-.section4 input[type="checkbox"]:checked {
+form.section4 input[type="checkbox"]:checked {
   outline: 2px solid #00fff2;
 }
 
-.section4 input[type="submit"] {
+form.section4 input[type="submit"] {
   background-color: #00fff2;
   color: #0d0d0d;
   font-weight: bold;
   cursor: pointer;
 }
 
-.section4 input[type="submit"]:hover {
+form.section4 input[type="submit"]:hover {
   background-color: #ff00ff;
   color: #fff;
 }
@@ -224,10 +232,107 @@ footer {
 footer a[target="_blank"] {
   color: #00fff2;
   text-decoration: none;
+  font-weight: bold;      
+  letter-spacing: 1px;     
 }
 
 footer a:hover {
   color: #ff00ff;
   text-decoration: underline;
+  font-weight: bold;           
+  letter-spacing: 1px; 
+}
+
+
+
+
+
+
+
+/* Contenedor de los formularios en columnas */
+.columnas_4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 20px;
+  padding: 40px;
+  background-color: #121212;
+}
+
+/* Estilo general de cada formulario */
+form.section4 {
+  border: 2px solid #00fff2;
+  border-radius: 10px;
+  padding: 20px;
+  background: linear-gradient(145deg, #141414, #1f1f1f);
+  color: #f2f2f2;
+  text-align: center;
+  box-shadow: 0 0 15px #00fff2;
+}
+
+/* Títulos */
+form.section4 h2 {
+  color: #00fff2;
+  text-shadow: 0 0 10px #00fff2;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Inputs, selects y textarea */
+form.section4 input,
+form.section4 select,
+form.section4 textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 2px solid #00fff2;
+  border-radius: 8px;
+  background-color: #252dc7;
+  color: #fff;
+}
+
+form.section4 input:focus,
+form.section4 select:focus,
+form.section4 textarea:focus {
+  border-color: #ff00ff;
+  outline: none;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Placeholder */
+form.section4 input::placeholder,
+form.section4 textarea::placeholder {
+  color: gray;
+  font-style: italic;
+}
+
+/* Checkbox */
+form.section4 input[type="checkbox"] {
+  accent-color: #00fff2;
+}
+
+/* Botón */
+form.section4 input[type="submit"] {
+  background-color: #00fff2;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form.section4 input[type="submit"]:hover {
+  background-color: #ff00ff;
+  color: #fff;
+  box-shadow: 0 0 15px #ff00ff;
+  transform: scale(1.05);
+}
+
+/* Fieldset y labels */
+fieldset legend,
+label {
+  color: #073dff;      
+  font-weight: 600;    
+  text-shadow: 0 0 5px #ff00bb; 
 }
 

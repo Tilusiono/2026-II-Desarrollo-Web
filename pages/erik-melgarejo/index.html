@@ -27,7 +27,7 @@
 
   <!-- LOGO -->
   <header>
-    <img src="logodejuego.jpg" alt="Logo GG Highlights" width="2000" height="300">
+    <img src="imagenes/logodejuego.jpg" alt="Logo GG Highlights" width="2000" height="300">
 
   </header>
 
@@ -54,7 +54,7 @@
       <article class="card">
         <h3>Dota 2</h3>
         <a href="https://www.dota2.com/home" target="_blank">
-          <img src="dotaimg.jpg" alt="Dota 2" width="250">
+          <img src="imagenes/dotaimg.jpg" alt="Dota 2" width="250">
         </a>
         <footer><a href="#clips-dota">Clips Dota 2</a></footer>
       </article>
@@ -62,7 +62,7 @@
       <article class="card">
         <h3>Valorant</h3>
         <a href="https://playvalorant.com/" target="_blank">
-          <img src="valorantimg.webp" alt="Valorant" width="250">
+          <img src="imagenes/valorantimg.webp" alt="Valorant" width="250">
         </a>
         <footer><a href="#clips-valorant">Clips Valorant</a></footer>
       </article>
@@ -70,7 +70,7 @@
       <article class="card">
         <h3>League of Legends</h3>
         <a href="https://www.leagueoflegends.com/" target="_blank">
-          <img src="lolimg.jpg" alt="LoL" width="250">
+          <img src="imagenes/lolimg.jpg" alt="LoL" width="250">
         </a>
         <footer><a href="#clips-lol">Clips LoL</a></footer>
       </article>
@@ -78,7 +78,7 @@
       <article class="card">
         <h3>Counter Strike 2</h3>
         <a href="https://www.counter-strike.net/cs2" target="_blank">
-          <img src="counterimg.jpg" alt="CS2" width="250">
+          <img src="imagenes/counterimg.jpg" alt="CS2" width="250">
         </a>
         <footer><a href="#clips-cs">Clips CS2</a></footer>
       </article>
@@ -210,77 +210,71 @@
   </section>
 
 
-  <!-- FORMULARIO -->
-  <section class="section4">
-    <h2>Suscríbete para recibir novedades</h2>
+ <!-- FORMULARIOS EN COLUMNAS -->
+<section class="columnas_4">
 
-    <section class="columnas_4">
-      <!-- Bloque 1 -->
-      <article>
-        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-        <input type="email" name="correo" placeholder="Ingresa tu correo">
-      </article>
+  <!-- FORM 1: Suscripción -->
+  <form class="section4" action="suscripcion.php" method="post">
+    <h2>Suscríbete</h2>
+    <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+    <input type="email" name="correo" placeholder="Ingresa tu correo">
+    <input type="submit" value="Suscribirme">
+  </form>
 
-      <!-- Bloque 2 -->
-      <article>
-        <input type="text" name="nickname" placeholder="Ingresa tu nickname">
-        <input type="number" name="edad" placeholder="Ingresa tu edad">
-      </article>
+  <!-- FORM 2: Datos personales -->
+  <form class="section4" action="datos.php" method="post">
+    <h2>Tus Datos</h2>
+    <input type="text" name="nickname" placeholder="Ingresa tu nickname">
+    <input type="number" name="edad" placeholder="Ingresa tu edad">
+    <input type="tel" name="telefono" placeholder="Ingresa tu número de teléfono">
+    <input type="text" name="ID_juego" placeholder="Ingresa tu ID del juego favorito">
+    <input type="submit" value="Guardar">
+  </form>
 
-      <!-- Bloque 3: Ubicación -->
-      <article>
-        <fieldset>
-          <legend>Ubicación</legend>
+  <!-- FORM 3: Ubicación -->
+  <form class="section4" action="ubicacion.php" method="post">
+    <h2>Ubicación</h2>
+    <fieldset>
+      <legend>Selecciona tu país</legend>
+      <select class="form-select form-select-lg mb-3" name="pais" id="pais">
+        <option value="">Seleccione</option>
+        <optgroup label="Sudamérica">
+          <option value="pe">Perú</option>
+          <option value="ar">Argentina</option>
+          <option value="co">Colombia</option>
+          <option value="cl">Chile</option>
+          <option value="uy">Uruguay</option>
+          <option value="ve">Venezuela</option>
+        </optgroup>
+        <optgroup label="Europa">
+          <option value="de">Alemania</option>
+          <option value="es">España</option>
+          <option value="fr">Francia</option>
+          <option value="it">Italia</option>
+          <option value="uk">Reino Unido</option>
+          <option value="ru">Rusia</option>
+          <option value="nl">Países Bajos</option>
+        </optgroup>
+      </select>
+    </fieldset>
+    <input type="submit" value="Confirmar">
+  </form>
 
-          <label>Seleccione País:</label>
-          <select name="pais">
-            <option value="">Seleccione</option>
+  <!-- FORM 4: Preferencias gamer -->
+  <form class="section4" action="preferencias.php" method="post">
+    <h2>Preferencias Gamer</h2>
+    <input type="text" name="plataforma" placeholder="Tu plataforma favorita">
+    <input type="text" name="juego" placeholder="Tu juego favorito">
+    <label>
+      <input type="checkbox" name="acepto"> Acepto recibir novedades por correo
+    </label>
+    <input type="submit" value="Enviar">
+  </form>
 
-            <!-- optgroup agrupa opciones -->
-            <optgroup label="Sudamérica">
-              <option value="pe" selected>Perú</option>
-              <option value="ar">Argentina</option>
-              <option value="co">Colombia</option>
-              <option value="cl">Chile</option>
-              <option value="uy">Uruguay</option>
-              <option value="ve">Venezuela</option>
-            </optgroup>
+</section>
 
-            <optgroup label="Europa">
-              <option value="de">Alemania</option>
-              <option value="es">España</option>
-              <option value="fr">Francia</option>
-              <option value="it">Italia</option>
-              <option value="uk">Reino Unido</option>
-              <option value="ru">Rusia</option>
-              <option value="nl">Países Bajos</option>
-            </optgroup>
-          </select>
-        </fieldset>
-      </article>
 
-      <!-- Bloque 4 -->
-      <article>
-        <input type="tel" name="telefono" placeholder="Ingresa tu número de teléfono">
-        <input type="text" name="ID del juego" placeholder="Ingresa tu ID del juego favorito">
-      </article>
 
-      <!-- Bloque 5 -->
-      <article>
-        <input type="text" name="plataforma" placeholder="Tu plataforma favorita">
-        <input type="text" name="juego" placeholder="Tu juego favorito">
-      </article>
-
-      <!-- Bloque 6 -->
-      <article>
-        <label>
-          <input type="checkbox" name="acepto"> Acepto recibir novedades por correo
-        </label>
-        <br>
-        <input type="submit" value="Suscribirme">
-      </article>
-    </section>
-  </section>
 
 
 
